@@ -1,31 +1,17 @@
-site_title = "ArxivDaily"
+site_title = "ME Arxiv Daily"
 limit_days = 7
-cache_url = "https://arxiv.alongwy.top/cache.json"
+#cache_url = "https://arxiv.alongwy.top/cache.json"
 
 [[sources]]
 limit = 100
-category = "cs.CL"
-title = "Computation and Language"
+category = "hep-ex"
+title = "High Energy Physics - Experimental"
 
 [[sources]]
 limit = 100
-category = "cs.CV"
-title = "Computer Vision and Pattern Recognition"
+category = "hep-ph"
+title = "High Energy Physics - Phenomenology"
 
-[[sources]]
-limit = 100
-category = "cs.IR"
-title = "Information Retrieval"
-
-[[sources]]
-limit = 100
-category = "cs.LG"
-title = "Machine Learning"
-
-[[sources]]
-limit = 100
-category = "cs.MM"
-title = "Multimedia"
 
 [scripts]
 highlight_title = "scripts/highlight_title.rhai"
