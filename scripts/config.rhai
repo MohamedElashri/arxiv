@@ -1,4 +1,4 @@
-let titles_area = ["B^+", "B", "meson", "higgs", "neural-network", "pv", "primary-vertex", "monopole", "four-body"];
+let titles_area = ["B^+", "B meson", "meson", "higgs", "neural-network", "pv", "primary-vertex", "monopole", "four-body"];
 let titles_type = ["flavor", "phenomenology", "Collider", "Neural", "Machine-Learning", "LHCb"];
 let titles = titles_area + titles_type;
 let authors_array = ["CMS", "ATLAS", "Alice", "Bell II", "Elashri"];
