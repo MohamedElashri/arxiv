@@ -1,23 +1,25 @@
 :root {
-    /* Palette: Gruvbox Dark */
-    --gruvbox-bg0: #282828; /* Dark background */
-    --gruvbox-bg1: #3c3836;
-    --gruvbox-bg2: #504945;
-    --gruvbox-bg3: #665c54;
+    /* Palette: Atom One Dark */
+    --atom-dark00: #282c34; /* Background */
+    --atom-dark01: #abb2bf; /* Foreground */
+    --atom-dark02: #e06c75; /* Red */
+    --atom-dark03: #98c379; /* Green */
+    --atom-dark04: #e5c07b; /* Yellow */
+    --atom-dark05: #61afef; /* Blue */
+    --atom-dark06: #c678dd; /* Purple */
+    --atom-dark07: #56b6c2; /* Cyan */
+    --atom-dark08: #be5046; /* Orange */
 
-    --gruvbox-fg0: #fbf1c7; /* Light foreground */
-    --gruvbox-fg1: #ebdbb2;
-    --gruvbox-fg2: #d5c4a1;
-    --gruvbox-fg3: #bdae93;
-
-    /* Colors */
-    --gruvbox-red: #fb4934;
-    --gruvbox-green: #b8bb26;
-    --gruvbox-yellow: #fabd2f;
-    --gruvbox-blue: #83a598;
-    --gruvbox-purple: #d3869b;
-    --gruvbox-aqua: #8ec07c;
-    --gruvbox-orange: #fe8019;
+    /* Palette: Atom One Light */
+    --atom-light00: #fafafa; /* Background */
+    --atom-light01: #383a42; /* Foreground */
+    --atom-light02: #e45649; /* Red */
+    --atom-light03: #50a14f; /* Green */
+    --atom-light04: #c18401; /* Yellow */
+    --atom-light05: #0184bc; /* Blue */
+    --atom-light06: #a626a4; /* Purple */
+    --atom-light07: #0997b3; /* Cyan */
+    --atom-light08: #ca1243; /* Orange */
 
     /* Typograph */
     --font-family-default: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
@@ -25,81 +27,81 @@
     --font-size-m: 1.6rem;
     --font-size-s: 1.4rem;
 
-    /* Components */
-    --body-color: var(--gruvbox-fg0);
-    --body-bg: var(--gruvbox-bg0);
+    /* Components (using Atom One Dark by default) */
+    --body-color: var(--atom-dark01);
+    --body-bg: var(--atom-dark00);
 
-    --header-title: var(--gruvbox-fg0);
-    --header-container: var(--gruvbox-bg0);
-    --header-title-preffix: var(--gruvbox-purple);
+    --header-title: var(--atom-dark01);
+    --header-container: var(--atom-dark00);
+    --header-title-preffix: var(--atom-dark06);
 
-    --chip-font: var(--gruvbox-blue);
-    --chip-color: var(--gruvbox-red);
+    --chip-font: var(--atom-dark05);
+    --chip-color: var(--atom-dark02);
 
-    --icons: var(--gruvbox-fg0);
-    --icons-hover: var(--gruvbox-purple);
+    --icons: var(--atom-dark01);
+    --icons-hover: var(--atom-dark06);
 
-    --day-container: var(--gruvbox-bg1);
-    --date: var(--gruvbox-yellow);
+    --day-container: var(--atom-dark01);
+    --date: var(--atom-dark05);
 
-    --summary: var(--gruvbox-green);
-    --summary-hover: var(--gruvbox-purple);
+    --summary: var(--atom-dark03);
+    --summary-hover: var(--atom-dark06);
 
-    --details-open: var(--gruvbox-bg2);
-    --details-content: var(--gruvbox-fg1);
-    --details-a: var(--gruvbox-aqua);
-    --details-a-hover: var(--gruvbox-purple);
+    --details-open: var(--atom-dark01);
+    --details-content: var(--atom-dark01);
+    --details-a: var(--atom-dark07);
+    --details-a-hover: var(--atom-dark06);
 
-    --highlight-title: var(--gruvbox-red);
-    --highlight-author: var(--gruvbox-red);
+    --highlight-title: var(--atom-dark02);
+    --highlight-author: var(--atom-dark02);
 
-    --article-summary-hover-color: var(--gruvbox-yellow);
-    --article-summary-color: var(--gruvbox-fg3);
+    --article-summary-hover-color: var(--atom-dark04);
+    --article-summary-color: var(--atom-dark01);
 
-    --article-title-color: var(--gruvbox-fg1);
-    --article-title-hover-color: var(--gruvbox-green);
+    --article-title-color: var(--atom-dark01);
+    --article-title-hover-color: var(--atom-dark03);
 
-    --accordion-content-rail-color: var(--gruvbox-bg1);
-    --accordion-content-hover-rail-color: var(--gruvbox-yellow);
-    --accordion-title-marker-color: var(--gruvbox-bg1);
-    --accordion-title-hover-marker-color: var(--gruvbox-green);
+    --accordion-content-rail-color: var(--atom-dark01);
+    --accordion-content-hover-rail-color: var(--atom-dark04);
+    --accordion-title-marker-color: var(--atom-dark01);
+    --accordion-title-hover-marker-color: var(--atom-dark03);
 
-    --footer-color: var(--gruvbox-fg3);
-    --footer-link-hover-color: var(--gruvbox-yellow);
+    --footer-color: var(--atom-dark01);
+    --footer-link-hover-color: var(--atom-dark04);
 }
 
 [data-theme="light"] {
-    /* Theme design */
+    /* Atom One Light Theme */
 
-    --color-primary: var(--gruvbox-aqua);
-    --color-primary-second: var(--gruvbox-bg0);
-    --color-info: var(--gruvbox-blue);
-    --color-success: var(--gruvbox-green);
-    --color-warning: var(--gruvbox-orange);
-    --color-danger: var(--gruvbox-red);
+    --color-primary: var(--atom-light07);
+    --color-primary-second: var(--atom-light00);
+    --color-info: var(--atom-light05);
+    --color-success: var(--atom-light03);
+    --color-warning: var(--atom-light04);
+    --color-danger: var(--atom-light02);
 
-    --color-text: var(--gruvbox-bg0);
-    --color-hover: var(--gruvbox-yellow);
-    --color-shadow: var(--gruvbox-bg3);
+    --color-text: var(--atom-light01);
+    --color-hover: var(--atom-light04);
+    --color-shadow: var(--atom-light01);
 
-    --color-primary-h: var(--gruvbox-yellow);
-    --color-primary-s: var(--gruvbox-blue);
-    --color-primary-l: var(--gruvbox-aqua);
+    --color-primary-h: var(--atom-light05);
+    --color-primary-s: var(--atom-light05);
+    --color-primary-l: var(--atom-light07);
 
-    --color-contrast-higher-h: var(--gruvbox-bg1);
-    --color-contrast-higher-l: var(--gruvbox-bg2);
-    --color-contrast-higher-s: var(--gruvbox-bg3);
+    --color-contrast-higher-h: var(--atom-light01);
+    --color-contrast-higher-l: var(--atom-light01);
+    --color-contrast-higher-s: var(--atom-light01);
 
-    --color-content: var(--gruvbox-fg0);
+    --color-content: var(--atom-light00);
 
-    --background: var(--gruvbox-fg0);
-    --background-content: var(--gruvbox-fg1);
-    --background-color: var(--gruvbox-fg3);
+    --background: var(--atom-light00);
+    --background-content: var(--atom-light00);
+    --background-color: var(--atom-light01);
 
-    /* Components */
+    /* Components (using Atom One Light) */
 
-    --chip-font: var(--gruvbox-fg0);
-    --chip-color: var(--gruvbox-yellow);
+    --chip-font: var(--atom-light01);
+    --chip-color: var(--atom-light05);
 
     --body-color: var(--background-color);
     --body-bg: var(--background);
@@ -139,6 +141,7 @@
     --footer-color: var(--color-text);
     --footer-link-hover-color: var(--color-hover);
 }
+
 
 html {
     font-size: var(--font-size-scaler);
