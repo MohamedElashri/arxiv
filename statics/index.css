@@ -1,23 +1,23 @@
 :root {
-    /* Palette: GitHub Dark */
-    --github-dark-primary: #f0f6fc;
-    --github-dark-secondary: #c9d1d9;
-    --github-dark-tertiary: #8b949e;
-    --github-dark-background: #0d1117;
-    --github-dark-header: #161b22;
-    --github-dark-border: #30363d;
-    --github-dark-accent: #58a6ff;
-    --github-dark-attention: #f85149;
+    /* Palette: Gruvbox Dark */
+    --gruvbox-bg0: #282828; /* Dark background */
+    --gruvbox-bg1: #3c3836;
+    --gruvbox-bg2: #504945;
+    --gruvbox-bg3: #665c54;
 
-    /* Palette: GitHub Light */
-    --github-light-primary: #24292e;
-    --github-light-secondary: #57606a;
-    --github-light-tertiary: #6e7781;
-    --github-light-background: #ffffff;
-    --github-light-header: #f6f8fa;
-    --github-light-border: #e1e4e8;
-    --github-light-accent: #0366d6;
-    --github-light-attention: #d73a49;
+    --gruvbox-fg0: #fbf1c7; /* Light foreground */
+    --gruvbox-fg1: #ebdbb2;
+    --gruvbox-fg2: #d5c4a1;
+    --gruvbox-fg3: #bdae93;
+
+    /* Colors */
+    --gruvbox-red: #fb4934;
+    --gruvbox-green: #b8bb26;
+    --gruvbox-yellow: #fabd2f;
+    --gruvbox-blue: #83a598;
+    --gruvbox-purple: #d3869b;
+    --gruvbox-aqua: #8ec07c;
+    --gruvbox-orange: #fe8019;
 
     /* Typograph */
     --font-family-default: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
@@ -26,91 +26,118 @@
     --font-size-s: 1.4rem;
 
     /* Components */
-    --body-color: var(--github-dark-primary);
-    --body-bg: var(--github-dark-background);
+    --body-color: var(--gruvbox-fg0);
+    --body-bg: var(--gruvbox-bg0);
 
-    --header-title: var(--github-dark-primary);
-    --header-container: var(--github-dark-header);
-    --header-title-preffix: var(--github-dark-accent);
+    --header-title: var(--gruvbox-fg0);
+    --header-container: var(--gruvbox-bg0);
+    --header-title-preffix: var(--gruvbox-purple);
 
-    --chip-font: var(--github-dark-primary);
-    --chip-color: var(--github-dark-attention);
+    --chip-font: var(--gruvbox-blue);
+    --chip-color: var(--gruvbox-red);
 
-    --icons: var(--github-dark-secondary);
-    --icons-hover: var(--github-dark-accent);
+    --icons: var(--gruvbox-fg0);
+    --icons-hover: var(--gruvbox-purple);
 
-    --day-container: var(--github-dark-tertiary);
-    --date: var(--github-dark-accent);
+    --day-container: var(--gruvbox-bg1);
+    --date: var(--gruvbox-yellow);
 
-    --summary: var(--github-dark-secondary);
-    --summary-hover: var(--github-dark-accent);
+    --summary: var(--gruvbox-green);
+    --summary-hover: var(--gruvbox-purple);
 
-    --details-open: var(--github-dark-tertiary);
-    --details-content: var(--github-dark-secondary);
-    --details-a: var(--github-dark-accent);
-    --details-a-hover: var(--github-dark-attention);
+    --details-open: var(--gruvbox-bg2);
+    --details-content: var(--gruvbox-fg1);
+    --details-a: var(--gruvbox-aqua);
+    --details-a-hover: var(--gruvbox-purple);
 
-    --highlight-title: var(--github-dark-attention);
-    --highlight-author: var(--github-dark-accent);
+    --highlight-title: var(--gruvbox-red);
+    --highlight-author: var(--gruvbox-red);
 
-    --article-summary-hover-color: var(--github-dark-accent);
-    --article-summary-color: var(--github-dark-primary);
+    --article-summary-hover-color: var(--gruvbox-yellow);
+    --article-summary-color: var(--gruvbox-fg3);
 
-    --article-title-color: var(--github-dark-primary);
-    --article-title-hover-color: var(--github-dark-secondary);
+    --article-title-color: var(--gruvbox-fg1);
+    --article-title-hover-color: var(--gruvbox-green);
 
-    --accordion-content-rail-color: var(--github-dark-tertiary);
-    --accordion-content-hover-rail-color: var(--github-dark-accent);
-    --accordion-title-marker-color: var(--github-dark-tertiary);
-    --accordion-title-hover-marker-color: var(--github-dark-accent);
+    --accordion-content-rail-color: var(--gruvbox-bg1);
+    --accordion-content-hover-rail-color: var(--gruvbox-yellow);
+    --accordion-title-marker-color: var(--gruvbox-bg1);
+    --accordion-title-hover-marker-color: var(--gruvbox-green);
 
-    --footer-color: var(--github-dark-secondary);
-    --footer-link-hover-color: var(--github-dark-accent);
+    --footer-color: var(--gruvbox-fg3);
+    --footer-link-hover-color: var(--gruvbox-yellow);
 }
 
 [data-theme="light"] {
-    /* GitHub Light Theme */
+    /* Theme design */
 
-    --body-color: var(--github-light-primary);
-    --body-bg: var(--github-light-background);
+    --color-primary: var(--gruvbox-aqua);
+    --color-primary-second: var(--gruvbox-bg0);
+    --color-info: var(--gruvbox-blue);
+    --color-success: var(--gruvbox-green);
+    --color-warning: var(--gruvbox-orange);
+    --color-danger: var(--gruvbox-red);
 
-    --header-title: var(--github-light-primary);
-    --header-container: var(--github-light-header);
-    --header-title-preffix: var(--github-light-accent);
+    --color-text: var(--gruvbox-bg0);
+    --color-hover: var(--gruvbox-yellow);
+    --color-shadow: var(--gruvbox-bg3);
 
-    --chip-font: var(--github-light-primary);
-    --chip-color: var(--github-light-attention);
+    --color-primary-h: var(--gruvbox-yellow);
+    --color-primary-s: var(--gruvbox-blue);
+    --color-primary-l: var(--gruvbox-aqua);
 
-    --icons: var(--github-light-secondary);
-    --icons-hover: var(--github-light-accent);
+    --color-contrast-higher-h: var(--gruvbox-bg1);
+    --color-contrast-higher-l: var(--gruvbox-bg2);
+    --color-contrast-higher-s: var(--gruvbox-bg3);
 
-    --day-container: var(--github-light-tertiary);
-    --date: var(--github-light-accent);
+    --color-content: var(--gruvbox-fg0);
 
-    --summary: var(--github-light-secondary);
-    --summary-hover: var(--github-light-accent);
+    --background: var(--gruvbox-fg0);
+    --background-content: var(--gruvbox-fg1);
+    --background-color: var(--gruvbox-fg3);
 
-    --details-open: var(--github-light-tertiary);
-    --details-content: var(--github-light-secondary);
-    --details-a: var(--github-light-accent);
-    --details-a-hover: var(--github-light-attention);
+    /* Components */
 
-    --highlight-title: var(--github-light-attention);
-    --highlight-author: var(--github-light-accent);
+    --chip-font: var(--gruvbox-fg0);
+    --chip-color: var(--gruvbox-yellow);
 
-    --article-summary-hover-color: var(--github-light-accent);
-    --article-summary-color: var(--github-light-primary);
+    --body-color: var(--background-color);
+    --body-bg: var(--background);
 
-    --article-title-color: var(--github-light-primary);
-    --article-title-hover-color: var(--github-light-secondary);
+    --header-title: var(--color-shadow);
+    --header-container: var(--background);
+    --header-title-preffix: var(--color-primary-h);
 
-    --accordion-content-rail-color: var(--github-light-tertiary);
-    --accordion-content-hover-rail-color: var(--github-light-accent);
-    --accordion-title-marker-color: var(--github-light-tertiary);
-    --accordion-title-hover-marker-color: var(--github-light-accent);
+    --icons: var(--color-shadow);
+    --icons-hover: var(--color-hover);
 
-    --footer-color: var(--github-light-secondary);
-    --footer-link-hover-color: var(--github-light-accent);
+    --day-container: var(--background-content);
+    --date: var(--color-primary-l);
+
+    --summary: var(--color-info);
+    --summary-hover: var(--color-success);
+
+    --details-open: var(--color-content);
+    --details-content: var(--color-text);
+    --details-a: var(--color-primary-h);
+    --details-a-hover: var(--color-hover);
+
+    --highlight-title: var(--color-danger);
+    --highlight-author: var(--color-warning);
+
+    --article-summary-color: var(--color-text);
+    --article-summary-hover-color: var(--color-primary-s);
+
+    --article-title-color: var(--color-primary);
+    --article-title-hover-color: var(--color-success);
+
+    --accordion-content-rail-color: var(--color-warning);
+    --accordion-content-hover-rail-color: var(--color-warning);
+    --accordion-title-marker-color: var(--color-success);
+    --accordion-title-hover-marker-color: var(--color-success);
+
+    --footer-color: var(--color-text);
+    --footer-link-hover-color: var(--color-hover);
 }
 
 html {
