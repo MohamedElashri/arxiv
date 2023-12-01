@@ -1,25 +1,23 @@
 :root {
-    /* Palette: Atom One Dark */
-    --atom-dark00: #282c34; /* Background */
-    --atom-dark01: #abb2bf; /* Foreground */
-    --atom-dark02: #e06c75; /* Red */
-    --atom-dark03: #98c379; /* Green */
-    --atom-dark04: #e5c07b; /* Yellow */
-    --atom-dark05: #61afef; /* Blue */
-    --atom-dark06: #c678dd; /* Purple */
-    --atom-dark07: #56b6c2; /* Cyan */
-    --atom-dark08: #be5046; /* Orange */
+    /* Palette: GitHub Dark */
+    --github-dark-primary: #f0f6fc;
+    --github-dark-secondary: #c9d1d9;
+    --github-dark-tertiary: #8b949e;
+    --github-dark-background: #0d1117;
+    --github-dark-header: #161b22;
+    --github-dark-border: #30363d;
+    --github-dark-accent: #58a6ff;
+    --github-dark-attention: #f85149;
 
-    /* Palette: Atom One Light */
-    --atom-light00: #fafafa; /* Background */
-    --atom-light01: #383a42; /* Foreground */
-    --atom-light02: #e45649; /* Red */
-    --atom-light03: #50a14f; /* Green */
-    --atom-light04: #c18401; /* Yellow */
-    --atom-light05: #0184bc; /* Blue */
-    --atom-light06: #a626a4; /* Purple */
-    --atom-light07: #0997b3; /* Cyan */
-    --atom-light08: #ca1243; /* Orange */
+    /* Palette: GitHub Light */
+    --github-light-primary: #24292e;
+    --github-light-secondary: #57606a;
+    --github-light-tertiary: #6e7781;
+    --github-light-background: #ffffff;
+    --github-light-header: #f6f8fa;
+    --github-light-border: #e1e4e8;
+    --github-light-accent: #0366d6;
+    --github-light-attention: #d73a49;
 
     /* Typograph */
     --font-family-default: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
@@ -27,121 +25,93 @@
     --font-size-m: 1.6rem;
     --font-size-s: 1.4rem;
 
-    /* Components (using Atom One Dark by default) */
-    --body-color: var(--atom-dark01);
-    --body-bg: var(--atom-dark00);
+    /* Components */
+    --body-color: var(--github-dark-primary);
+    --body-bg: var(--github-dark-background);
 
-    --header-title: var(--atom-dark01);
-    --header-container: var(--atom-dark00);
-    --header-title-preffix: var(--atom-dark06);
+    --header-title: var(--github-dark-primary);
+    --header-container: var(--github-dark-header);
+    --header-title-preffix: var(--github-dark-accent);
 
-    --chip-font: var(--atom-dark05);
-    --chip-color: var(--atom-dark02);
+    --chip-font: var(--github-dark-primary);
+    --chip-color: var(--github-dark-attention);
 
-    --icons: var(--atom-dark01);
-    --icons-hover: var(--atom-dark06);
+    --icons: var(--github-dark-secondary);
+    --icons-hover: var(--github-dark-accent);
 
-    --day-container: var(--atom-dark01);
-    --date: var(--atom-dark05);
+    --day-container: var(--github-dark-tertiary);
+    --date: var(--github-dark-accent);
 
-    --summary: var(--atom-dark03);
-    --summary-hover: var(--atom-dark06);
+    --summary: var(--github-dark-secondary);
+    --summary-hover: var(--github-dark-accent);
 
-    --details-open: var(--atom-dark01);
-    --details-content: var(--atom-dark01);
-    --details-a: var(--atom-dark07);
-    --details-a-hover: var(--atom-dark06);
+    --details-open: var(--github-dark-tertiary);
+    --details-content: var(--github-dark-secondary);
+    --details-a: var(--github-dark-accent);
+    --details-a-hover: var(--github-dark-attention);
 
-    --highlight-title: var(--atom-dark02);
-    --highlight-author: var(--atom-dark02);
+    --highlight-title: var(--github-dark-attention);
+    --highlight-author: var(--github-dark-accent);
 
-    --article-summary-hover-color: var(--atom-dark04);
-    --article-summary-color: var(--atom-dark01);
+    --article-summary-hover-color: var(--github-dark-accent);
+    --article-summary-color: var(--github-dark-primary);
 
-    --article-title-color: var(--atom-dark01);
-    --article-title-hover-color: var(--atom-dark03);
+    --article-title-color: var(--github-dark-primary);
+    --article-title-hover-color: var(--github-dark-secondary);
 
-    --accordion-content-rail-color: var(--atom-dark01);
-    --accordion-content-hover-rail-color: var(--atom-dark04);
-    --accordion-title-marker-color: var(--atom-dark01);
-    --accordion-title-hover-marker-color: var(--atom-dark03);
+    --accordion-content-rail-color: var(--github-dark-tertiary);
+    --accordion-content-hover-rail-color: var(--github-dark-accent);
+    --accordion-title-marker-color: var(--github-dark-tertiary);
+    --accordion-title-hover-marker-color: var(--github-dark-accent);
 
-    --footer-color: var(--atom-dark01);
-    --footer-link-hover-color: var(--atom-dark04);
+    --footer-color: var(--github-dark-secondary);
+    --footer-link-hover-color: var(--github-dark-accent);
 }
 
 [data-theme="light"] {
-    /* Atom One Light Theme */
+    /* GitHub Light Theme */
 
-    --color-primary: var(--atom-light07);
-    --color-primary-second: var(--atom-light00);
-    --color-info: var(--atom-light05);
-    --color-success: var(--atom-light03);
-    --color-warning: var(--atom-light04);
-    --color-danger: var(--atom-light02);
+    --body-color: var(--github-light-primary);
+    --body-bg: var(--github-light-background);
 
-    --color-text: var(--atom-light01);
-    --color-hover: var(--atom-light04);
-    --color-shadow: var(--atom-light01);
+    --header-title: var(--github-light-primary);
+    --header-container: var(--github-light-header);
+    --header-title-preffix: var(--github-light-accent);
 
-    --color-primary-h: var(--atom-light05);
-    --color-primary-s: var(--atom-light05);
-    --color-primary-l: var(--atom-light07);
+    --chip-font: var(--github-light-primary);
+    --chip-color: var(--github-light-attention);
 
-    --color-contrast-higher-h: var(--atom-light01);
-    --color-contrast-higher-l: var(--atom-light01);
-    --color-contrast-higher-s: var(--atom-light01);
+    --icons: var(--github-light-secondary);
+    --icons-hover: var(--github-light-accent);
 
-    --color-content: var(--atom-light00);
+    --day-container: var(--github-light-tertiary);
+    --date: var(--github-light-accent);
 
-    --background: var(--atom-light00);
-    --background-content: var(--atom-light00);
-    --background-color: var(--atom-light01);
+    --summary: var(--github-light-secondary);
+    --summary-hover: var(--github-light-accent);
 
-    /* Components (using Atom One Light) */
+    --details-open: var(--github-light-tertiary);
+    --details-content: var(--github-light-secondary);
+    --details-a: var(--github-light-accent);
+    --details-a-hover: var(--github-light-attention);
 
-    --chip-font: var(--atom-light01);
-    --chip-color: var(--atom-light05);
+    --highlight-title: var(--github-light-attention);
+    --highlight-author: var(--github-light-accent);
 
-    --body-color: var(--background-color);
-    --body-bg: var(--background);
+    --article-summary-hover-color: var(--github-light-accent);
+    --article-summary-color: var(--github-light-primary);
 
-    --header-title: var(--color-shadow);
-    --header-container: var(--background);
-    --header-title-preffix: var(--color-primary-h);
+    --article-title-color: var(--github-light-primary);
+    --article-title-hover-color: var(--github-light-secondary);
 
-    --icons: var(--color-shadow);
-    --icons-hover: var(--color-hover);
+    --accordion-content-rail-color: var(--github-light-tertiary);
+    --accordion-content-hover-rail-color: var(--github-light-accent);
+    --accordion-title-marker-color: var(--github-light-tertiary);
+    --accordion-title-hover-marker-color: var(--github-light-accent);
 
-    --day-container: var(--background-content);
-    --date: var(--color-primary-l);
-
-    --summary: var(--color-info);
-    --summary-hover: var(--color-success);
-
-    --details-open: var(--color-content);
-    --details-content: var(--color-text);
-    --details-a: var(--color-primary-h);
-    --details-a-hover: var(--color-hover);
-
-    --highlight-title: var(--color-danger);
-    --highlight-author: var(--color-warning);
-
-    --article-summary-color: var(--color-text);
-    --article-summary-hover-color: var(--color-primary-s);
-
-    --article-title-color: var(--color-primary);
-    --article-title-hover-color: var(--color-success);
-
-    --accordion-content-rail-color: var(--color-warning);
-    --accordion-content-hover-rail-color: var(--color-warning);
-    --accordion-title-marker-color: var(--color-success);
-    --accordion-title-hover-marker-color: var(--color-success);
-
-    --footer-color: var(--color-text);
-    --footer-link-hover-color: var(--color-hover);
+    --footer-color: var(--github-light-secondary);
+    --footer-link-hover-color: var(--github-light-accent);
 }
-
 
 html {
     font-size: var(--font-size-scaler);
