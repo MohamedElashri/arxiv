@@ -13,11 +13,6 @@ category = "hep-ph"
 title = "High Energy Physics - Phenomenology"
 
 [[sources]]
-limit = 10
-category = "cs.LG"
-title = "Machine Learning - Computer Science"
-
-[[sources]]
 limit = 30
 categoty = "stat.ML"
 title = "Machine Learning - Statistics"
@@ -26,6 +21,11 @@ title = "Machine Learning - Statistics"
 limit = 10
 category = "cs.PL"
 title = "Programming Languages"
+
+[[sources]]
+limit = 10
+category = "cs.LG"
+title = "Machine Learning - Computer Science"
 
 
 
