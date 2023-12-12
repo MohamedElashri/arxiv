@@ -3,19 +3,30 @@ limit_days = 14
 #cache_url = "https://arxiv.alongwy.top/cache.json"
 
 [[sources]]
-limit = 100
+limit = 50
 category = "hep-ex"
 title = "High Energy Physics - Experimental"
 
 [[sources]]
-limit = 100
+limit = 50
 category = "hep-ph"
 title = "High Energy Physics - Phenomenology"
 
 [[sources]]
-limit = 1
+limit = 10
 category = "cs.LG"
-title = "Machine Learning"
+title = "Machine Learning - Computer Science"
+
+[[sources]]
+limit = 30
+categoty = "stat.ML"
+title = "Machine Learning - Statistics"
+
+[[sources]]
+limit = 10
+category = "cs.PL"
+title = "Programming Languages"
+
 
 
 
