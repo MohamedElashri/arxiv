@@ -1,7 +1,7 @@
-let titles_area = ["B^+", "meson", "neural-network", "pv", "primary-vertex", "monopole", "four-body", "\\bB\\b"];
-let titles_type = ["flavor", "phenomenology", "Collider", "Neural", "Machine-Learning", "LHCb"];
+let titles_area = ["B^+", "meson", "neural-network", "pv", "primary-vertex", "monopole", "four-body", "\\bB\\b", "quantum"];
+let titles_type = ["flavor", "phenomenology", "Collider", "Neural", "Machine-Learning", "LHCb", RNN, "Jet"];
 let titles = titles_area + titles_type;
-let authors_array = ["CMS", "ATLAS", "Alice", "Bell II", "Elashri"];
+let authors_array = ["CMS", "ATLAS", "Alice", "Bell II", "Elashri", ];
 
 let meetings = [
     // AI
