@@ -1,32 +1,31 @@
 site_title = "ME Arxiv Daily"
-limit_days = 14
+limit_days = 7
 #cache_url = "https://arxiv.alongwy.top/cache.json"
 
 [[sources]]
-limit = 50
+limit = 20
 category = "hep-ex"
 title = "High Energy Physics - Experimental"
 
 [[sources]]
-limit = 50
+limit = 20
 category = "hep-ph"
 title = "High Energy Physics - Phenomenology"
 
 [[sources]]
-limit = 30
+limit = 20
 category = "stat.ML"
 title = "Machine Learning - Statistics"
 
 [[sources]]
-limit = 10
-category = "cs.PL"
-title = "Programming Languages"
-
-[[sources]]
-limit = 10
+limit = 20
 category = "cs.LG"
 title = "Machine Learning - Computer Science"
 
+[[sources]]
+limit = 20
+category = "cs.PL"
+title = "Programming Languages"
 
 
 
