@@ -1,24 +1,72 @@
-let titles_area = ["B^+", "meson", "neural network", "pv", "primary-vertex", "monopole", "four-body", "\\bB\\b", "quantum"];
-let titles_type = ["flavor", "phenomenology", "Collider", "Neural", "Machine-Learning", "LHCb", "RNN", "Jet"];
-let titles = titles_area + titles_type;
-let authors_array = ["CMS", "ATLAS", "Alice", "Bell II", "Elashri"];
-
-let meetings = [
-    // AI
-    "AAAI", "AAMAS", "ACM MM", "AISTATS", "ALT", "CEC", "ECAI", "FUZZ IEEE", "GECCO", "ICANN", "ICAPS", "ICCBR", "ICONIP", "ICRA", "ICTAI", "IJCAI", "IJCNN", "IROS", "KR", "KSEM", "SIGGRAPH", "STOC", "UAI", "PPSN", "PRICAI", "TAAI",
-    // ML
-    "ACML", "AISTATS", "ECML", "ICLR", "ICML", "ML4H", "NeurIPS", "NIPS", "UAI"
-    // HEP
+// Physics-related terms (flavor physics, hadrons, experiments)
+let titles_physics = [
+    // B physics and flavor
+    "B^+", "B^0", "B_s", "\\bB\\b", "meson", "hadron", "flavor", "CP violation",
+    "charm", "strange", "beauty", "bottom", "rare decay", "mixing", "oscillation",
+    "CKM", "Unitarity", "penguin", "box diagram", "form factor",
+    
+    // Experimental signatures
+    "pv", "primary-vertex", "secondary-vertex", "track", "reconstruction",
+    "trigger", "efficiency", "acceptance", "resolution", "luminosity",
+    "cross-section", "branching ratio", "BR", "yield", "significance",
+    "four-body", "three-body", "monopole", "resonance",
+    
+    // Detectors and experiments
+    "detector", "calorimeter", "RICH", "muon system", "tracking"
 ];
 
+// ML/Software terms
+let titles_ml_sw = [
+    // Machine Learning
+    "neural network", "deep learning", "transformer", "attention mechanism",
+    "RNN", "LSTM", "GNN", "graph neural", "autoencoder", "classification",
+    "regression", "optimization", "hyperparameter", "training", "inference",
+    "Machine-Learning", "Neural", "artificial intelligence", "reinforcement",
+    "supervised", "unsupervised", "transfer learning", "few-shot", "zero-shot",
+    
+    // Software/Computing
+    "GPU", "FPGA", "parallel", "distributed", "pipeline", "framework",
+    "real-time", "online", "offline", "simulation", "Monte Carlo",
+    "data acquisition", "DAQ", "storage", "database", "containerization",
+    "workflow", "CI/CD", "deployment"
+];
+
+// Combine all title keywords
+let titles = [...titles_physics, ...titles_ml_sw];
+
+// Expanded list of relevant experiments and collaborations
+let authors_array = [
+    // Major experiments
+    "LHCb", "CMS", "ATLAS", "ALICE", "Belle II", "BaBar", "BESIII",
+    // Collaborations and institutes
+    "CERN", "DESY", "SLAC", "KEK", "IHEP", "Fermilab",
+    // Add my specific authors of interest
+    "Elashri"
+];
+
+// Expanded list of relevant conferences
+let meetings = [
+    // Physics conferences
+    "ICHEP", "Lepton Photon", "Beauty", "CKM", "Flavor Physics",
+    "EPS-HEP", "PANIC", "LHCP", "HCP",
+    
+    // ML/Computing conferences
+    "ICLR", "ICML", "NeurIPS", "AAAI", "IJCAI", "MLSys",
+    "CHEP", "ACAT", "ROOTCom", "vCHEP",
+    
+    // Software/Computing
+    "SC", "HPDC", "CCGrid", "IPDPS", "Euro-Par"
+];
+
+// Generate regex patterns
 let start = meetings.shift();
 let meetings_rg = meetings.reduce(|sum, v| sum + "|" + v, start);
 let meetings_rg = "(" + meetings_rg + ")([\\s'-]*\\d+)?";
 
-let start = titles.shift();
+start = titles.shift();
 let title_rg = titles.reduce(|sum, v| sum + "|" + v, start);
 
-let start = authors_array.shift();
+start = authors_array.shift();
 let authors_rg = authors_array.reduce(|sum, v| sum + "|" + v, start);
 
 export title_rg;
