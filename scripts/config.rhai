@@ -1,62 +1,41 @@
 let titles_area = [
-    // Flavor Physics & Heavy Quarks
-    "B^+", "B^0", "D^+", "D^0", "K^+", "K^0", "\\Lambda_b", "\\Xi_b", "\\Omega_b",
-    "meson", "charm", "strange", "top", "quark", "CP violation", "CPV",
-    "CKM", "lepton", "hadron", "flavor", "FCNC", "rare decay", "mixing",
-    "penguin", "box diagram", "form factor", "EFT", "SMEFT", "HQEFT",
-    "bottomonium", "charmonium", "spectroscopy", "lifetime", "BF ratio",
-    
-    // Detector & Software
-    "tracking", "reconstruction", "detector", "trigger", "RICH",
-    "calorimeter", "vertex", "alignment", "calibration", "GEANT",
-    "TMVA", "ROOT", "particle flow", "PID", "resolution",
-    
-    // Modern ML/Computing
-    "transformer", "attention", "LLM", "foundation model", "large language model",
-    "diffusion", "GNN", "graph neural", "equivariant", "invariant",
-    "quantum", "variational", "autoencoder", "normalizing flow", "generative",
-    "probabilistic", "bayesian", "uncertainty", "robustness", "GANs"
+    "B^+", "meson", "charm", "strange", "top", "quark", "CP violation", 
+    "CKM", "lepton", "hadron", "flavor", "FCNC", "rare decay",
+    "tracking", "reconstruction", "detector", "trigger",
+    "transformer", "attention", "LLM", "foundation model", "large language model"
 ];
 
 let titles_type = [
-    // Analysis Methods
     "flavor", "phenomenology", "Collider", "Neural", "Machine-Learning",
     "LHCb", "RNN", "Jet", "ATLAS", "CMS", "embedding", "GPU", "FPGA",
     "real-time", "online", "offline", "distributed", "parallel",
-    "inference", "fine-tuning", "few-shot", "zero-shot",
-    
-    // Computing & Software
-    "CUDA", "OpenCL", "Triton", "vectorization", "MLOps",
-    "pipeline", "optimization", "acceleration", "heterogeneous",
-    "high-throughput", "low-latency", "compression", "deduplication",
-    
-    // Analysis Frameworks
-    "JAX", "PyTorch", "TensorFlow", "ONNX", "Pythia",
-    "Delphes", "MadGraph", "Sherpa", "Herwig", "EvtGen",
-    "AmpGen", "Gaudi", "Allen", "Snakemake", "Rucio"
+    "inference", "fine-tuning", "few-shot", "zero-shot"
 ];
 
+let titles = titles_area + titles_type;
+
 let authors_array = [
-    // Experiments
     "LHCb", "CMS", "ATLAS", "ALICE", "Belle II", "BaBar",
-    "T2K", "NA62", "BESIII", "PANDA", "CBM",
-    
-    // Labs & Institutions
-    "FAIR", "FNAL", "KEK", "IHEP", "DESY", "CERN",
-    "SLAC", "JLAB", "BINP", "RAL", "TRIUMF"
+    "FAIR", "FNAL", "KEK", "IHEP", "DESY"
 ];
 
 let meetings = [
-    // HEP Conferences
+    // HEP
     "CHEP", "ICHEP", "Beauty", "CKM", "Flavor", "EPS-HEP", "Lepton-Photon",
-    "HCP", "QCD", "DIS", "Charm", "FPCP", "BEACH", "HQL",
-    
-    // ML/AI Conferences
-    "ICLR", "ICML", "NeurIPS", "AAAI", "IJCAI", "ACAT",
-    "KDD", "ICDM", "ECML", "ACML", "MLSys", "AISTATS",
-    
-    // Computing Conferences
+    // ML/AI
+    "ICLR", "ICML", "NeurIPS", "AAAI", "IJCAI",
+    // Computing
     "ACAT", "Computing in High Energy Physics", "Real Time Processing",
-    "IEEE NSS/MIC", "FPGA for Machine Learning", "SC", "IPDPS",
-    "Euro-Par", "CCGrid", "HPDC", "FHPC", "HiPC"
+    "IEEE NSS/MIC", "FPGA for Machine Learning"
 ];
+
+let start = meetings.shift();
+let meetings_rg = meetings.reduce(|sum, v| sum + "|" + v, start);
+let meetings_rg = "(" + meetings_rg + ")([\\s'-]*\\d+)?";
+let start = titles.shift();
+let title_rg = titles.reduce(|sum, v| sum + "|" + v, start);
+let start = authors_array.shift();
+let authors_rg = authors_array.reduce(|sum, v| sum + "|" + v, start);
+export title_rg;
+export authors_rg;
+export meetings_rg;
