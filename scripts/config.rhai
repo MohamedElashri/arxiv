@@ -31,8 +31,10 @@ let titles_ml_sw = [
     "workflow", "CI/CD", "deployment"
 ];
 
-// Combine all title keywords
-let titles = [...titles_physics, ...titles_ml_sw];
+// Combine all title keywords using array concatenation
+let titles = [];
+for (item in titles_physics) { titles.push(item); }
+for (item in titles_ml_sw) { titles.push(item); }
 
 // Expanded list of relevant experiments and collaborations
 let authors_array = [
@@ -40,7 +42,7 @@ let authors_array = [
     "LHCb", "CMS", "ATLAS", "ALICE", "Belle II", "BaBar", "BESIII",
     // Collaborations and institutes
     "CERN", "DESY", "SLAC", "KEK", "IHEP", "Fermilab",
-    // Add my specific authors of interest
+    // Add your specific authors of interest
     "Elashri"
 ];
 
