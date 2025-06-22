@@ -1,105 +1,105 @@
 :root {
-    /* Palette: Gruvbox Dark */
-    --gruvbox-bg0: #282828; /* Dark background */
-    --gruvbox-bg1: #3c3836;
-    --gruvbox-bg2: #504945;
-    --gruvbox-bg3: #665c54;
+    /* Palette: Nord (https://www.nordtheme.com)*/
+    --nord00: #2e3440;
+    --nord01: #3b4252;
+    --nord02: #434c5e;
+    --nord03: #4c566a;
+    --nord04: #d8dee9;
+    --nord05: #e5e9f0;
+    --nord06: #eceff4;
+    --nord07: #8fbcbb;
+    --nord08: #88c0d0;
+    --nord09: #81a1c1;
+    --nord0A: #5e81ac;
+    --nord0B: #bf616a;
+    --nord0C: #d08770;
+    --nord0D: #ebcb8b;
+    --nord0E: #a3be8c;
+    --nord0F: #b48ead;
 
-    --gruvbox-fg0: #fbf1c7; /* Light foreground */
-    --gruvbox-fg1: #ebdbb2;
-    --gruvbox-fg2: #d5c4a1;
-    --gruvbox-fg3: #bdae93;
-
-    /* Colors */
-    --gruvbox-red: #fb4934;
-    --gruvbox-green: #b8bb26;
-    --gruvbox-yellow: #fabd2f;
-    --gruvbox-blue: #83a598;
-    --gruvbox-purple: #d3869b;
-    --gruvbox-aqua: #8ec07c;
-    --gruvbox-orange: #fe8019;
 
     /* Typograph */
-    --font-family-default: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    --font-family-default: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue",
+    sans-serif;
     --font-size-scaler: 62.5%;
     --font-size-m: 1.6rem;
     --font-size-s: 1.4rem;
 
     /* Components */
-    --body-color: var(--gruvbox-fg0);
-    --body-bg: var(--gruvbox-bg0);
+    --body-color: var(--nord06);
+    --body-bg: var(--nord00);
 
-    --header-title: var(--gruvbox-fg0);
-    --header-container: var(--gruvbox-bg0);
-    --header-title-preffix: var(--gruvbox-purple);
+    --header-title: var(--nord06);
+    --header-container: var(--nord00);
+    --header-title-preffix: var(--nord0F);
 
-    --chip-font: var(--gruvbox-blue);
-    --chip-color: var(--gruvbox-red);
+    --chip-font: var(--nord08);
+    --chip-color: var(--nord0B);
 
-    --icons: var(--gruvbox-fg0);
-    --icons-hover: var(--gruvbox-purple);
+    --icons: var(--nord06);
+    --icons-hover: var(--nord0F);
 
-    --day-container: var(--gruvbox-bg1);
-    --date: var(--gruvbox-yellow);
+    --day-container: var(--nord01);
+    --date: var(--nord09);
 
-    --summary: var(--gruvbox-green);
-    --summary-hover: var(--gruvbox-purple);
+    --summary: var(--nord0E);
+    --summary-hover: var(--nord0F);
 
-    --details-open: var(--gruvbox-bg2);
-    --details-content: var(--gruvbox-fg1);
-    --details-a: var(--gruvbox-aqua);
-    --details-a-hover: var(--gruvbox-purple);
+    --details-open: var(--nord02);
+    --details-content: var(--nord05);
+    --details-a: var(--nord07);
+    --details-a-hover: var(--nord0F);
 
-    --highlight-title: var(--gruvbox-red);
-    --highlight-author: var(--gruvbox-red);
+    --highlight-title: var(--nord0B);
+    --highlight-author: var(--nord0B);
 
-    --article-summary-hover-color: var(--gruvbox-yellow);
-    --article-summary-color: var(--gruvbox-fg3);
+    --article-summary-hover-color: var(--nord0D);
+    --article-summary-color: var(--nord04);
 
-    --article-title-color: var(--gruvbox-fg1);
-    --article-title-hover-color: var(--gruvbox-green);
+    --article-title-color: var(--nord05);
+    --article-title-hover-color: var(--nord0E);
 
-    --accordion-content-rail-color: var(--gruvbox-bg1);
-    --accordion-content-hover-rail-color: var(--gruvbox-yellow);
-    --accordion-title-marker-color: var(--gruvbox-bg1);
-    --accordion-title-hover-marker-color: var(--gruvbox-green);
+    --accordion-content-rail-color: var(--nord01);
+    --accordion-content-hover-rail-color: var(--nord0D);
+    --accordion-title-marker-color: var(--nord01);
+    --accordion-title-hover-marker-color: var(--nord0E);
 
-    --footer-color: var(--gruvbox-fg3);
-    --footer-link-hover-color: var(--gruvbox-yellow);
+    --footer-color: var(--nord04);
+    --footer-link-hover-color: var(--nord0D);
 }
 
 [data-theme="light"] {
     /* Theme design */
 
-    --color-primary: var(--gruvbox-aqua);
-    --color-primary-second: var(--gruvbox-bg0);
-    --color-info: var(--gruvbox-blue);
-    --color-success: var(--gruvbox-green);
-    --color-warning: var(--gruvbox-orange);
-    --color-danger: var(--gruvbox-red);
+    --color-primary: var(--nord07);
+    --color-primary-second: var(--nord00);
+    --color-info: var(--nord0A);
+    --color-success: var(--nord0E);
+    --color-warning: var(--nord0C);
+    --color-danger: var(--nord0B);
 
-    --color-text: var(--gruvbox-bg0);
-    --color-hover: var(--gruvbox-yellow);
-    --color-shadow: var(--gruvbox-bg3);
+    --color-text: var(--nord00);
+    --color-hover: var(--nord0D);
+    --color-shadow: var(--nord03);
 
-    --color-primary-h: var(--gruvbox-yellow);
-    --color-primary-s: var(--gruvbox-blue);
-    --color-primary-l: var(--gruvbox-aqua);
+    --color-primary-h: var(--nord09);
+    --color-primary-s: var(--nord08);
+    --color-primary-l: var(--nord07);
 
-    --color-contrast-higher-h: var(--gruvbox-bg1);
-    --color-contrast-higher-l: var(--gruvbox-bg2);
-    --color-contrast-higher-s: var(--gruvbox-bg3);
+    --color-contrast-higher-h: var(--nord01);
+    --color-contrast-higher-l: var(--nord02);
+    --color-contrast-higher-s: var(--nord03);
 
-    --color-content: var(--gruvbox-fg0);
+    --color-content: white;
 
-    --background: var(--gruvbox-fg0);
-    --background-content: var(--gruvbox-fg1);
-    --background-color: var(--gruvbox-fg3);
+    --background: var(--nord06);
+    --background-content: var(--nord05);
+    --background-color: var(--nord04);
 
     /* Components */
 
-    --chip-font: var(--gruvbox-fg0);
-    --chip-color: var(--gruvbox-yellow);
+    --chip-font: var(--nord06);
+    --chip-color: var(--nord09);
 
     --body-color: var(--background-color);
     --body-bg: var(--background);
