@@ -226,9 +226,3 @@ Edit `scripts/arxiv_fetcher.py` to:
 ## License
 
 This project is open source and available under the [MIT License](LICENSE).
-
-## Acknowledgments
-
-- Data provided by [ArXiv.org](https://arxiv.org/)
-- Powered by GitHub Pages and GitHub Actions
-- Icons from various open source icon sets
