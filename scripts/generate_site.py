@@ -1,0 +1,382 @@
+#!/usr/bin/env python3
+"""
+Static site generator for ArXiv daily papers.
+Generates HTML pages from JSON data files.
+"""
+
+import json
+import os
+from datetime import datetime, timedelta
+from pathlib import Path
+from typing import Dict, List, Any
+import toml
+import re
+
+
+class SiteGenerator:
+    def __init__(self, config_path: str = "config.toml"):
+        """Initialize the site generator with configuration."""
+        self.config = toml.load(config_path)
+        self.data_dir = Path("data")
+        self.output_dir = Path("site")  # Generated static site files
+        self.output_dir.mkdir(exist_ok=True)
+        
+        # Create assets directories
+        (self.output_dir / "css").mkdir(exist_ok=True)
+        (self.output_dir / "js").mkdir(exist_ok=True)
+    
+    def highlight_words(self, text: str) -> str:
+        """Highlight specified words in text."""
+        highlight_words = self.config.get("highlights", {}).get("words", [])
+        if not highlight_words:
+            return text
+        
+        # Create regex pattern for all highlight words (case-insensitive)
+        pattern = r'\b(' + '|'.join(re.escape(word) for word in highlight_words) + r')\b'
+        
+        def replace_match(match):
+            return f'<span class="highlight">{match.group(0)}</span>'
+        
+        return re.sub(pattern, replace_match, text, flags=re.IGNORECASE)
+    
+    def format_authors(self, authors: List[str]) -> str:
+        """Format authors list with proper display."""
+        if not authors:
+            return ""
+        
+        max_authors = self.config["settings"]["max_authors_display"]
+        if len(authors) <= max_authors:
+            return ", ".join(authors)
+        else:
+            displayed = authors[:max_authors]
+            return ", ".join(displayed) + ", et al."
+    
+    def generate_paper_html(self, paper: Dict[str, Any]) -> str:
+        """Generate HTML for a single paper."""
+        title = self.highlight_words(paper["title"])
+        authors = self.format_authors(paper["display_authors"])
+        
+        # Format submission date
+        submitted_date = datetime.fromisoformat(paper["submitted_date"])
+        date_str = submitted_date.strftime("%Y-%m-%d")
+        
+        html = f'''
+        <div class="paper">
+            <div class="paper-header" onclick="togglePaper(this)">
+                <span class="toggle-icon">▶</span>
+                <div class="paper-title-section">
+                    <h3 class="paper-title">{title}</h3>
+                    <div class="paper-meta">
+                        <span class="authors">Authors: {authors}</span>
+                        <div class="paper-links">
+                            <a href="{paper['arxiv_url']}" target="_blank" class="arxiv-link" title="View on ArXiv">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                                </svg>
+                            </a>
+                            <a href="{paper['pdf_url']}" target="_blank" class="pdf-link" title="Download PDF">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="paper-content" style="display: none;">
+                <div class="abstract">
+                    <h4>Abstract</h4>
+                    <p>{paper['summary']}</p>
+                </div>
+                {f'<div class="comments"><strong>Comments:</strong> {paper["comments"]}</div>' if paper.get("comments") else ""}
+                <div class="paper-info">
+                    <span class="submitted-date">Submitted: {date_str}</span>
+                    <span class="arxiv-id">ArXiv ID: {paper['id']}</span>
+                </div>
+            </div>
+        </div>'''
+        
+        return html
+    
+    def generate_category_html(self, category_code: str, category_data: Dict[str, Any]) -> str:
+        """Generate HTML for a category section."""
+        category_name = category_data["name"]
+        papers = category_data["papers"]
+        paper_count = len(papers)
+        
+        if paper_count == 0:
+            return f'''
+            <div class="category">
+                <div class="category-header" onclick="toggleCategory(this)">
+                    <span class="toggle-icon">▶</span>
+                    <h2>{category_name} ({paper_count} papers)</h2>
+                </div>
+                <div class="category-content" style="display: none;">
+                    <p class="no-papers">No papers found for this category today.</p>
+                </div>
+            </div>'''
+        
+        papers_html = ""
+        for paper in papers:
+            papers_html += self.generate_paper_html(paper)
+        
+        html = f'''
+        <div class="category">
+            <div class="category-header" onclick="toggleCategory(this)">
+                <span class="toggle-icon">▶</span>
+                <h2>{category_name} ({paper_count} papers)</h2>
+            </div>
+            <div class="category-content" style="display: none;">
+                {papers_html}
+            </div>
+        </div>'''
+        
+        return html
+    
+    def generate_index_html(self) -> str:
+        """Generate the main index.html file."""
+        # Get all available data files
+        data_files = sorted(self.data_dir.glob("*.json"), reverse=True)
+        
+        if not data_files:
+            return self.generate_empty_page()
+        
+        # Load the most recent data
+        latest_file = data_files[0]
+        with open(latest_file, 'r', encoding='utf-8') as f:
+            data = json.load(f)
+        
+        # Generate categories HTML
+        categories_html = ""
+        for category_code, category_data in data["categories"].items():
+            categories_html += self.generate_category_html(category_code, category_data)
+        
+        # Generate date navigation
+        date_nav_html = self.generate_date_navigation(data_files)
+        
+        # Get site configuration
+        site_title = self.config["site"]["title"]
+        site_description = self.config["site"]["description"]
+        
+        # Format the current date
+        current_date = datetime.fromisoformat(data["date"]).strftime("%B %d, %Y")
+        generated_at = datetime.fromisoformat(data["generated_at"]).strftime("%Y-%m-%d %H:%M UTC")
+        
+        html = f'''<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{site_title}</title>
+    <meta name="description" content="{site_description}">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>{site_title}</h1>
+            <p class="site-description">{site_description}</p>
+            <div class="header-controls">
+                <button id="theme-toggle" class="theme-toggle" title="Toggle dark/light mode">
+                    <span class="theme-icon">🌙</span>
+                </button>
+            </div>
+        </div>
+    </header>
+    
+    <main class="container">
+        <div class="date-info">
+            <h2>Papers for {current_date}</h2>
+            <p class="last-updated">Last updated: {generated_at}</p>
+        </div>
+        
+        {date_nav_html}
+        
+        <div class="categories">
+            {categories_html}
+        </div>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <p>Data sourced from <a href="https://arxiv.org/" target="_blank">ArXiv.org</a></p>
+            <p>Generated automatically via GitHub Actions</p>
+        </div>
+    </footer>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>'''
+        
+        return html
+    
+    def generate_date_navigation(self, data_files: List[Path]) -> str:
+        """Generate navigation for different dates."""
+        if len(data_files) <= 1:
+            return ""
+        
+        nav_html = '<div class="date-navigation"><h3>Other dates:</h3><div class="date-links">'
+        
+        for i, file_path in enumerate(data_files[:7]):  # Show last 7 days
+            date_str = file_path.stem
+            try:
+                date_obj = datetime.strptime(date_str, "%Y-%m-%d")
+                display_date = date_obj.strftime("%b %d")
+                
+                if i == 0:
+                    nav_html += f'<span class="date-link current">{display_date}</span>'
+                else:
+                    nav_html += f'<a href="{date_str}.html" class="date-link">{display_date}</a>'
+            except ValueError:
+                continue
+        
+        nav_html += '</div></div>'
+        return nav_html
+    
+    def generate_empty_page(self) -> str:
+        """Generate a page when no data is available."""
+        site_title = self.config["site"]["title"]
+        site_description = self.config["site"]["description"]
+        
+        return f'''<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{site_title}</title>
+    <meta name="description" content="{site_description}">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>{site_title}</h1>
+            <p class="site-description">{site_description}</p>
+        </div>
+    </header>
+    
+    <main class="container">
+        <div class="empty-state">
+            <h2>No papers available yet</h2>
+            <p>Papers will appear here once the daily fetch runs.</p>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <p>Data sourced from <a href="https://arxiv.org/" target="_blank">ArXiv.org</a></p>
+        </div>
+    </footer>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>'''
+    
+    def generate_historical_pages(self):
+        """Generate individual pages for historical dates."""
+        data_files = sorted(self.data_dir.glob("*.json"), reverse=True)
+        
+        for file_path in data_files[1:]:  # Skip the latest (it's the index)
+            date_str = file_path.stem
+            
+            with open(file_path, 'r', encoding='utf-8') as f:
+                data = json.load(f)
+            
+            # Generate categories HTML
+            categories_html = ""
+            for category_code, category_data in data["categories"].items():
+                categories_html += self.generate_category_html(category_code, category_data)
+            
+            # Format the date
+            current_date = datetime.fromisoformat(data["date"]).strftime("%B %d, %Y")
+            generated_at = datetime.fromisoformat(data["generated_at"]).strftime("%Y-%m-%d %H:%M UTC")
+            
+            site_title = self.config["site"]["title"]
+            site_description = self.config["site"]["description"]
+            
+            html = f'''<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{site_title} - {current_date}</title>
+    <meta name="description" content="{site_description} - {current_date}">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><a href="index.html">{site_title}</a></h1>
+            <p class="site-description">{site_description}</p>
+            <div class="header-controls">
+                <button id="theme-toggle" class="theme-toggle" title="Toggle dark/light mode">
+                    <span class="theme-icon">🌙</span>
+                </button>
+            </div>
+        </div>
+    </header>
+    
+    <main class="container">
+        <div class="date-info">
+            <h2>Papers for {current_date}</h2>
+            <p class="last-updated">Generated: {generated_at}</p>
+            <a href="index.html" class="back-link">← Back to latest</a>
+        </div>
+        
+        <div class="categories">
+            {categories_html}
+        </div>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <p>Data sourced from <a href="https://arxiv.org/" target="_blank">ArXiv.org</a></p>
+            <p>Generated automatically via GitHub Actions</p>
+        </div>
+    </footer>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>'''
+            
+            # Write the historical page
+            output_file = self.output_dir / f"{date_str}.html"
+            with open(output_file, 'w', encoding='utf-8') as f:
+                f.write(html)
+            
+            print(f"Generated historical page: {output_file}")
+    
+    def generate_site(self):
+        """Generate the complete static site."""
+        print("Generating static site...")
+        
+        # Generate main index page
+        index_html = self.generate_index_html()
+        index_file = self.output_dir / "index.html"
+        
+        with open(index_file, 'w', encoding='utf-8') as f:
+            f.write(index_html)
+        
+        print(f"Generated index page: {index_file}")
+        
+        # Generate historical pages
+        self.generate_historical_pages()
+        
+        print("Static site generation completed!")
+
+
+def main():
+    """Main function to generate the static site."""
+    try:
+        generator = SiteGenerator()
+        generator.generate_site()
+        print("Site generated successfully!")
+        
+    except Exception as e:
+        print(f"Error generating site: {e}")
+        import traceback
+        traceback.print_exc()
+
+
+if __name__ == "__main__":
+    main()

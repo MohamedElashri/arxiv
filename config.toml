@@ -1,0 +1,30 @@
+[site]
+title = "ArXiv Daily Papers"
+description = "Daily collection of papers from ArXiv in selected categories"
+base_url = "https://melashri.net/arxiv-daily"
+
+[categories]
+# ArXiv category codes and their display names
+hep-ex = "High Energy Physics - Experiment"
+hep-ph = "High Energy Physics - Phenomenology"
+hep-th = "High Energy Physics - Theory"
+astro-ph = "Astrophysics"
+
+[settings]
+# Number of days to keep papers (older papers will be cleaned up)
+retention_days = 7
+# Maximum number of papers per category per day
+max_papers_per_category = 50
+# Show only first N authors if more exist
+max_authors_display = 3
+
+[highlights]
+# Words to highlight in paper titles (case-insensitive)
+# Add words you want to highlight, otherwise keep empty
+words = []
+# Example: words = ["quantum", "machine learning", "neural"]
+
+[schedule]
+# GitHub Actions will run at this time (UTC)
+# 7:00 AM in your timezone - adjust as needed
+cron = "0 5 * * *"  # 5:00 UTC = 7:00 AM CEST

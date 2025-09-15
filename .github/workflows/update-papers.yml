@@ -1,0 +1,83 @@
+name: Update ArXiv Papers
+
+on:
+  schedule:
+    # Run at 5:00 AM UTC (7:00 AM CEST) every day
+    - cron: '0 5 * * *'
+  workflow_dispatch:
+    # Allow manual triggering
+    inputs:
+      date:
+        description: 'Date to fetch papers for (YYYY-MM-DD format, optional)'
+        required: false
+        type: string
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  fetch-and-generate:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+        
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+        
+    - name: Create data directory
+      run: mkdir -p data
+      
+    - name: Fetch ArXiv papers
+      run: |
+        if [ -n "${{ github.event.inputs.date }}" ]; then
+          python scripts/arxiv_fetcher.py "${{ github.event.inputs.date }}"
+        else
+          python scripts/arxiv_fetcher.py
+        fi
+      env:
+        PYTHONPATH: ${{ github.workspace }}
+        
+    - name: Generate static site
+      run: python scripts/generate_site.py
+      env:
+        PYTHONPATH: ${{ github.workspace }}
+        
+    - name: Setup Pages
+      uses: actions/configure-pages@v4
+      
+    - name: Upload artifact
+      uses: actions/upload-pages-artifact@v3
+      with:
+        path: './site'
+        
+    - name: Deploy to GitHub Pages
+      id: deployment
+      uses: actions/deploy-pages@v4
+      
+    - name: Commit and push data files
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add data/
+        git add site/
+        if git diff --staged --quiet; then
+          echo "No changes to commit"
+        else
+          git commit -m "Update ArXiv papers data - $(date -u '+%Y-%m-%d %H:%M UTC')"
+          git push
+        fi

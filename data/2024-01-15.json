@@ -1,0 +1,69 @@
+{
+  "date": "2024-01-15",
+  "generated_at": "2025-09-16T00:06:54.609851",
+  "categories": {
+    "hep-ex": {
+      "name": "High Energy Physics - Experiment",
+      "papers": [
+        {
+          "id": "2401.07890",
+          "title": "Experimental Review of the Quarkonium Physics at the LHC",
+          "authors": [
+            "Yiyang Zhao",
+            "Jinfeng Liu",
+            "Xing Cheng",
+            "Chi Wang",
+            "Zhen Hu"
+          ],
+          "display_authors": [
+            "Yiyang Zhao",
+            "Jinfeng Liu",
+            "Xing Cheng",
+            "et al."
+          ],
+          "summary": "We review recent heavy quarkonium measurements in pp, pPb, and PbPb collisions at the LHC by the ALICE, ATLAS, CMS, and LHCb collaborations using Run 2 and early Run 3 data. Production studies include present differential cross sections and polarization measurements of charmonium and bottomonium, providing precise tests of QCD theoretical calculations and unveiling symmetry relations among spin and orbital configurations. Notably, a ttbar quasi bound state has been observed at the LHC recently. Suppression analyses quantify the sequential melting of bottomonium states in PbPb collisions, serving as a probe of the deconfined quark gluon plasma. Cold nuclear matter effects are constrained through comparisons of quarkonium yields in pPb and pp collisions. Furthermore, multi quarkonium investigations observe di and tri quarkonium production processes and resonances, exploring multi parton interactions and the symmetry structure underlying exotic hadron states.",
+          "arxiv_url": "https://arxiv.org/abs/2401.07890",
+          "pdf_url": "https://arxiv.org/pdf/2401.07890.pdf",
+          "submitted_date": "2024-01-15T18:30:00+00:00",
+          "categories": [
+            "hep-ex",
+            "hep-ph"
+          ],
+          "comments": "45 pages, 50 figures"
+        }
+      ],
+      "count": 1
+    },
+    "hep-ph": {
+      "name": "High Energy Physics - Phenomenology",
+      "papers": [
+        {
+          "id": "2401.07891",
+          "title": "Quantum Field Theory Calculations in High Energy Physics",
+          "authors": [
+            "John Smith",
+            "Jane Doe",
+            "Bob Johnson",
+            "Alice Brown"
+          ],
+          "display_authors": [
+            "John Smith",
+            "Jane Doe",
+            "Bob Johnson",
+            "et al."
+          ],
+          "summary": "This paper presents advanced quantum field theory calculations relevant to high energy physics experiments. We develop new computational methods for loop calculations and apply them to various physical processes. The results show excellent agreement with experimental data from the LHC.",
+          "arxiv_url": "https://arxiv.org/abs/2401.07891",
+          "pdf_url": "https://arxiv.org/pdf/2401.07891.pdf",
+          "submitted_date": "2024-01-15T19:45:00+00:00",
+          "categories": [
+            "hep-ph",
+            "hep-th"
+          ],
+          "comments": "32 pages, 15 figures"
+        }
+      ],
+      "count": 1
+    }
+  }
+}
