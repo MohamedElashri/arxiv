@@ -27,6 +27,61 @@ class SiteGenerator:
         (self.output_dir / "css").mkdir(exist_ok=True)
         (self.output_dir / "js").mkdir(exist_ok=True)
     
+    def get_valid_data_files(self) -> List[Path]:
+        """Get all valid JSON data files, sorted by date (newest first)."""
+        data_files = []
+        
+        # Find all JSON files in data directory
+        for json_file in self.data_dir.glob("*.json"):
+            try:
+                # Try to load and validate the JSON file
+                with open(json_file, 'r', encoding='utf-8') as f:
+                    data = json.load(f)
+                
+                # Check if it has the required structure
+                if self.validate_json_structure(data):
+                    data_files.append(json_file)
+                else:
+                    print(f"Warning: {json_file} has invalid structure, skipping")
+                    
+            except (json.JSONDecodeError, IOError) as e:
+                print(f"Warning: Could not read {json_file}: {e}")
+                continue
+        
+        # Sort by filename (which should be date format YYYY-MM-DD)
+        return sorted(data_files, reverse=True)
+    
+    def validate_json_structure(self, data: Dict[str, Any]) -> bool:
+        """Validate that JSON data has the required structure for site generation."""
+        required_keys = ["date", "generated_at", "categories"]
+        
+        # Check for required top-level keys
+        for key in required_keys:
+            if key not in data:
+                return False
+        
+        # Validate date format
+        try:
+            datetime.fromisoformat(data["date"])
+            datetime.fromisoformat(data["generated_at"])
+        except (ValueError, TypeError):
+            return False
+        
+        # Validate categories structure
+        if not isinstance(data["categories"], dict):
+            return False
+        
+        # Check each category has required structure
+        for category_code, category_data in data["categories"].items():
+            if not isinstance(category_data, dict):
+                return False
+            if "name" not in category_data or "papers" not in category_data:
+                return False
+            if not isinstance(category_data["papers"], list):
+                return False
+        
+        return True
+    
     def highlight_words(self, text: str) -> str:
         """Highlight specified words in text."""
         highlight_words = self.config.get("highlights", {}).get("words", [])
@@ -153,8 +208,8 @@ class SiteGenerator:
 
     def generate_index_html(self) -> str:
         """Generate the main index.html file using template."""
-        # Get all available data files
-        data_files = sorted(self.data_dir.glob("*.json"), reverse=True)
+        # Get all available data files - only valid JSON files
+        data_files = self.get_valid_data_files()
         
         if not data_files:
             return self.generate_empty_page()
@@ -166,21 +221,31 @@ class SiteGenerator:
         # Generate content for all dates (max 7)
         all_dates_html = ""
         for i, file_path in enumerate(data_files[:7]):
-            with open(file_path, 'r', encoding='utf-8') as f:
-                data = json.load(f)
-            
-            # Format the date
-            current_date = datetime.fromisoformat(data["date"]).strftime("%Y-%m-%d")
-            
-            # Generate date header
-            all_dates_html += f'<div class="date-section">\n'
-            all_dates_html += f'    <h2 class="date-header">{current_date}</h2>\n'
-            
-            # Generate categories for this date
-            for category_code, category_data in data["categories"].items():
-                all_dates_html += self.generate_category_html(category_code, category_data)
-            
-            all_dates_html += '</div>\n'
+            try:
+                with open(file_path, 'r', encoding='utf-8') as f:
+                    data = json.load(f)
+                
+                # Validate that the JSON has required structure
+                if not self.validate_json_structure(data):
+                    print(f"Warning: Skipping {file_path} - invalid JSON structure")
+                    continue
+                
+                # Format the date
+                current_date = datetime.fromisoformat(data["date"]).strftime("%Y-%m-%d")
+                
+                # Generate date header
+                all_dates_html += f'<div class="date-section">\n'
+                all_dates_html += f'    <h2 class="date-header">{current_date}</h2>\n'
+                
+                # Generate categories for this date
+                for category_code, category_data in data["categories"].items():
+                    all_dates_html += self.generate_category_html(category_code, category_data)
+                
+                all_dates_html += '</div>\n'
+                
+            except (json.JSONDecodeError, KeyError, ValueError) as e:
+                print(f"Warning: Skipping {file_path} - error reading file: {e}")
+                continue
         
         # Get latest update time from the most recent file
         with open(data_files[0], 'r', encoding='utf-8') as f:
@@ -218,6 +283,7 @@ class SiteGenerator:
                 else:
                     nav_html += f'<a href="{date_str}.html" class="date-link">{display_date}</a>'
             except ValueError:
+                print(f"Warning: Invalid date format in filename: {date_str}")
                 continue
         
         nav_html += '</div></div>'
@@ -264,22 +330,32 @@ class SiteGenerator:
     
     def generate_historical_pages(self):
         """Generate individual pages for historical dates."""
-        data_files = sorted(self.data_dir.glob("*.json"), reverse=True)
+        data_files = self.get_valid_data_files()
         
         for file_path in data_files[1:]:  # Skip the latest (it's the index)
             date_str = file_path.stem
             
-            with open(file_path, 'r', encoding='utf-8') as f:
-                data = json.load(f)
-            
-            # Generate categories HTML
-            categories_html = ""
-            for category_code, category_data in data["categories"].items():
-                categories_html += self.generate_category_html(category_code, category_data)
-            
-            # Format the date
-            current_date = datetime.fromisoformat(data["date"]).strftime("%Y-%m-%d")
-            generated_at = datetime.fromisoformat(data["generated_at"]).strftime("%Y-%m-%d %H:%M UTC")
+            try:
+                with open(file_path, 'r', encoding='utf-8') as f:
+                    data = json.load(f)
+                
+                # Validate JSON structure (should already be valid from get_valid_data_files)
+                if not self.validate_json_structure(data):
+                    print(f"Warning: Skipping historical page for {file_path} - invalid structure")
+                    continue
+                
+                # Generate categories HTML
+                categories_html = ""
+                for category_code, category_data in data["categories"].items():
+                    categories_html += self.generate_category_html(category_code, category_data)
+                
+                # Format the date
+                current_date = datetime.fromisoformat(data["date"]).strftime("%Y-%m-%d")
+                generated_at = datetime.fromisoformat(data["generated_at"]).strftime("%Y-%m-%d %H:%M UTC")
+                
+            except (json.JSONDecodeError, KeyError, ValueError) as e:
+                print(f"Warning: Skipping historical page for {file_path} - error: {e}")
+                continue
             
             site_title = self.config["site"]["title"]
             site_description = self.config["site"]["description"]
@@ -340,6 +416,13 @@ class SiteGenerator:
         """Generate the complete static site."""
         print("Generating static site...")
         
+        # Check if we have any valid data files
+        valid_files = self.get_valid_data_files()
+        if not valid_files:
+            print("No valid JSON data files found. Generating empty site.")
+        else:
+            print(f"Found {len(valid_files)} valid data files")
+        
         # Copy static assets from templates
         self.copy_static_assets()
         
@@ -351,6 +434,11 @@ class SiteGenerator:
             f.write(index_html)
         
         print(f"Generated index page: {index_file}")
+        
+        # Generate historical pages for other dates (if any)
+        if len(valid_files) > 1:
+            self.generate_historical_pages()
+        
         print("Static site generation completed!")
 
 
