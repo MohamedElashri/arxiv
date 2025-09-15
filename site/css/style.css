@@ -60,7 +60,7 @@ body {
 header {
   background-color: var(--header-bg);
   border-bottom: 1px solid var(--border-color);
-  padding: 1rem 0;
+  padding: 0.5rem 0;
   margin-bottom: 1.5rem;
 }
 
@@ -116,79 +116,27 @@ header h1 a:hover {
   transform: scale(1.1);
 }
 
-/* Date info */
-.date-info {
-  text-align: center;
-  margin-bottom: 2rem;
-  padding: 1.5rem;
-  background-color: var(--bg-secondary);
-  border-radius: 12px;
-  border: 1px solid var(--border-color);
+/* All dates container */
+.all-dates {
+  margin-bottom: 3rem;
 }
 
-.date-info h2 {
-  font-size: 1.8rem;
-  margin-bottom: 0.5rem;
+/* Date sections */
+.date-section {
+  margin-bottom: 3rem;
+}
+
+.date-section:last-child {
+  margin-bottom: 0;
+}
+
+.date-header {
+  font-size: 1.5rem;
+  font-weight: 700;
   color: var(--text-primary);
-}
-
-.last-updated {
-  color: var(--text-muted);
-  font-size: 0.9rem;
-}
-
-.back-link {
-  display: inline-block;
-  margin-top: 1rem;
-  color: var(--accent-color);
-  text-decoration: none;
-  font-weight: 500;
-}
-
-.back-link:hover {
-  color: var(--accent-hover);
-}
-
-/* Date navigation */
-.date-navigation {
-  margin-bottom: 2rem;
-  text-align: center;
-}
-
-.date-navigation h3 {
-  margin-bottom: 1rem;
-  color: var(--text-secondary);
-  font-size: 1.1rem;
-}
-
-.date-links {
-  display: flex;
-  justify-content: center;
-  gap: 0.5rem;
-  flex-wrap: wrap;
-}
-
-.date-link {
-  padding: 0.5rem 1rem;
-  background-color: var(--bg-secondary);
-  border: 1px solid var(--border-color);
-  border-radius: 6px;
-  text-decoration: none;
-  color: var(--text-secondary);
-  font-weight: 500;
-  transition: all 0.3s ease;
-}
-
-.date-link:hover {
-  background-color: var(--accent-color);
-  color: white;
-  border-color: var(--accent-color);
-}
-
-.date-link.current {
-  background-color: var(--accent-color);
-  color: white;
-  border-color: var(--accent-color);
+  margin-bottom: 1.5rem;
+  padding: 0.75rem 0;
+  border-bottom: 2px solid var(--border-color);
 }
 
 /* Categories */
@@ -206,7 +154,7 @@ header h1 a:hover {
 }
 
 .category-header {
-  padding: 1.5rem;
+  padding: 1rem;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -415,7 +363,7 @@ footer a:hover {
   }
   
   header {
-    padding: 1.5rem 0;
+    padding: 1rem 0;
   }
   
   header h1 {
@@ -434,10 +382,6 @@ footer a:hover {
   .paper-info {
     flex-direction: column;
     align-items: flex-start;
-  }
-  
-  .date-links {
-    justify-content: center;
   }
   
   .theme-toggle {
@@ -465,15 +409,7 @@ footer a:hover {
   }
   
   .category-header {
-    padding: 1rem;
-  }
-  
-  .date-info {
-    padding: 1rem;
-  }
-  
-  .date-info h2 {
-    font-size: 1.5rem;
+    padding: 0.75rem;
   }
 }
 
@@ -485,8 +421,7 @@ footer a:hover {
 
 /* Print styles */
 @media print {
-  .theme-toggle,
-  .date-navigation {
+  .theme-toggle {
     display: none;
   }
   

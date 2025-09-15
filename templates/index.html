@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ site_title }}</title>
+    <meta name="description" content="{{ site_description }}">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>{{ site_title }}</h1>
+            <p class="site-description">{{ site_description }}</p>
+            <div class="header-controls">
+                <button id="theme-toggle" class="theme-toggle" title="Toggle dark/light mode">
+                    <span class="theme-icon">🌙</span>
+                </button>
+            </div>
+        </div>
+    </header>
+    
+    <main class="container">
+        <div class="all-dates">
+            {{ all_dates_content }}
+        </div>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <p>Data sourced from <a href="https://arxiv.org/" target="_blank">ArXiv.org</a></p>
+            <p>Last updated: {{ last_updated }}</p>
+        </div>
+    </footer>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>

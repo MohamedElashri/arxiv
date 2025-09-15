@@ -6,6 +6,7 @@ Generates HTML pages from JSON data files.
 
 import json
 import os
+import shutil
 from datetime import datetime, timedelta
 from pathlib import Path
 from typing import Dict, List, Any
@@ -18,6 +19,7 @@ class SiteGenerator:
         """Initialize the site generator with configuration."""
         self.config = toml.load(config_path)
         self.data_dir = Path("data")
+        self.templates_dir = Path("templates")
         self.output_dir = Path("site")  # Generated static site files
         self.output_dir.mkdir(exist_ok=True)
         
@@ -109,7 +111,7 @@ class SiteGenerator:
             <div class="category">
                 <div class="category-header" onclick="toggleCategory(this)">
                     <span class="toggle-icon">▶</span>
-                    <h2>{category_name} ({paper_count} papers)</h2>
+                    <h2>{category_name}</h2>
                 </div>
                 <div class="category-content" style="display: none;">
                     <p class="no-papers">No papers found for this category today.</p>
@@ -124,7 +126,7 @@ class SiteGenerator:
         <div class="category">
             <div class="category-header" onclick="toggleCategory(this)">
                 <span class="toggle-icon">▶</span>
-                <h2>{category_name} ({paper_count} papers)</h2>
+                <h2>{category_name}</h2>
             </div>
             <div class="category-content" style="display: none;">
                 {papers_html}
@@ -133,80 +135,68 @@ class SiteGenerator:
         
         return html
     
+    def copy_static_assets(self):
+        """Copy CSS and JS files from templates to output directory."""
+        # Copy CSS file
+        css_template = self.templates_dir / "style.css"
+        css_output = self.output_dir / "css" / "style.css"
+        if css_template.exists():
+            shutil.copy2(css_template, css_output)
+            print(f"Copied CSS: {css_template} -> {css_output}")
+        
+        # Copy JS file
+        js_template = self.templates_dir / "script.js"
+        js_output = self.output_dir / "js" / "script.js"
+        if js_template.exists():
+            shutil.copy2(js_template, js_output)
+            print(f"Copied JS: {js_template} -> {js_output}")
+
     def generate_index_html(self) -> str:
-        """Generate the main index.html file."""
+        """Generate the main index.html file using template."""
         # Get all available data files
         data_files = sorted(self.data_dir.glob("*.json"), reverse=True)
         
         if not data_files:
             return self.generate_empty_page()
         
-        # Load the most recent data
-        latest_file = data_files[0]
-        with open(latest_file, 'r', encoding='utf-8') as f:
-            data = json.load(f)
-        
-        # Generate categories HTML
-        categories_html = ""
-        for category_code, category_data in data["categories"].items():
-            categories_html += self.generate_category_html(category_code, category_data)
-        
-        # Generate date navigation
-        date_nav_html = self.generate_date_navigation(data_files)
-        
         # Get site configuration
         site_title = self.config["site"]["title"]
         site_description = self.config["site"]["description"]
         
-        # Format the current date
-        current_date = datetime.fromisoformat(data["date"]).strftime("%B %d, %Y")
-        generated_at = datetime.fromisoformat(data["generated_at"]).strftime("%Y-%m-%d %H:%M UTC")
+        # Generate content for all dates (max 7)
+        all_dates_html = ""
+        for i, file_path in enumerate(data_files[:7]):
+            with open(file_path, 'r', encoding='utf-8') as f:
+                data = json.load(f)
+            
+            # Format the date
+            current_date = datetime.fromisoformat(data["date"]).strftime("%Y-%m-%d")
+            
+            # Generate date header
+            all_dates_html += f'<div class="date-section">\n'
+            all_dates_html += f'    <h2 class="date-header">{current_date}</h2>\n'
+            
+            # Generate categories for this date
+            for category_code, category_data in data["categories"].items():
+                all_dates_html += self.generate_category_html(category_code, category_data)
+            
+            all_dates_html += '</div>\n'
         
-        html = f'''<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{site_title}</title>
-    <meta name="description" content="{site_description}">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <header>
-        <div class="container">
-            <h1>{site_title}</h1>
-            <p class="site-description">{site_description}</p>
-            <div class="header-controls">
-                <button id="theme-toggle" class="theme-toggle" title="Toggle dark/light mode">
-                    <span class="theme-icon">🌙</span>
-                </button>
-            </div>
-        </div>
-    </header>
-    
-    <main class="container">
-        <div class="date-info">
-            <h2>Papers for {current_date}</h2>
-            <p class="last-updated">Last updated: {generated_at}</p>
-        </div>
+        # Get latest update time from the most recent file
+        with open(data_files[0], 'r', encoding='utf-8') as f:
+            latest_data = json.load(f)
+        generated_at = datetime.fromisoformat(latest_data["generated_at"]).strftime("%Y-%m-%d %H:%M UTC")
         
-        {date_nav_html}
+        # Load HTML template
+        template_path = self.templates_dir / "index.html"
+        with open(template_path, 'r', encoding='utf-8') as f:
+            template = f.read()
         
-        <div class="categories">
-            {categories_html}
-        </div>
-    </main>
-    
-    <footer>
-        <div class="container">
-            <p>Data sourced from <a href="https://arxiv.org/" target="_blank">ArXiv.org</a></p>
-            <p>Generated automatically via GitHub Actions</p>
-        </div>
-    </footer>
-    
-    <script src="js/script.js"></script>
-</body>
-</html>'''
+        # Replace template variables
+        html = template.replace("{{ site_title }}", site_title)
+        html = html.replace("{{ site_description }}", site_description)
+        html = html.replace("{{ all_dates_content }}", all_dates_html)
+        html = html.replace("{{ last_updated }}", generated_at)
         
         return html
     
@@ -288,7 +278,7 @@ class SiteGenerator:
                 categories_html += self.generate_category_html(category_code, category_data)
             
             # Format the date
-            current_date = datetime.fromisoformat(data["date"]).strftime("%B %d, %Y")
+            current_date = datetime.fromisoformat(data["date"]).strftime("%Y-%m-%d")
             generated_at = datetime.fromisoformat(data["generated_at"]).strftime("%Y-%m-%d %H:%M UTC")
             
             site_title = self.config["site"]["title"]
@@ -318,7 +308,7 @@ class SiteGenerator:
     
     <main class="container">
         <div class="date-info">
-            <h2>Papers for {current_date}</h2>
+            <h2>{current_date}</h2>
             <p class="last-updated">Generated: {generated_at}</p>
             <a href="index.html" class="back-link">← Back to latest</a>
         </div>
@@ -350,7 +340,10 @@ class SiteGenerator:
         """Generate the complete static site."""
         print("Generating static site...")
         
-        # Generate main index page
+        # Copy static assets from templates
+        self.copy_static_assets()
+        
+        # Generate main index page with all dates
         index_html = self.generate_index_html()
         index_file = self.output_dir / "index.html"
         
@@ -358,10 +351,6 @@ class SiteGenerator:
             f.write(index_html)
         
         print(f"Generated index page: {index_file}")
-        
-        # Generate historical pages
-        self.generate_historical_pages()
-        
         print("Static site generation completed!")
 
 

@@ -7,8 +7,10 @@ base_url = "https://melashri.net/arxiv-daily"
 # ArXiv category codes and their display names
 hep-ex = "High Energy Physics - Experiment"
 hep-ph = "High Energy Physics - Phenomenology"
-hep-th = "High Energy Physics - Theory"
-astro-ph = "Astrophysics"
+stat.ML = "Machine Learning - Statistics"
+cs.LG = "Machine Learning"
+nucl-ex = "Nuclear Physics - Experiment"
+cs.IR = "Information Retrieval"
 
 [settings]
 # Number of days to keep papers (older papers will be cleaned up)
