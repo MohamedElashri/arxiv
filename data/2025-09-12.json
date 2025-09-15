@@ -1,6 +1,6 @@
 {
   "date": "2025-09-12",
-  "generated_at": "2025-09-15T23:45:12.901534",
+  "generated_at": "2025-09-15T23:51:17.934970",
   "categories": {
     "hep-ex": {
       "name": "High Energy Physics - Experiment",
@@ -533,17 +533,13 @@
       ],
       "count": 13
     },
-    "stat": {
-      "name": {
-        "ML": "Machine Learning - Statistics"
-      },
+    "stat-ML": {
+      "name": "Machine Learning - Statistics",
       "papers": [],
       "count": 0
     },
-    "cs": {
-      "name": {
-        "LG": "Machine Learning"
-      },
+    "cs-LG": {
+      "name": "Machine Learning",
       "papers": [],
       "count": 0
     },
