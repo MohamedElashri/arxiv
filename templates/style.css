@@ -359,7 +359,7 @@ header h1 a:hover {
   color: var(--text-primary);
   line-height: 1.7;
   text-align: justify;
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 400;
   text-indent: 1.5em;
   hyphens: auto;
@@ -374,7 +374,7 @@ header h1 a:hover {
 
 /* Enhanced readability for math expressions in abstracts */
 .abstract .katex {
-  font-size: 1.05em;
+  font-size: 0.95em;
 }
 
 .abstract .katex-display {
@@ -383,6 +383,7 @@ header h1 a:hover {
   background-color: var(--bg-tertiary);
   border-radius: 4px;
   border-left: 3px solid var(--accent-color);
+  font-size: 0.9em;
 }
 
 .comments {
