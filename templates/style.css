@@ -48,8 +48,8 @@
     --details-a: var(--nord07);
     --details-a-hover: var(--nord0F);
 
-    --highlight-title: var(--nord0B);
-    --highlight-author: var(--nord0B);
+    --highlight-bg: var(--nord0B);
+    --highlight-text: var(--nord06);
 
     --article-summary-hover-color: var(--nord0D);
     --article-summary-color: var(--nord04);
@@ -92,8 +92,8 @@
     --details-a: #3498db;
     --details-a-hover: #2980b9;
 
-    --highlight-title: #e74c3c;
-    --highlight-author: #f39c12;
+    --highlight-bg: #e74c3c;
+    --highlight-text: #ffffff;
 
     --article-summary-color: #2c3e50;
     --article-summary-hover-color: #3498db;
@@ -469,11 +469,12 @@ p {
 
 /* Highlight words */
 .highlight {
-    background-color: var(--highlight-title);
-    color: var(--details-content);
+    background-color: var(--highlight-bg) !important;
+    color: var(--highlight-text) !important;
     padding: 0.1rem 0.3rem;
     border-radius: 3px;
     font-weight: 600;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 /* Chip styling */
@@ -626,14 +627,6 @@ p {
   border-top: 1px solid var(--border-color);
 }
 
-/* Highlight words */
-.highlight {
-  background-color: var(--highlight-bg);
-  color: var(--highlight-text);
-  padding: 0.1rem 0.3rem;
-  border-radius: 3px;
-  font-weight: 600;
-}
 
 /* Empty state */
 .empty-state {

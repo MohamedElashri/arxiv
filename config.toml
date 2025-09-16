@@ -21,7 +21,9 @@ max_authors_display = 3
 [highlights]
 # Words to highlight in paper titles (case-insensitive)
 # Add words you want to highlight, otherwise keep empty
-words = []
+words = ["Allen","LHCb","charm","charmonium","trigger","FCC","FCC-ee",
+"FCC-hh","LLM","flavor","flavour","reconstruction","rare decay","attention",
+"tracks","tracking","benchmark","rare"]
 # Example: words = ["quantum", "machine learning", "neural"]
 
 [schedule]
