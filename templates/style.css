@@ -485,6 +485,30 @@ footer a:hover {
     height: 45px;
     font-size: 1.3rem;
   }
+  
+  /* Improve text readability on mobile */
+  .paper-title {
+    font-size: 1.1rem;
+    line-height: 1.4;
+  }
+  
+  .paper-authors {
+    font-size: 0.85rem;
+  }
+  
+  /* Better spacing for mobile */
+  .paper {
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Ensure links are touch-friendly */
+  .paper-links a {
+    padding: 0.5rem 0.75rem;
+    margin: 0.25rem 0.25rem 0.25rem 0;
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+  }
 }
 
 @media (max-width: 480px) {
@@ -506,6 +530,29 @@ footer a:hover {
   
   .category-header {
     padding: 0.75rem;
+  }
+  
+  /* Extra small screens - improve readability */
+  .paper-title {
+    font-size: 1rem;
+    line-height: 1.3;
+  }
+  
+  .paper-authors {
+    font-size: 0.8rem;
+  }
+  
+  /* Horizontal scrolling prevention */
+  .container {
+    padding: 0 10px;
+    overflow-x: hidden;
+  }
+  
+  /* Better touch targets */
+  .category-header {
+    min-height: 48px;
+    display: flex;
+    align-items: center;
   }
 }
 
