@@ -12,6 +12,7 @@ from pathlib import Path
 from typing import Dict, List, Any
 import toml
 import re
+from zoneinfo import ZoneInfo
 
 
 class SiteGenerator:
@@ -253,7 +254,11 @@ class SiteGenerator:
         # Get latest update time from the most recent file
         with open(data_files[0], 'r', encoding='utf-8') as f:
             latest_data = json.load(f)
-        generated_at = datetime.fromisoformat(latest_data["generated_at"]).strftime("%Y-%m-%d %H:%M UTC")
+        
+        # Convert UTC time to CERN timezone (Europe/Zurich)
+        utc_time = datetime.fromisoformat(latest_data["generated_at"]).replace(tzinfo=ZoneInfo('UTC'))
+        cern_time = utc_time.astimezone(ZoneInfo('Europe/Zurich'))
+        generated_at = cern_time.strftime("%Y-%m-%d %H:%M CET")
         
         # Load HTML template
         template_path = self.templates_dir / "index.html"
