@@ -281,47 +281,68 @@ class SiteGenerator:
     <meta name="description" content="{site_description}">
     <link rel="stylesheet" href="css/style.css">
     
-    <!-- MathJax Configuration for Complete LaTeX Support -->
+    <!-- KaTeX CSS and JS for fast LaTeX rendering -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css" integrity="sha384-GvrOXuhMATgEsSwCs4smul74iXGOixntILdUW9XmUC6+HX0sLNAK3q71HotJqlAn" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js" integrity="sha384-cpW21h6RZv/phavutF+AuVYrr+dA8xD9zs6FwLpaCct6O9ctzYFfFr4dgmgccOTx" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"></script>
     <script>
-    MathJax = {{
-      tex: {{
-        inlineMath: [['$', '$'], ['\\\\(', '\\\\)']],
-        displayMath: [['$$', '$$'], ['\\\\[', '\\\\]']],
-        processEscapes: true,
-        processEnvironments: true,
-        processRefs: true,
-        packages: {{
-          '[+]': ['ams', 'newcommand', 'configmacros', 'action', 'bbox', 'boldsymbol', 'braket', 'cancel', 'color', 'enclose', 'extpfeil', 'html', 'mhchem', 'unicode', 'verb', 'physics', 'textmacros', 'cases', 'empheq', 'gensymb']
-        }},
-        tags: 'ams',
-        tagSide: 'right',
-        tagIndent: '0.8em',
-        multlineWidth: '85%',
-        useLabelIds: true,
-        maxMacros: 10000,
-        maxBuffer: 5120
-      }},
-      chtml: {{
-        scale: 1,
-        minScale: 0.5,
-        matchFontHeight: false,
-        displayAlign: 'center',
-        displayIndent: '0',
-        fontURL: 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2'
-      }},
-      options: {{
-        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
-        includeHtmlTags: ['div', 'span', 'p', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6'],
-        ignoreHtmlClass: 'tex2jax_ignore',
-        processHtmlClass: 'tex2jax_process'
-      }},
-      loader: {{
-        load: ['[tex]/ams', '[tex]/newcommand', '[tex]/configmacros', '[tex]/action', '[tex]/bbox', '[tex]/boldsymbol', '[tex]/braket', '[tex]/cancel', '[tex]/color', '[tex]/enclose', '[tex]/extpfeil', '[tex]/html', '[tex]/mhchem', '[tex]/unicode', '[tex]/verb', '[tex]/physics', '[tex]/textmacros', '[tex]/cases', '[tex]/empheq', '[tex]/gensymb']
-      }}
-    }};
+        document.addEventListener("DOMContentLoaded", function() {{
+            renderMathInElement(document.body, {{
+                delimiters: [
+                    {{left: '$$', right: '$$', display: true}},
+                    {{left: '$', right: '$', display: false}},
+                    {{left: '\\\\(', right: '\\\\)', display: false}},
+                    {{left: '\\\\[', right: '\\\\]', display: true}}
+                ],
+                throwOnError: false,
+                errorColor: '#cc0000',
+                macros: {{
+                    "\\\\RR": "\\\\mathbb{{R}}",
+                    "\\\\CC": "\\\\mathbb{{C}}",
+                    "\\\\NN": "\\\\mathbb{{N}}",
+                    "\\\\ZZ": "\\\\mathbb{{Z}}",
+                    "\\\\QQ": "\\\\mathbb{{Q}}",
+                    "\\\\dd": "\\\\mathrm{{d}}",
+                    "\\\\ee": "\\\\mathrm{{e}}",
+                    "\\\\ii": "\\\\mathrm{{i}}",
+                    "\\\\ket": "\\\\left|#1\\\\right\\\\rangle",
+                    "\\\\bra": "\\\\left\\\\langle#1\\\\right|",
+                    "\\\\braket": "\\\\left\\\\langle#1\\\\right\\\\rangle",
+                    "\\\\norm": "\\\\left\\\\|#1\\\\right\\\\|",
+                    "\\\\abs": "\\\\left|#1\\\\right|",
+                    "\\\\tr": "\\\\operatorname{{tr}}",
+                    "\\\\Tr": "\\\\operatorname{{Tr}}",
+                    "\\\\rank": "\\\\operatorname{{rank}}",
+                    "\\\\span": "\\\\operatorname{{span}}",
+                    "\\\\dim": "\\\\operatorname{{dim}}",
+                    "\\\\det": "\\\\operatorname{{det}}",
+                    "\\\\sgn": "\\\\operatorname{{sgn}}",
+                    "\\\\diag": "\\\\operatorname{{diag}}",
+                    "\\\\Re": "\\\\operatorname{{Re}}",
+                    "\\\\Im": "\\\\operatorname{{Im}}",
+                    "\\\\order": "\\\\mathcal{{O}}\\\\left(#1\\\\right)",
+                    "\\\\bigO": "\\\\mathcal{{O}}\\\\left(#1\\\\right)",
+                    "\\\\expect": "\\\\left\\\\langle#1\\\\right\\\\rangle",
+                    "\\\\expectation": "\\\\mathbb{{E}}\\\\left[#1\\\\right]",
+                    "\\\\var": "\\\\operatorname{{Var}}\\\\left[#1\\\\right]",
+                    "\\\\prob": "\\\\mathbb{{P}}\\\\left(#1\\\\right)",
+                    "\\\\given": "\\\\mid",
+                    "\\\\defeq": "\\\\stackrel{{\\\\text{{def}}}}{{=}}",
+                    "\\\\const": "\\\\text{{const}}",
+                    "\\\\half": "\\\\frac{{1}}{{2}}",
+                    "\\\\inv": "^{{-1}}",
+                    "\\\\trans": "^{{\\\\top}}",
+                    "\\\\adj": "^{{\\\\dagger}}",
+                    "\\\\perp": "\\\\bot",
+                    "\\\\parallel": "\\\\|",
+                    "\\\\floor": "\\\\left\\\\lfloor#1\\\\right\\\\rfloor",
+                    "\\\\ceil": "\\\\left\\\\lceil#1\\\\right\\\\rceil",
+                    "\\\\set": "\\\\left\\\\{{#1\\\\right\\\\}}",
+                    "\\\\card": "\\\\left|#1\\\\right|"
+                }}
+            }});
+        }});
     </script>
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"></script>
 </head>
 <body>
     <header>
