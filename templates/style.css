@@ -330,9 +330,6 @@ p {
     color: var(--article-title-color);
 }
 
-.paper-header:hover .paper-title {
-    color: var(--article-title-hover-color);
-}
 
 .paper-links {
     display: flex;
