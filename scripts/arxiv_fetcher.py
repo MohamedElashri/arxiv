@@ -157,6 +157,8 @@ class ArXivFetcher:
             "categories": {}
         }
         
+        total_papers = 0
+        
         # Fetch papers for each category
         for category_code, category_name in self.config["categories"].items():
             print(f"Fetching papers for category: {category_name} ({category_code})")
@@ -169,15 +171,22 @@ class ArXivFetcher:
                 "count": len(papers)
             }
             
+            total_papers += len(papers)
+            
             # Rate limiting to be respectful to ArXiv API
             time.sleep(3)
         
-        # Save to JSON file
+        # Check if any papers were found across all categories
+        if total_papers == 0:
+            print(f"No papers found for any category on {target_date}. Skipping JSON file creation.")
+            return None
+        
+        # Save to JSON file only if papers were found
         output_file = self.data_dir / f"{target_date}.json"
         with open(output_file, 'w', encoding='utf-8') as f:
             json.dump(daily_data, f, indent=2, ensure_ascii=False)
         
-        print(f"Saved daily papers to: {output_file}")
+        print(f"Saved {total_papers} papers to: {output_file}")
         
         # Clean up old data
         self.clean_old_data()

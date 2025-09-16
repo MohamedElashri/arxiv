@@ -43,11 +43,26 @@ jobs:
       run: mkdir -p data
       
     - name: Fetch ArXiv papers
+      id: fetch_papers
       run: |
         if [ -n "${{ github.event.inputs.date }}" ]; then
           python scripts/arxiv_fetcher.py "${{ github.event.inputs.date }}"
         else
           python scripts/arxiv_fetcher.py
+        fi
+        
+        # Check if any JSON files were created today
+        today=$(date -u '+%Y-%m-%d')
+        if [ -n "${{ github.event.inputs.date }}" ]; then
+          today="${{ github.event.inputs.date }}"
+        fi
+        
+        if [ -f "data/${today}.json" ]; then
+          echo "papers_found=true" >> $GITHUB_OUTPUT
+          echo "Papers found and JSON file created for ${today}"
+        else
+          echo "papers_found=false" >> $GITHUB_OUTPUT
+          echo "No papers found for ${today}, skipping commit"
         fi
       env:
         PYTHONPATH: ${{ github.workspace }}
@@ -70,6 +85,7 @@ jobs:
       uses: actions/deploy-pages@v4
       
     - name: Commit and push data files
+      if: steps.fetch_papers.outputs.papers_found == 'true'
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"

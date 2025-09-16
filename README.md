@@ -213,7 +213,7 @@ Edit `scripts/arxiv_fetcher.py` to:
 ### Missing Papers
 
 - ArXiv submissions may take time to appear in API
-- Some categories may have fewer papers on certain days
+- Some categories may have fewer papers on certain days (or none at all)
 
 ## Contributing
 
