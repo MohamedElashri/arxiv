@@ -30,9 +30,9 @@ class ThemeManager {
     }
 
     updateThemeIcon() {
-        const themeIcon = document.querySelector('.theme-icon');
+        const themeIcon = document.getElementById("theme-icon");
         if (themeIcon) {
-            themeIcon.textContent = this.theme === 'light' ? '🌙' : '☀️';
+            themeIcon.className = this.theme === 'light' ? "ri-sun-line" : "ri-moon-line";
         }
     }
 }
@@ -193,11 +193,22 @@ class SearchManager {
 // Keyboard shortcuts
 class KeyboardManager {
     constructor() {
+        this.expanded = false;
         this.init();
     }
 
     init() {
         document.addEventListener('keydown', (e) => {
+            // TAB key: Expand/Collapse all details
+            if (e.key === 'Tab' && !e.ctrlKey && !e.metaKey && !e.altKey && !e.shiftKey) {
+                e.preventDefault();
+                this.expanded = !this.expanded;
+                document.querySelectorAll("details").forEach(detail => {
+                    detail.open = this.expanded;
+                });
+                return false;
+            }
+
             // Ctrl/Cmd + D: Toggle theme
             if ((e.ctrlKey || e.metaKey) && e.key === 'd') {
                 e.preventDefault();
@@ -291,6 +302,45 @@ document.addEventListener('DOMContentLoaded', () => {
     window.performanceMonitor = new PerformanceMonitor();
     window.accessibilityManager = new AccessibilityManager();
 
+    // Enhanced theme switching with checkbox support
+    const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+    if (toggleSwitch) {
+        function switchTheme(e) {
+            if (e.target.checked) {
+                document.documentElement.setAttribute('data-theme', 'light');
+                const themeIcon = document.getElementById("theme-icon");
+                if (themeIcon) themeIcon.className = "ri-sun-line";
+                localStorage.setItem('theme', 'light');
+            } else {
+                document.documentElement.setAttribute('data-theme', 'dark');
+                const themeIcon = document.getElementById("theme-icon");
+                if (themeIcon) themeIcon.className = "ri-moon-line";
+                localStorage.setItem('theme', 'dark');
+            }
+        }
+
+        toggleSwitch.addEventListener('change', switchTheme, false);
+        
+        // Set initial state based on current theme
+        const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : 'dark';
+        if (currentTheme) {
+            document.documentElement.setAttribute('data-theme', currentTheme);
+            if (currentTheme === 'light') {
+                toggleSwitch.checked = true;
+            }
+        }
+    }
+
+    // Build timestamp functionality (if element exists)
+    const timestamp = document.getElementById("build-timestamp");
+    if (timestamp) {
+        const timestamp_local = new Date(timestamp.getAttribute("datetime")).toLocaleString();
+        const badge = document.getElementById("build-timestamp-badge");
+        if (badge) {
+            badge.src = `https://img.shields.io/github/actions/workflow/status/NotCraft/ArxivDaily/update-feed.yml?label=${timestamp_local}&style=for-the-badge`;
+        }
+    }
+
     // Add refresh functionality to title
     const titleElement = document.querySelector('header h1');
     if (titleElement) {
@@ -323,7 +373,7 @@ document.addEventListener('DOMContentLoaded', () => {
         window.accessibilityManager.updateAriaExpanded(paperHeader, !wasExpanded);
     };
 
-    console.log('ArXiv Daily Papers site initialized successfully!');
+    console.log('ArXiv Daily Papers site with Nord theme initialized successfully!');
 });
 
 // Export for potential module use

@@ -34,6 +34,9 @@
     <meta name="msapplication-TileColor" content="#2c3e50">
     <link rel="stylesheet" href="css/style.css">
     
+    <!-- Remix Icons for theme toggle -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    
     <!-- KaTeX CSS and JS for fast LaTeX rendering -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css" integrity="sha384-GvrOXuhMATgEsSwCs4smul74iXGOixntILdUW9XmUC6+HX0sLNAK3q71HotJqlAn" crossorigin="anonymous">
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js" integrity="sha384-cpW21h6RZv/phavutF+AuVYrr+dA8xD9zs6FwLpaCct6O9ctzYFfFr4dgmgccOTx" crossorigin="anonymous"></script>
@@ -145,29 +148,23 @@
     </script>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>{{ site_title }}</h1>
-            <p class="site-description">{{ site_description }}</p>
-            <div class="header-controls">
-                <button id="theme-toggle" class="theme-toggle" title="Toggle dark/light mode">
-                    <span class="theme-icon">🌙</span>
-                </button>
-            </div>
+    <div class="header-container">
+        <h1 class="header-title">
+            <span class="header-title-preffix">ArXiv</span> {{ site_title }}
+        </h1>
+        <div class="icons">
+            <label class="theme-switch">
+                <input type="checkbox">
+                <i id="theme-icon" class="ri-moon-line"></i>
+            </label>
         </div>
-    </header>
+    </div>
     
-    <main class="container">
-        <div class="all-dates">
-            {{ all_dates_content }}
-        </div>
-    </main>
+    {{ all_dates_content }}
     
     <footer>
-        <div class="container">
-            <p>Data sourced from <a href="https://arxiv.org/" target="_blank">ArXiv.org</a></p>
-            <p>Last updated: {{ last_updated }}</p>
-        </div>
+        <p>Data sourced from <a href="https://arxiv.org/" target="_blank">ArXiv.org</a></p>
+        <p>Last updated: {{ last_updated }}</p>
     </footer>
     
     <script src="js/script.js"></script>
