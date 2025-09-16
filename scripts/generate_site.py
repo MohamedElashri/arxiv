@@ -302,6 +302,48 @@ class SiteGenerator:
     <title>{site_title}</title>
     <meta name="description" content="{site_description}">
     <link rel="stylesheet" href="css/style.css">
+    
+    <!-- MathJax Configuration for Complete LaTeX Support -->
+    <script>
+    MathJax = {{
+      tex: {{
+        inlineMath: [['$', '$'], ['\\\\(', '\\\\)']],
+        displayMath: [['$$', '$$'], ['\\\\[', '\\\\]']],
+        processEscapes: true,
+        processEnvironments: true,
+        processRefs: true,
+        packages: {{
+          '[+]': ['ams', 'newcommand', 'configmacros', 'action', 'bbox', 'boldsymbol', 'braket', 'cancel', 'color', 'enclose', 'extpfeil', 'html', 'mhchem', 'unicode', 'verb', 'physics', 'textmacros', 'cases', 'empheq', 'gensymb']
+        }},
+        tags: 'ams',
+        tagSide: 'right',
+        tagIndent: '0.8em',
+        multlineWidth: '85%',
+        useLabelIds: true,
+        maxMacros: 10000,
+        maxBuffer: 5120
+      }},
+      chtml: {{
+        scale: 1,
+        minScale: 0.5,
+        matchFontHeight: false,
+        displayAlign: 'center',
+        displayIndent: '0',
+        fontURL: 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2'
+      }},
+      options: {{
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+        includeHtmlTags: ['div', 'span', 'p', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6'],
+        ignoreHtmlClass: 'tex2jax_ignore',
+        processHtmlClass: 'tex2jax_process'
+      }},
+      loader: {{
+        load: ['[tex]/ams', '[tex]/newcommand', '[tex]/configmacros', '[tex]/action', '[tex]/bbox', '[tex]/boldsymbol', '[tex]/braket', '[tex]/cancel', '[tex]/color', '[tex]/enclose', '[tex]/extpfeil', '[tex]/html', '[tex]/mhchem', '[tex]/unicode', '[tex]/verb', '[tex]/physics', '[tex]/textmacros', '[tex]/cases', '[tex]/empheq', '[tex]/gensymb']
+      }}
+    }};
+    </script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"></script>
 </head>
 <body>
     <header>
@@ -368,6 +410,48 @@ class SiteGenerator:
     <title>{site_title} - {current_date}</title>
     <meta name="description" content="{site_description} - {current_date}">
     <link rel="stylesheet" href="css/style.css">
+    
+    <!-- MathJax Configuration for Complete LaTeX Support -->
+    <script>
+    MathJax = {{
+      tex: {{
+        inlineMath: [['$', '$'], ['\\\\(', '\\\\)']],
+        displayMath: [['$$', '$$'], ['\\\\[', '\\\\]']],
+        processEscapes: true,
+        processEnvironments: true,
+        processRefs: true,
+        packages: {{
+          '[+]': ['ams', 'newcommand', 'configmacros', 'action', 'bbox', 'boldsymbol', 'braket', 'cancel', 'color', 'enclose', 'extpfeil', 'html', 'mhchem', 'unicode', 'verb', 'physics', 'textmacros', 'cases', 'empheq', 'gensymb']
+        }},
+        tags: 'ams',
+        tagSide: 'right',
+        tagIndent: '0.8em',
+        multlineWidth: '85%',
+        useLabelIds: true,
+        maxMacros: 10000,
+        maxBuffer: 5120
+      }},
+      chtml: {{
+        scale: 1,
+        minScale: 0.5,
+        matchFontHeight: false,
+        displayAlign: 'center',
+        displayIndent: '0',
+        fontURL: 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2'
+      }},
+      options: {{
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+        includeHtmlTags: ['div', 'span', 'p', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6'],
+        ignoreHtmlClass: 'tex2jax_ignore',
+        processHtmlClass: 'tex2jax_process'
+      }},
+      loader: {{
+        load: ['[tex]/ams', '[tex]/newcommand', '[tex]/configmacros', '[tex]/action', '[tex]/bbox', '[tex]/boldsymbol', '[tex]/braket', '[tex]/cancel', '[tex]/color', '[tex]/enclose', '[tex]/extpfeil', '[tex]/html', '[tex]/mhchem', '[tex]/unicode', '[tex]/verb', '[tex]/physics', '[tex]/textmacros', '[tex]/cases', '[tex]/empheq', '[tex]/gensymb']
+      }}
+    }};
+    </script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"></script>
 </head>
 <body>
     <header>

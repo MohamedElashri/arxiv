@@ -83,6 +83,13 @@ class CollapsibleManager {
             content.style.display = 'block';
             toggleIcon.textContent = '▼';
             toggleIcon.classList.add('expanded');
+            
+            // Trigger MathJax re-rendering for newly visible content
+            if (typeof MathJax !== 'undefined' && MathJax.typesetPromise) {
+                MathJax.typesetPromise([content]).catch((err) => {
+                    console.log('MathJax typeset error:', err.message);
+                });
+            }
         }
     }
 }
