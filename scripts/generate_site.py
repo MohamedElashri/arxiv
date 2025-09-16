@@ -123,24 +123,25 @@ class SiteGenerator:
                 <span class="toggle-icon">▶</span>
                 <div class="paper-title-section">
                     <h3 class="paper-title">{title}</h3>
-                    <div class="paper-meta">
-                        <span class="authors">Authors: {authors}</span>
-                        <div class="paper-links">
-                            <a href="{paper['arxiv_url']}" target="_blank" class="arxiv-link" title="View on ArXiv">
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-                                </svg>
-                            </a>
-                            <a href="{paper['pdf_url']}" target="_blank" class="pdf-link" title="Download PDF">
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-                                    <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
+                </div>
+                <div class="paper-links">
+                    <a href="{paper['arxiv_url']}" target="_blank" class="arxiv-link" title="View on ArXiv">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                        </svg>
+                    </a>
+                    <a href="{paper['pdf_url']}" target="_blank" class="pdf-link" title="Download PDF">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/>
+                        </svg>
+                    </a>
                 </div>
             </div>
             <div class="paper-content" style="display: none;">
+                <div class="authors-section">
+                    <h4>Authors</h4>
+                    <p class="authors">{authors}</p>
+                </div>
                 <div class="abstract">
                     <h4>Abstract</h4>
                     <p>{paper['summary']}</p>
