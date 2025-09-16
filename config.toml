@@ -23,7 +23,7 @@ max_authors_display = 3
 # Add words you want to highlight, otherwise keep empty
 words = ["Allen","LHCb","charm","charmonium","trigger","FCC","FCC-ee",
 "FCC-hh","LLM","flavor","flavour","reconstruction","rare decay","attention",
-"tracks","tracking","benchmark","rare"]
+"tracks","tracking","benchmark","rare","vertex","locator"]
 # Example: words = ["quantum", "machine learning", "neural"]
 
 [schedule]

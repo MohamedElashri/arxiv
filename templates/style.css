@@ -141,7 +141,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 16px 0;
+    padding: 16px 20px;
 }
 
 .header-title {
@@ -168,26 +168,31 @@ body {
 .theme-toggle-container {
     position: absolute;
     top: 16px;
-    right: 0;
+    right: 20px;
     z-index: 100;
 }
 
 /* Theme switcher */
 .theme-switch {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
     cursor: pointer;
-    padding: 8px;
-    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
     background: var(--day-container);
     border: 2px solid var(--accordion-content-rail-color);
     transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .theme-switch:hover {
     background: var(--summary-hover);
     border-color: var(--details-a);
-    transform: scale(1.1);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
 .theme-switch input {
@@ -196,8 +201,8 @@ body {
 
 .theme-switch i {
     color: var(--icons);
-    font-size: 18px;
-    transition: color 0.3s ease;
+    font-size: 20px;
+    transition: all 0.3s ease;
 }
 
 .theme-switch:hover i {
@@ -695,10 +700,14 @@ footer a:hover {
     align-items: flex-start;
   }
   
-  .theme-toggle {
-    width: 45px;
-    height: 45px;
-    font-size: 1.3rem;
+  .theme-switch {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+  }
+  
+  .theme-switch i {
+    font-size: 18px;
   }
   
   /* Improve text readability on mobile */
