@@ -1,7 +1,7 @@
 [site]
 title = "Daily Papers"
 description = "Daily collection of papers from ArXiv in selected categories"
-base_url = "https://melashri.net/arxiv-daily"
+base_url = "https://melashri.net/arxiv"
 
 [categories]
 # ArXiv category codes and their display names

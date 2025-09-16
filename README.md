@@ -19,8 +19,8 @@ A GitHub Pages-powered web application that automatically fetches and displays d
 ### 1. Fork/Clone this Repository
 
 ```bash
-git clone https://github.com/MohamedElashri/arxiv-daily
-cd arxiv-daily
+git clone https://github.com/MohamedElashri/arxiv
+cd arxiv
 ```
 
 ### 2. Configure Categories and Settings
@@ -122,7 +122,7 @@ words = ["quantum", "machine learning", "neural", "dark matter"]
 [site]
 title = "My ArXiv Daily"
 description = "Daily collection of papers from ArXiv"
-base_url = "https://<your-username>.github.io/arxiv-daily"
+base_url = "https://<your-username>.github.io/arxiv"
 
 [settings]
 retention_days = 7              # Days to keep old papers
