@@ -137,6 +137,11 @@ body {
     max-width: 1200px;
     background: var(--header-container);
     margin: 0 auto;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 16px 0;
 }
 
 .header-title {
@@ -144,9 +149,9 @@ body {
     font-weight: bold;
     color: var(--header-title);
     margin: 0;
-    padding-bottom: 14px;
     cursor: pointer;
     transition: color 0.3s ease;
+    flex: 1;
 }
 
 .header-title a {
@@ -159,28 +164,44 @@ body {
     color: var(--header-title-preffix);
 }
 
-.icons {
-    color: var(--icons);
-    padding-bottom: 16px;
-}
-
-.icons a {
-    color: var(--icons);
-    text-decoration: none;
-}
-
-.icons a:hover {
-    color: var(--icons-hover);
+/* Theme toggle container positioned in top right */
+.theme-toggle-container {
+    position: absolute;
+    top: 16px;
+    right: 0;
+    z-index: 100;
 }
 
 /* Theme switcher */
 .theme-switch {
     display: inline-block;
     position: relative;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 50%;
+    background: var(--day-container);
+    border: 2px solid var(--accordion-content-rail-color);
+    transition: all 0.3s ease;
+}
+
+.theme-switch:hover {
+    background: var(--summary-hover);
+    border-color: var(--details-a);
+    transform: scale(1.1);
 }
 
 .theme-switch input {
     display: none;
+}
+
+.theme-switch i {
+    color: var(--icons);
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.theme-switch:hover i {
+    color: var(--icons-hover);
 }
 
 .date-section {
@@ -360,11 +381,20 @@ p {
     font-size: 1rem;
 }
 
+.authors-with-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
 .authors-section .authors {
     color: var(--details-content);
     font-size: 1rem;
     line-height: 1.6;
     font-weight: 500;
+    flex: 1;
+    margin: 0;
 }
 
 .abstract {

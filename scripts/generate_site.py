@@ -124,23 +124,25 @@ class SiteGenerator:
                 <div class="paper-title-section">
                     <h3 class="paper-title">{title}</h3>
                 </div>
-                <div class="paper-links">
-                    <a href="{paper['arxiv_url']}" target="_blank" class="arxiv-link" title="View on ArXiv">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-                        </svg>
-                    </a>
-                    <a href="{paper['pdf_url']}" target="_blank" class="pdf-link" title="Download PDF">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/>
-                        </svg>
-                    </a>
-                </div>
             </div>
             <div class="paper-content" style="display: none;">
                 <div class="authors-section">
                     <h4>Authors</h4>
-                    <p class="authors">{authors}</p>
+                    <div class="authors-with-links">
+                        <p class="authors">{authors}</p>
+                        <div class="paper-links">
+                            <a href="{paper['arxiv_url']}" target="_blank" class="arxiv-link" title="View on ArXiv">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H6.9C4.01 7 1.9 9.11 1.9 12s2.11 5 5 5h4v-1.9H6.9c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9.1-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.89 0 5-2.11 5-5s-2.11-5-5-5z"/>
+                                </svg>
+                            </a>
+                            <a href="{paper['pdf_url']}" target="_blank" class="pdf-link" title="Download PDF">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z M9,13V19H7V13H9M15,13V19H13V13H15M11,13V19H9V13H11"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
                 </div>
                 <div class="abstract">
                     <h4>Abstract</h4>
