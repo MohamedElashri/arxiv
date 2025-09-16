@@ -219,9 +219,9 @@ class SiteGenerator:
         site_title = self.config["site"]["title"]
         site_description = self.config["site"]["description"]
         
-        # Generate content for all dates (max 7)
+        # Generate content for all dates
         all_dates_html = ""
-        for i, file_path in enumerate(data_files[:7]):
+        for i, file_path in enumerate(data_files):
             try:
                 with open(file_path, 'r', encoding='utf-8') as f:
                     data = json.load(f)
@@ -266,29 +266,6 @@ class SiteGenerator:
         
         return html
     
-    def generate_date_navigation(self, data_files: List[Path]) -> str:
-        """Generate navigation for different dates."""
-        if len(data_files) <= 1:
-            return ""
-        
-        nav_html = '<div class="date-navigation"><h3>Other dates:</h3><div class="date-links">'
-        
-        for i, file_path in enumerate(data_files[:7]):  # Show last 7 days
-            date_str = file_path.stem
-            try:
-                date_obj = datetime.strptime(date_str, "%Y-%m-%d")
-                display_date = date_obj.strftime("%b %d")
-                
-                if i == 0:
-                    nav_html += f'<span class="date-link current">{display_date}</span>'
-                else:
-                    nav_html += f'<a href="{date_str}.html" class="date-link">{display_date}</a>'
-            except ValueError:
-                print(f"Warning: Invalid date format in filename: {date_str}")
-                continue
-        
-        nav_html += '</div></div>'
-        return nav_html
     
     def generate_empty_page(self) -> str:
         """Generate a page when no data is available."""
@@ -371,131 +348,6 @@ class SiteGenerator:
 </body>
 </html>'''
     
-    def generate_historical_pages(self):
-        """Generate individual pages for historical dates."""
-        data_files = self.get_valid_data_files()
-        
-        for file_path in data_files[1:]:  # Skip the latest (it's the index)
-            date_str = file_path.stem
-            
-            try:
-                with open(file_path, 'r', encoding='utf-8') as f:
-                    data = json.load(f)
-                
-                # Validate JSON structure (should already be valid from get_valid_data_files)
-                if not self.validate_json_structure(data):
-                    print(f"Warning: Skipping historical page for {file_path} - invalid structure")
-                    continue
-                
-                # Generate categories HTML
-                categories_html = ""
-                for category_code, category_data in data["categories"].items():
-                    categories_html += self.generate_category_html(category_code, category_data)
-                
-                # Format the date
-                current_date = datetime.fromisoformat(data["date"]).strftime("%Y-%m-%d")
-                generated_at = datetime.fromisoformat(data["generated_at"]).strftime("%Y-%m-%d %H:%M UTC")
-                
-            except (json.JSONDecodeError, KeyError, ValueError) as e:
-                print(f"Warning: Skipping historical page for {file_path} - error: {e}")
-                continue
-            
-            site_title = self.config["site"]["title"]
-            site_description = self.config["site"]["description"]
-            
-            html = f'''<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{site_title} - {current_date}</title>
-    <meta name="description" content="{site_description} - {current_date}">
-    <link rel="stylesheet" href="css/style.css">
-    
-    <!-- MathJax Configuration for Complete LaTeX Support -->
-    <script>
-    MathJax = {{
-      tex: {{
-        inlineMath: [['$', '$'], ['\\\\(', '\\\\)']],
-        displayMath: [['$$', '$$'], ['\\\\[', '\\\\]']],
-        processEscapes: true,
-        processEnvironments: true,
-        processRefs: true,
-        packages: {{
-          '[+]': ['ams', 'newcommand', 'configmacros', 'action', 'bbox', 'boldsymbol', 'braket', 'cancel', 'color', 'enclose', 'extpfeil', 'html', 'mhchem', 'unicode', 'verb', 'physics', 'textmacros', 'cases', 'empheq', 'gensymb']
-        }},
-        tags: 'ams',
-        tagSide: 'right',
-        tagIndent: '0.8em',
-        multlineWidth: '85%',
-        useLabelIds: true,
-        maxMacros: 10000,
-        maxBuffer: 5120
-      }},
-      chtml: {{
-        scale: 1,
-        minScale: 0.5,
-        matchFontHeight: false,
-        displayAlign: 'center',
-        displayIndent: '0',
-        fontURL: 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2'
-      }},
-      options: {{
-        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
-        includeHtmlTags: ['div', 'span', 'p', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6'],
-        ignoreHtmlClass: 'tex2jax_ignore',
-        processHtmlClass: 'tex2jax_process'
-      }},
-      loader: {{
-        load: ['[tex]/ams', '[tex]/newcommand', '[tex]/configmacros', '[tex]/action', '[tex]/bbox', '[tex]/boldsymbol', '[tex]/braket', '[tex]/cancel', '[tex]/color', '[tex]/enclose', '[tex]/extpfeil', '[tex]/html', '[tex]/mhchem', '[tex]/unicode', '[tex]/verb', '[tex]/physics', '[tex]/textmacros', '[tex]/cases', '[tex]/empheq', '[tex]/gensymb']
-      }}
-    }};
-    </script>
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"></script>
-</head>
-<body>
-    <header>
-        <div class="container">
-            <h1><a href="index.html">{site_title}</a></h1>
-            <p class="site-description">{site_description}</p>
-            <div class="header-controls">
-                <button id="theme-toggle" class="theme-toggle" title="Toggle dark/light mode">
-                    <span class="theme-icon">🌙</span>
-                </button>
-            </div>
-        </div>
-    </header>
-    
-    <main class="container">
-        <div class="date-info">
-            <h2>{current_date}</h2>
-            <p class="last-updated">Generated: {generated_at}</p>
-            <a href="index.html" class="back-link">← Back to latest</a>
-        </div>
-        
-        <div class="categories">
-            {categories_html}
-        </div>
-    </main>
-    
-    <footer>
-        <div class="container">
-            <p>Data sourced from <a href="https://arxiv.org/" target="_blank">ArXiv.org</a></p>
-            <p>Generated automatically via GitHub Actions</p>
-        </div>
-    </footer>
-    
-    <script src="js/script.js"></script>
-</body>
-</html>'''
-            
-            # Write the historical page
-            output_file = self.output_dir / f"{date_str}.html"
-            with open(output_file, 'w', encoding='utf-8') as f:
-                f.write(html)
-            
-            print(f"Generated historical page: {output_file}")
     
     def generate_site(self):
         """Generate the complete static site."""
@@ -520,9 +372,7 @@ class SiteGenerator:
         
         print(f"Generated index page: {index_file}")
         
-        # Generate historical pages for other dates (if any)
-        if len(valid_files) > 1:
-            self.generate_historical_pages()
+        # No historical pages - everything is on the main index page
         
         print("Static site generation completed!")
 
