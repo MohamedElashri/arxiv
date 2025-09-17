@@ -2,10 +2,10 @@ name: Update ArXiv Papers
 
 on:
   schedule:
-    # Run at 5:00 AM UTC (7:00 AM CEST) every day
-    - cron: '0 5 * * *'
+    # Run at 23:50 America/Chicago daily (DST-safe via two UTC crons; guard step below selects the right one)
+    - cron: '50 4 * * *'  # 23:50 CDT (UTC-5)
+    - cron: '50 5 * * *'  # 23:50 CST (UTC-6)
   workflow_dispatch:
-    # Allow manual triggering
     inputs:
       date:
         description: 'Date to fetch papers for (YYYY-MM-DD format, optional)'
@@ -24,68 +24,89 @@ concurrency:
 jobs:
   fetch-and-generate:
     runs-on: ubuntu-latest
-    
+
     steps:
+    - name: Guard: only proceed at 23:50 America/Chicago or on manual run
+      id: guard
+      run: |
+        if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+          echo "run_job=true" >> $GITHUB_OUTPUT
+        else
+          hhmm=$(TZ=America/Chicago date +%H%M)
+          if [ "$hhmm" = "2350" ]; then
+            echo "run_job=true" >> $GITHUB_OUTPUT
+          else
+            echo "run_job=false" >> $GITHUB_OUTPUT
+            echo "Not the intended local time; skipping."
+          fi
+        fi
+
     - name: Checkout repository
+      if: ${{ steps.guard.outputs.run_job == 'true' }}
       uses: actions/checkout@v4
-      
+
     - name: Set up Python
+      if: ${{ steps.guard.outputs.run_job == 'true' }}
       uses: actions/setup-python@v4
       with:
         python-version: '3.11'
-        
+
     - name: Install dependencies
+      if: ${{ steps.guard.outputs.run_job == 'true' }}
       run: |
         python -m pip install --upgrade pip
         pip install -r requirements.txt
-        
+
     - name: Create data directory
+      if: ${{ steps.guard.outputs.run_job == 'true' }}
       run: mkdir -p data
-      
-    - name: Fetch ArXiv papers
+
+    - name: Fetch ArXiv papers (default to America/Chicago local date)
+      if: ${{ steps.guard.outputs.run_job == 'true' }}
       id: fetch_papers
       run: |
         if [ -n "${{ github.event.inputs.date }}" ]; then
-          python scripts/arxiv_fetcher.py "${{ github.event.inputs.date }}"
+          TARGET_DATE="${{ github.event.inputs.date }}"
         else
-          python scripts/arxiv_fetcher.py
+          TARGET_DATE=$(TZ=America/Chicago date '+%Y-%m-%d')
         fi
-        
-        # Check if any JSON files were created today
-        today=$(date -u '+%Y-%m-%d')
-        if [ -n "${{ github.event.inputs.date }}" ]; then
-          today="${{ github.event.inputs.date }}"
-        fi
-        
-        if [ -f "data/${today}.json" ]; then
+        echo "target_date=$TARGET_DATE" >> $GITHUB_OUTPUT
+
+        python scripts/arxiv_fetcher.py "$TARGET_DATE"
+
+        if [ -f "data/${TARGET_DATE}.json" ]; then
           echo "papers_found=true" >> $GITHUB_OUTPUT
-          echo "Papers found and JSON file created for ${today}"
+          echo "Papers found and JSON file created for ${TARGET_DATE}"
         else
           echo "papers_found=false" >> $GITHUB_OUTPUT
-          echo "No papers found for ${today}, skipping commit"
+          echo "No papers found for ${TARGET_DATE}, skipping commit"
         fi
       env:
         PYTHONPATH: ${{ github.workspace }}
-        
+
     - name: Generate static site
+      if: ${{ steps.guard.outputs.run_job == 'true' }}
       run: python scripts/generate_site.py
       env:
         PYTHONPATH: ${{ github.workspace }}
-        
+
     - name: Setup Pages
+      if: ${{ steps.guard.outputs.run_job == 'true' }}
       uses: actions/configure-pages@v4
-      
+
     - name: Upload artifact
+      if: ${{ steps.guard.outputs.run_job == 'true' }}
       uses: actions/upload-pages-artifact@v3
       with:
         path: './site'
-        
+
     - name: Deploy to GitHub Pages
+      if: ${{ steps.guard.outputs.run_job == 'true' }}
       id: deployment
       uses: actions/deploy-pages@v4
-      
+
     - name: Commit and push data files
-      if: steps.fetch_papers.outputs.papers_found == 'true'
+      if: ${{ steps.guard.outputs.run_job == 'true' && steps.fetch_papers.outputs.papers_found == 'true' }}
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
