@@ -18,18 +18,16 @@ permissions:
   id-token: write
 
 concurrency:
-  group: "pages"
+  group: pages
   cancel-in-progress: false
 
 jobs:
   fetch-and-generate:
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+    environment: github-pages
 
     steps:
-      - name: Guard: only proceed at 23:50 America/Chicago or on manual run
+      - name: "Guard: only proceed at 23:50 America/Chicago or on manual run"
         id: guard
         shell: bash
         run: |
@@ -49,7 +47,6 @@ jobs:
         if: ${{ steps.guard.outputs.run_job == 'true' }}
         uses: actions/checkout@v4
         with:
-          ref: ${{ github.ref }}
           fetch-depth: 0
 
       - name: Set up Python
@@ -107,7 +104,7 @@ jobs:
         if: ${{ steps.guard.outputs.run_job == 'true' }}
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './site'
+          path: ./site
 
       - name: Deploy to GitHub Pages
         if: ${{ steps.guard.outputs.run_job == 'true' }}
@@ -120,8 +117,7 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add data/ || true
-          git add site/ || true
+          git add data/ site/ || true
           if git diff --staged --quiet; then
             echo "No changes to commit"
           else
