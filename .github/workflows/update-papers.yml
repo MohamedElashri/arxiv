@@ -24,19 +24,23 @@ concurrency:
 jobs:
   fetch-and-generate:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
       - name: Guard: only proceed at 23:50 America/Chicago or on manual run
         id: guard
+        shell: bash
         run: |
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
-            echo "run_job=true" >> $GITHUB_OUTPUT
+            echo "run_job=true" >> "$GITHUB_OUTPUT"
           else
             hhmm=$(TZ=America/Chicago date +%H%M)
             if [ "$hhmm" = "2350" ]; then
-              echo "run_job=true" >> $GITHUB_OUTPUT
+              echo "run_job=true" >> "$GITHUB_OUTPUT"
             else
-              echo "run_job=false" >> $GITHUB_OUTPUT
+              echo "run_job=false" >> "$GITHUB_OUTPUT"
               echo "Not the intended local time; skipping."
             fi
           fi
@@ -44,15 +48,19 @@ jobs:
       - name: Checkout repository
         if: ${{ steps.guard.outputs.run_job == 'true' }}
         uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref }}
+          fetch-depth: 0
 
       - name: Set up Python
         if: ${{ steps.guard.outputs.run_job == 'true' }}
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
           python-version: '3.11'
 
       - name: Install dependencies
         if: ${{ steps.guard.outputs.run_job == 'true' }}
+        shell: bash
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
@@ -64,35 +72,36 @@ jobs:
       - name: Fetch ArXiv papers (default to America/Chicago local date)
         if: ${{ steps.guard.outputs.run_job == 'true' }}
         id: fetch_papers
+        shell: bash
+        env:
+          PYTHONPATH: ${{ github.workspace }}
         run: |
           if [ -n "${{ github.event.inputs.date }}" ]; then
             TARGET_DATE="${{ github.event.inputs.date }}"
           else
             TARGET_DATE=$(TZ=America/Chicago date '+%Y-%m-%d')
           fi
-          echo "target_date=$TARGET_DATE" >> $GITHUB_OUTPUT
+          echo "target_date=$TARGET_DATE" >> "$GITHUB_OUTPUT"
 
           python scripts/arxiv_fetcher.py "$TARGET_DATE"
 
           if [ -f "data/${TARGET_DATE}.json" ]; then
-            echo "papers_found=true" >> $GITHUB_OUTPUT
+            echo "papers_found=true" >> "$GITHUB_OUTPUT"
             echo "Papers found and JSON file created for ${TARGET_DATE}"
           else
-            echo "papers_found=false" >> $GITHUB_OUTPUT
+            echo "papers_found=false" >> "$GITHUB_OUTPUT"
             echo "No papers found for ${TARGET_DATE}, skipping commit"
           fi
-        env:
-          PYTHONPATH: ${{ github.workspace }}
 
       - name: Generate static site
         if: ${{ steps.guard.outputs.run_job == 'true' }}
-        run: python scripts/generate_site.py
         env:
           PYTHONPATH: ${{ github.workspace }}
+        run: python scripts/generate_site.py
 
       - name: Setup Pages
         if: ${{ steps.guard.outputs.run_job == 'true' }}
-        uses: actions/configure-pages@v4
+        uses: actions/configure-pages@v5
 
       - name: Upload artifact
         if: ${{ steps.guard.outputs.run_job == 'true' }}
@@ -107,11 +116,12 @@ jobs:
 
       - name: Commit and push data files
         if: ${{ steps.guard.outputs.run_job == 'true' && steps.fetch_papers.outputs.papers_found == 'true' }}
+        shell: bash
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add data/
-          git add site/
+          git add data/ || true
+          git add site/ || true
           if git diff --staged --quiet; then
             echo "No changes to commit"
           else
