@@ -26,95 +26,95 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Guard: only proceed at 23:50 America/Chicago or on manual run
-      id: guard
-      run: |
-        if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
-          echo "run_job=true" >> $GITHUB_OUTPUT
-        else
-          hhmm=$(TZ=America/Chicago date +%H%M)
-          if [ "$hhmm" = "2350" ]; then
+      - name: Guard: only proceed at 23:50 America/Chicago or on manual run
+        id: guard
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
             echo "run_job=true" >> $GITHUB_OUTPUT
           else
-            echo "run_job=false" >> $GITHUB_OUTPUT
-            echo "Not the intended local time; skipping."
+            hhmm=$(TZ=America/Chicago date +%H%M)
+            if [ "$hhmm" = "2350" ]; then
+              echo "run_job=true" >> $GITHUB_OUTPUT
+            else
+              echo "run_job=false" >> $GITHUB_OUTPUT
+              echo "Not the intended local time; skipping."
+            fi
           fi
-        fi
 
-    - name: Checkout repository
-      if: ${{ steps.guard.outputs.run_job == 'true' }}
-      uses: actions/checkout@v4
+      - name: Checkout repository
+        if: ${{ steps.guard.outputs.run_job == 'true' }}
+        uses: actions/checkout@v4
 
-    - name: Set up Python
-      if: ${{ steps.guard.outputs.run_job == 'true' }}
-      uses: actions/setup-python@v4
-      with:
-        python-version: '3.11'
+      - name: Set up Python
+        if: ${{ steps.guard.outputs.run_job == 'true' }}
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
 
-    - name: Install dependencies
-      if: ${{ steps.guard.outputs.run_job == 'true' }}
-      run: |
-        python -m pip install --upgrade pip
-        pip install -r requirements.txt
+      - name: Install dependencies
+        if: ${{ steps.guard.outputs.run_job == 'true' }}
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
 
-    - name: Create data directory
-      if: ${{ steps.guard.outputs.run_job == 'true' }}
-      run: mkdir -p data
+      - name: Create data directory
+        if: ${{ steps.guard.outputs.run_job == 'true' }}
+        run: mkdir -p data
 
-    - name: Fetch ArXiv papers (default to America/Chicago local date)
-      if: ${{ steps.guard.outputs.run_job == 'true' }}
-      id: fetch_papers
-      run: |
-        if [ -n "${{ github.event.inputs.date }}" ]; then
-          TARGET_DATE="${{ github.event.inputs.date }}"
-        else
-          TARGET_DATE=$(TZ=America/Chicago date '+%Y-%m-%d')
-        fi
-        echo "target_date=$TARGET_DATE" >> $GITHUB_OUTPUT
+      - name: Fetch ArXiv papers (default to America/Chicago local date)
+        if: ${{ steps.guard.outputs.run_job == 'true' }}
+        id: fetch_papers
+        run: |
+          if [ -n "${{ github.event.inputs.date }}" ]; then
+            TARGET_DATE="${{ github.event.inputs.date }}"
+          else
+            TARGET_DATE=$(TZ=America/Chicago date '+%Y-%m-%d')
+          fi
+          echo "target_date=$TARGET_DATE" >> $GITHUB_OUTPUT
 
-        python scripts/arxiv_fetcher.py "$TARGET_DATE"
+          python scripts/arxiv_fetcher.py "$TARGET_DATE"
 
-        if [ -f "data/${TARGET_DATE}.json" ]; then
-          echo "papers_found=true" >> $GITHUB_OUTPUT
-          echo "Papers found and JSON file created for ${TARGET_DATE}"
-        else
-          echo "papers_found=false" >> $GITHUB_OUTPUT
-          echo "No papers found for ${TARGET_DATE}, skipping commit"
-        fi
-      env:
-        PYTHONPATH: ${{ github.workspace }}
+          if [ -f "data/${TARGET_DATE}.json" ]; then
+            echo "papers_found=true" >> $GITHUB_OUTPUT
+            echo "Papers found and JSON file created for ${TARGET_DATE}"
+          else
+            echo "papers_found=false" >> $GITHUB_OUTPUT
+            echo "No papers found for ${TARGET_DATE}, skipping commit"
+          fi
+        env:
+          PYTHONPATH: ${{ github.workspace }}
 
-    - name: Generate static site
-      if: ${{ steps.guard.outputs.run_job == 'true' }}
-      run: python scripts/generate_site.py
-      env:
-        PYTHONPATH: ${{ github.workspace }}
+      - name: Generate static site
+        if: ${{ steps.guard.outputs.run_job == 'true' }}
+        run: python scripts/generate_site.py
+        env:
+          PYTHONPATH: ${{ github.workspace }}
 
-    - name: Setup Pages
-      if: ${{ steps.guard.outputs.run_job == 'true' }}
-      uses: actions/configure-pages@v4
+      - name: Setup Pages
+        if: ${{ steps.guard.outputs.run_job == 'true' }}
+        uses: actions/configure-pages@v4
 
-    - name: Upload artifact
-      if: ${{ steps.guard.outputs.run_job == 'true' }}
-      uses: actions/upload-pages-artifact@v3
-      with:
-        path: './site'
+      - name: Upload artifact
+        if: ${{ steps.guard.outputs.run_job == 'true' }}
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: './site'
 
-    - name: Deploy to GitHub Pages
-      if: ${{ steps.guard.outputs.run_job == 'true' }}
-      id: deployment
-      uses: actions/deploy-pages@v4
+      - name: Deploy to GitHub Pages
+        if: ${{ steps.guard.outputs.run_job == 'true' }}
+        id: deployment
+        uses: actions/deploy-pages@v4
 
-    - name: Commit and push data files
-      if: ${{ steps.guard.outputs.run_job == 'true' && steps.fetch_papers.outputs.papers_found == 'true' }}
-      run: |
-        git config --local user.email "action@github.com"
-        git config --local user.name "GitHub Action"
-        git add data/
-        git add site/
-        if git diff --staged --quiet; then
-          echo "No changes to commit"
-        else
-          git commit -m "Update ArXiv papers data - $(date -u '+%Y-%m-%d %H:%M UTC')"
-          git push
-        fi
+      - name: Commit and push data files
+        if: ${{ steps.guard.outputs.run_job == 'true' && steps.fetch_papers.outputs.papers_found == 'true' }}
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add data/
+          git add site/
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Update ArXiv papers data - $(date -u '+%Y-%m-%d %H:%M UTC')"
+            git push
+          fi
