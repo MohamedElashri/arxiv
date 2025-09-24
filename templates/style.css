@@ -236,11 +236,13 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Theme toggle container positioned in top right */
 .theme-toggle-container {
-    position: absolute;
-    top: 16px;
-    right: 20px;
-    z-index: 100;
-}
+    position: relative;
+    top: -14px;  /* Moved up from 12px */
+    right: 32px;
+    z-index: 50;
+    /* decreased size for better fit */
+    width: 32px;
+    height: 16px;}
 
 /* Enhanced theme switcher */
 .theme-switch {
@@ -626,13 +628,13 @@ footer {
     margin: var(--spacing-xl) auto 0 auto;
     color: var(--footer-color);
     font-size: var(--font-size-xs); /* Reduced from var(--font-size-s) to var(--font-size-xs) */
-    padding: 0 16px;
+    padding: 0 16px 50px 16px; /* Added bottom padding to account for fixed GitHub link */
     position: relative;
     max-width: 1200px;
     width: 90%;
 }
 
-.Footer-content {
+.footer-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -652,6 +654,10 @@ footer {
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     text-decoration: none;
     color: var(--footer-color);
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    z-index: 1000;
 }
 
 .github-link:hover {
