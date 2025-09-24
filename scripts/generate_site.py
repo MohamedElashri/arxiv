@@ -118,6 +118,10 @@ class SiteGenerator:
         submitted_date = datetime.fromisoformat(paper["submitted_date"])
         date_str = submitted_date.strftime("%Y-%m-%d")
         
+        # Generate the DOI from the arXiv ID - standard format for arXiv DOIs
+        arxiv_id = paper['id'].split('v')[0]  # Remove version number if present
+        zotero_doi_url = f"https://www.zotero.org/save?type=doi&q=https://doi.org/10.48550/arXiv.{arxiv_id}"
+        
         html = f'''
         <div class="paper">
             <div class="paper-header" onclick="togglePaper(this)">
@@ -133,13 +137,18 @@ class SiteGenerator:
                         <p class="authors">{authors}</p>
                         <div class="paper-links">
                             <a href="{paper['arxiv_url']}" target="_blank" class="arxiv-link" title="View on ArXiv">
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
                                     <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H6.9C4.01 7 1.9 9.11 1.9 12s2.11 5 5 5h4v-1.9H6.9c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9.1-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.89 0 5-2.11 5-5s-2.11-5-5-5z"/>
                                 </svg>
                             </a>
                             <a href="{paper['pdf_url']}" target="_blank" class="pdf-link" title="Download PDF">
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
                                     <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z M9,13V19H7V13H9M15,13V19H13V13H15M11,13V19H9V13H11"/>
+                                </svg>
+                            </a>
+                            <a href="{zotero_doi_url}" target="_blank" class="zotero-link" title="Add to Zotero">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 16 16" fill="currentColor">
+                                    <polygon points="13.863 2.73 13.027 1 2.137 1 2.137 3.8 2.137 3.921 8.822 3.921 1.289 13.233 2.137 15 13.863 15 13.863 12.142 13.863 12.021 6.448 12.021 13.863 2.73"/>
                                 </svg>
                             </a>
                         </div>

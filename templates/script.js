@@ -136,6 +136,34 @@ class Utils {
             timeout = setTimeout(later, wait);
         };
     }
+    
+    // Detect browser and operating system for Zotero integration
+    static detectBrowserAndOS() {
+        const userAgent = navigator.userAgent;
+        const platform = navigator.platform;
+        
+        let browser = 'other';
+        let os = 'other';
+        
+        // Detect OS
+        if (platform.indexOf('Win') !== -1) os = 'windows';
+        else if (platform.indexOf('Mac') !== -1) os = 'mac';
+        else if (platform.indexOf('Linux') !== -1) os = 'linux';
+        else if (/Android/i.test(userAgent)) os = 'android';
+        else if (/iPad|iPhone|iPod/.test(userAgent)) os = 'ios';
+        
+        // Detect browser
+        if (userAgent.indexOf('Firefox') !== -1) browser = 'firefox';
+        else if (userAgent.indexOf('Chrome') !== -1) browser = 'chrome';
+        else if (userAgent.indexOf('Safari') !== -1) browser = 'safari';
+        else if (userAgent.indexOf('Edge') !== -1) browser = 'edge';
+        
+        return { browser, os };
+    }
+    
+    // Show information about Zotero integration or trigger Zotero if available
+    // Utility function - currently unused for Zotero integration
+    // Zotero integration now uses direct DOI links
 }
 
 // Search functionality (for future enhancement)
@@ -373,6 +401,9 @@ document.addEventListener('DOMContentLoaded', () => {
         window.accessibilityManager.updateAriaExpanded(paperHeader, !wasExpanded);
     };
 
+    // Make Utils available globally
+    window.Utils = Utils;
+    
     console.log('ArXiv Daily Papers site with Nord theme initialized successfully!');
 });
 
