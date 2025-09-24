@@ -1,20 +1,22 @@
 :root {
-    /* One Dark Pro Theme Colors */
-    --odp-bg: #282c34;        /* Editor background */
-    --odp-surface: #2c323c;   /* Panel background */
-    --odp-surface-hover: #313640;
-    --odp-text-primary: #abb2bf;  /* Editor foreground */
-    --odp-text-secondary: #828997; /* Comments */
-    --odp-accent-fg: #61afef;     /* Blue (selection, brackets, tags) */
-    --odp-accent-emphasis: #526fff; /* Strong blue */
-    --odp-border-default: #3e4451; /* Editor border */
-    --odp-border-muted: #3b4048;   /* Muted borders */
-    --odp-neutral-muted: #5c637066; /* Subtle elements */
-    --odp-success-fg: #98c379;    /* Green (strings, success) */
-    --odp-attention-fg: #e5c07b;  /* Yellow (keywords, variables) */
-    --odp-danger-fg: #e06c75;     /* Red (errors, punctuation) */
-    --odp-purple: #c678dd;        /* Purple (keywords) */
-    --odp-orange: #d19a66;        /* Orange (numbers) */
+    /* Gruvbox Dark Theme Colors */
+    --gruvbox-bg0: #282828;      /* Main background */
+    --gruvbox-bg1: #3c3836;      /* Status line, line number background */
+    --gruvbox-bg2: #504945;      /* Selected background */
+    --gruvbox-bg3: #665c54;      /* Disabled background */
+    --gruvbox-bg4: #7c6f64;      /* Disabled background */
+    --gruvbox-fg0: #fbf1c7;      /* Main foreground */
+    --gruvbox-fg1: #ebdbb2;      /* Foreground */
+    --gruvbox-fg2: #d5c4a1;      /* Comments */
+    --gruvbox-fg3: #bdae93;      /* Disabled foreground */
+    --gruvbox-fg4: #a89984;      /* Disabled foreground */
+    --gruvbox-red: #fb4934;      /* Red for errors/danger */
+    --gruvbox-green: #b8bb26;    /* Green for success/strings */
+    --gruvbox-yellow: #fabd2f;   /* Yellow for warnings/keywords */
+    --gruvbox-blue: #83a598;     /* Blue for selection/links */
+    --gruvbox-purple: #d3869b;   /* Purple for special */
+    --gruvbox-aqua: #8ec07c;     /* Aqua for operators */
+    --gruvbox-orange: #fe8019;   /* Orange for numbers */
 
     /* Typography improvements */
     --font-family-default: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
@@ -49,57 +51,57 @@
     --spacing-xl: 2rem;
     --spacing-xxl: 3rem;
     
-    /* Components - Dark theme (One Dark Pro) */
-    --body-color: var(--odp-text-primary);
-    --body-bg: var(--odp-bg);
+    /* Components - Dark theme (Gruvbox) */
+    --body-color: var(--gruvbox-fg1);
+    --body-bg: var(--gruvbox-bg0);
     
-    --header-title: var(--odp-text-primary);
-    --header-container: var(--odp-bg);
-    --header-title-preffix: var(--odp-accent-fg);
+    --header-title: var(--gruvbox-fg1);
+    --header-container: var(--gruvbox-bg0);
+    --header-title-preffix: var(--gruvbox-blue);
     
-    --chip-font: var(--odp-bg);
-    --chip-color: var(--odp-accent-emphasis);
+    --chip-font: var(--gruvbox-bg0);
+    --chip-color: var(--gruvbox-blue);
     
-    --icons: var(--odp-text-primary);
-    --icons-hover: var(--odp-accent-fg);
+    --icons: var(--gruvbox-fg1);
+    --icons-hover: var(--gruvbox-yellow);
     
-    --day-container: var(--odp-surface);
-    --date: var(--odp-accent-fg);
+    --day-container: var(--gruvbox-bg1);
+    --date: var(--gruvbox-yellow);
     
-    --summary: var(--odp-success-fg);
-    --summary-hover: var(--odp-accent-fg);
+    --summary: var(--gruvbox-green);
+    --summary-hover: var(--gruvbox-yellow);
     
-    --details-open: var(--odp-surface);
-    --details-content: var(--odp-text-primary);
-    --details-a: var(--odp-accent-fg);
-    --details-a-hover: var(--odp-accent-emphasis);
+    --details-open: var(--gruvbox-bg1);
+    --details-content: var(--gruvbox-fg1);
+    --details-a: var(--gruvbox-blue);
+    --details-a-hover: var(--gruvbox-yellow);
     
-    --highlight-bg: var(--odp-attention-fg);
-    --highlight-text: var(--odp-bg);
+    --highlight-bg: var(--gruvbox-orange);
+    --highlight-text: var(--gruvbox-bg0);
     
-    --article-summary-hover-color: var(--odp-accent-fg);
-    --article-summary-color: var(--odp-text-secondary);
+    --article-summary-hover-color: var(--gruvbox-yellow);
+    --article-summary-color: var(--gruvbox-fg2);
     
-    --article-title-color: var(--odp-text-primary);
-    --article-title-hover-color: var(--odp-text-primary); /* Changed to not change color on hover */
+    --article-title-color: var(--gruvbox-fg1);
+    --article-title-hover-color: var(--gruvbox-fg1); /* No color change on hover */
     
-    --accordion-content-rail-color: var(--odp-border-default);
-    --accordion-content-hover-rail-color: var(--odp-accent-fg);
-    --accordion-title-marker-color: var(--odp-border-default);
-    --accordion-title-hover-marker-color: var(--odp-accent-fg);
+    --accordion-content-rail-color: var(--gruvbox-bg2);
+    --accordion-content-hover-rail-color: var(--gruvbox-yellow);
+    --accordion-title-marker-color: var(--gruvbox-bg2);
+    --accordion-title-hover-marker-color: var(--gruvbox-yellow);
     
-    --footer-color: var(--odp-text-secondary);
-    --footer-link-hover-color: var(--odp-accent-fg);
+    --footer-color: var(--gruvbox-fg2);
+    --footer-link-hover-color: var(--gruvbox-yellow);
     
     /* Category-specific colors to differentiate from paper items */
-    --category-header-bg: var(--odp-surface);
-    --category-header-hover-bg: var(--odp-surface-hover);
-    --category-header-color: var(--odp-accent-fg);
-    --category-header-hover-color: var(--odp-accent-emphasis);
-    --category-title-color: var(--odp-accent-fg);
-    --category-title-hover-color: var(--odp-text-primary);
-    --category-toggle-color: var(--odp-accent-fg);
-    --category-toggle-hover-color: var(--odp-accent-emphasis);
+    --category-header-bg: var(--gruvbox-bg1);
+    --category-header-hover-bg: var(--gruvbox-bg2);
+    --category-header-color: var(--gruvbox-yellow);
+    --category-header-hover-color: var(--gruvbox-blue);
+    --category-title-color: var(--gruvbox-yellow);
+    --category-title-hover-color: var(--gruvbox-fg1);
+    --category-toggle-color: var(--gruvbox-yellow);
+    --category-toggle-hover-color: var(--gruvbox-blue);
     
     /* Card and container radius */
     --border-radius-sm: 6px;
