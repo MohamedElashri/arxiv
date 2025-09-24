@@ -1,33 +1,32 @@
 :root {
-    /* Palette: Nord (https://www.nordtheme.com) with improvements for readability*/
-    --nord00: #2e3440;
-    --nord01: #3b4252;
-    --nord02: #434c5e;
-    --nord03: #4c566a;
-    --nord04: #d8dee9;
-    --nord05: #e5e9f0;
-    --nord06: #eceff4;
-    --nord07: #8fbcbb;
-    --nord08: #88c0d0;
-    --nord09: #81a1c1;
-    --nord0A: #5e81ac;
-    --nord0B: #bf616a;
-    --nord0C: #d08770;
-    --nord0D: #ebcb8b;
-    --nord0E: #a3be8c;
-    --nord0F: #b48ead;
+    /* One Dark Pro Theme Colors */
+    --odp-bg: #282c34;        /* Editor background */
+    --odp-surface: #2c323c;   /* Panel background */
+    --odp-surface-hover: #313640;
+    --odp-text-primary: #abb2bf;  /* Editor foreground */
+    --odp-text-secondary: #828997; /* Comments */
+    --odp-accent-fg: #61afef;     /* Blue (selection, brackets, tags) */
+    --odp-accent-emphasis: #526fff; /* Strong blue */
+    --odp-border-default: #3e4451; /* Editor border */
+    --odp-border-muted: #3b4048;   /* Muted borders */
+    --odp-neutral-muted: #5c637066; /* Subtle elements */
+    --odp-success-fg: #98c379;    /* Green (strings, success) */
+    --odp-attention-fg: #e5c07b;  /* Yellow (keywords, variables) */
+    --odp-danger-fg: #e06c75;     /* Red (errors, punctuation) */
+    --odp-purple: #c678dd;        /* Purple (keywords) */
+    --odp-orange: #d19a66;        /* Orange (numbers) */
 
     /* Typography improvements */
     --font-family-default: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
     --font-family-serif: "Georgia", "Times New Roman", Times, serif;
     --font-family-heading: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     --font-size-scaler: 62.5%; /* Base font size: 10px */
-    --font-size-xs: 1.1rem; /* Decreased from 1.2rem */
-    --font-size-s: 1.3rem; /* Decreased from 1.4rem */
-    --font-size-m: 1.5rem; /* Decreased from 1.6rem */
-    --font-size-l: 1.7rem; /* Decreased from 1.8rem */
-    --font-size-xl: 1.9rem; /* Decreased from 2.0rem */
-    --font-size-xxl: 2.3rem; /* Decreased from 2.4rem */
+    --font-size-xs: 1.1rem;
+    --font-size-s: 1.3rem;
+    --font-size-m: 1.5rem;
+    --font-size-l: 1.7rem;
+    --font-size-xl: 1.9rem;
+    --font-size-xxl: 2.3rem;
     --font-weight-light: 300;
     --font-weight-regular: 400;
     --font-weight-medium: 500;
@@ -50,57 +49,57 @@
     --spacing-xl: 2rem;
     --spacing-xxl: 3rem;
     
-    /* Components - Dark theme (default) */
-    --body-color: var(--nord06);
-    --body-bg: var(--nord00);
+    /* Components - Dark theme (One Dark Pro) */
+    --body-color: var(--odp-text-primary);
+    --body-bg: var(--odp-bg);
     
-    --header-title: var(--nord06);
-    --header-container: var(--nord00);
-    --header-title-preffix: var(--nord0F);
+    --header-title: var(--odp-text-primary);
+    --header-container: var(--odp-bg);
+    --header-title-preffix: var(--odp-accent-fg);
     
-    --chip-font: var(--nord08);
-    --chip-color: var(--nord0B);
+    --chip-font: var(--odp-bg);
+    --chip-color: var(--odp-accent-emphasis);
     
-    --icons: var(--nord06);
-    --icons-hover: var(--nord0F);
+    --icons: var(--odp-text-primary);
+    --icons-hover: var(--odp-accent-fg);
     
-    --day-container: var(--nord01);
-    --date: var(--nord09);
+    --day-container: var(--odp-surface);
+    --date: var(--odp-accent-fg);
     
-    --summary: var(--nord0E);
-    --summary-hover: var(--nord0F);
+    --summary: var(--odp-success-fg);
+    --summary-hover: var(--odp-accent-fg);
     
-    --details-open: var(--nord02);
-    --details-content: var(--nord05);
-    --details-a: var(--nord07);
-    --details-a-hover: var(--nord0F);
+    --details-open: var(--odp-surface);
+    --details-content: var(--odp-text-primary);
+    --details-a: var(--odp-accent-fg);
+    --details-a-hover: var(--odp-accent-emphasis);
     
-    --highlight-bg: var(--nord0B);
-    --highlight-text: var(--nord06);
+    --highlight-bg: var(--odp-attention-fg);
+    --highlight-text: var(--odp-bg);
     
-    --article-summary-hover-color: var(--nord0D);
-    --article-summary-color: var(--nord04);
+    --article-summary-hover-color: var(--odp-accent-fg);
+    --article-summary-color: var(--odp-text-secondary);
     
-    --article-title-color: var(--nord0E);
-    --article-title-hover-color: var(--nord07);
+    --article-title-color: var(--odp-text-primary);
+    --article-title-hover-color: var(--odp-text-primary); /* Changed to not change color on hover */
     
-    --accordion-content-rail-color: var(--nord01);
-    --accordion-content-hover-rail-color: var(--nord0D);
-    --accordion-title-marker-color: var(--nord01);
-    --accordion-title-hover-marker-color: var(--nord0E);
+    --accordion-content-rail-color: var(--odp-border-default);
+    --accordion-content-hover-rail-color: var(--odp-accent-fg);
+    --accordion-title-marker-color: var(--odp-border-default);
+    --accordion-title-hover-marker-color: var(--odp-accent-fg);
     
-    --footer-color: var(--nord04);
-    --footer-link-hover-color: var(--nord0D);
+    --footer-color: var(--odp-text-secondary);
+    --footer-link-hover-color: var(--odp-accent-fg);
     
     /* Category-specific colors to differentiate from paper items */
-    --category-header-bg: var(--nord02);
-    --category-header-hover-bg: var(--nord03);
-    --category-header-color: var(--nord07);
-    --category-header-hover-color: var(--nord08);
-    --category-title-color: var(--nord08);
-    --category-title-hover-color: var(--nord06);
-    --category-toggle-color: var(--nord08);
-    --category-toggle-hover-color: var(--nord06);
+    --category-header-bg: var(--odp-surface);
+    --category-header-hover-bg: var(--odp-surface-hover);
+    --category-header-color: var(--odp-accent-fg);
+    --category-header-hover-color: var(--odp-accent-emphasis);
+    --category-title-color: var(--odp-accent-fg);
+    --category-title-hover-color: var(--odp-text-primary);
+    --category-toggle-color: var(--odp-accent-fg);
+    --category-toggle-hover-color: var(--odp-accent-emphasis);
     
     /* Card and container radius */
     --border-radius-sm: 6px;
@@ -110,57 +109,57 @@
 }
 
 [data-theme="light"] {
-    /* Light theme colors with improved readability */
-    --body-color: #2c3e50;
-    --body-bg: #ffffff;
+    /* GitHub Light Theme Colors */
+    --body-color: #444d56;  /* Text color */
+    --body-bg: #ffffff;    /* Background */
     
-    --header-title: #2c3e50;
-    --header-container: #f8f9fa;
-    --header-title-preffix: var(--nord0F);
+    --header-title: #24292f;  /* GitHub dark header */
+    --header-container: #ffffff;
+    --header-title-preffix: #0969da;  /* GitHub blue */
     
     --chip-font: #ffffff;
-    --chip-color: #3498db;
+    --chip-color: #0969da;  /* GitHub blue */
     
-    --icons: #2c3e50;
-    --icons-hover: #3498db;
+    --icons: #444d56;
+    --icons-hover: #0969da;  /* GitHub blue */
     
-    --day-container: #f8f9fa;
-    --date: #3498db;
+    --day-container: #f6f8fa;  /* GitHub surface */
+    --date: #0969da;  /* GitHub blue */
     
-    --summary: #2980b9;
-    --summary-hover: #3498db;
+    --summary: #24292f;  /* GitHub darker text */
+    --summary-hover: #0969da;  /* GitHub blue */
     
     --details-open: #ffffff;
-    --details-content: #2c3e50;
-    --details-a: #3498db;
-    --details-a-hover: #2980b9;
+    --details-content: #24292f;
+    --details-a: #0969da;  /* GitHub blue */
+    --details-a-hover: #055d20;  /* GitHub darker green */
     
-    --highlight-bg: #e74c3c;
+    --highlight-bg: #d29922;  /* GitHub yellow */
     --highlight-text: #ffffff;
     
-    --article-summary-color: #2c3e50;
-    --article-summary-hover-color: #3498db;
+    --article-summary-color: #57606a;
+    --article-summary-hover-color: #0969da;  /* GitHub blue */
     
-    --article-title-color: #2c3e50;
-    --article-title-hover-color: #3498db;
+    --article-title-color: #24292f;  /* GitHub dark text */
+    --article-title-hover-color: #24292f;  /* Changed to not change color on hover */
     
-    --accordion-content-rail-color: #dee2e6;
-    --accordion-content-hover-rail-color: #3498db;
-    --accordion-title-marker-color: #2980b9;
-    --accordion-title-hover-marker-color: #3498db;
+    --accordion-content-rail-color: #d0d7de;
+    --accordion-content-hover-rail-color: #0969da;  /* GitHub blue */
+    --accordion-title-marker-color: #24292f;  /* GitHub dark text */
+    --accordion-title-hover-marker-color: #0969da;  /* GitHub blue */
     
-    --footer-color: #2c3e50;
-    --footer-link-hover-color: #3498db;
+    --footer-color: #57606a;
+    --footer-link-hover-color: #0969da;  /* GitHub blue */
     
     /* Category-specific colors for light theme */
-    --category-header-bg: #e9ecef;
-    --category-header-hover-bg: #dee2e6;
-    --category-header-color: #2980b9;
-    --category-header-hover-color: #1d5a87;
-    --category-title-color: #2980b9;
-    --category-title-hover-color: #2c3e50;
-    --category-toggle-color: #2980b9;
-    --category-toggle-hover-color: #2c3e50;
+    --category-header-bg: #f6f8fa;
+    --category-header-hover-bg: #eaecef;
+    --category-header-color: #0969da;  /* GitHub blue */
+    --category-header-hover-color: #055d20;  /* GitHub darker green */
+    --category-title-color: #0969da;  /* GitHub blue */
+    --category-title-hover-color: #24292f;
+    --category-toggle-color: #0969da;  /* GitHub blue */
+    --category-toggle-hover-color: #24292f;
 }
 
 /* Base styles with improved typography */
@@ -399,10 +398,7 @@ p {
     transition: background-color 0.3s ease, transform 0.1s ease;
 }
 
-.paper-header:hover {
-    background-color: var(--summary-hover);
-    transform: translateX(4px);
-}
+
 
 .paper-title-section {
     flex: 1;
@@ -414,12 +410,9 @@ p {
     margin-bottom: 0.5rem;
     line-height: var(--line-height-snug);
     color: var(--article-title-color);
-    transition: color 0.3s ease;
 }
 
-.paper-title:hover {
-    color: var(--article-title-hover-color);
-}
+
 
 .paper-authors {
     color: var(--article-summary-color);
