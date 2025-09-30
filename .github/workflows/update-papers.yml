@@ -2,9 +2,9 @@ name: Update ArXiv Papers
 
 on:
   schedule:
-    # Single daily run near end-of-day Chicago time:
-    # 06:10 UTC = 00:10 CST (UTC-6) / 01:10 CDT (UTC-5)
-    - cron: '10 6 * * *'
+    # Run at 23:55 America/Chicago daily (DST-safe via two UTC crons)
+    - cron: '55 4 * * *'  # 23:55 CDT (UTC-5)
+    - cron: '55 5 * * *'  # 23:55 CST (UTC-6)
   workflow_dispatch:
     inputs:
       date:
