@@ -323,12 +323,13 @@ class AccessibilityManager {
 // Initialize everything when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
     // Initialize all managers
-    window.themeManager = new ThemeManager();
+    window.themeManager = new EnhancedThemeManager();
     window.collapsibleManager = new CollapsibleManager();
     window.searchManager = new SearchManager();
     window.keyboardManager = new KeyboardManager();
     window.performanceMonitor = new PerformanceMonitor();
     window.accessibilityManager = new AccessibilityManager();
+    window.mobileManager = new MobileManager();
 
     // Enhanced theme switching with checkbox support
     const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
@@ -400,6 +401,139 @@ document.addEventListener('DOMContentLoaded', () => {
         // Update ARIA attribute
         window.accessibilityManager.updateAriaExpanded(paperHeader, !wasExpanded);
     };
+
+// Mobile-specific optimizations
+class MobileManager {
+    constructor() {
+        this.isMobile = window.innerWidth <= 768;
+        this.isTablet = window.innerWidth > 768 && window.innerWidth <= 1024;
+        this.init();
+    }
+
+    init() {
+        this.handleViewportChanges();
+        this.improveTouchTargets();
+        this.addMobileScrollBehavior();
+        
+        // Listen for orientation changes
+        window.addEventListener('orientationchange', () => {
+            setTimeout(() => this.handleViewportChanges(), 100);
+        });
+        
+        // Listen for resize events
+        window.addEventListener('resize', () => {
+            this.handleViewportChanges();
+        });
+    }
+
+    handleViewportChanges() {
+        const newIsMobile = window.innerWidth <= 768;
+        const newIsTablet = window.innerWidth > 768 && window.innerWidth <= 1024;
+        
+        if (newIsMobile !== this.isMobile || newIsTablet !== this.isTablet) {
+            this.isMobile = newIsMobile;
+            this.isTablet = newIsTablet;
+            this.updateLayoutForViewport();
+        }
+    }
+
+    updateLayoutForViewport() {
+        // Adjust font sizes for better readability on different devices
+        if (this.isMobile) {
+            document.body.classList.add('mobile-layout');
+            document.body.classList.remove('tablet-layout');
+        } else if (this.isTablet) {
+            document.body.classList.add('tablet-layout');
+            document.body.classList.remove('mobile-layout');
+        } else {
+            document.body.classList.remove('mobile-layout', 'tablet-layout');
+        }
+    }
+
+    improveTouchTargets() {
+        // Ensure all clickable elements have adequate touch targets
+        const clickableElements = document.querySelectorAll('.category-header, .paper-header, .paper-links a, .theme-switch');
+        
+        clickableElements.forEach(element => {
+            // Add visual feedback for touch
+            element.addEventListener('touchstart', () => {
+                element.style.opacity = '0.7';
+            }, { passive: true });
+            
+            element.addEventListener('touchend', () => {
+                setTimeout(() => {
+                    element.style.opacity = '';
+                }, 150);
+            }, { passive: true });
+        });
+    }
+
+    addMobileScrollBehavior() {
+        // Smooth scrolling for mobile devices
+        if (this.isMobile && 'scrollBehavior' in document.documentElement.style) {
+            document.documentElement.style.scrollBehavior = 'smooth';
+        }
+        
+        // Add pull-to-refresh indicator (visual only)
+        if (this.isMobile) {
+            let startY = 0;
+            let isScrolling = false;
+            
+            document.addEventListener('touchstart', (e) => {
+                startY = e.touches[0].clientY;
+                isScrolling = false;
+            }, { passive: true });
+            
+            document.addEventListener('touchmove', (e) => {
+                if (!isScrolling && window.scrollY === 0) {
+                    const currentY = e.touches[0].clientY;
+                    const deltaY = currentY - startY;
+                    
+                    if (deltaY > 50) {
+                        // User is pulling down from top
+                        isScrolling = true;
+                    }
+                }
+            }, { passive: true });
+        }
+    }
+}
+
+// Enhanced theme manager with mobile considerations
+class EnhancedThemeManager extends ThemeManager {
+    constructor() {
+        super();
+        this.addMobileThemeOptimizations();
+    }
+
+    addMobileThemeOptimizations() {
+        // Improve theme switching performance on mobile
+        const themeToggle = document.querySelector('.theme-switch');
+        if (themeToggle) {
+            // Add haptic feedback for supported devices
+            themeToggle.addEventListener('click', () => {
+                if ('vibrate' in navigator) {
+                    navigator.vibrate(50);
+                }
+            });
+        }
+    }
+
+    toggleTheme() {
+        super.toggleTheme();
+        
+        // Optimize rendering for mobile after theme change
+        if (window.innerWidth <= 768) {
+            // Force a small delay to ensure smooth transition
+            requestAnimationFrame(() => {
+                document.body.style.transform = 'translateZ(0)';
+                setTimeout(() => {
+                    document.body.style.transform = '';
+                }, 100);
+            });
+        }
+    }
+}
 
     // Make Utils available globally
     window.Utils = Utils;
