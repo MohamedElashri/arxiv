@@ -127,7 +127,8 @@
     --icons-hover: #0969da;  /* GitHub blue */
     
     --day-container: #f6f8fa;  /* GitHub surface */
-    --date: #0969da;  /* GitHub blue */
+    --date: #6e7781;  /* Softer gray-blue for date text */
+    --dark-bg-hover: #eef1f4;  /* Soft light gray for hover */
     
     --summary: #24292f;  /* GitHub darker text */
     --summary-hover: #0969da;  /* GitHub blue */
@@ -284,24 +285,61 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .date-section {
-    padding: var(--spacing-lg);
-    background: var(--day-container);
+    padding: 0;
+    background: transparent;
     width: 90%;
     max-width: 1200px;
-    margin: 0 auto var(--spacing-md) auto;
-    border-radius: var(--border-radius-lg);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    margin: 0 auto var(--spacing-xl) auto;
+    border-radius: 0;
+    box-shadow: none;
 }
 
 .date-header {
-    font-size: var(--font-size-m); /* Changed from var(--font-size-l) to var(--font-size-m) to account for decreased base sizes */
-    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-extrabold);
     margin: 0;
     color: var(--date);
-    margin-bottom: 1.5rem;
-    padding: 0.75rem 0;
-    border-bottom: 2px solid var(--accordion-content-rail-color);
+    margin-bottom: var(--spacing-lg);
+    padding: var(--spacing-lg) var(--spacing-xl);
+    background: linear-gradient(135deg, var(--day-container) 0%, var(--dark-bg-hover) 100%);
+    border-left: 6px solid var(--date);
+    border-radius: var(--border-radius-md);
     font-family: var(--font-family-heading);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.date-header:hover {
+    background: linear-gradient(135deg, var(--dark-bg-hover) 0%, var(--day-container) 100%);
+    border-left-color: var(--dark-accent-blue);
+    transform: translateX(4px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.date-header .toggle-icon {
+    font-size: 1.5rem;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    color: var(--date);
+    min-width: 1.5rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.date-header:hover .toggle-icon {
+    color: var(--dark-accent-blue);
+}
+
+.date-header .toggle-icon.expanded {
+    transform: rotate(90deg);
+}
+
+.date-content {
+    padding: var(--spacing-lg) 0;
+    display: block;
 }
 
 p {

@@ -246,14 +246,19 @@ class SiteGenerator:
                 # Format the date
                 current_date = datetime.fromisoformat(data["date"]).strftime("%Y-%m-%d")
                 
-                # Generate date header
+                # Generate date header with toggle
                 all_dates_html += f'<div class="date-section">\n'
-                all_dates_html += f'    <h2 class="date-header">{current_date}</h2>\n'
+                all_dates_html += f'    <div class="date-header" onclick="toggleDate(this)">\n'
+                all_dates_html += f'        <span class="toggle-icon">▶</span>\n'
+                all_dates_html += f'        <span>{current_date}</span>\n'
+                all_dates_html += f'    </div>\n'
+                all_dates_html += f'    <div class="date-content" style="display: none;">\n'
                 
                 # Generate categories for this date
                 for category_code, category_data in data["categories"].items():
                     all_dates_html += self.generate_category_html(category_code, category_data)
                 
+                all_dates_html += '    </div>\n'
                 all_dates_html += '</div>\n'
                 
             except (json.JSONDecodeError, KeyError, ValueError) as e:

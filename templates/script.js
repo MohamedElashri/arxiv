@@ -49,6 +49,12 @@ class CollapsibleManager {
     }
 
     collapseAll() {
+        // Collapse all dates
+        const dateContents = document.querySelectorAll('.date-content');
+        dateContents.forEach(content => {
+            content.style.display = 'none';
+        });
+
         // Collapse all categories
         const categoryContents = document.querySelectorAll('.category-content');
         categoryContents.forEach(content => {
@@ -95,6 +101,11 @@ class CollapsibleManager {
 }
 
 // Global functions for onclick handlers
+function toggleDate(dateHeader) {
+    const dateContent = dateHeader.nextElementSibling;
+    window.collapsibleManager.toggleElement(dateHeader, dateContent);
+}
+
 function toggleCategory(categoryHeader) {
     const categoryContent = categoryHeader.nextElementSibling;
     window.collapsibleManager.toggleElement(categoryHeader, categoryContent);
@@ -279,8 +290,8 @@ class AccessibilityManager {
     }
 
     enhanceKeyboardNavigation() {
-        // Make category and paper headers focusable
-        const headers = document.querySelectorAll('.category-header, .paper-header');
+        // Make date, category and paper headers focusable
+        const headers = document.querySelectorAll('.date-header, .category-header, .paper-header');
         headers.forEach(header => {
             header.setAttribute('tabindex', '0');
             header.setAttribute('role', 'button');
@@ -296,6 +307,12 @@ class AccessibilityManager {
 
     addAriaLabels() {
         // Add ARIA labels for better screen reader support
+        const dateHeaders = document.querySelectorAll('.date-header');
+        dateHeaders.forEach(header => {
+            const dateText = header.querySelector('span:last-child')?.textContent || 'Date';
+            header.setAttribute('aria-label', `Toggle ${dateText} section`);
+        });
+
         const categoryHeaders = document.querySelectorAll('.category-header');
         categoryHeaders.forEach(header => {
             const categoryName = header.querySelector('h2')?.textContent || 'Category';
@@ -309,7 +326,7 @@ class AccessibilityManager {
         });
 
         // Add aria-expanded attributes
-        const allHeaders = document.querySelectorAll('.category-header, .paper-header');
+        const allHeaders = document.querySelectorAll('.date-header, .category-header, .paper-header');
         allHeaders.forEach(header => {
             header.setAttribute('aria-expanded', 'false');
         });
