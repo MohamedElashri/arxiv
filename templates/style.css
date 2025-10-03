@@ -1,22 +1,23 @@
 :root {
-    /* Gruvbox Dark Theme Colors */
-    --gruvbox-bg0: #282828;      /* Main background */
-    --gruvbox-bg1: #3c3836;      /* Status line, line number background */
-    --gruvbox-bg2: #504945;      /* Selected background */
-    --gruvbox-bg3: #665c54;      /* Disabled background */
-    --gruvbox-bg4: #7c6f64;      /* Disabled background */
-    --gruvbox-fg0: #fbf1c7;      /* Main foreground */
-    --gruvbox-fg1: #ebdbb2;      /* Foreground */
-    --gruvbox-fg2: #d5c4a1;      /* Comments */
-    --gruvbox-fg3: #bdae93;      /* Disabled foreground */
-    --gruvbox-fg4: #a89984;      /* Disabled foreground */
-    --gruvbox-red: #fb4934;      /* Red for errors/danger */
-    --gruvbox-green: #b8bb26;    /* Green for success/strings */
-    --gruvbox-yellow: #fabd2f;   /* Yellow for warnings/keywords */
-    --gruvbox-blue: #83a598;     /* Blue for selection/links */
-    --gruvbox-purple: #d3869b;   /* Purple for special */
-    --gruvbox-aqua: #8ec07c;     /* Aqua for operators */
-    --gruvbox-orange: #fe8019;   /* Orange for numbers */
+    /* Modern Comfortable Dark Theme Colors */
+    --dark-bg-primary: #1a1d23;      /* Main background - soft dark blue-gray */
+    --dark-bg-secondary: #22262e;    /* Card backgrounds */
+    --dark-bg-tertiary: #2a2f38;     /* Elevated surfaces */
+    --dark-bg-hover: #2f3541;        /* Hover states */
+    
+    --dark-text-primary: #e4e6eb;    /* Main text - soft white */
+    --dark-text-secondary: #b8bcc8;  /* Secondary text */
+    --dark-text-tertiary: #8b92a4;   /* Muted text */
+    
+    --dark-accent-blue: #6ba4ff;     /* Primary accent - soft blue */
+    --dark-accent-blue-hover: #8bb8ff; /* Hover blue */
+    --dark-accent-purple: #a78bfa;   /* Secondary accent */
+    --dark-accent-green: #6ee7b7;    /* Success/highlight */
+    --dark-accent-orange: #fbbf24;   /* Warning/special */
+    --dark-accent-cyan: #67e8f9;     /* Info */
+    
+    --dark-border: #363b47;          /* Subtle borders */
+    --dark-border-light: #404654;    /* Lighter borders */
 
     /* Typography improvements */
     --font-family-default: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
@@ -51,57 +52,57 @@
     --spacing-xl: 2rem;
     --spacing-xxl: 3rem;
     
-    /* Components - Dark theme (Gruvbox) */
-    --body-color: var(--gruvbox-fg1);
-    --body-bg: var(--gruvbox-bg0);
+    /* Components - Modern Dark theme */
+    --body-color: var(--dark-text-primary);
+    --body-bg: var(--dark-bg-primary);
     
-    --header-title: var(--gruvbox-fg1);
-    --header-container: var(--gruvbox-bg0);
-    --header-title-preffix: var(--gruvbox-blue);
+    --header-title: var(--dark-text-primary);
+    --header-container: var(--dark-bg-secondary);
+    --header-title-preffix: var(--dark-accent-blue);
     
-    --chip-font: var(--gruvbox-bg0);
-    --chip-color: var(--gruvbox-blue);
+    --chip-font: var(--dark-bg-primary);
+    --chip-color: var(--dark-accent-blue);
     
-    --icons: var(--gruvbox-fg1);
-    --icons-hover: var(--gruvbox-yellow);
+    --icons: var(--dark-text-secondary);
+    --icons-hover: var(--dark-accent-blue);
     
-    --day-container: var(--gruvbox-bg1);
-    --date: var(--gruvbox-yellow);
+    --day-container: var(--dark-bg-secondary);
+    --date: var(--dark-accent-cyan);
     
-    --summary: var(--gruvbox-green);
-    --summary-hover: var(--gruvbox-yellow);
+    --summary: var(--dark-text-primary);
+    --summary-hover: var(--dark-accent-blue);
     
-    --details-open: var(--gruvbox-bg1);
-    --details-content: var(--gruvbox-fg1);
-    --details-a: var(--gruvbox-blue);
-    --details-a-hover: var(--gruvbox-yellow);
+    --details-open: var(--dark-bg-tertiary);
+    --details-content: var(--dark-text-primary);
+    --details-a: var(--dark-accent-blue);
+    --details-a-hover: var(--dark-accent-blue-hover);
     
-    --highlight-bg: var(--gruvbox-orange);
-    --highlight-text: var(--gruvbox-bg0);
+    --highlight-bg: var(--dark-accent-orange);
+    --highlight-text: var(--dark-bg-primary);
     
-    --article-summary-hover-color: var(--gruvbox-yellow);
-    --article-summary-color: var(--gruvbox-fg2);
+    --article-summary-hover-color: var(--dark-accent-blue);
+    --article-summary-color: var(--dark-text-secondary);
     
-    --article-title-color: var(--gruvbox-fg1);
-    --article-title-hover-color: var(--gruvbox-fg1); /* No color change on hover */
+    --article-title-color: var(--dark-text-primary);
+    --article-title-hover-color: var(--dark-text-primary);
     
-    --accordion-content-rail-color: var(--gruvbox-bg2);
-    --accordion-content-hover-rail-color: var(--gruvbox-yellow);
-    --accordion-title-marker-color: var(--gruvbox-bg2);
-    --accordion-title-hover-marker-color: var(--gruvbox-yellow);
+    --accordion-content-rail-color: var(--dark-border);
+    --accordion-content-hover-rail-color: var(--dark-accent-blue);
+    --accordion-title-marker-color: var(--dark-border);
+    --accordion-title-hover-marker-color: var(--dark-accent-blue);
     
-    --footer-color: var(--gruvbox-fg2);
-    --footer-link-hover-color: var(--gruvbox-yellow);
+    --footer-color: var(--dark-text-tertiary);
+    --footer-link-hover-color: var(--dark-accent-blue);
     
-    /* Category-specific colors to differentiate from paper items */
-    --category-header-bg: var(--gruvbox-bg1);
-    --category-header-hover-bg: var(--gruvbox-bg2);
-    --category-header-color: var(--gruvbox-yellow);
-    --category-header-hover-color: var(--gruvbox-blue);
-    --category-title-color: var(--gruvbox-yellow);
-    --category-title-hover-color: var(--gruvbox-fg1);
-    --category-toggle-color: var(--gruvbox-yellow);
-    --category-toggle-hover-color: var(--gruvbox-blue);
+    /* Category-specific colors */
+    --category-header-bg: var(--dark-bg-secondary);
+    --category-header-hover-bg: var(--dark-bg-hover);
+    --category-header-color: var(--dark-accent-cyan);
+    --category-header-hover-color: var(--dark-accent-blue);
+    --category-title-color: var(--dark-accent-cyan);
+    --category-title-hover-color: var(--dark-text-primary);
+    --category-toggle-color: var(--dark-accent-cyan);
+    --category-toggle-hover-color: var(--dark-accent-blue);
     
     /* Card and container radius */
     --border-radius-sm: 6px;
