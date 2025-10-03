@@ -320,88 +320,6 @@ class AccessibilityManager {
     }
 }
 
-// Initialize everything when DOM is loaded
-document.addEventListener('DOMContentLoaded', () => {
-    // Initialize all managers
-    window.themeManager = new EnhancedThemeManager();
-    window.collapsibleManager = new CollapsibleManager();
-    window.searchManager = new SearchManager();
-    window.keyboardManager = new KeyboardManager();
-    window.performanceMonitor = new PerformanceMonitor();
-    window.accessibilityManager = new AccessibilityManager();
-    window.mobileManager = new MobileManager();
-
-    // Enhanced theme switching with checkbox support
-    const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
-    if (toggleSwitch) {
-        function switchTheme(e) {
-            if (e.target.checked) {
-                document.documentElement.setAttribute('data-theme', 'light');
-                const themeIcon = document.getElementById("theme-icon");
-                if (themeIcon) themeIcon.className = "ri-sun-line";
-                localStorage.setItem('theme', 'light');
-            } else {
-                document.documentElement.setAttribute('data-theme', 'dark');
-                const themeIcon = document.getElementById("theme-icon");
-                if (themeIcon) themeIcon.className = "ri-moon-line";
-                localStorage.setItem('theme', 'dark');
-            }
-        }
-
-        toggleSwitch.addEventListener('change', switchTheme, false);
-        
-        // Set initial state based on current theme
-        const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : 'dark';
-        if (currentTheme) {
-            document.documentElement.setAttribute('data-theme', currentTheme);
-            if (currentTheme === 'light') {
-                toggleSwitch.checked = true;
-            }
-        }
-    }
-
-    // Build timestamp functionality (if element exists)
-    const timestamp = document.getElementById("build-timestamp");
-    if (timestamp) {
-        const timestamp_local = new Date(timestamp.getAttribute("datetime")).toLocaleString();
-        const badge = document.getElementById("build-timestamp-badge");
-        if (badge) {
-            badge.src = `https://img.shields.io/github/actions/workflow/status/NotCraft/ArxivDaily/update-feed.yml?label=${timestamp_local}&style=for-the-badge`;
-        }
-    }
-
-    // Add refresh functionality to title
-    const titleElement = document.querySelector('header h1');
-    if (titleElement) {
-        titleElement.addEventListener('click', () => {
-            window.location.reload();
-        });
-        titleElement.setAttribute('title', 'Click to refresh page');
-    }
-
-    // Override the toggle functions to include accessibility updates
-    const originalToggleCategory = window.toggleCategory;
-    window.toggleCategory = function(categoryHeader) {
-        const categoryContent = categoryHeader.nextElementSibling;
-        const wasExpanded = categoryContent.style.display !== 'none';
-        
-        originalToggleCategory(categoryHeader);
-        
-        // Update ARIA attribute
-        window.accessibilityManager.updateAriaExpanded(categoryHeader, !wasExpanded);
-    };
-
-    const originalTogglePaper = window.togglePaper;
-    window.togglePaper = function(paperHeader) {
-        const paperContent = paperHeader.nextElementSibling;
-        const wasExpanded = paperContent.style.display !== 'none';
-        
-        originalTogglePaper(paperHeader);
-        
-        // Update ARIA attribute
-        window.accessibilityManager.updateAriaExpanded(paperHeader, !wasExpanded);
-    };
-
 // Mobile-specific optimizations
 class MobileManager {
     constructor() {
@@ -534,6 +452,88 @@ class EnhancedThemeManager extends ThemeManager {
         }
     }
 }
+
+// Initialize everything when DOM is loaded
+document.addEventListener('DOMContentLoaded', () => {
+    // Initialize all managers
+    window.themeManager = new EnhancedThemeManager();
+    window.collapsibleManager = new CollapsibleManager();
+    window.searchManager = new SearchManager();
+    window.keyboardManager = new KeyboardManager();
+    window.performanceMonitor = new PerformanceMonitor();
+    window.accessibilityManager = new AccessibilityManager();
+    window.mobileManager = new MobileManager();
+
+    // Enhanced theme switching with checkbox support
+    const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+    if (toggleSwitch) {
+        function switchTheme(e) {
+            if (e.target.checked) {
+                document.documentElement.setAttribute('data-theme', 'light');
+                const themeIcon = document.getElementById("theme-icon");
+                if (themeIcon) themeIcon.className = "ri-sun-line";
+                localStorage.setItem('theme', 'light');
+            } else {
+                document.documentElement.setAttribute('data-theme', 'dark');
+                const themeIcon = document.getElementById("theme-icon");
+                if (themeIcon) themeIcon.className = "ri-moon-line";
+                localStorage.setItem('theme', 'dark');
+            }
+        }
+
+        toggleSwitch.addEventListener('change', switchTheme, false);
+        
+        // Set initial state based on current theme
+        const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : 'dark';
+        if (currentTheme) {
+            document.documentElement.setAttribute('data-theme', currentTheme);
+            if (currentTheme === 'light') {
+                toggleSwitch.checked = true;
+            }
+        }
+    }
+
+    // Build timestamp functionality (if element exists)
+    const timestamp = document.getElementById("build-timestamp");
+    if (timestamp) {
+        const timestamp_local = new Date(timestamp.getAttribute("datetime")).toLocaleString();
+        const badge = document.getElementById("build-timestamp-badge");
+        if (badge) {
+            badge.src = `https://img.shields.io/github/actions/workflow/status/NotCraft/ArxivDaily/update-feed.yml?label=${timestamp_local}&style=for-the-badge`;
+        }
+    }
+
+    // Add refresh functionality to title
+    const titleElement = document.querySelector('header h1');
+    if (titleElement) {
+        titleElement.addEventListener('click', () => {
+            window.location.reload();
+        });
+        titleElement.setAttribute('title', 'Click to refresh page');
+    }
+
+    // Override the toggle functions to include accessibility updates
+    const originalToggleCategory = window.toggleCategory;
+    window.toggleCategory = function(categoryHeader) {
+        const categoryContent = categoryHeader.nextElementSibling;
+        const wasExpanded = categoryContent.style.display !== 'none';
+        
+        originalToggleCategory(categoryHeader);
+        
+        // Update ARIA attribute
+        window.accessibilityManager.updateAriaExpanded(categoryHeader, !wasExpanded);
+    };
+
+    const originalTogglePaper = window.togglePaper;
+    window.togglePaper = function(paperHeader) {
+        const paperContent = paperHeader.nextElementSibling;
+        const wasExpanded = paperContent.style.display !== 'none';
+        
+        originalTogglePaper(paperHeader);
+        
+        // Update ARIA attribute
+        window.accessibilityManager.updateAriaExpanded(paperHeader, !wasExpanded);
+    };
 
     // Make Utils available globally
     window.Utils = Utils;
