@@ -28,22 +28,30 @@ class ArXivFetcher:
         self.arxiv_api = "http://export.arxiv.org/api/query"
         
     def clean_old_data(self):
-        """Remove JSON files older than retention_days."""
+        """Keep only the last N days of data files (not calendar days, but actual files with data)."""
         retention_days = self.config["settings"]["retention_days"]
-        cutoff_date = datetime.now() - timedelta(days=retention_days)
         
+        # Get all valid JSON files with dates
+        valid_files = []
         for json_file in self.data_dir.glob("*.json"):
             try:
                 # Extract date from filename (format: YYYY-MM-DD.json)
                 date_str = json_file.stem
                 file_date = datetime.strptime(date_str, "%Y-%m-%d")
-                
-                if file_date < cutoff_date:
-                    json_file.unlink()
-                    print(f"Removed old data file: {json_file}")
+                valid_files.append((file_date, json_file))
             except ValueError:
                 # Skip files that don't match the expected date format
                 continue
+        
+        # Sort by date (most recent first)
+        valid_files.sort(key=lambda x: x[0], reverse=True)
+        
+        # Keep only the most recent retention_days files, remove the rest
+        if len(valid_files) > retention_days:
+            files_to_remove = valid_files[retention_days:]
+            for _, json_file in files_to_remove:
+                json_file.unlink()
+                print(f"Removed old data file: {json_file}")
     
     def fetch_papers_for_category(self, category: str, date_str: str) -> List[Dict[str, Any]]:
         """Fetch papers for a specific category and date."""
