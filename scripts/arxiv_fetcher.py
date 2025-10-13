@@ -8,6 +8,7 @@ import json
 import os
 import sys
 import time
+import shutil
 from datetime import datetime, timedelta
 from pathlib import Path
 from typing import Dict, List, Any
@@ -31,6 +32,10 @@ class ArXivFetcher:
         """Keep only the last N days of data files (not calendar days, but actual files with data)."""
         retention_days = self.config["settings"]["retention_days"]
         
+        # Create archive directory if it doesn't exist
+        archive_dir = self.data_dir / "archive"
+        archive_dir.mkdir(exist_ok=True)
+        
         # Get all valid JSON files with dates
         valid_files = []
         for json_file in self.data_dir.glob("*.json"):
@@ -46,12 +51,13 @@ class ArXivFetcher:
         # Sort by date (most recent first)
         valid_files.sort(key=lambda x: x[0], reverse=True)
         
-        # Keep only the most recent retention_days files, remove the rest
+        # Keep only the most recent retention_days files, archive the rest
         if len(valid_files) > retention_days:
-            files_to_remove = valid_files[retention_days:]
-            for _, json_file in files_to_remove:
-                json_file.unlink()
-                print(f"Removed old data file: {json_file}")
+            files_to_archive = valid_files[retention_days:]
+            for _, json_file in files_to_archive:
+                archive_path = archive_dir / json_file.name
+                shutil.move(str(json_file), str(archive_path))
+                print(f"Archived old data file: {json_file} -> {archive_path}")
     
     def fetch_papers_for_category(self, category: str, date_str: str) -> List[Dict[str, Any]]:
         """Fetch papers for a specific category and date."""
