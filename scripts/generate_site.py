@@ -204,7 +204,7 @@ class SiteGenerator:
         return html
     
     def copy_static_assets(self):
-        """Copy CSS and JS files from templates to output directory."""
+        """Copy CSS, JS, and favicon files from templates to output directory."""
         # Copy CSS file
         css_template = self.templates_dir / "style.css"
         css_output = self.output_dir / "css" / "style.css"
@@ -218,6 +218,13 @@ class SiteGenerator:
         if js_template.exists():
             shutil.copy2(js_template, js_output)
             print(f"Copied JS: {js_template} -> {js_output}")
+        
+        # Copy favicon
+        favicon_template = self.templates_dir / "favicon.ico"
+        favicon_output = self.output_dir / "favicon.ico"
+        if favicon_template.exists():
+            shutil.copy2(favicon_template, favicon_output)
+            print(f"Copied favicon: {favicon_template} -> {favicon_output}")
 
     def generate_index_html(self) -> str:
         """Generate the main index.html file using template."""
@@ -300,6 +307,7 @@ class SiteGenerator:
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{site_title}</title>
     <meta name="description" content="{site_description}">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="css/style.css">
     
     <!-- KaTeX CSS and JS for fast LaTeX rendering -->
