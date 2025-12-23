@@ -1,0 +1,1526 @@
+{
+  "date": "2025-12-21",
+  "generated_at": "2025-12-23T03:05:52.530242",
+  "categories": {
+    "hep-ex": {
+      "name": "High Energy Physics - Experiment",
+      "papers": [
+        {
+          "id": "2512.18926v1",
+          "title": "Nuclear collectivity and the harmonic spectrum of two-body correlations",
+          "authors": [
+            "Jean-Paul Blaizot",
+            "Giuliano Giacalone",
+            "Alessandro Lovato"
+          ],
+          "display_authors": [
+            "Jean-Paul Blaizot",
+            "Giuliano Giacalone",
+            "Alessandro Lovato"
+          ],
+          "summary": "High-energy nuclear collisions have opened a new experimental method to reveal collective behavior in nuclear ground states through the lens of many-body correlations of nucleons. Using ab initio lattice and variational calculations of $^{20}$Ne and $^{16}$O, we study how emergent phenomena such as deformation or clustering can be identified in these systems from the dependence of their two-body density distributions on the relative azimuthal angle of nucleon pairs. A harmonic analysis of the correlation functions reveals in particular a dominant quadrupole component in $^{20}$Ne, consistent with a bowling-pin picture, and a prominent triangular modulation in $^{16}$O, possibly indicative of alpha-cluster correlations. Given that such structures can be accurately identified in high-energy collider experiments, these findings open a new paradigm for analyzing emergent collective behavior in atomic nuclei, relating their intrinsic shapes to the harmonic spectrum of microscopic correlations.",
+          "arxiv_url": "https://arxiv.org/abs/2512.18926v1",
+          "pdf_url": "https://arxiv.org/pdf/2512.18926v1.pdf",
+          "submitted_date": "2025-12-21T23:54:01+00:00",
+          "categories": [
+            "nucl-th",
+            "hep-ex",
+            "hep-ph",
+            "nucl-ex"
+          ],
+          "comments": "10 pages; 5 figures"
+        },
+        {
+          "id": "2512.18728v1",
+          "title": "Dissociation driven quarkonium spin alignment in Pb--Pb collisions at $\\sqrt{s_{\\rm NN}} = 5.02$ TeV",
+          "authors": [
+            "Bhagyarathi Sahoo",
+            "Captain R. Singh",
+            "Raghunath Sahoo"
+          ],
+          "display_authors": [
+            "Bhagyarathi Sahoo",
+            "Captain R. Singh",
+            "Raghunath Sahoo"
+          ],
+          "summary": "The observation of spin alignment of quarkonia in ultra-relativistic heavy-ion collisions provides deep insight into the possible formation of the quark-gluon plasma (QGP). The present study investigates the spin alignment of quarkonia induced by dissociation mechanisms arising from medium effects imposed on quarkonia. We implement an effective Hamiltonian with a medium-modified color-singlet potential to incorporate the coupling of quarkonium spin with medium vorticity. This coupling gives rise to spin-dependent dissociation, which we identify as a plausible mechanism contributing to quarkonium spin alignment. Within the ambit of second-order relativistic viscous hydrodynamics, we calculate the spin-dependent decay widths of charmonium ($J/ψ$, $ψ$(2S)) and bottomonium ($Υ$(1S), $Υ$(2S)) in a rotating thermal medium, including collisional damping and gluonic dissociation effects. We evaluate the observable $ρ_{00}$ for Pb--Pb collisions at $\\sqrt{s_{\\rm NN}} = 5.02$ TeV as a function of transverse momentum of the quarkonia, charged particle multiplicity, and medium rotation. The results demonstrate that medium vorticity modifies the quarkonia net decay width and, as a consequence, quarkonia spin alignment gets modified. These findings suggest new directions for understanding spin transport and the microscopic dynamics of vortical QGP.",
+          "arxiv_url": "https://arxiv.org/abs/2512.18728v1",
+          "pdf_url": "https://arxiv.org/pdf/2512.18728v1.pdf",
+          "submitted_date": "2025-12-21T13:20:02+00:00",
+          "categories": [
+            "nucl-th",
+            "hep-ex",
+            "hep-ph",
+            "hep-th",
+            "nucl-ex"
+          ],
+          "comments": "16 pages and 7 captioned figures"
+        }
+      ],
+      "count": 2
+    },
+    "hep-ph": {
+      "name": "High Energy Physics - Phenomenology",
+      "papers": [
+        {
+          "id": "2512.18926v1",
+          "title": "Nuclear collectivity and the harmonic spectrum of two-body correlations",
+          "authors": [
+            "Jean-Paul Blaizot",
+            "Giuliano Giacalone",
+            "Alessandro Lovato"
+          ],
+          "display_authors": [
+            "Jean-Paul Blaizot",
+            "Giuliano Giacalone",
+            "Alessandro Lovato"
+          ],
+          "summary": "High-energy nuclear collisions have opened a new experimental method to reveal collective behavior in nuclear ground states through the lens of many-body correlations of nucleons. Using ab initio lattice and variational calculations of $^{20}$Ne and $^{16}$O, we study how emergent phenomena such as deformation or clustering can be identified in these systems from the dependence of their two-body density distributions on the relative azimuthal angle of nucleon pairs. A harmonic analysis of the correlation functions reveals in particular a dominant quadrupole component in $^{20}$Ne, consistent with a bowling-pin picture, and a prominent triangular modulation in $^{16}$O, possibly indicative of alpha-cluster correlations. Given that such structures can be accurately identified in high-energy collider experiments, these findings open a new paradigm for analyzing emergent collective behavior in atomic nuclei, relating their intrinsic shapes to the harmonic spectrum of microscopic correlations.",
+          "arxiv_url": "https://arxiv.org/abs/2512.18926v1",
+          "pdf_url": "https://arxiv.org/pdf/2512.18926v1.pdf",
+          "submitted_date": "2025-12-21T23:54:01+00:00",
+          "categories": [
+            "nucl-th",
+            "hep-ex",
+            "hep-ph",
+            "nucl-ex"
+          ],
+          "comments": "10 pages; 5 figures"
+        },
+        {
+          "id": "2512.18909v1",
+          "title": "Application of $K \\to 3π$ amplitudes to semileptonic kaon decays",
+          "authors": [
+            "Anshika Bansal",
+            "Jack Jenkins",
+            "Daniel Winney"
+          ],
+          "display_authors": [
+            "Anshika Bansal",
+            "Jack Jenkins",
+            "Daniel Winney"
+          ],
+          "summary": "We study dispersive representations of nonlocal form factors in $K^+ \\to π^+ \\ell^+ \\ell^-$ and $K^+ \\to π^+ ν\\barν$ decays, with an aim of improving the theoretical description of the spectrum and decay rate of the neutrino mode. Based on unitarity, these representations invoke the $K^+ π^- \\to π^+ π^-$ amplitude in $P$-wave and the pion vector form factor. The $P$-wave amplitude can be effectively parameterized within the dispersive Khuri-Treiman framework, and constrained by experimental information on the CP-conserving $K^+ \\to π^+ π^+ π^-$ and $K^+ \\to π^0 π^0 π^+$ decays. We also emphasize certain relations between charged-lepton and neutrino non-local form factors based on the Operator Product Expansion, which can be used to impose further phenomenological constraints.",
+          "arxiv_url": "https://arxiv.org/abs/2512.18909v1",
+          "pdf_url": "https://arxiv.org/pdf/2512.18909v1.pdf",
+          "submitted_date": "2025-12-21T23:00:03+00:00",
+          "categories": [
+            "hep-ph"
+          ],
+          "comments": "8 pages, 2 figures"
+        },
+        {
+          "id": "2512.18866v1",
+          "title": "Next-to-Next-to-Leading-Order Corrections to the $B \\to π$ Form Factors from Light-Cone Sum Rules",
+          "authors": [
+            "Huang-Yong Kang",
+            "Dong-Hao Li",
+            "Cai-Dian Lü",
+            "Bo-Xuan Shi",
+            "Hui-Xin Yu"
+          ],
+          "display_authors": [
+            "Huang-Yong Kang",
+            "Dong-Hao Li",
+            "Cai-Dian Lü",
+            "et al."
+          ],
+          "summary": "By incorporating the available leading-power results at $\\mathcal{O}(α_s)$ and next-to-leading-power corrections at tree level, we improve the precision of the theoretical predictions for $B\\toπ$ form factors to the $\\mathcal{O}(α_s^2β_0)$ level in the large-recoil region using the light-cone sum rule approach with $B$-meson light-cone distribution amplitudes. We find that the QCD corrections at $\\mathcal{O}(α_s^2β_0)$ contribute approximately $+6.1\\%$ compared to the tree-level result. Combining the light-cone sum rule predictions in the large-recoil region, lattice QCD results in the small-recoil region, we perform a combined fit for the $B\\toπ$ form factors across the full kinematic range. Utilizing these form factors, we calculate the branching ratios, lepton-flavor-universality ratio $R_π$, forward-backward asymmetry $\\mathcal{A}_{\\rm FB}$, flat term $\\mathcal{F}_{\\rm H}$ and polarization asymmetry $\\mathcal{A}_{\\rm λ_\\ell}$ of $B\\toπμ\\barν_μ$ and $B\\toπτ\\barν_τ$ decays. Using the experimentally measured $q^2$-binned differential branching ratios of $B\\toπμ\\barν_μ$ decay as input, employing the Bourrely-Caprini-Lellouch parametrization, we extract the Cabibbo-Kobayashi-Maskawa matrix element $|V_{ub}| = 3.73(14) \\times 10^{-3}$.",
+          "arxiv_url": "https://arxiv.org/abs/2512.18866v1",
+          "pdf_url": "https://arxiv.org/pdf/2512.18866v1.pdf",
+          "submitted_date": "2025-12-21T19:50:50+00:00",
+          "categories": [
+            "hep-ph"
+          ],
+          "comments": "30 pages, 8 figures"
+        },
+        {
+          "id": "2512.18849v1",
+          "title": "Multi-neutron correlations in light nuclei via ab-initio lattice simulations",
+          "authors": [
+            "Shuang Zhang",
+            "Serdar Elhatisari",
+            "Ulf-G. Meißner"
+          ],
+          "display_authors": [
+            "Shuang Zhang",
+            "Serdar Elhatisari",
+            "Ulf-G. Meißner"
+          ],
+          "summary": "The quest to understand multi-neutron systems has a long history, and recent experimental efforts aim to probe candidate four-neutron configurations in neutron-rich light nuclei such as ${}^8$He and ${}^7$H via quasi-free knockout reactions. However, the ground-state energies of the hydrogen isotopes ${}^6$H and ${}^7$H are not yet well constrained, with substantial discrepancies across experimental analyses and theoretical predictions. Using ab initio nuclear lattice effective field theory with an ensemble of 282 chiral two- and three-nucleon forces, we perform an uncertainty-quantified analysis of the ground-state energies of ${}^6$H and ${}^7$H. The marginal posteriors suggest single-neutron separation energy $S_n({}^{7}\\text{H})=0.35^{+0.32}_{-0.32}$ MeV, disfavoring sequential ${}^{6}\\mathrm{H}+n$ decay and pointing towards direct $t+4n$ emission. Intrinsic densities indicate triton- and $α$-like clusters in ${}^7$H and ${}^8$He, respectively. By computing two-body and reduced four-body correlation functions, we find that the valence neutrons in the surface region of these systems form compact dineutrons that predominantly organize into symmetric dineutron-dineutron configurations, with only a small but non-negligible fraction assembling into more compact tetraneutron-like substructures. In ${}^7$H, these components account for roughly 95% and 5% of the sampled four-neutron configurations, respectively, and ${}^8$He exhibits a similar hierarchy. For these configurations, we also extract the corresponding spatial and angular correlation patterns among the nucleons. These results provide nuclear-structure insights into the debate surrounding four-neutron clusters and complement ongoing experimental searches for tetraneutron signatures in light nuclei.",
+          "arxiv_url": "https://arxiv.org/abs/2512.18849v1",
+          "pdf_url": "https://arxiv.org/pdf/2512.18849v1.pdf",
+          "submitted_date": "2025-12-21T18:40:08+00:00",
+          "categories": [
+            "nucl-th",
+            "hep-lat",
+            "hep-ph",
+            "nucl-ex"
+          ],
+          "comments": "9+9 pages, 3+5 figures, supplemental material included"
+        },
+        {
+          "id": "2512.18830v1",
+          "title": "Emergent chiral spin symmetry, non-perturbative dynamics and thermoparticles in hot QCD",
+          "authors": [
+            "Owe Philipsen"
+          ],
+          "display_authors": [
+            "Owe Philipsen"
+          ],
+          "summary": "Several non-perturbative results for hot QCD are challenging some aspects of the phase diagram and its associated degrees of freedom which were previously believed to be well understood. With increasing temperature, the chiral crossover is followed by an intermediate region with an approximate chiral spin symmetry larger than chiral symmetry, in which pseudo-scalar mesons continue to exist as hadron-like excitations, before at some higher temperature the expected chiral symmetry is recovered. By testing general formal considerations against lattice data, it can be shown that thermally modified versions of stable vacuum particles, so-called thermoparticles, form the constituents of thermal quantum field theories, with properties quite different from what is expected perturbatively. This ``viewpoint'' aims to raise broader and, in particular, phenomenological interest in these directions.",
+          "arxiv_url": "https://arxiv.org/abs/2512.18830v1",
+          "pdf_url": "https://arxiv.org/pdf/2512.18830v1.pdf",
+          "submitted_date": "2025-12-21T17:28:13+00:00",
+          "categories": [
+            "hep-ph",
+            "hep-lat",
+            "nucl-th"
+          ],
+          "comments": "Invited EPJA viewpoint, 9 pages, 5 figures"
+        },
+        {
+          "id": "2512.18739v1",
+          "title": "Charm multiplicity distribution in high energy pp collisions with PYTHIA",
+          "authors": [
+            "Y. N. Lima",
+            "C. Jahnke",
+            "M. Munhoz",
+            "F. S. Navarra"
+          ],
+          "display_authors": [
+            "Y. N. Lima",
+            "C. Jahnke",
+            "M. Munhoz",
+            "et al."
+          ],
+          "summary": "With the growth of statistics in the future experiments at the LHC, the number of events with charm production will increase substantially. It may become possible to measure the multiplicity distribution of charm particles. Using PYTHIA-8, we generated charm multiplicity distributions in $pp$ collisions for different pseudorapidity ranges ($|η| < 0.5, 1.0, 2.0, 3.0$) and center-of-mass energies ($\\sqrt{s}=$ 0.9, 2.36, 2.76, 7.0, 8.0, 13.0 TeV). We investigated the role played by multiple parton interactions and color reconnection. We compared the multiplicity distribution of D mesons with the charm quark multiplicity distribution. We observe that the \"quark-hadron\" duality hypothesis is satisfied. With the obtained distributions we tested the validity of the Koba-Nielsen-Olesen scaling. We also parameterized the charm distributions considering the Poisson and negative binomial distributions.",
+          "arxiv_url": "https://arxiv.org/abs/2512.18739v1",
+          "pdf_url": "https://arxiv.org/pdf/2512.18739v1.pdf",
+          "submitted_date": "2025-12-21T14:01:36+00:00",
+          "categories": [
+            "hep-ph"
+          ],
+          "comments": "9 pages, 8 figures"
+        },
+        {
+          "id": "2512.18728v1",
+          "title": "Dissociation driven quarkonium spin alignment in Pb--Pb collisions at $\\sqrt{s_{\\rm NN}} = 5.02$ TeV",
+          "authors": [
+            "Bhagyarathi Sahoo",
+            "Captain R. Singh",
+            "Raghunath Sahoo"
+          ],
+          "display_authors": [
+            "Bhagyarathi Sahoo",
+            "Captain R. Singh",
+            "Raghunath Sahoo"
+          ],
+          "summary": "The observation of spin alignment of quarkonia in ultra-relativistic heavy-ion collisions provides deep insight into the possible formation of the quark-gluon plasma (QGP). The present study investigates the spin alignment of quarkonia induced by dissociation mechanisms arising from medium effects imposed on quarkonia. We implement an effective Hamiltonian with a medium-modified color-singlet potential to incorporate the coupling of quarkonium spin with medium vorticity. This coupling gives rise to spin-dependent dissociation, which we identify as a plausible mechanism contributing to quarkonium spin alignment. Within the ambit of second-order relativistic viscous hydrodynamics, we calculate the spin-dependent decay widths of charmonium ($J/ψ$, $ψ$(2S)) and bottomonium ($Υ$(1S), $Υ$(2S)) in a rotating thermal medium, including collisional damping and gluonic dissociation effects. We evaluate the observable $ρ_{00}$ for Pb--Pb collisions at $\\sqrt{s_{\\rm NN}} = 5.02$ TeV as a function of transverse momentum of the quarkonia, charged particle multiplicity, and medium rotation. The results demonstrate that medium vorticity modifies the quarkonia net decay width and, as a consequence, quarkonia spin alignment gets modified. These findings suggest new directions for understanding spin transport and the microscopic dynamics of vortical QGP.",
+          "arxiv_url": "https://arxiv.org/abs/2512.18728v1",
+          "pdf_url": "https://arxiv.org/pdf/2512.18728v1.pdf",
+          "submitted_date": "2025-12-21T13:20:02+00:00",
+          "categories": [
+            "nucl-th",
+            "hep-ex",
+            "hep-ph",
+            "hep-th",
+            "nucl-ex"
+          ],
+          "comments": "16 pages and 7 captioned figures"
+        },
+        {
+          "id": "2512.18721v1",
+          "title": "Magnetic monopoles as probes of the global structure of the Standard Model",
+          "authors": [
+            "Yunji Ha"
+          ],
+          "display_authors": [
+            "Yunji Ha"
+          ],
+          "summary": "The magnetic charges of monopoles arising in ultraviolet completions of the Standard Model are constrained by the global structure of the gauge group. After electroweak symmetry breaking, a subset of the ultraviolet monopoles carrying magnetic charges 3$g_D$ and $6g_D$ can survive as isolated, colour-neutral states in the infrared. We show that this selection rule follows from the interplay between the symmetry structure and the magnetic 1-form symmetry, and discuss how the relic abundance of such monopoles can be naturally suppressed by the symmetry breaking scale. We further demonstrate that such monopoles with Lorentz factor $γ\\lesssim 10^4$ propagate through matter with ionisation energy loss profiles scaling as $g^2$ using CORSIKA Monte Carlo simulations.",
+          "arxiv_url": "https://arxiv.org/abs/2512.18721v1",
+          "pdf_url": "https://arxiv.org/pdf/2512.18721v1.pdf",
+          "submitted_date": "2025-12-21T12:43:40+00:00",
+          "categories": [
+            "hep-ph"
+          ],
+          "comments": "6 pages, 2 figures"
+        },
+        {
+          "id": "2512.18694v1",
+          "title": "Quark-model search for compact $c\\bar c uds$ pentaquark states",
+          "authors": [
+            "Emiko Hiyama",
+            "Atsushi Hosaka",
+            "Makoto Oka",
+            "Georg Wolschin"
+          ],
+          "display_authors": [
+            "Emiko Hiyama",
+            "Atsushi Hosaka",
+            "Makoto Oka",
+            "et al."
+          ],
+          "summary": "A potential quark model is used to search for a $P_{c\\bar{c}s}^0=(c\\bar{c}uds)^0$, $J^P=1/2^-$ pentaquark state that has recently been observed experimentally by the LHCb collaboration at 4338.2 MeV, with a width of 7.0 MeV and high statistical significance $>15σ$. Our model Hamiltonian reproduces the masses of the low-lying charmed and strange hadrons. We use the Gaussian expansion method {to solve the} five-body Schrödinger equation. Employing the real scaling method {including}   the relevant meson-baryon thresholds explicitly, sharp resonances are distinguished from the meson-baryon scattering states. We incorporate new color states of the color-octet meson and baryon configurations as well as the color-singlet configurations for the five-quark states. We find no $ J^P=1/2^-$ resonance close to the observed state, and also none in the $ J^P=3/2^-$ state. This increases the likelihood that $P^0_{c\\bar{c}s}$ is a $Ξ_c\\bar{D}$ hadronic molecule rather than a compact state.",
+          "arxiv_url": "https://arxiv.org/abs/2512.18694v1",
+          "pdf_url": "https://arxiv.org/pdf/2512.18694v1.pdf",
+          "submitted_date": "2025-12-21T11:15:47+00:00",
+          "categories": [
+            "hep-ph"
+          ],
+          "comments": "10 pages, 6 figures"
+        },
+        {
+          "id": "2512.18691v1",
+          "title": "Collapse of Coulomb Bound States of Vector Bosons",
+          "authors": [
+            "V. V. Flambaum",
+            "H. B. Tran Tan"
+          ],
+          "display_authors": [
+            "V. V. Flambaum",
+            "H. B. Tran Tan"
+          ],
+          "summary": "Charged spin 1 (vector) particles behave very differently from electrons or scalars in a Coulomb field. For an infinitely heavy point-like nucleus their bound state wave functions fall to the centre, and embedding the system in a renormalisable electroweak-type theory does not remedy this short-distance pathology. We therefore solve the pure Coulomb problem for a finite nuclear radius $R$ and recover the point nucleus limit by letting $R\\to 0$. This approach allows us to include the crucial Upsilon term in the wave equations, which for the point-like nucleus is proportional to delta(r) and was ignored in the previous calculations of the energy spectrum. Several unusual effects emerge: (i) The Upsilon term supports a tower of states located mainly inside the nucleus. As R -> 0 their number diverges, most lying in the negative energy continuum (energy epsilon < - m c^2). They trigger vacuum breakdown - particle-antiparticle pair creation that ultimately screens the nuclear charge.   (ii) Ordinary Sommerfeld-like states (with binding energy smaller m c^2) persist, but a finite fraction of each wave function leaks into the nucleus, even as R -> 0.   (iii) Charge density of a negatively charged vector particle changes sign in a vicinity of the nucleus and becomes positive charge density, whereas the Upsilon term ensures its density inside the nucleus remains negative.   (iv) For weak coupling, Z alpha << 1, yet with mR <Z alpha, the non-relativistic solution differs qualitatively from Schrodinger theory despite binding energies are well below m c^2; agreement is recovered only when Z alpha << mR.   These phenomena highlight the distinctive and subtle behaviour of spin-1 particles in the Coulomb field.",
+          "arxiv_url": "https://arxiv.org/abs/2512.18691v1",
+          "pdf_url": "https://arxiv.org/pdf/2512.18691v1.pdf",
+          "submitted_date": "2025-12-21T11:02:28+00:00",
+          "categories": [
+            "hep-ph",
+            "nucl-th",
+            "physics.atom-ph"
+          ],
+          "comments": ""
+        },
+        {
+          "id": "2512.18574v1",
+          "title": "Modular weights of wave functions on magnetized torus",
+          "authors": [
+            "Tim Jeric",
+            "Tatsuo Kobayashi",
+            "Hajime Otsuka",
+            "Maki Takeuchi",
+            "Hikaru Uchida"
+          ],
+          "display_authors": [
+            "Tim Jeric",
+            "Tatsuo Kobayashi",
+            "Hajime Otsuka",
+            "et al."
+          ],
+          "summary": "We study the origin of modular weights of wave functions in magnetized $T^{2}$ models. It is explicitly demonstrated that the modular weights of the wave functions on magnetized $T^2$ is equivalent to their mass level. We further extend this result to magnetized $T^{2g}$ models. As a result, we construct the wave functions of excited states in magnetized $T^{2g}$ models and show that their modular weights are likewise equivalent to the corresponding mass levels.",
+          "arxiv_url": "https://arxiv.org/abs/2512.18574v1",
+          "pdf_url": "https://arxiv.org/pdf/2512.18574v1.pdf",
+          "submitted_date": "2025-12-21T03:04:51+00:00",
+          "categories": [
+            "hep-th",
+            "hep-ph"
+          ],
+          "comments": "32 pages"
+        },
+        {
+          "id": "2512.18569v1",
+          "title": "Investigating the internal structure of $X(6900)$ in the $2J/ψ$ decay channel",
+          "authors": [
+            "Duo-Duo Lu",
+            "Shao-Zhou Jiang"
+          ],
+          "display_authors": [
+            "Duo-Duo Lu",
+            "Shao-Zhou Jiang"
+          ],
+          "summary": "Assuming $X(6900)$ is a tetraquark state, the decay width of $X(6900)\\to 2J/ψ$ is calculated in a covariant quark model, with the diquark-antidiquark $[cc][\\bar{c}\\bar{c}]$ picture. Two possible structures, vector-vector and axial-vector--axial-vector coupling, are investigated. The result indicates that the axial-vector--axial-vector coupling is consistent with the experiments.",
+          "arxiv_url": "https://arxiv.org/abs/2512.18569v1",
+          "pdf_url": "https://arxiv.org/pdf/2512.18569v1.pdf",
+          "submitted_date": "2025-12-21T02:27:20+00:00",
+          "categories": [
+            "hep-ph"
+          ],
+          "comments": "11 pages, 8 figures"
+        },
+        {
+          "id": "2512.18568v1",
+          "title": "Two-Component Dark Matter with an SU(2) Dark Sector",
+          "authors": [
+            "Shao-Long Chen",
+            "Wen-wen Jiang"
+          ],
+          "display_authors": [
+            "Shao-Long Chen",
+            "Wen-wen Jiang"
+          ],
+          "summary": "We propose an extension to the standard model incorporating a dark sector with a non-Abelian SU(2) gauge symmetry. The model yields stable dark matter candidates, protected by a residual $Z_3$ symmetry arising after the spontaneous symmetry breaking. The dark sector interacts with the SM via a Higgs portal, facilitated from mixing between the SM Higgs doublet and a dark scalar singlet. The model features two distinct DM components. We analyze theoretical and experimental constraints, including perturbativity, unitarity, vacuum stability, dark matter relic density, direct detection, indirect detection, Higgs invisible decays, dark radiation, and ellipticity. Our findings identify viable parameter spaces that satisfy these constraints, as exemplified by two benchmark points.",
+          "arxiv_url": "https://arxiv.org/abs/2512.18568v1",
+          "pdf_url": "https://arxiv.org/pdf/2512.18568v1.pdf",
+          "submitted_date": "2025-12-21T02:27:03+00:00",
+          "categories": [
+            "hep-ph"
+          ],
+          "comments": "24 pages, 8 figures"
+        }
+      ],
+      "count": 13
+    },
+    "stat.ML": {
+      "name": "Machine Learning - Statistics",
+      "papers": [
+        {
+          "id": "2512.18924v1",
+          "title": "Testing for latent structure via the Wilcoxon--Wigner random matrix of normalized rank statistics",
+          "authors": [
+            "Jonquil Z. Liao",
+            "Joshua Cape"
+          ],
+          "display_authors": [
+            "Jonquil Z. Liao",
+            "Joshua Cape"
+          ],
+          "summary": "This paper considers the problem of testing for latent structure in large symmetric data matrices. The goal here is to develop statistically principled methodology that is flexible in its applicability, computationally efficient, and insensitive to extreme data variation, thereby overcoming limitations facing existing approaches. To do so, we introduce and systematically study certain symmetric matrices, called Wilcoxon--Wigner random matrices, whose entries are normalized rank statistics derived from an underlying independent and identically distributed sample of absolutely continuous random variables. These matrices naturally arise as the matricization of one-sample problems in statistics and conceptually lie at the interface of nonparametrics, multivariate analysis, and data reduction. Among our results, we establish that the leading eigenvalue and corresponding eigenvector of Wilcoxon--Wigner random matrices admit asymptotically Gaussian fluctuations with explicit centering and scaling terms. These asymptotic results enable rigorous parameter-free and distribution-free spectral methodology for addressing two hypothesis testing problems, namely community detection and principal submatrix detection. Numerical examples illustrate the performance of the proposed approach. Throughout, our findings are juxtaposed with existing results based on the spectral properties of independent entry symmetric random matrices in signal-plus-noise data settings.",
+          "arxiv_url": "https://arxiv.org/abs/2512.18924v1",
+          "pdf_url": "https://arxiv.org/pdf/2512.18924v1.pdf",
+          "submitted_date": "2025-12-21T23:49:22+00:00",
+          "categories": [
+            "stat.ME",
+            "math.PR",
+            "math.ST",
+            "stat.ML"
+          ],
+          "comments": "17 pages main text, 2 figures, 3 tables, 43 pages supplementary material"
+        },
+        {
+          "id": "2512.18732v1",
+          "title": "Counterfactual Basis Extension and Representational Geometry: An MDL-Constrained Model of Conceptual Growth",
+          "authors": [
+            "Chainarong Amornbunchornvej"
+          ],
+          "display_authors": [
+            "Chainarong Amornbunchornvej"
+          ],
+          "summary": "Concept learning becomes possible only when existing representations fail to account for experience. Most models of learning and inference, however, presuppose a fixed representational basis within which belief updating occurs. In this paper, I address a prior question: under what structural conditions can the representational basis itself expand in a principled and selective way?   I propose a geometric framework in which conceptual growth is modeled as admissible basis extension evaluated under a Minimum Description Length (MDL) criterion. Experience, whether externally observed or internally simulated, is represented as vectors relative to a current conceptual subspace. Residual components capture systematic representational failure, and candidate conceptual extensions are restricted to low-rank, admissible transformations. I show that any MDL-accepted extension can be chosen so that its novel directions lie entirely within the residual span induced by experience, while extensions orthogonal to this span strictly increase description length and are therefore rejected.   This yields a conservative account of imagination and conceptual innovation. Internally generated counterfactual representations contribute to learning only insofar as they expose or amplify structured residual error, and cannot introduce arbitrary novelty. I further distinguish representational counterfactuals--counterfactuals over an agent's conceptual basis--from causal or value-level counterfactuals, and show how MDL provides a normative selection principle governing representational change.   Overall, the framework characterizes conceptual development as an error-driven, geometry-constrained process of basis extension, clarifying both the role and the limits of imagination in learning and theory change.",
+          "arxiv_url": "https://arxiv.org/abs/2512.18732v1",
+          "pdf_url": "https://arxiv.org/pdf/2512.18732v1.pdf",
+          "submitted_date": "2025-12-21T13:39:00+00:00",
+          "categories": [
+            "cs.AI",
+            "cs.LG",
+            "stat.ML"
+          ],
+          "comments": "First draft"
+        },
+        {
+          "id": "2512.18720v1",
+          "title": "Unsupervised Feature Selection via Robust Autoencoder and Adaptive Graph Learning",
+          "authors": [
+            "Feng Yu",
+            "MD Saifur Rahman Mazumder",
+            "Ying Su",
+            "Oscar Contreras Velasco"
+          ],
+          "display_authors": [
+            "Feng Yu",
+            "MD Saifur Rahman Mazumder",
+            "Ying Su",
+            "et al."
+          ],
+          "summary": "Effective feature selection is essential for high-dimensional data analysis and machine learning. Unsupervised feature selection (UFS) aims to simultaneously cluster data and identify the most discriminative features. Most existing UFS methods linearly project features into a pseudo-label space for clustering, but they suffer from two critical limitations: (1) an oversimplified linear mapping that fails to capture complex feature relationships, and (2) an assumption of uniform cluster distributions, ignoring outliers prevalent in real-world data. To address these issues, we propose the Robust Autoencoder-based Unsupervised Feature Selection (RAEUFS) model, which leverages a deep autoencoder to learn nonlinear feature representations while inherently improving robustness to outliers. We further develop an efficient optimization algorithm for RAEUFS. Extensive experiments demonstrate that our method outperforms state-of-the-art UFS approaches in both clean and outlier-contaminated data settings.",
+          "arxiv_url": "https://arxiv.org/abs/2512.18720v1",
+          "pdf_url": "https://arxiv.org/pdf/2512.18720v1.pdf",
+          "submitted_date": "2025-12-21T12:42:37+00:00",
+          "categories": [
+            "stat.ML",
+            "cs.LG"
+          ],
+          "comments": ""
+        },
+        {
+          "id": "2512.18634v1",
+          "title": "From Shortcut to Induction Head: How Data Diversity Shapes Algorithm Selection in Transformers",
+          "authors": [
+            "Ryotaro Kawata",
+            "Yujin Song",
+            "Alberto Bietti",
+            "Naoki Nishikawa",
+            "Taiji Suzuki",
+            "Samuel Vaiter",
+            "Denny Wu"
+          ],
+          "display_authors": [
+            "Ryotaro Kawata",
+            "Yujin Song",
+            "Alberto Bietti",
+            "et al."
+          ],
+          "summary": "Transformers can implement both generalizable algorithms (e.g., induction heads) and simple positional shortcuts (e.g., memorizing fixed output positions). In this work, we study how the choice of pretraining data distribution steers a shallow transformer toward one behavior or the other. Focusing on a minimal trigger-output prediction task -- copying the token immediately following a special trigger upon its second occurrence -- we present a rigorous analysis of gradient-based training of a single-layer transformer. In both the infinite and finite sample regimes, we prove a transition in the learned mechanism: if input sequences exhibit sufficient diversity, measured by a low ``max-sum'' ratio of trigger-to-trigger distances, the trained model implements an induction head and generalizes to unseen contexts; by contrast, when this ratio is large, the model resorts to a positional shortcut and fails to generalize out-of-distribution (OOD). We also reveal a trade-off between the pretraining context length and OOD generalization, and derive the optimal pretraining distribution that minimizes computational cost per sample. Finally, we validate our theoretical predictions with controlled synthetic experiments, demonstrating that broadening context distributions robustly induces induction heads and enables OOD generalization. Our results shed light on the algorithmic biases of pretrained transformers and offer conceptual guidelines for data-driven control of their learned behaviors.",
+          "arxiv_url": "https://arxiv.org/abs/2512.18634v1",
+          "pdf_url": "https://arxiv.org/pdf/2512.18634v1.pdf",
+          "submitted_date": "2025-12-21T08:10:26+00:00",
+          "categories": [
+            "cs.LG",
+            "stat.ML"
+          ],
+          "comments": "NeurIPS 2025"
+        }
+      ],
+      "count": 4
+    },
+    "cs.LG": {
+      "name": "Machine Learning",
+      "papers": [
+        {
+          "id": "2512.18921v1",
+          "title": "Merging of Kolmogorov-Arnold networks trained on disjoint datasets",
+          "authors": [
+            "Andrew Polar",
+            "Michael Poluektov"
+          ],
+          "display_authors": [
+            "Andrew Polar",
+            "Michael Poluektov"
+          ],
+          "summary": "Training on disjoint datasets can serve two primary goals: accelerating data processing and enabling federated learning. It has already been established that Kolmogorov-Arnold networks (KANs) are particularly well suited for federated learning and can be merged through simple parameter averaging. While the federated learning literature has mostly focused on achieving training convergence across distributed nodes, the present paper specifically targets acceleration of the training, which depends critically on the choice of an optimisation method and the type of the basis functions. To the best knowledge of the authors, the fastest currently-available combination is the Newton-Kaczmarz method and the piecewise-linear basis functions. Here, it is shown that training on disjoint datasets (or disjoint subsets of the training dataset) can further improve the performance. Experimental comparisons are provided, and all corresponding codes are publicly available.",
+          "arxiv_url": "https://arxiv.org/abs/2512.18921v1",
+          "pdf_url": "https://arxiv.org/pdf/2512.18921v1.pdf",
+          "submitted_date": "2025-12-21T23:41:34+00:00",
+          "categories": [
+            "cs.LG"
+          ],
+          "comments": ""
+        },
+        {
+          "id": "2512.18901v1",
+          "title": "Gabliteration: Adaptive Multi-Directional Neural Weight Modification for Selective Behavioral Alteration in Large Language Models",
+          "authors": [
+            "Gökdeniz Gülmez"
+          ],
+          "display_authors": [
+            "Gökdeniz Gülmez"
+          ],
+          "summary": "We present Gabliteration, a novel neural weight modification technique that advances beyond traditional abliteration methods by implementing adaptive multi-directional projections with regularized layer selection. Our approach addresses the fundamental limitation of existing methods that compromise model quality while attempting to modify specific behavioral patterns. Through dynamic layer optimization, regularized projection matrices, and adaptive scaling mechanisms, we achieve theoretically superior weight modification while minimizing quality degradation in unrelated domains. We validate our method through the gabliterated-v1 model series (0.6B to 4B parameters) available on Hugging Face, demonstrating practical applicability across multiple model scales.",
+          "arxiv_url": "https://arxiv.org/abs/2512.18901v1",
+          "pdf_url": "https://arxiv.org/pdf/2512.18901v1.pdf",
+          "submitted_date": "2025-12-21T22:12:54+00:00",
+          "categories": [
+            "cs.AI",
+            "cs.LG"
+          ],
+          "comments": ""
+        },
+        {
+          "id": "2512.18892v1",
+          "title": "Structural Reinforcement Learning for Heterogeneous Agent Macroeconomics",
+          "authors": [
+            "Yucheng Yang",
+            "Chiyuan Wang",
+            "Andreas Schaab",
+            "Benjamin Moll"
+          ],
+          "display_authors": [
+            "Yucheng Yang",
+            "Chiyuan Wang",
+            "Andreas Schaab",
+            "et al."
+          ],
+          "summary": "We present a new approach to formulating and solving heterogeneous agent models with aggregate risk. We replace the cross-sectional distribution with low-dimensional prices as state variables and let agents learn equilibrium price dynamics directly from simulated paths. To do so, we introduce a structural reinforcement learning (SRL) method which treats prices via simulation while exploiting agents' structural knowledge of their own individual dynamics. Our SRL method yields a general and highly efficient global solution method for heterogeneous agent models that sidesteps the Master equation and handles problems traditional methods struggle with, in particular nontrivial market-clearing conditions. We illustrate the approach in the Krusell-Smith model, the Huggett model with aggregate shocks, and a HANK model with a forward-looking Phillips curve, all of which we solve globally within minutes.",
+          "arxiv_url": "https://arxiv.org/abs/2512.18892v1",
+          "pdf_url": "https://arxiv.org/pdf/2512.18892v1.pdf",
+          "submitted_date": "2025-12-21T21:22:12+00:00",
+          "categories": [
+            "econ.TH",
+            "cs.AI",
+            "cs.LG"
+          ],
+          "comments": ""
+        },
+        {
+          "id": "2512.18865v1",
+          "title": "Application of deep learning approaches for medieval historical documents transcription",
+          "authors": [
+            "Maksym Voloshchuk",
+            "Bohdana Zarembovska",
+            "Mykola Kozlenko"
+          ],
+          "display_authors": [
+            "Maksym Voloshchuk",
+            "Bohdana Zarembovska",
+            "Mykola Kozlenko"
+          ],
+          "summary": "Handwritten text recognition and optical character recognition solutions show excellent results with processing data of modern era, but efficiency drops with Latin documents of medieval times. This paper presents a deep learning method to extract text information from handwritten Latin-language documents of the 9th to 11th centuries. The approach takes into account the properties inherent in medieval documents. The paper provides a brief introduction to the field of historical document transcription, a first-sight analysis of the raw data, and the related works and studies. The paper presents the steps of dataset development for further training of the models. The explanatory data analysis of the processed data is provided as well. The paper explains the pipeline of deep learning models to extract text information from the document images, from detecting objects to word recognition using classification models and embedding word images. The paper reports the following results: recall, precision, F1 score, intersection over union, confusion matrix, and mean string distance. The plots of the metrics are also included. The implementation is published on the GitHub repository.",
+          "arxiv_url": "https://arxiv.org/abs/2512.18865v1",
+          "pdf_url": "https://arxiv.org/pdf/2512.18865v1.pdf",
+          "submitted_date": "2025-12-21T19:43:30+00:00",
+          "categories": [
+            "cs.CV",
+            "cs.CL",
+            "cs.LG"
+          ],
+          "comments": "15 pages, 15 figures, 4 tables. Originally published by CEUR Workshop Proceedings (CEUR-WS.org, ISSN 1613-0073), available: https://ceur-ws.org/Vol-4133/S_05_Kozlenko.pdf"
+        },
+        {
+          "id": "2512.18857v1",
+          "title": "CORE: Concept-Oriented Reinforcement for Bridging the Definition-Application Gap in Mathematical Reasoning",
+          "authors": [
+            "Zijun Gao",
+            "Zhikun Xu",
+            "Xiao Ye",
+            "Ben Zhou"
+          ],
+          "display_authors": [
+            "Zijun Gao",
+            "Zhikun Xu",
+            "Xiao Ye",
+            "et al."
+          ],
+          "summary": "Large language models (LLMs) often solve challenging math exercises yet fail to apply the concept right when the problem requires genuine understanding. Popular Reinforcement Learning with Verifiable Rewards (RLVR) pipelines reinforce final answers but provide little fine-grained conceptual signal, so models improve at pattern reuse rather than conceptual applications. We introduce CORE (Concept-Oriented REinforcement), an RL training framework that turns explicit concepts into a controllable supervision signal. Starting from a high-quality, low-contamination textbook resource that links verifiable exercises to concise concept descriptions, we run a sanity probe showing LLMs can restate definitions but fail concept-linked quizzes, quantifying the conceptual reasoning gap. CORE then (i) synthesizes concept-aligned quizzes, (ii) injects brief concept snippets during rollouts to elicit concept-primed trajectories, and (iii) reinforces conceptual reasoning via trajectory replacement after group failures, a lightweight forward-KL constraint that aligns unguided with concept-primed policies, or standard GRPO directly on concept-aligned quizzes. Across several models, CORE delivers consistent gains over vanilla and SFT baselines on both in-domain concept-exercise suites and diverse out-of-domain math benchmarks. CORE unifies direct training on concept-aligned quizzes and concept-injected rollouts under outcome regularization. It provides fine-grained conceptual supervision that bridges problem-solving competence and genuine conceptual reasoning, while remaining algorithm- and verifier-agnostic.",
+          "arxiv_url": "https://arxiv.org/abs/2512.18857v1",
+          "pdf_url": "https://arxiv.org/pdf/2512.18857v1.pdf",
+          "submitted_date": "2025-12-21T19:01:35+00:00",
+          "categories": [
+            "cs.AI",
+            "cs.LG"
+          ],
+          "comments": ""
+        },
+        {
+          "id": "2512.18837v1",
+          "title": "Generative Modeling through Spectral Analysis of Koopman Operator",
+          "authors": [
+            "Yuanchao Xu",
+            "Fengyi Li",
+            "Masahiro Fujisawa",
+            "Youssef Marzouk",
+            "Isao Ishikawa"
+          ],
+          "display_authors": [
+            "Yuanchao Xu",
+            "Fengyi Li",
+            "Masahiro Fujisawa",
+            "et al."
+          ],
+          "summary": "We propose Koopman Spectral Wasserstein Gradient Descent (KSWGD), a generative modeling framework that combines operator-theoretic spectral analysis with optimal transport. The novel insight is that the spectral structure required for accelerated Wasserstein gradient descent can be directly estimated from trajectory data via Koopman operator approximation which can eliminate the need for explicit knowledge of the target potential or neural network training. We provide rigorous convergence analysis and establish connection to Feynman-Kac theory that clarifies the method's probabilistic foundation. Experiments across diverse settings, including compact manifold sampling, metastable multi-well systems, image generation, and high dimensional stochastic partial differential equation, demonstrate that KSWGD consistently achieves faster convergence than other existing methods while maintaining high sample quality.",
+          "arxiv_url": "https://arxiv.org/abs/2512.18837v1",
+          "pdf_url": "https://arxiv.org/pdf/2512.18837v1.pdf",
+          "submitted_date": "2025-12-21T17:54:09+00:00",
+          "categories": [
+            "cs.LG",
+            "math.DS"
+          ],
+          "comments": ""
+        },
+        {
+          "id": "2512.18826v1",
+          "title": "Hyperbolic Graph Embeddings: a Survey and an Evaluation on Anomaly Detection",
+          "authors": [
+            "Souhail Abdelmouaiz Sadat",
+            "Mohamed Yacine Touahria Miliani",
+            "Khadidja Hab El Hames",
+            "Hamida Seba",
+            "Mohammed Haddad"
+          ],
+          "display_authors": [
+            "Souhail Abdelmouaiz Sadat",
+            "Mohamed Yacine Touahria Miliani",
+            "Khadidja Hab El Hames",
+            "et al."
+          ],
+          "summary": "This survey reviews hyperbolic graph embedding models, and evaluate them on anomaly detection, highlighting their advantages over Euclidean methods in capturing complex structures. Evaluating models like \\textit{HGCAE}, \\textit{\\(\\mathcal{P}\\)-VAE}, and \\textit{HGCN} demonstrates high performance, with \\textit{\\(\\mathcal{P}\\)-VAE} achieving an F1-score of 94\\% on the \\textit{Elliptic} dataset and \\textit{HGCAE} scoring 80\\% on \\textit{Cora}. In contrast, Euclidean methods like \\textit{DOMINANT} and \\textit{GraphSage} struggle with complex data. The study emphasizes the potential of hyperbolic spaces for improving anomaly detection, and provides an open-source library to foster further research in this field.",
+          "arxiv_url": "https://arxiv.org/abs/2512.18826v1",
+          "pdf_url": "https://arxiv.org/pdf/2512.18826v1.pdf",
+          "submitted_date": "2025-12-21T17:19:29+00:00",
+          "categories": [
+            "cs.LG",
+            "cs.AI"
+          ],
+          "comments": ""
+        },
+        {
+          "id": "2512.18815v1",
+          "title": "Controllable Probabilistic Forecasting with Stochastic Decomposition Layers",
+          "authors": [
+            "John S. Schreck",
+            "William E. Chapman",
+            "Charlie Becker",
+            "David John Gagne",
+            "Dhamma Kimpara",
+            "Nihanth Cherukuru",
+            "Judith Berner",
+            "Kirsten J. Mayer",
+            "Negin Sobhani"
+          ],
+          "display_authors": [
+            "John S. Schreck",
+            "William E. Chapman",
+            "Charlie Becker",
+            "et al."
+          ],
+          "summary": "AI weather prediction ensembles with latent noise injection and optimized with the continuous ranked probability score (CRPS) have produced both accurate and well-calibrated predictions with far less computational cost compared with diffusion-based methods. However, current CRPS ensemble approaches vary in their training strategies and noise injection mechanisms, with most injecting noise globally throughout the network via conditional normalization. This structure increases training expense and limits the physical interpretability of the stochastic perturbations. We introduce Stochastic Decomposition Layers (SDL) for converting deterministic machine learning weather models into probabilistic ensemble systems. Adapted from StyleGAN's hierarchical noise injection, SDL applies learned perturbations at three decoder scales through latent-driven modulation, per-pixel noise, and channel scaling. When applied to WXFormer via transfer learning, SDL requires less than 2\\% of the computational cost needed to train the baseline model. Each ensemble member is generated from a compact latent tensor (5 MB), enabling perfect reproducibility and post-inference spread adjustment through latent rescaling. Evaluation on 2022 ERA5 reanalysis shows ensembles with spread-skill ratios approaching unity and rank histograms that progressively flatten toward uniformity through medium-range forecasts, achieving calibration competitive with operational IFS-ENS. Multi-scale experiments reveal hierarchical uncertainty: coarse layers modulate synoptic patterns while fine layers control mesoscale variability. The explicit latent parameterization provides interpretable uncertainty quantification for operational forecasting and climate applications.",
+          "arxiv_url": "https://arxiv.org/abs/2512.18815v1",
+          "pdf_url": "https://arxiv.org/pdf/2512.18815v1.pdf",
+          "submitted_date": "2025-12-21T17:10:00+00:00",
+          "categories": [
+            "cs.LG",
+            "cs.AI",
+            "physics.ao-ph",
+            "physics.geo-ph"
+          ],
+          "comments": ""
+        },
+        {
+          "id": "2512.18788v1",
+          "title": "RIS-Enabled Smart Wireless Environments: Fundamentals and Distributed Optimization",
+          "authors": [
+            "George C. Alexandropoulos",
+            "Kostantinos D. Katsanos",
+            "George Stamatelis",
+            "Ioannis Gavras"
+          ],
+          "display_authors": [
+            "George C. Alexandropoulos",
+            "Kostantinos D. Katsanos",
+            "George Stamatelis",
+            "et al."
+          ],
+          "summary": "This chapter overviews the concept of Smart Wireless Environments (SWEs) motivated by the emerging technology of Reconfigurable Intelligent Surfaces (RISs). The operating principles and state-of-the-art hardware architectures of programmable metasurfaces are first introduced. Subsequently, key performance objectives and use cases of RIS-enabled SWEs, including spectral and energy efficiency, physical-layer security, integrated sensing and communications, as well as the emerging paradigm of over-the-air computing, are discussed. Focusing on the recent trend of Beyond-Diagonal (BD) RISs, two distributed designs of respective SWEs are presented. The first deals with a multi-user Multiple-Input Single-Output (MISO) system operating within the area of influence of a SWE comprising multiple BD-RISs. A hybrid distributed and fusion machine learning framework based on multi-branch attention-based convolutional Neural Networks (NNs), NN parameter sharing, and neuroevolutionary training is presented, which enables online mapping of channel realizations to the BD-RIS configurations as well as the multi-user transmit precoder. Performance evaluation results showcase that the distributedly optimized RIS-enabled SWE achieves near-optimal sum-rate performance with low online computational complexity. The second design focuses on the wideband interference MISO broadcast channel, where each base station exclusively controls one BD-RIS to serve its assigned group of users. A cooperative optimization framework that jointly designs the base station transmit precoders as well as the tunable capacitances and switch matrices of all metasurfaces is presented. Numerical results demonstrating the superior sum-rate performance of the designed RIS-enabled SWE for multi-cell MISO networks over benchmark schemes, considering non-cooperative configuration and conventional diagonal metasurfaces, are presented.",
+          "arxiv_url": "https://arxiv.org/abs/2512.18788v1",
+          "pdf_url": "https://arxiv.org/pdf/2512.18788v1.pdf",
+          "submitted_date": "2025-12-21T16:00:50+00:00",
+          "categories": [
+            "eess.SP",
+            "cs.IT",
+            "cs.LG"
+          ],
+          "comments": "48 pages; 12 figures; book chapter"
+        },
+        {
+          "id": "2512.18784v1",
+          "title": "Eff-GRot: Efficient and Generalizable Rotation Estimation with Transformers",
+          "authors": [
+            "Fanis Mathioulakis",
+            "Gorjan Radevski",
+            "Tinne Tuytelaars"
+          ],
+          "display_authors": [
+            "Fanis Mathioulakis",
+            "Gorjan Radevski",
+            "Tinne Tuytelaars"
+          ],
+          "summary": "We introduce Eff-GRot, an approach for efficient and generalizable rotation estimation from RGB images. Given a query image and a set of reference images with known orientations, our method directly predicts the object's rotation in a single forward pass, without requiring object- or category-specific training. At the core of our framework is a transformer that performs a comparison in the latent space, jointly processing rotation-aware representations from multiple references alongside a query. This design enables a favorable balance between accuracy and computational efficiency while remaining simple, scalable, and fully end-to-end. Experimental results show that Eff-GRot offers a promising direction toward more efficient rotation estimation, particularly in latency-sensitive applications.",
+          "arxiv_url": "https://arxiv.org/abs/2512.18784v1",
+          "pdf_url": "https://arxiv.org/pdf/2512.18784v1.pdf",
+          "submitted_date": "2025-12-21T15:57:13+00:00",
+          "categories": [
+            "cs.CV",
+            "cs.LG"
+          ],
+          "comments": ""
+        },
+        {
+          "id": "2512.18774v1",
+          "title": "Label-Informed Outlier Detection Based on Granule Density",
+          "authors": [
+            "Baiyang Chen",
+            "Zhong Yuan",
+            "Dezhong Peng",
+            "Hongmei Chen",
+            "Xiaomin Song",
+            "Huiming Zheng"
+          ],
+          "display_authors": [
+            "Baiyang Chen",
+            "Zhong Yuan",
+            "Dezhong Peng",
+            "et al."
+          ],
+          "summary": "Outlier detection, crucial for identifying unusual patterns with significant implications across numerous applications, has drawn considerable research interest. Existing semi-supervised methods typically treat data as purely numerical and} in a deterministic manner, thereby neglecting the heterogeneity and uncertainty inherent in complex, real-world datasets. This paper introduces a label-informed outlier detection method for heterogeneous data based on Granular Computing and Fuzzy Sets, namely Granule Density-based Outlier Factor (GDOF). Specifically, GDOF first employs label-informed fuzzy granulation to effectively represent various data types and develops granule density for precise density estimation. Subsequently, granule densities from individual attributes are integrated for outlier scoring by assessing attribute relevance with a limited number of labeled outliers. Experimental results on various real-world datasets show that GDOF stands out in detecting outliers in heterogeneous data with a minimal number of labeled outliers. The integration of Fuzzy Sets and Granular Computing in GDOF offers a practical framework for outlier detection in complex and diverse data types. All relevant datasets and source codes are publicly available for further research. This is the author's accepted manuscript of a paper published in IEEE Transactions on Fuzzy Systems. The final version is available at https://doi.org/10.1109/TFUZZ.2024.3514853",
+          "arxiv_url": "https://arxiv.org/abs/2512.18774v1",
+          "pdf_url": "https://arxiv.org/pdf/2512.18774v1.pdf",
+          "submitted_date": "2025-12-21T15:27:06+00:00",
+          "categories": [
+            "cs.LG"
+          ],
+          "comments": "Author's Accepted Manuscript"
+        },
+        {
+          "id": "2512.18763v1",
+          "title": "Gaussian-Mixture-Model Q-Functions for Policy Iteration in Reinforcement Learning",
+          "authors": [
+            "Minh Vu",
+            "Konstantinos Slavakis"
+          ],
+          "display_authors": [
+            "Minh Vu",
+            "Konstantinos Slavakis"
+          ],
+          "summary": "Unlike their conventional use as estimators of probability density functions in reinforcement learning (RL), this paper introduces a novel function-approximation role for Gaussian mixture models (GMMs) as direct surrogates for Q-function losses. These parametric models, termed GMM-QFs, possess substantial representational capacity, as they are shown to be universal approximators over a broad class of functions. They are further embedded within Bellman residuals, where their learnable parameters -- a fixed number of mixing weights, together with Gaussian mean vectors and covariance matrices -- are inferred from data via optimization on a Riemannian manifold. This geometric perspective on the parameter space naturally incorporates Riemannian optimization into the policy-evaluation step of standard policy-iteration frameworks. Rigorous theoretical results are established, and supporting numerical tests show that, even without access to experience data, GMM-QFs deliver competitive performance and, in some cases, outperform state-of-the-art approaches across a range of benchmark RL tasks, all while maintaining a significantly smaller computational footprint than deep-learning methods that rely on experience data.",
+          "arxiv_url": "https://arxiv.org/abs/2512.18763v1",
+          "pdf_url": "https://arxiv.org/pdf/2512.18763v1.pdf",
+          "submitted_date": "2025-12-21T15:00:32+00:00",
+          "categories": [
+            "cs.LG"
+          ],
+          "comments": "This work has been submitted to the IEEE for possible publication"
+        },
+        {
+          "id": "2512.18745v1",
+          "title": "InSight-o3: Empowering Multimodal Foundation Models with Generalized Visual Search",
+          "authors": [
+            "Kaican Li",
+            "Lewei Yao",
+            "Jiannan Wu",
+            "Tiezheng Yu",
+            "Jierun Chen",
+            "Haoli Bai",
+            "Lu Hou",
+            "Lanqing Hong",
+            "Wei Zhang",
+            "Nevin L. Zhang"
+          ],
+          "display_authors": [
+            "Kaican Li",
+            "Lewei Yao",
+            "Jiannan Wu",
+            "et al."
+          ],
+          "summary": "The ability for AI agents to \"think with images\" requires a sophisticated blend of reasoning and perception. However, current open multimodal agents still largely fall short on the reasoning aspect crucial for real-world tasks like analyzing documents with dense charts/diagrams and navigating maps. To address this gap, we introduce O3-Bench, a new benchmark designed to evaluate multimodal reasoning with interleaved attention to visual details. O3-Bench features challenging problems that require agents to piece together subtle visual information from distinct image areas through multi-step reasoning. The problems are highly challenging even for frontier systems like OpenAI o3, which only obtains 40.8% accuracy on O3-Bench. To make progress, we propose InSight-o3, a multi-agent framework consisting of a visual reasoning agent (vReasoner) and a visual search agent (vSearcher) for which we introduce the task of generalized visual search -- locating relational, fuzzy, or conceptual regions described in free-form language, beyond just simple objects or figures in natural images. We then present a multimodal LLM purpose-trained for this task via reinforcement learning. As a plug-and-play agent, our vSearcher empowers frontier multimodal models (as vReasoners), significantly improving their performance on a wide range of benchmarks. This marks a concrete step towards powerful o3-like open systems. Our code and dataset can be found at https://github.com/m-Just/InSight-o3 .",
+          "arxiv_url": "https://arxiv.org/abs/2512.18745v1",
+          "pdf_url": "https://arxiv.org/pdf/2512.18745v1.pdf",
+          "submitted_date": "2025-12-21T14:23:07+00:00",
+          "categories": [
+            "cs.CV",
+            "cs.CL",
+            "cs.LG"
+          ],
+          "comments": ""
+        },
+        {
+          "id": "2512.18737v1",
+          "title": "PIPCFR: Pseudo-outcome Imputation with Post-treatment Variables for Individual Treatment Effect Estimation",
+          "authors": [
+            "Zichuan Lin",
+            "Xiaokai Huang",
+            "Jiate Liu",
+            "Yuxuan Han",
+            "Jia Chen",
+            "Xiapeng Wu",
+            "Deheng Ye"
+          ],
+          "display_authors": [
+            "Zichuan Lin",
+            "Xiaokai Huang",
+            "Jiate Liu",
+            "et al."
+          ],
+          "summary": "The estimation of individual treatment effects (ITE) focuses on predicting the outcome changes that result from a change in treatment. A fundamental challenge in observational data is that while we need to infer outcome differences under alternative treatments, we can only observe each individual's outcome under a single treatment. Existing approaches address this limitation either by training with inferred pseudo-outcomes or by creating matched instance pairs. However, recent work has largely overlooked the potential impact of post-treatment variables on the outcome. This oversight prevents existing methods from fully capturing outcome variability, resulting in increased variance in counterfactual predictions. This paper introduces Pseudo-outcome Imputation with Post-treatment Variables for Counterfactual Regression (PIPCFR), a novel approach that incorporates post-treatment variables to improve pseudo-outcome imputation. We analyze the challenges inherent in utilizing post-treatment variables and establish a novel theoretical bound for ITE risk that explicitly connects post-treatment variables to ITE estimation accuracy. Unlike existing methods that ignore these variables or impose restrictive assumptions, PIPCFR learns effective representations that preserve informative components while mitigating bias. Empirical evaluations on both real-world and simulated datasets demonstrate that PIPCFR achieves significantly lower ITE errors compared to existing methods.",
+          "arxiv_url": "https://arxiv.org/abs/2512.18737v1",
+          "pdf_url": "https://arxiv.org/pdf/2512.18737v1.pdf",
+          "submitted_date": "2025-12-21T13:57:26+00:00",
+          "categories": [
+            "cs.LG",
+            "cs.AI"
+          ],
+          "comments": "17 pages, 3 figures"
+        },
+        {
+          "id": "2512.18736v1",
+          "title": "Is Your Conditional Diffusion Model Actually Denoising?",
+          "authors": [
+            "Daniel Pfrommer",
+            "Zehao Dou",
+            "Christopher Scarvelis",
+            "Max Simchowitz",
+            "Ali Jadbabaie"
+          ],
+          "display_authors": [
+            "Daniel Pfrommer",
+            "Zehao Dou",
+            "Christopher Scarvelis",
+            "et al."
+          ],
+          "summary": "We study the inductive biases of diffusion models with a conditioning-variable, which have seen widespread application as both text-conditioned generative image models and observation-conditioned continuous control policies. We observe that when these models are queried conditionally, their generations consistently deviate from the idealized \"denoising\" process upon which diffusion models are formulated, inducing disagreement between popular sampling algorithms (e.g. DDPM, DDIM). We introduce Schedule Deviation, a rigorous measure which captures the rate of deviation from a standard denoising process, and provide a methodology to compute it. Crucially, we demonstrate that the deviation from an idealized denoising process occurs irrespective of the model capacity or amount of training data. We posit that this phenomenon occurs due to the difficulty of bridging distinct denoising flows across different parts of the conditioning space and show theoretically how such a phenomenon can arise through an inductive bias towards smoothness.",
+          "arxiv_url": "https://arxiv.org/abs/2512.18736v1",
+          "pdf_url": "https://arxiv.org/pdf/2512.18736v1.pdf",
+          "submitted_date": "2025-12-21T13:54:27+00:00",
+          "categories": [
+            "cs.LG"
+          ],
+          "comments": "41 pages, 14 figures, published in Neural Information Processing Systems 2025"
+        },
+        {
+          "id": "2512.18732v1",
+          "title": "Counterfactual Basis Extension and Representational Geometry: An MDL-Constrained Model of Conceptual Growth",
+          "authors": [
+            "Chainarong Amornbunchornvej"
+          ],
+          "display_authors": [
+            "Chainarong Amornbunchornvej"
+          ],
+          "summary": "Concept learning becomes possible only when existing representations fail to account for experience. Most models of learning and inference, however, presuppose a fixed representational basis within which belief updating occurs. In this paper, I address a prior question: under what structural conditions can the representational basis itself expand in a principled and selective way?   I propose a geometric framework in which conceptual growth is modeled as admissible basis extension evaluated under a Minimum Description Length (MDL) criterion. Experience, whether externally observed or internally simulated, is represented as vectors relative to a current conceptual subspace. Residual components capture systematic representational failure, and candidate conceptual extensions are restricted to low-rank, admissible transformations. I show that any MDL-accepted extension can be chosen so that its novel directions lie entirely within the residual span induced by experience, while extensions orthogonal to this span strictly increase description length and are therefore rejected.   This yields a conservative account of imagination and conceptual innovation. Internally generated counterfactual representations contribute to learning only insofar as they expose or amplify structured residual error, and cannot introduce arbitrary novelty. I further distinguish representational counterfactuals--counterfactuals over an agent's conceptual basis--from causal or value-level counterfactuals, and show how MDL provides a normative selection principle governing representational change.   Overall, the framework characterizes conceptual development as an error-driven, geometry-constrained process of basis extension, clarifying both the role and the limits of imagination in learning and theory change.",
+          "arxiv_url": "https://arxiv.org/abs/2512.18732v1",
+          "pdf_url": "https://arxiv.org/pdf/2512.18732v1.pdf",
+          "submitted_date": "2025-12-21T13:39:00+00:00",
+          "categories": [
+            "cs.AI",
+            "cs.LG",
+            "stat.ML"
+          ],
+          "comments": "First draft"
+        },
+        {
+          "id": "2512.18730v1",
+          "title": "A Theoretical Lens for RL-Tuned Language Models via Energy-Based Models",
+          "authors": [
+            "Zhiquan Tan",
+            "Yinrong Hong"
+          ],
+          "display_authors": [
+            "Zhiquan Tan",
+            "Yinrong Hong"
+          ],
+          "summary": "Large language models (LLMs) trained via KL-regularized reinforcement learning demonstrate strong instruction following, self-correction, and reasoning abilities. Yet their theoretical underpinnings remain limited. We exploit the closed-form energy-based model (EBM) structure of the optimal KL-regularized policy to provide a unified variational analysis of LLMs.   For instruction-tuned models, under natural assumptions on reward potentials and pretraining symmetry, we prove that the transition kernel satisfies detailed balance with respect to a scalar potential encoding response quality. This yields monotonic KL convergence to a high-quality stationary distribution, bounded hitting times to superior states, and exponential mixing governed by the spectral gap.   For reasoning models trained with verifiable rewards (RLVR), we show the objective is equivalent to expected KL minimization toward an optimal reasoning distribution, with the suboptimality gap reducing to the Bernoulli KL between target and current accuracies along the natural gradient flow. This helps explain empirical entropy-accuracy trade-offs.",
+          "arxiv_url": "https://arxiv.org/abs/2512.18730v1",
+          "pdf_url": "https://arxiv.org/pdf/2512.18730v1.pdf",
+          "submitted_date": "2025-12-21T13:28:58+00:00",
+          "categories": [
+            "cs.LG"
+          ],
+          "comments": ""
+        },
+        {
+          "id": "2512.18725v1",
+          "title": "ML Inference Scheduling with Predictable Latency",
+          "authors": [
+            "Haidong Zhao",
+            "Nikolaos Georgantas"
+          ],
+          "display_authors": [
+            "Haidong Zhao",
+            "Nikolaos Georgantas"
+          ],
+          "summary": "Machine learning (ML) inference serving systems can schedule requests to improve GPU utilization and to meet service level objectives (SLOs) or deadlines. However, improving GPU utilization may compromise latency-sensitive scheduling, as concurrent tasks contend for GPU resources and thereby introduce interference. Given that interference effects introduce unpredictability in scheduling, neglecting them may compromise SLO or deadline satisfaction. Nevertheless, existing interference prediction approaches remain limited in several respects, which may restrict their usefulness for scheduling. First, they are often coarse-grained, which ignores runtime co-location dynamics and thus restricts their accuracy in interference prediction. Second, they tend to use a static prediction model, which may not effectively cope with different workload characteristics. To this end, we evaluate the potential limitations of existing interference prediction approaches and outline our ongoing work toward achieving efficient ML inference scheduling.",
+          "arxiv_url": "https://arxiv.org/abs/2512.18725v1",
+          "pdf_url": "https://arxiv.org/pdf/2512.18725v1.pdf",
+          "submitted_date": "2025-12-21T12:59:45+00:00",
+          "categories": [
+            "cs.LG"
+          ],
+          "comments": "Accepted at MAIoT@Middleware 2025"
+        },
+        {
+          "id": "2512.18722v1",
+          "title": "Generating Risky Samples with Conformity Constraints via Diffusion Models",
+          "authors": [
+            "Han Yu",
+            "Hao Zou",
+            "Xingxuan Zhang",
+            "Zhengyi Wang",
+            "Yue He",
+            "Kehan Li",
+            "Peng Cui"
+          ],
+          "display_authors": [
+            "Han Yu",
+            "Hao Zou",
+            "Xingxuan Zhang",
+            "et al."
+          ],
+          "summary": "Although neural networks achieve promising performance in many tasks, they may still fail when encountering some examples and bring about risks to applications. To discover risky samples, previous literature attempts to search for patterns of risky samples within existing datasets or inject perturbation into them. Yet in this way the diversity of risky samples is limited by the coverage of existing datasets. To overcome this limitation, recent works adopt diffusion models to produce new risky samples beyond the coverage of existing datasets. However, these methods struggle in the conformity between generated samples and expected categories, which could introduce label noise and severely limit their effectiveness in applications. To address this issue, we propose RiskyDiff that incorporates the embeddings of both texts and images as implicit constraints of category conformity. We also design a conformity score to further explicitly strengthen the category conformity, as well as introduce the mechanisms of embedding screening and risky gradient guidance to boost the risk of generated samples. Extensive experiments reveal that RiskyDiff greatly outperforms existing methods in terms of the degree of risk, generation quality, and conformity with conditioned categories. We also empirically show the generalization ability of the models can be enhanced by augmenting training data with generated samples of high conformity.",
+          "arxiv_url": "https://arxiv.org/abs/2512.18722v1",
+          "pdf_url": "https://arxiv.org/pdf/2512.18722v1.pdf",
+          "submitted_date": "2025-12-21T12:47:14+00:00",
+          "categories": [
+            "cs.LG"
+          ],
+          "comments": ""
+        },
+        {
+          "id": "2512.18720v1",
+          "title": "Unsupervised Feature Selection via Robust Autoencoder and Adaptive Graph Learning",
+          "authors": [
+            "Feng Yu",
+            "MD Saifur Rahman Mazumder",
+            "Ying Su",
+            "Oscar Contreras Velasco"
+          ],
+          "display_authors": [
+            "Feng Yu",
+            "MD Saifur Rahman Mazumder",
+            "Ying Su",
+            "et al."
+          ],
+          "summary": "Effective feature selection is essential for high-dimensional data analysis and machine learning. Unsupervised feature selection (UFS) aims to simultaneously cluster data and identify the most discriminative features. Most existing UFS methods linearly project features into a pseudo-label space for clustering, but they suffer from two critical limitations: (1) an oversimplified linear mapping that fails to capture complex feature relationships, and (2) an assumption of uniform cluster distributions, ignoring outliers prevalent in real-world data. To address these issues, we propose the Robust Autoencoder-based Unsupervised Feature Selection (RAEUFS) model, which leverages a deep autoencoder to learn nonlinear feature representations while inherently improving robustness to outliers. We further develop an efficient optimization algorithm for RAEUFS. Extensive experiments demonstrate that our method outperforms state-of-the-art UFS approaches in both clean and outlier-contaminated data settings.",
+          "arxiv_url": "https://arxiv.org/abs/2512.18720v1",
+          "pdf_url": "https://arxiv.org/pdf/2512.18720v1.pdf",
+          "submitted_date": "2025-12-21T12:42:37+00:00",
+          "categories": [
+            "stat.ML",
+            "cs.LG"
+          ],
+          "comments": ""
+        },
+        {
+          "id": "2512.18699v1",
+          "title": "Task Vector in TTS: Toward Emotionally Expressive Dialectal Speech Synthesis",
+          "authors": [
+            "Pengchao Feng",
+            "Yao Xiao",
+            "Ziyang Ma",
+            "Zhikang Niu",
+            "Shuai Fan",
+            "Yao Li",
+            "Sheng Wang",
+            "Xie Chen"
+          ],
+          "display_authors": [
+            "Pengchao Feng",
+            "Yao Xiao",
+            "Ziyang Ma",
+            "et al."
+          ],
+          "summary": "Recent advances in text-to-speech (TTS) have yielded remarkable improvements in naturalness and intelligibility. Building on these achievements, research has increasingly shifted toward enhancing the expressiveness of generated speech, such as dialectal and emotional TTS. However, cross-style synthesis combining both dialect and emotion remains challenging and largely unexplored, mainly due to the scarcity of dialectal data with emotional labels. To address this, we propose Hierarchical Expressive Vector (HE-Vector), a two-stage method for Emotional Dialectal TTS. In the first stage, we construct different task vectors to model dialectal and emotional styles independently, and then enhance single-style synthesis by adjusting their weights, a method we refer to as Expressive Vector (E-Vector). For the second stage, we hierarchically integrate these vectors to achieve controllable emotionally expressive dialect synthesis without requiring jointly labeled data, corresponding to Hierarchical Expressive Vector (HE-Vector). Experimental results demonstrate that HE-Vectors achieve superior performance in dialect synthesis, and promising results in synthesizing emotionally expressive dialectal speech in a zero-shot setting.",
+          "arxiv_url": "https://arxiv.org/abs/2512.18699v1",
+          "pdf_url": "https://arxiv.org/pdf/2512.18699v1.pdf",
+          "submitted_date": "2025-12-21T11:27:58+00:00",
+          "categories": [
+            "cs.SD",
+            "cs.LG"
+          ],
+          "comments": ""
+        },
+        {
+          "id": "2512.18689v1",
+          "title": "Fusion of Multiscale Features Via Centralized Sparse-attention Network for EEG Decoding",
+          "authors": [
+            "Xiangrui Cai",
+            "Shaocheng Ma",
+            "Lei Cao",
+            "Jie Li",
+            "Tianyu Liu",
+            "Yilin Dong"
+          ],
+          "display_authors": [
+            "Xiangrui Cai",
+            "Shaocheng Ma",
+            "Lei Cao",
+            "et al."
+          ],
+          "summary": "Electroencephalography (EEG) signal decoding is a key technology that translates brain activity into executable commands, laying the foundation for direct brain-machine interfacing and intelligent interaction. To address the inherent spatiotemporal heterogeneity of EEG signals, this paper proposes a multi-branch parallel architecture, where each temporal scale is equipped with an independent spatial feature extraction module. To further enhance multi-branch feature fusion, we propose a Fusion of Multiscale Features via Centralized Sparse-attention Network (EEG-CSANet), a centralized sparse-attention network. It employs a main-auxiliary branch architecture, where the main branch models core spatiotemporal patterns via multiscale self-attention, and the auxiliary branch facilitates efficient local interactions through sparse cross-attention. Experimental results show that EEG-CSANet achieves state-of-the-art (SOTA) performance across five public datasets (BCIC-IV-2A, BCIC-IV-2B, HGD, SEED, and SEED-VIG), with accuracies of 88.54%, 91.09%, 99.43%, 96.03%, and 90.56%, respectively. Such performance demonstrates its strong adaptability and robustness across various EEG decoding tasks. Moreover, extensive ablation studies are conducted to enhance the interpretability of EEG-CSANet. In the future, we hope that EEG-CSANet could serve as a promising baseline model in the field of EEG signal decoding. The source code is publicly available at: https://github.com/Xiangrui-Cai/EEG-CSANet",
+          "arxiv_url": "https://arxiv.org/abs/2512.18689v1",
+          "pdf_url": "https://arxiv.org/pdf/2512.18689v1.pdf",
+          "submitted_date": "2025-12-21T10:55:32+00:00",
+          "categories": [
+            "cs.LG",
+            "cs.AI"
+          ],
+          "comments": ""
+        },
+        {
+          "id": "2512.18673v1",
+          "title": "Improving Pattern Recognition of Scheduling Anomalies through Structure-Aware and Semantically-Enhanced Graphs",
+          "authors": [
+            "Ning Lyu",
+            "Junjie Jiang",
+            "Lu Chang",
+            "Chihui Shao",
+            "Feng Chen",
+            "Chong Zhang"
+          ],
+          "display_authors": [
+            "Ning Lyu",
+            "Junjie Jiang",
+            "Lu Chang",
+            "et al."
+          ],
+          "summary": "This paper proposes a structure-aware driven scheduling graph modeling method to improve the accuracy and representation capability of anomaly identification in scheduling behaviors of complex systems. The method first designs a structure-guided scheduling graph construction mechanism that integrates task execution stages, resource node states, and scheduling path information to build dynamically evolving scheduling behavior graphs, enhancing the model's ability to capture global scheduling relationships. On this basis, a multi-scale graph semantic aggregation module is introduced to achieve semantic consistency modeling of scheduling features through local adjacency semantic integration and global topology alignment, thereby strengthening the model's capability to capture abnormal features in complex scenarios such as multi-task concurrency, resource competition, and stage transitions. Experiments are conducted on a real scheduling dataset with multiple scheduling disturbance paths set to simulate different types of anomalies, including structural shifts, resource changes, and task delays. The proposed model demonstrates significant performance advantages across multiple metrics, showing a sensitive response to structural disturbances and semantic shifts. Further visualization analysis reveals that, under the combined effect of structure guidance and semantic aggregation, the scheduling behavior graph exhibits stronger anomaly separability and pattern representation, validating the effectiveness and adaptability of the method in scheduling anomaly detection tasks.",
+          "arxiv_url": "https://arxiv.org/abs/2512.18673v1",
+          "pdf_url": "https://arxiv.org/pdf/2512.18673v1.pdf",
+          "submitted_date": "2025-12-21T10:27:06+00:00",
+          "categories": [
+            "cs.LG"
+          ],
+          "comments": ""
+        },
+        {
+          "id": "2512.18670v1",
+          "title": "Demonstration-Guided Continual Reinforcement Learning in Dynamic Environments",
+          "authors": [
+            "Xue Yang",
+            "Michael Schukat",
+            "Junlin Lu",
+            "Patrick Mannion",
+            "Karl Mason",
+            "Enda Howley"
+          ],
+          "display_authors": [
+            "Xue Yang",
+            "Michael Schukat",
+            "Junlin Lu",
+            "et al."
+          ],
+          "summary": "Reinforcement learning (RL) excels in various applications but struggles in dynamic environments where the underlying Markov decision process evolves. Continual reinforcement learning (CRL) enables RL agents to continually learn and adapt to new tasks, but balancing stability (preserving prior knowledge) and plasticity (acquiring new knowledge) remains challenging. Existing methods primarily address the stability-plasticity dilemma through mechanisms where past knowledge influences optimization but rarely affects the agent's behavior directly, which may hinder effective knowledge reuse and efficient learning. In contrast, we propose demonstration-guided continual reinforcement learning (DGCRL), which stores prior knowledge in an external, self-evolving demonstration repository that directly guides RL exploration and adaptation. For each task, the agent dynamically selects the most relevant demonstration and follows a curriculum-based strategy to accelerate learning, gradually shifting from demonstration-guided exploration to fully self-exploration. Extensive experiments on 2D navigation and MuJoCo locomotion tasks demonstrate its superior average performance, enhanced knowledge transfer, mitigation of forgetting, and training efficiency. The additional sensitivity analysis and ablation study further validate its effectiveness.",
+          "arxiv_url": "https://arxiv.org/abs/2512.18670v1",
+          "pdf_url": "https://arxiv.org/pdf/2512.18670v1.pdf",
+          "submitted_date": "2025-12-21T10:13:21+00:00",
+          "categories": [
+            "cs.LG"
+          ],
+          "comments": ""
+        },
+        {
+          "id": "2512.18660v1",
+          "title": "PMPGuard: Catching Pseudo-Matched Pairs in Remote Sensing Image-Text Retrieval",
+          "authors": [
+            "Pengxiang Ouyang",
+            "Qing Ma",
+            "Zheng Wang",
+            "Cong Bai"
+          ],
+          "display_authors": [
+            "Pengxiang Ouyang",
+            "Qing Ma",
+            "Zheng Wang",
+            "et al."
+          ],
+          "summary": "Remote sensing (RS) image-text retrieval faces significant challenges in real-world datasets due to the presence of Pseudo-Matched Pairs (PMPs), semantically mismatched or weakly aligned image-text pairs, which hinder the learning of reliable cross-modal alignments. To address this issue, we propose a novel retrieval framework that leverages Cross-Modal Gated Attention and a Positive-Negative Awareness Attention mechanism to mitigate the impact of such noisy associations. The gated module dynamically regulates cross-modal information flow, while the awareness mechanism explicitly distinguishes informative (positive) cues from misleading (negative) ones during alignment learning. Extensive experiments on three benchmark RS datasets, i.e., RSICD, RSITMD, and RS5M, demonstrate that our method consistently achieves state-of-the-art performance, highlighting its robustness and effectiveness in handling real-world mismatches and PMPs in RS image-text retrieval tasks.",
+          "arxiv_url": "https://arxiv.org/abs/2512.18660v1",
+          "pdf_url": "https://arxiv.org/pdf/2512.18660v1.pdf",
+          "submitted_date": "2025-12-21T09:16:11+00:00",
+          "categories": [
+            "cs.CV",
+            "cs.LG",
+            "cs.MM"
+          ],
+          "comments": ""
+        },
+        {
+          "id": "2512.18634v1",
+          "title": "From Shortcut to Induction Head: How Data Diversity Shapes Algorithm Selection in Transformers",
+          "authors": [
+            "Ryotaro Kawata",
+            "Yujin Song",
+            "Alberto Bietti",
+            "Naoki Nishikawa",
+            "Taiji Suzuki",
+            "Samuel Vaiter",
+            "Denny Wu"
+          ],
+          "display_authors": [
+            "Ryotaro Kawata",
+            "Yujin Song",
+            "Alberto Bietti",
+            "et al."
+          ],
+          "summary": "Transformers can implement both generalizable algorithms (e.g., induction heads) and simple positional shortcuts (e.g., memorizing fixed output positions). In this work, we study how the choice of pretraining data distribution steers a shallow transformer toward one behavior or the other. Focusing on a minimal trigger-output prediction task -- copying the token immediately following a special trigger upon its second occurrence -- we present a rigorous analysis of gradient-based training of a single-layer transformer. In both the infinite and finite sample regimes, we prove a transition in the learned mechanism: if input sequences exhibit sufficient diversity, measured by a low ``max-sum'' ratio of trigger-to-trigger distances, the trained model implements an induction head and generalizes to unseen contexts; by contrast, when this ratio is large, the model resorts to a positional shortcut and fails to generalize out-of-distribution (OOD). We also reveal a trade-off between the pretraining context length and OOD generalization, and derive the optimal pretraining distribution that minimizes computational cost per sample. Finally, we validate our theoretical predictions with controlled synthetic experiments, demonstrating that broadening context distributions robustly induces induction heads and enables OOD generalization. Our results shed light on the algorithmic biases of pretrained transformers and offer conceptual guidelines for data-driven control of their learned behaviors.",
+          "arxiv_url": "https://arxiv.org/abs/2512.18634v1",
+          "pdf_url": "https://arxiv.org/pdf/2512.18634v1.pdf",
+          "submitted_date": "2025-12-21T08:10:26+00:00",
+          "categories": [
+            "cs.LG",
+            "stat.ML"
+          ],
+          "comments": "NeurIPS 2025"
+        },
+        {
+          "id": "2512.18633v1",
+          "title": "ARC: Leveraging Compositional Representations for Cross-Problem Learning on VRPs",
+          "authors": [
+            "Han-Seul Jeong",
+            "Youngjoon Park",
+            "Hyungseok Song",
+            "Woohyung Lim"
+          ],
+          "display_authors": [
+            "Han-Seul Jeong",
+            "Youngjoon Park",
+            "Hyungseok Song",
+            "et al."
+          ],
+          "summary": "Vehicle Routing Problems (VRPs) with diverse real-world attributes have driven recent interest in cross-problem learning approaches that efficiently generalize across problem variants. We propose ARC (Attribute Representation via Compositional Learning), a cross-problem learning framework that learns disentangled attribute representations by decomposing them into two complementary components: an Intrinsic Attribute Embedding (IAE) for invariant attribute semantics and a Contextual Interaction Embedding (CIE) for attribute-combination effects. This disentanglement is achieved by enforcing analogical consistency in the embedding space to ensure the semantic transformation of adding an attribute (e.g., a length constraint) remains invariant across different problem contexts. This enables our model to reuse invariant semantics across trained variants and construct representations for unseen combinations. ARC achieves state-of-the-art performance across in-distribution, zero-shot generalization, few-shot adaptation, and real-world benchmarks.",
+          "arxiv_url": "https://arxiv.org/abs/2512.18633v1",
+          "pdf_url": "https://arxiv.org/pdf/2512.18633v1.pdf",
+          "submitted_date": "2025-12-21T08:06:27+00:00",
+          "categories": [
+            "cs.LG",
+            "cs.AI"
+          ],
+          "comments": "19 pages, 13 figures"
+        },
+        {
+          "id": "2512.18610v1",
+          "title": "The Procrustean Bed of Time Series: The Optimization Bias of Point-wise Loss",
+          "authors": [
+            "Rongyao Cai",
+            "Yuxi Wan",
+            "Kexin Zhang",
+            "Ming Jin",
+            "Hao Wang",
+            "Zhiqiang Ge",
+            "Daoyi Dong",
+            "Yong Liu",
+            "Qingsong Wen"
+          ],
+          "display_authors": [
+            "Rongyao Cai",
+            "Yuxi Wan",
+            "Kexin Zhang",
+            "et al."
+          ],
+          "summary": "Optimizing time series models via point-wise loss functions (e.g., MSE) relying on a flawed point-wise independent and identically distributed (i.i.d.) assumption that disregards the causal temporal structure, an issue with growing awareness yet lacking formal theoretical grounding. Focusing on the core independence issue under covariance stationarity, this paper aims to provide a first-principles analysis of the Expectation of Optimization Bias (EOB), formalizing it information-theoretically as the discrepancy between the true joint distribution and its flawed i.i.d. counterpart. Our analysis reveals a fundamental paradigm paradox: the more deterministic and structured the time series, the more severe the bias by point-wise loss function. We derive the first closed-form quantification for the non-deterministic EOB across linear and non-linear systems, and prove EOB is an intrinsic data property, governed exclusively by sequence length and our proposed Structural Signal-to-Noise Ratio (SSNR). This theoretical diagnosis motivates our principled debiasing program that eliminates the bias through sequence length reduction and structural orthogonalization. We present a concrete solution that simultaneously achieves both principles via DFT or DWT. Furthermore, a novel harmonized $\\ell_p$ norm framework is proposed to rectify gradient pathologies of high-variance series. Extensive experiments validate EOB Theory's generality and the superior performance of debiasing program.",
+          "arxiv_url": "https://arxiv.org/abs/2512.18610v1",
+          "pdf_url": "https://arxiv.org/pdf/2512.18610v1.pdf",
+          "submitted_date": "2025-12-21T06:08:22+00:00",
+          "categories": [
+            "cs.LG"
+          ],
+          "comments": ""
+        },
+        {
+          "id": "2512.18607v1",
+          "title": "The Interaction Bottleneck of Deep Neural Networks: Discovery, Proof, and Modulation",
+          "authors": [
+            "Huiqi Deng",
+            "Qihan Ren",
+            "Zhuofan Chen",
+            "Zhenyuan Cui",
+            "Wen Shen",
+            "Peng Zhang",
+            "Hongbin Pei",
+            "Quanshi Zhang"
+          ],
+          "display_authors": [
+            "Huiqi Deng",
+            "Qihan Ren",
+            "Zhuofan Chen",
+            "et al."
+          ],
+          "summary": "Understanding what kinds of cooperative structures deep neural networks (DNNs) can represent remains a fundamental yet insufficiently understood problem. In this work, we treat interactions as the fundamental units of such structure and investigate a largely unexplored question: how DNNs encode interactions under different levels of contextual complexity, and how these microscopic interaction patterns shape macroscopic representation capacity. To quantify this complexity, we use multi-order interactions [57], where each order reflects the amount of contextual information required to evaluate the joint interaction utility of a variable pair. This formulation enables a stratified analysis of cooperative patterns learned by DNNs. Building on this formulation, we develop a comprehensive study of interaction structure in DNNs. (i) We empirically discover a universal interaction bottleneck: across architectures and tasks, DNNs easily learn low-order and high-order interactions but consistently under-represent mid-order ones. (ii) We theoretically explain this bottleneck by proving that mid-order interactions incur the highest contextual variability, yielding large gradient variance and making them intrinsically difficult to learn. (iii) We further modulate the bottleneck by introducing losses that steer models toward emphasizing interactions of selected orders. Finally, we connect microscopic interaction structures with macroscopic representational behavior: low-order-emphasized models exhibit stronger generalization and robustness, whereas high-order-emphasized models demonstrate greater structural modeling and fitting capability. Together, these results uncover an inherent representational bias in modern DNNs and establish interaction order as a powerful lens for interpreting and guiding deep representations.",
+          "arxiv_url": "https://arxiv.org/abs/2512.18607v1",
+          "pdf_url": "https://arxiv.org/pdf/2512.18607v1.pdf",
+          "submitted_date": "2025-12-21T05:55:11+00:00",
+          "categories": [
+            "cs.LG",
+            "cs.AI"
+          ],
+          "comments": ""
+        },
+        {
+          "id": "2512.18604v1",
+          "title": "Trajectory Planning for UAV-Based Smart Farming Using Imitation-Based Triple Deep Q-Learning",
+          "authors": [
+            "Wencan Mao",
+            "Quanxi Zhou",
+            "Tomas Couso Coddou",
+            "Manabu Tsukada",
+            "Yunling Liu",
+            "Yusheng Ji"
+          ],
+          "display_authors": [
+            "Wencan Mao",
+            "Quanxi Zhou",
+            "Tomas Couso Coddou",
+            "et al."
+          ],
+          "summary": "Unmanned aerial vehicles (UAVs) have emerged as a promising auxiliary platform for smart agriculture, capable of simultaneously performing weed detection, recognition, and data collection from wireless sensors. However, trajectory planning for UAV-based smart agriculture is challenging due to the high uncertainty of the environment, partial observations, and limited battery capacity of UAVs. To address these issues, we formulate the trajectory planning problem as a Markov decision process (MDP) and leverage multi-agent reinforcement learning (MARL) to solve it. Furthermore, we propose a novel imitation-based triple deep Q-network (ITDQN) algorithm, which employs an elite imitation mechanism to reduce exploration costs and utilizes a mediator Q-network over a double deep Q-network (DDQN) to accelerate and stabilize training and improve performance. Experimental results in both simulated and real-world environments demonstrate the effectiveness of our solution. Moreover, our proposed ITDQN outperforms DDQN by 4.43\\% in weed recognition rate and 6.94\\% in data collection rate.",
+          "arxiv_url": "https://arxiv.org/abs/2512.18604v1",
+          "pdf_url": "https://arxiv.org/pdf/2512.18604v1.pdf",
+          "submitted_date": "2025-12-21T05:30:19+00:00",
+          "categories": [
+            "cs.LG"
+          ],
+          "comments": ""
+        },
+        {
+          "id": "2512.18596v1",
+          "title": "EIA-SEC: Improved Actor-Critic Framework for Multi-UAV Collaborative Control in Smart Agriculture",
+          "authors": [
+            "Quanxi Zhou",
+            "Wencan Mao",
+            "Yilei Liang",
+            "Manabu Tsukada",
+            "Yunling Liu",
+            "Jon Crowcroft"
+          ],
+          "display_authors": [
+            "Quanxi Zhou",
+            "Wencan Mao",
+            "Yilei Liang",
+            "et al."
+          ],
+          "summary": "The widespread application of wireless communication technology has promoted the development of smart agriculture, where unmanned aerial vehicles (UAVs) play a multifunctional role. We target a multi-UAV smart agriculture system where UAVs cooperatively perform data collection, image acquisition, and communication tasks. In this context, we model a Markov decision process to solve the multi-UAV trajectory planning problem. Moreover, we propose a novel Elite Imitation Actor-Shared Ensemble Critic (EIA-SEC) framework, where agents adaptively learn from the elite agent to reduce trial-and-error costs, and a shared ensemble critic collaborates with each agent's local critic to ensure unbiased objective value estimates and prevent overestimation. Experimental results demonstrate that EIA-SEC outperforms state-of-the-art baselines in terms of reward performance, training stability, and convergence speed.",
+          "arxiv_url": "https://arxiv.org/abs/2512.18596v1",
+          "pdf_url": "https://arxiv.org/pdf/2512.18596v1.pdf",
+          "submitted_date": "2025-12-21T05:05:45+00:00",
+          "categories": [
+            "cs.LG"
+          ],
+          "comments": ""
+        },
+        {
+          "id": "2512.18595v1",
+          "title": "Benchmarking neural surrogates on realistic spatiotemporal multiphysics flows",
+          "authors": [
+            "Runze Mao",
+            "Rui Zhang",
+            "Xuan Bai",
+            "Tianhao Wu",
+            "Teng Zhang",
+            "Zhenyi Chen",
+            "Minqi Lin",
+            "Bocheng Zeng",
+            "Yangchen Xu",
+            "Yingxuan Xiang",
+            "Haoze Zhang",
+            "Shubham Goswami",
+            "Pierre A. Dawe",
+            "Yifan Xu",
+            "Zhenhua An",
+            "Mengtao Yan",
+            "Xiaoyi Lu",
+            "Yi Wang",
+            "Rongbo Bai",
+            "Haobu Gao",
+            "Xiaohang Fang",
+            "Han Li",
+            "Hao Sun",
+            "Zhi X. Chen"
+          ],
+          "display_authors": [
+            "Runze Mao",
+            "Rui Zhang",
+            "Xuan Bai",
+            "et al."
+          ],
+          "summary": "Predicting multiphysics dynamics is computationally expensive and challenging due to the severe coupling of multi-scale, heterogeneous physical processes. While neural surrogates promise a paradigm shift, the field currently suffers from an \"illusion of mastery\", as repeatedly emphasized in top-tier commentaries: existing evaluations overly rely on simplified, low-dimensional proxies, which fail to expose the models' inherent fragility in realistic regimes. To bridge this critical gap, we present REALM (REalistic AI Learning for Multiphysics), a rigorous benchmarking framework designed to test neural surrogates on challenging, application-driven reactive flows. REALM features 11 high-fidelity datasets spanning from canonical multiphysics problems to complex propulsion and fire safety scenarios, alongside a standardized end-to-end training and evaluation protocol that incorporates multiphysics-aware preprocessing and a robust rollout strategy. Using this framework, we systematically benchmark over a dozen representative surrogate model families, including spectral operators, convolutional models, Transformers, pointwise operators, and graph/mesh networks, and identify three robust trends: (i) a scaling barrier governed jointly by dimensionality, stiffness, and mesh irregularity, leading to rapidly growing rollout errors; (ii) performance primarily controlled by architectural inductive biases rather than parameter count; and (iii) a persistent gap between nominal accuracy metrics and physically trustworthy behavior, where models with high correlations still miss key transient structures and integral quantities. Taken together, REALM exposes the limits of current neural surrogates on realistic multiphysics flows and offers a rigorous testbed to drive the development of next-generation physics-aware architectures.",
+          "arxiv_url": "https://arxiv.org/abs/2512.18595v1",
+          "pdf_url": "https://arxiv.org/pdf/2512.18595v1.pdf",
+          "submitted_date": "2025-12-21T05:04:13+00:00",
+          "categories": [
+            "cs.LG"
+          ],
+          "comments": "52 pages, 20 figures. Code and data available at https://github.com/deepflame-ai/REALM. Companion website and leaderboard at https://realm-bench.org"
+        },
+        {
+          "id": "2512.18583v1",
+          "title": "SD2AIL: Adversarial Imitation Learning from Synthetic Demonstrations via Diffusion Models",
+          "authors": [
+            "Pengcheng Li",
+            "Qiang Fang",
+            "Tong Zhao",
+            "Yixing Lan",
+            "Xin Xu"
+          ],
+          "display_authors": [
+            "Pengcheng Li",
+            "Qiang Fang",
+            "Tong Zhao",
+            "et al."
+          ],
+          "summary": "Adversarial Imitation Learning (AIL) is a dominant framework in imitation learning that infers rewards from expert demonstrations to guide policy optimization. Although providing more expert demonstrations typically leads to improved performance and greater stability, collecting such demonstrations can be challenging in certain scenarios. Inspired by the success of diffusion models in data generation, we propose SD2AIL, which utilizes synthetic demonstrations via diffusion models. We first employ a diffusion model in the discriminator to generate synthetic demonstrations as pseudo-expert data that augment the expert demonstrations. To selectively replay the most valuable demonstrations from the large pool of (pseudo-) expert demonstrations, we further introduce a prioritized expert demonstration replay strategy (PEDR). The experimental results on simulation tasks demonstrate the effectiveness and robustness of our method. In particular, in the Hopper task, our method achieves an average return of 3441, surpassing the state-of-the-art method by 89. Our code will be available at https://github.com/positron-lpc/SD2AIL.",
+          "arxiv_url": "https://arxiv.org/abs/2512.18583v1",
+          "pdf_url": "https://arxiv.org/pdf/2512.18583v1.pdf",
+          "submitted_date": "2025-12-21T04:00:38+00:00",
+          "categories": [
+            "cs.LG",
+            "cs.RO"
+          ],
+          "comments": ""
+        },
+        {
+          "id": "2512.18575v1",
+          "title": "Modality-Dependent Memory Mechanisms in Cross-Modal Neuromorphic Computing",
+          "authors": [
+            "Effiong Blessing",
+            "Chiung-Yi Tseng",
+            "Somshubhra Roy",
+            "Junaid Rehman",
+            "Isaac Nkrumah"
+          ],
+          "display_authors": [
+            "Effiong Blessing",
+            "Chiung-Yi Tseng",
+            "Somshubhra Roy",
+            "et al."
+          ],
+          "summary": "Memory-augmented spiking neural networks (SNNs) promise energy-efficient neuromorphic computing, yet their generalization across sensory modalities remains unexplored. We present the first comprehensive cross-modal ablation study of memory mechanisms in SNNs, evaluating Hopfield networks, Hierarchical Gated Recurrent Networks (HGRNs), and supervised contrastive learning (SCL) across visual (N-MNIST) and auditory (SHD) neuromorphic datasets. Our systematic evaluation of five architectures reveals striking modality-dependent performance patterns: Hopfield networks achieve 97.68% accuracy on visual tasks but only 76.15% on auditory tasks (21.53 point gap), revealing severe modality-specific specialization, while SCL demonstrates more balanced cross-modal performance (96.72% visual, 82.16% audio, 14.56 point gap). These findings establish that memory mechanisms exhibit task-specific benefits rather than universal applicability. Joint multi-modal training with HGRN achieves 94.41% visual and 79.37% audio accuracy (88.78% average), matching parallel HGRN performance through unified deployment. Quantitative engram analysis confirms weak cross-modal alignment (0.038 similarity), validating our parallel architecture design. Our work provides the first empirical evidence for modality-specific memory optimization in neuromorphic systems, achieving 603x energy efficiency over traditional neural networks.",
+          "arxiv_url": "https://arxiv.org/abs/2512.18575v1",
+          "pdf_url": "https://arxiv.org/pdf/2512.18575v1.pdf",
+          "submitted_date": "2025-12-21T03:18:42+00:00",
+          "categories": [
+            "cs.LG",
+            "cs.AI",
+            "cs.NE"
+          ],
+          "comments": ""
+        },
+        {
+          "id": "2512.18573v1",
+          "title": "Placenta Accreta Spectrum Detection Using an MRI-based Hybrid CNN-Transformer Model",
+          "authors": [
+            "Sumaiya Ali",
+            "Areej Alhothali",
+            "Ohoud Alzamzami",
+            "Sameera Albasri",
+            "Ahmed Abduljabbar",
+            "Muhammad Alwazzan"
+          ],
+          "display_authors": [
+            "Sumaiya Ali",
+            "Areej Alhothali",
+            "Ohoud Alzamzami",
+            "et al."
+          ],
+          "summary": "Placenta Accreta Spectrum (PAS) is a serious obstetric condition that can be challenging to diagnose with Magnetic Resonance Imaging (MRI) due to variability in radiologists' interpretations. To overcome this challenge, a hybrid 3D deep learning model for automated PAS detection from volumetric MRI scans is proposed in this study. The model integrates a 3D DenseNet121 to capture local features and a 3D Vision Transformer (ViT) to model global spatial context. It was developed and evaluated on a retrospective dataset of 1,133 MRI volumes. Multiple 3D deep learning architectures were also evaluated for comparison. On an independent test set, the DenseNet121-ViT model achieved the highest performance with a five-run average accuracy of 84.3%. These results highlight the strength of hybrid CNN-Transformer models as a computer-aided diagnosis tool. The model's performance demonstrates a clear potential to assist radiologists by providing a robust decision support to improve diagnostic consistency across interpretations, and ultimately enhance the accuracy and timeliness of PAS diagnosis.",
+          "arxiv_url": "https://arxiv.org/abs/2512.18573v1",
+          "pdf_url": "https://arxiv.org/pdf/2512.18573v1.pdf",
+          "submitted_date": "2025-12-21T02:59:47+00:00",
+          "categories": [
+            "cs.CV",
+            "cs.AI",
+            "cs.LG"
+          ],
+          "comments": ""
+        },
+        {
+          "id": "2512.18566v1",
+          "title": "Comparing Dynamical Models Through Diffeomorphic Vector Field Alignment",
+          "authors": [
+            "Ruiqi Chen",
+            "Giacomo Vedovati",
+            "Todd Braver",
+            "ShiNung Ching"
+          ],
+          "display_authors": [
+            "Ruiqi Chen",
+            "Giacomo Vedovati",
+            "Todd Braver",
+            "et al."
+          ],
+          "summary": "Dynamical systems models such as recurrent neural networks (RNNs) are increasingly popular in theoretical neuroscience for hypothesis-generation and data analysis. Evaluating the dynamics in such models is key to understanding their learned generative mechanisms. However, such evaluation is impeded by two major challenges: First, comparison of learned dynamics across models is difficult because there is no enforced equivalence of their coordinate systems. Second, identification of mechanistically important low-dimensional motifs (e.g., limit sets) is intractable in high-dimensional nonlinear models such as RNNs. Here, we propose a comprehensive framework to address these two issues, termed Diffeomorphic vector field alignment FOR learned Models (DFORM). DFORM learns a nonlinear coordinate transformation between the state spaces of two dynamical systems, which aligns their trajectories in a maximally one-to-one manner. In so doing, DFORM enables an assessment of whether two models exhibit topological equivalence, i.e., similar mechanisms despite differences in coordinate systems. A byproduct of this method is a means to locate dynamical motifs on low-dimensional manifolds embedded within higher-dimensional systems. We verified DFORM's ability to identify linear and nonlinear coordinate transformations using canonical topologically equivalent systems, RNNs, and systems related by nonlinear flows. DFORM was also shown to provide a quantification of similarity between topologically distinct systems. We then demonstrated that DFORM can locate important dynamical motifs including invariant manifolds and saddle limit sets within high-dimensional models. Finally, using a set of RNN models trained on human functional MRI (fMRI) recordings, we illustrated that DFORM can identify limit cycles from high-dimensional data-driven models, which agreed well with prior numerical analysis.",
+          "arxiv_url": "https://arxiv.org/abs/2512.18566v1",
+          "pdf_url": "https://arxiv.org/pdf/2512.18566v1.pdf",
+          "submitted_date": "2025-12-21T02:23:05+00:00",
+          "categories": [
+            "cs.LG",
+            "eess.SY",
+            "q-bio.NC"
+          ],
+          "comments": "57 pages, 18 figures. For associated code, see https://github.com/rq-Chen/DFORM_stable"
+        },
+        {
+          "id": "2512.18552v1",
+          "title": "Toward Training Superintelligent Software Agents through Self-Play SWE-RL",
+          "authors": [
+            "Yuxiang Wei",
+            "Zhiqing Sun",
+            "Emily McMilin",
+            "Jonas Gehring",
+            "David Zhang",
+            "Gabriel Synnaeve",
+            "Daniel Fried",
+            "Lingming Zhang",
+            "Sida Wang"
+          ],
+          "display_authors": [
+            "Yuxiang Wei",
+            "Zhiqing Sun",
+            "Emily McMilin",
+            "et al."
+          ],
+          "summary": "While current software agents powered by large language models (LLMs) and agentic reinforcement learning (RL) can boost programmer productivity, their training data (e.g., GitHub issues and pull requests) and environments (e.g., pass-to-pass and fail-to-pass tests) heavily depend on human knowledge or curation, posing a fundamental barrier to superintelligence. In this paper, we present Self-play SWE-RL (SSR), a first step toward training paradigms for superintelligent software agents. Our approach takes minimal data assumptions, only requiring access to sandboxed repositories with source code and installed dependencies, with no need for human-labeled issues or tests. Grounded in these real-world codebases, a single LLM agent is trained via reinforcement learning in a self-play setting to iteratively inject and repair software bugs of increasing complexity, with each bug formally specified by a test patch rather than a natural language issue description. On the SWE-bench Verified and SWE-Bench Pro benchmarks, SSR achieves notable self-improvement (+10.4 and +7.8 points, respectively) and consistently outperforms the human-data baseline over the entire training trajectory, despite being evaluated on natural language issues absent from self-play. Our results, albeit early, suggest a path where agents autonomously gather extensive learning experiences from real-world software repositories, ultimately enabling superintelligent systems that exceed human capabilities in understanding how systems are constructed, solving novel challenges, and autonomously creating new software from scratch.",
+          "arxiv_url": "https://arxiv.org/abs/2512.18552v1",
+          "pdf_url": "https://arxiv.org/pdf/2512.18552v1.pdf",
+          "submitted_date": "2025-12-21T00:49:40+00:00",
+          "categories": [
+            "cs.SE",
+            "cs.AI",
+            "cs.CL",
+            "cs.LG"
+          ],
+          "comments": ""
+        }
+      ],
+      "count": 37
+    },
+    "nucl-ex": {
+      "name": "Nuclear Physics - Experiment",
+      "papers": [
+        {
+          "id": "2512.18926v1",
+          "title": "Nuclear collectivity and the harmonic spectrum of two-body correlations",
+          "authors": [
+            "Jean-Paul Blaizot",
+            "Giuliano Giacalone",
+            "Alessandro Lovato"
+          ],
+          "display_authors": [
+            "Jean-Paul Blaizot",
+            "Giuliano Giacalone",
+            "Alessandro Lovato"
+          ],
+          "summary": "High-energy nuclear collisions have opened a new experimental method to reveal collective behavior in nuclear ground states through the lens of many-body correlations of nucleons. Using ab initio lattice and variational calculations of $^{20}$Ne and $^{16}$O, we study how emergent phenomena such as deformation or clustering can be identified in these systems from the dependence of their two-body density distributions on the relative azimuthal angle of nucleon pairs. A harmonic analysis of the correlation functions reveals in particular a dominant quadrupole component in $^{20}$Ne, consistent with a bowling-pin picture, and a prominent triangular modulation in $^{16}$O, possibly indicative of alpha-cluster correlations. Given that such structures can be accurately identified in high-energy collider experiments, these findings open a new paradigm for analyzing emergent collective behavior in atomic nuclei, relating their intrinsic shapes to the harmonic spectrum of microscopic correlations.",
+          "arxiv_url": "https://arxiv.org/abs/2512.18926v1",
+          "pdf_url": "https://arxiv.org/pdf/2512.18926v1.pdf",
+          "submitted_date": "2025-12-21T23:54:01+00:00",
+          "categories": [
+            "nucl-th",
+            "hep-ex",
+            "hep-ph",
+            "nucl-ex"
+          ],
+          "comments": "10 pages; 5 figures"
+        },
+        {
+          "id": "2512.18849v1",
+          "title": "Multi-neutron correlations in light nuclei via ab-initio lattice simulations",
+          "authors": [
+            "Shuang Zhang",
+            "Serdar Elhatisari",
+            "Ulf-G. Meißner"
+          ],
+          "display_authors": [
+            "Shuang Zhang",
+            "Serdar Elhatisari",
+            "Ulf-G. Meißner"
+          ],
+          "summary": "The quest to understand multi-neutron systems has a long history, and recent experimental efforts aim to probe candidate four-neutron configurations in neutron-rich light nuclei such as ${}^8$He and ${}^7$H via quasi-free knockout reactions. However, the ground-state energies of the hydrogen isotopes ${}^6$H and ${}^7$H are not yet well constrained, with substantial discrepancies across experimental analyses and theoretical predictions. Using ab initio nuclear lattice effective field theory with an ensemble of 282 chiral two- and three-nucleon forces, we perform an uncertainty-quantified analysis of the ground-state energies of ${}^6$H and ${}^7$H. The marginal posteriors suggest single-neutron separation energy $S_n({}^{7}\\text{H})=0.35^{+0.32}_{-0.32}$ MeV, disfavoring sequential ${}^{6}\\mathrm{H}+n$ decay and pointing towards direct $t+4n$ emission. Intrinsic densities indicate triton- and $α$-like clusters in ${}^7$H and ${}^8$He, respectively. By computing two-body and reduced four-body correlation functions, we find that the valence neutrons in the surface region of these systems form compact dineutrons that predominantly organize into symmetric dineutron-dineutron configurations, with only a small but non-negligible fraction assembling into more compact tetraneutron-like substructures. In ${}^7$H, these components account for roughly 95% and 5% of the sampled four-neutron configurations, respectively, and ${}^8$He exhibits a similar hierarchy. For these configurations, we also extract the corresponding spatial and angular correlation patterns among the nucleons. These results provide nuclear-structure insights into the debate surrounding four-neutron clusters and complement ongoing experimental searches for tetraneutron signatures in light nuclei.",
+          "arxiv_url": "https://arxiv.org/abs/2512.18849v1",
+          "pdf_url": "https://arxiv.org/pdf/2512.18849v1.pdf",
+          "submitted_date": "2025-12-21T18:40:08+00:00",
+          "categories": [
+            "nucl-th",
+            "hep-lat",
+            "hep-ph",
+            "nucl-ex"
+          ],
+          "comments": "9+9 pages, 3+5 figures, supplemental material included"
+        },
+        {
+          "id": "2512.18728v1",
+          "title": "Dissociation driven quarkonium spin alignment in Pb--Pb collisions at $\\sqrt{s_{\\rm NN}} = 5.02$ TeV",
+          "authors": [
+            "Bhagyarathi Sahoo",
+            "Captain R. Singh",
+            "Raghunath Sahoo"
+          ],
+          "display_authors": [
+            "Bhagyarathi Sahoo",
+            "Captain R. Singh",
+            "Raghunath Sahoo"
+          ],
+          "summary": "The observation of spin alignment of quarkonia in ultra-relativistic heavy-ion collisions provides deep insight into the possible formation of the quark-gluon plasma (QGP). The present study investigates the spin alignment of quarkonia induced by dissociation mechanisms arising from medium effects imposed on quarkonia. We implement an effective Hamiltonian with a medium-modified color-singlet potential to incorporate the coupling of quarkonium spin with medium vorticity. This coupling gives rise to spin-dependent dissociation, which we identify as a plausible mechanism contributing to quarkonium spin alignment. Within the ambit of second-order relativistic viscous hydrodynamics, we calculate the spin-dependent decay widths of charmonium ($J/ψ$, $ψ$(2S)) and bottomonium ($Υ$(1S), $Υ$(2S)) in a rotating thermal medium, including collisional damping and gluonic dissociation effects. We evaluate the observable $ρ_{00}$ for Pb--Pb collisions at $\\sqrt{s_{\\rm NN}} = 5.02$ TeV as a function of transverse momentum of the quarkonia, charged particle multiplicity, and medium rotation. The results demonstrate that medium vorticity modifies the quarkonia net decay width and, as a consequence, quarkonia spin alignment gets modified. These findings suggest new directions for understanding spin transport and the microscopic dynamics of vortical QGP.",
+          "arxiv_url": "https://arxiv.org/abs/2512.18728v1",
+          "pdf_url": "https://arxiv.org/pdf/2512.18728v1.pdf",
+          "submitted_date": "2025-12-21T13:20:02+00:00",
+          "categories": [
+            "nucl-th",
+            "hep-ex",
+            "hep-ph",
+            "hep-th",
+            "nucl-ex"
+          ],
+          "comments": "16 pages and 7 captioned figures"
+        }
+      ],
+      "count": 3
+    }
+  }
+}
