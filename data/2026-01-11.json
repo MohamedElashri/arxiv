@@ -1,0 +1,3162 @@
+{
+  "date": "2026-01-11",
+  "generated_at": "2026-01-13T03:07:13.928031",
+  "categories": {
+    "hep-ex": {
+      "name": "High Energy Physics - Experiment",
+      "papers": [
+        {
+          "id": "2601.07089v1",
+          "title": "SMARTHEP: training PhD students in real-time analysis at the LHC and in industry",
+          "authors": [
+            "Johannes Albrecht",
+            "Laura Boggia",
+            "Leon Bozianu",
+            "Andrew Carey",
+            "Carlos Cocha",
+            "Caterina Doglioni",
+            "James Andrew Gooding",
+            "Joachim Hansen",
+            "Patin Inkaew",
+            "Kaare Iversen",
+            "Pratik Jawahar",
+            "Henning Kirschenmann",
+            "Daniel Magdalinski",
+            "Alice Ohlson",
+            "Micol Olocco",
+            "Henrique Piñeiro Monteagudo",
+            "Steven Schramm",
+            "Mike Sokoloff",
+            "Alexandros Sopasakis",
+            "Leonardo Taccari",
+            "Sten Åstrand"
+          ],
+          "display_authors": [
+            "Johannes Albrecht",
+            "Laura Boggia",
+            "Leon Bozianu",
+            "et al."
+          ],
+          "summary": "In this invited Editorial for Software and Computing for Big Science, we describe the SMARTHEP Innovative Training Network funded via the Marie Skłodowska-Curie Actions between 2021 and 2025. SMARTHEP trained 12 PhD students to advance machine learning and real-time analysis in high-energy physics experiments and industrial applications. We present the perspective of students, supervisors, and external observers of the network, concerning the work done within the network, the added value compared to ``typical'' PhD positions, and the emerging themes and directions from our experiences in the past four years.",
+          "arxiv_url": "https://arxiv.org/abs/2601.07089v1",
+          "pdf_url": "https://arxiv.org/pdf/2601.07089v1.pdf",
+          "submitted_date": "2026-01-11T22:54:37+00:00",
+          "categories": [
+            "physics.ed-ph",
+            "hep-ex"
+          ],
+          "comments": ""
+        },
+        {
+          "id": "2601.06878v1",
+          "title": "Evidence for the rare decay $B^{+} \\to \\bar Λp μ^{+} μ^{-}$",
+          "authors": [
+            " LHCb collaboration",
+            "R. Aaij",
+            "A. S. W. Abdelmotteleb",
+            "C. Abellan Beteta",
+            "F. Abudinén",
+            "T. Ackernley",
+            "A. A. Adefisoye",
+            "B. Adeva",
+            "M. Adinolfi",
+            "P. Adlarson",
+            "C. Agapopoulou",
+            "C. A. Aidala",
+            "Z. Ajaltouni",
+            "S. Akar",
+            "K. Akiba",
+            "M. Akthar",
+            "P. Albicocco",
+            "J. Albrecht",
+            "R. Aleksiejunas",
+            "F. Alessio",
+            "P. Alvarez Cartelle",
+            "R. Amalric",
+            "S. Amato",
+            "J. L. Amey",
+            "Y. Amhis",
+            "L. An",
+            "L. Anderlini",
+            "M. Andersson",
+            "P. Andreola",
+            "M. Andreotti",
+            "S. Andres Estrada",
+            "A. Anelli",
+            "D. Ao",
+            "C. Arata",
+            "F. Archilli",
+            "Z. Areg",
+            "M. Argenton",
+            "S. Arguedas Cuendis",
+            "L. Arnone",
+            "A. Artamonov",
+            "M. Artuso",
+            "E. Aslanides",
+            "R. Ataíde Da Silva",
+            "M. Atzeni",
+            "B. Audurier",
+            "J. A. Authier",
+            "D. Bacher",
+            "I. Bachiller Perea",
+            "S. Bachmann",
+            "M. Bachmayer",
+            "J. J. Back",
+            "P. Baladron Rodriguez",
+            "V. Balagura",
+            "A. Balboni",
+            "W. Baldini",
+            "Z. Baldwin",
+            "L. Balzani",
+            "H. Bao",
+            "J. Baptista de Souza Leite",
+            "C. Barbero Pretel",
+            "M. Barbetti",
+            "I. R. Barbosa",
+            "R. J. Barlow",
+            "M. Barnyakov",
+            "S. Barsuk",
+            "W. Barter",
+            "J. Bartz",
+            "S. Bashir",
+            "B. Batsukh",
+            "P. B. Battista",
+            "A. Bavarchee",
+            "A. Bay",
+            "A. Beck",
+            "M. Becker",
+            "F. Bedeschi",
+            "I. B. Bediaga",
+            "N. A. Behling",
+            "S. Belin",
+            "A. Bellavista",
+            "K. Belous",
+            "I. Belov",
+            "I. Belyaev",
+            "G. Benane",
+            "G. Bencivenni",
+            "E. Ben-Haim",
+            "A. Berezhnoy",
+            "R. Bernet",
+            "S. Bernet Andres",
+            "A. Bertolin",
+            "F. Betti",
+            "J. Bex",
+            "O. Bezshyyko",
+            "S. Bhattacharya",
+            "M. S. Bieker",
+            "N. V. Biesuz",
+            "A. Biolchini",
+            "M. Birch",
+            "F. C. R. Bishop",
+            "A. Bitadze",
+            "A. Bizzeti",
+            "T. Blake",
+            "F. Blanc",
+            "J. E. Blank",
+            "S. Blusk",
+            "V. Bocharnikov",
+            "J. A. Boelhauve",
+            "O. Boente Garcia",
+            "T. Boettcher",
+            "A. Bohare",
+            "A. Boldyrev",
+            "C. Bolognani",
+            "R. Bolzonella",
+            "R. B. Bonacci",
+            "N. Bondar",
+            "A. Bordelius",
+            "F. Borgato",
+            "S. Borghi",
+            "M. Borsato",
+            "J. T. Borsuk",
+            "E. Bottalico",
+            "S. A. Bouchiba",
+            "M. Bovill",
+            "T. J. V. Bowcock",
+            "A. Boyer",
+            "C. Bozzi",
+            "J. D. Brandenburg",
+            "A. Brea Rodriguez",
+            "N. Breer",
+            "J. Brodzicka",
+            "J. Brown",
+            "D. Brundu",
+            "E. Buchanan",
+            "M. Burgos Marcos",
+            "A. T. Burke",
+            "C. Burr",
+            "C. Buti",
+            "J. S. Butter",
+            "J. Buytaert",
+            "W. Byczynski",
+            "S. Cadeddu",
+            "H. Cai",
+            "Y. Cai",
+            "A. Caillet",
+            "R. Calabrese",
+            "S. Calderon Ramirez",
+            "L. Calefice",
+            "M. Calvi",
+            "M. Calvo Gomez",
+            "P. Camargo Magalhaes",
+            "J. I. Cambon Bouzas",
+            "P. Campana",
+            "A. F. Campoverde Quezada",
+            "S. Capelli",
+            "M. Caporale",
+            "L. Capriotti",
+            "R. Caravaca-Mora",
+            "A. Carbone",
+            "L. Carcedo Salgado",
+            "R. Cardinale",
+            "A. Cardini",
+            "P. Carniti",
+            "L. Carus",
+            "A. Casais Vidal",
+            "R. Caspary",
+            "G. Casse",
+            "M. Cattaneo",
+            "G. Cavallero",
+            "V. Cavallini",
+            "S. Celani",
+            "I. Celestino",
+            "S. Cesare",
+            "A. J. Chadwick",
+            "I. Chahrour",
+            "H. Chang",
+            "M. Charles",
+            "Ph. Charpentier",
+            "E. Chatzianagnostou",
+            "R. Cheaib",
+            "M. Chefdeville",
+            "C. Chen",
+            "J. Chen",
+            "S. Chen",
+            "Z. Chen",
+            "A. Chen Hu",
+            "M. Cherif",
+            "A. Chernov",
+            "S. Chernyshenko",
+            "X. Chiotopoulos",
+            "V. Chobanova",
+            "M. Chrzaszcz",
+            "A. Chubykin",
+            "V. Chulikov",
+            "P. Ciambrone",
+            "X. Cid Vidal",
+            "G. Ciezarek",
+            "P. Cifra",
+            "P. E. L. Clarke",
+            "M. Clemencic",
+            "H. V. Cliff",
+            "J. Closier",
+            "C. Cocha Toapaxi",
+            "V. Coco",
+            "J. Cogan",
+            "E. Cogneras",
+            "L. Cojocariu",
+            "S. Collaviti",
+            "P. Collins",
+            "T. Colombo",
+            "M. Colonna",
+            "A. Comerma-Montells",
+            "L. Congedo",
+            "J. Connaughton",
+            "A. Contu",
+            "N. Cooke",
+            "G. Cordova",
+            "C. Coronel",
+            "I. Corredoira",
+            "A. Correia",
+            "G. Corti",
+            "J. Cottee Meldrum",
+            "B. Couturier",
+            "D. C. Craik",
+            "M. Cruz Torres",
+            "M. Cubero Campos",
+            "E. Curras Rivera",
+            "R. Currie",
+            "C. L. Da Silva",
+            "S. Dadabaev",
+            "X. Dai",
+            "E. Dall'Occo",
+            "J. Dalseno",
+            "C. D'Ambrosio",
+            "J. Daniel",
+            "G. Darze",
+            "A. Davidson",
+            "J. E. Davies",
+            "O. De Aguiar Francisco",
+            "C. De Angelis",
+            "F. De Benedetti",
+            "J. de Boer",
+            "K. De Bruyn",
+            "S. De Capua",
+            "M. De Cian",
+            "U. De Freitas Carneiro Da Graca",
+            "E. De Lucia",
+            "J. M. De Miranda",
+            "L. De Paula",
+            "M. De Serio",
+            "P. De Simone",
+            "F. De Vellis",
+            "J. A. de Vries",
+            "F. Debernardis",
+            "D. Decamp",
+            "S. Dekkers",
+            "L. Del Buono",
+            "B. Delaney",
+            "J. Deng",
+            "V. Denysenko",
+            "O. Deschamps",
+            "F. Dettori",
+            "B. Dey",
+            "P. Di Nezza",
+            "I. Diachkov",
+            "S. Didenko",
+            "S. Ding",
+            "Y. Ding",
+            "L. Dittmann",
+            "V. Dobishuk",
+            "A. D. Docheva",
+            "A. Doheny",
+            "C. Dong",
+            "A. M. Donohoe",
+            "F. Dordei",
+            "A. C. dos Reis",
+            "A. D. Dowling",
+            "L. Dreyfus",
+            "W. Duan",
+            "P. Duda",
+            "L. Dufour",
+            "V. Duk",
+            "P. Durante",
+            "M. M. Duras",
+            "J. M. Durham",
+            "O. D. Durmus",
+            "A. Dziurda",
+            "A. Dzyuba",
+            "S. Easo",
+            "E. Eckstein",
+            "U. Egede",
+            "A. Egorychev",
+            "V. Egorychev",
+            "S. Eisenhardt",
+            "E. Ejopu",
+            "L. Eklund",
+            "M. Elashri",
+            "D. Elizondo Blanco",
+            "J. Ellbracht",
+            "S. Ely",
+            "A. Ene",
+            "J. Eschle",
+            "T. Evans",
+            "F. Fabiano",
+            "S. Faghih",
+            "L. N. Falcao",
+            "B. Fang",
+            "R. Fantechi",
+            "L. Fantini",
+            "M. Faria",
+            "K. Farmer",
+            "F. Fassin",
+            "D. Fazzini",
+            "L. Felkowski",
+            "M. Feng",
+            "A. Fernandez Casani",
+            "M. Fernandez Gomez",
+            "A. D. Fernez",
+            "F. Ferrari",
+            "F. Ferreira Rodrigues",
+            "M. Ferrillo",
+            "M. Ferro-Luzzi",
+            "S. Filippov",
+            "R. A. Fini",
+            "M. Fiorini",
+            "M. Firlej",
+            "K. L. Fischer",
+            "D. S. Fitzgerald",
+            "C. Fitzpatrick",
+            "T. Fiutowski",
+            "F. Fleuret",
+            "A. Fomin",
+            "M. Fontana",
+            "L. A. Foreman",
+            "R. Forty",
+            "D. Foulds-Holt",
+            "V. Franco Lima",
+            "M. Franco Sevilla",
+            "M. Frank",
+            "E. Franzoso",
+            "G. Frau",
+            "C. Frei",
+            "D. A. Friday",
+            "J. Fu",
+            "Q. Führing",
+            "T. Fulghesu",
+            "G. Galati",
+            "M. D. Galati",
+            "A. Gallas Torreira",
+            "D. Galli",
+            "S. Gambetta",
+            "M. Gandelman",
+            "P. Gandini",
+            "B. Ganie",
+            "H. Gao",
+            "R. Gao",
+            "T. Q. Gao",
+            "Y. Gao",
+            "Y. Gao",
+            "Y. Gao",
+            "L. M. Garcia Martin",
+            "P. Garcia Moreno",
+            "J. García Pardiñas",
+            "P. Gardner",
+            "L. Garrido",
+            "C. Gaspar",
+            "A. Gavrikov",
+            "L. L. Gerken",
+            "E. Gersabeck",
+            "M. Gersabeck",
+            "T. Gershon",
+            "S. Ghizzo",
+            "Z. Ghorbanimoghaddam",
+            "F. I. Giasemis",
+            "V. Gibson",
+            "H. K. Giemza",
+            "A. L. Gilman",
+            "M. Giovannetti",
+            "A. Gioventù",
+            "L. Girardey",
+            "M. A. Giza",
+            "F. C. Glaser",
+            "V. V. Gligorov",
+            "C. Göbel",
+            "L. Golinka-Bezshyyko",
+            "E. Golobardes",
+            "D. Golubkov",
+            "A. Golutvin",
+            "S. Gomez Fernandez",
+            "W. Gomulka",
+            "I. Gonçales Vaz",
+            "F. Goncalves Abrantes",
+            "M. Goncerz",
+            "G. Gong",
+            "J. A. Gooding",
+            "I. V. Gorelov",
+            "C. Gotti",
+            "E. Govorkova",
+            "J. P. Grabowski",
+            "L. A. Granado Cardoso",
+            "E. Graugés",
+            "E. Graverini",
+            "L. Grazette",
+            "G. Graziani",
+            "A. T. Grecu",
+            "N. A. Grieser",
+            "L. Grillo",
+            "S. Gromov",
+            "C. Gu",
+            "M. Guarise",
+            "L. Guerry",
+            "A. -K. Guseinov",
+            "E. Gushchin",
+            "Y. Guz",
+            "T. Gys",
+            "K. Habermann",
+            "T. Hadavizadeh",
+            "C. Hadjivasiliou",
+            "G. Haefeli",
+            "C. Haen",
+            "S. Haken",
+            "G. Hallett",
+            "P. M. Hamilton",
+            "J. Hammerich",
+            "Q. Han",
+            "X. Han",
+            "S. Hansmann-Menzemer",
+            "L. Hao",
+            "N. Harnew",
+            "T. H. Harris",
+            "M. Hartmann",
+            "S. Hashmi",
+            "J. He",
+            "N. Heatley",
+            "A. Hedes",
+            "F. Hemmer",
+            "C. Henderson",
+            "R. Henderson",
+            "R. D. L. Henderson",
+            "A. M. Hennequin",
+            "K. Hennessy",
+            "L. Henry",
+            "J. Herd",
+            "P. Herrero Gascon",
+            "J. Heuel",
+            "A. Heyn",
+            "A. Hicheur",
+            "G. Hijano Mendizabal",
+            "J. Horswill",
+            "R. Hou",
+            "Y. Hou",
+            "D. C. Houston",
+            "N. Howarth",
+            "W. Hu",
+            "X. Hu",
+            "W. Hulsbergen",
+            "R. J. Hunter",
+            "M. Hushchyn",
+            "D. Hutchcroft",
+            "M. Idzik",
+            "D. Ilin",
+            "P. Ilten",
+            "A. Iniukhin",
+            "A. Iohner",
+            "A. Ishteev",
+            "K. Ivshin",
+            "H. Jage",
+            "S. J. Jaimes Elles",
+            "S. Jakobsen",
+            "T. Jakoubek",
+            "E. Jans",
+            "B. K. Jashal",
+            "A. Jawahery",
+            "C. Jayaweera",
+            "A. Jelavic",
+            "V. Jevtic",
+            "Z. Jia",
+            "E. Jiang",
+            "X. Jiang",
+            "Y. Jiang",
+            "Y. J. Jiang",
+            "E. Jimenez Moya",
+            "N. Jindal",
+            "M. John",
+            "A. John Rubesh Rajan",
+            "D. Johnson",
+            "C. R. Jones",
+            "S. Joshi",
+            "B. Jost",
+            "J. Juan Castella",
+            "N. Jurik",
+            "I. Juszczak",
+            "K. Kalecinska",
+            "D. Kaminaris",
+            "S. Kandybei",
+            "M. Kane",
+            "Y. Kang",
+            "C. Kar",
+            "M. Karacson",
+            "A. Kauniskangas",
+            "J. W. Kautz",
+            "M. K. Kazanecki",
+            "F. Keizer",
+            "M. Kenzie",
+            "T. Ketel",
+            "B. Khanji",
+            "A. Kharisova",
+            "S. Kholodenko",
+            "G. Khreich",
+            "F. Kiraz",
+            "T. Kirn",
+            "V. S. Kirsebom",
+            "S. Klaver",
+            "N. Kleijne",
+            "A. Kleimenova",
+            "D. K. Klekots",
+            "K. Klimaszewski",
+            "M. R. Kmiec",
+            "T. Knospe",
+            "R. Kolb",
+            "S. Koliiev",
+            "L. Kolk",
+            "A. Konoplyannikov",
+            "P. Kopciewicz",
+            "P. Koppenburg",
+            "A. Korchin",
+            "M. Korolev",
+            "I. Kostiuk",
+            "O. Kot",
+            "S. Kotriakhova",
+            "E. Kowalczyk",
+            "A. Kozachuk",
+            "P. Kravchenko",
+            "L. Kravchuk",
+            "O. Kravcov",
+            "M. Kreps",
+            "P. Krokovny",
+            "W. Krupa",
+            "W. Krzemien",
+            "O. Kshyvanskyi",
+            "S. Kubis",
+            "M. Kucharczyk",
+            "V. Kudryavtsev",
+            "E. Kulikova",
+            "A. Kupsc",
+            "V. Kushnir",
+            "B. Kutsenko",
+            "J. Kvapil",
+            "I. Kyryllin",
+            "D. Lacarrere",
+            "P. Laguarta Gonzalez",
+            "A. Lai",
+            "A. Lampis",
+            "D. Lancierini",
+            "C. Landesa Gomez",
+            "J. J. Lane",
+            "G. Lanfranchi",
+            "C. Langenbruch",
+            "J. Langer",
+            "T. Latham",
+            "F. Lazzari",
+            "C. Lazzeroni",
+            "R. Le Gac",
+            "H. Lee",
+            "R. Lefèvre",
+            "A. Leflat",
+            "S. Legotin",
+            "M. Lehuraux",
+            "E. Lemos Cid",
+            "O. Leroy",
+            "T. Lesiak",
+            "E. D. Lesser",
+            "B. Leverington",
+            "A. Li",
+            "C. Li",
+            "C. Li",
+            "H. Li",
+            "J. Li",
+            "K. Li",
+            "L. Li",
+            "M. Li",
+            "P. Li",
+            "P. -R. Li",
+            "Q. Li",
+            "T. Li",
+            "T. Li",
+            "Y. Li",
+            "Y. Li",
+            "Y. Li",
+            "Z. Lian",
+            "Q. Liang",
+            "X. Liang",
+            "Z. Liang",
+            "S. Libralon",
+            "A. Lightbody",
+            "C. Lin",
+            "T. Lin",
+            "R. Lindner",
+            "H. Linton",
+            "R. Litvinov",
+            "D. Liu",
+            "F. L. Liu",
+            "G. Liu",
+            "K. Liu",
+            "S. Liu",
+            "W. Liu",
+            "Y. Liu",
+            "Y. Liu",
+            "Y. L. Liu",
+            "G. Loachamin Ordonez",
+            "I. Lobo",
+            "A. Lobo Salvia",
+            "A. Loi",
+            "T. Long",
+            "F. C. L. Lopes",
+            "J. H. Lopes",
+            "A. Lopez Huertas",
+            "C. Lopez Iribarnegaray",
+            "S. López Soliño",
+            "Q. Lu",
+            "C. Lucarelli",
+            "D. Lucchesi",
+            "M. Lucio Martinez",
+            "Y. Luo",
+            "A. Lupato",
+            "E. Luppi",
+            "K. Lynch",
+            "X. -R. Lyu",
+            "G. M. Ma",
+            "H. Ma",
+            "S. Maccolini",
+            "F. Machefert",
+            "F. Maciuc",
+            "B. Mack",
+            "I. Mackay",
+            "L. M. Mackey",
+            "L. R. Madhan Mohan",
+            "M. J. Madurai",
+            "D. Magdalinski",
+            "D. Maisuzenko",
+            "J. J. Malczewski",
+            "S. Malde",
+            "L. Malentacca",
+            "A. Malinin",
+            "T. Maltsev",
+            "G. Manca",
+            "G. Mancinelli",
+            "C. Mancuso",
+            "R. Manera Escalero",
+            "F. M. Manganella",
+            "D. Manuzzi",
+            "D. Marangotto",
+            "J. F. Marchand",
+            "R. Marchevski",
+            "U. Marconi",
+            "E. Mariani",
+            "S. Mariani",
+            "C. Marin Benito",
+            "J. Marks",
+            "A. M. Marshall",
+            "L. Martel",
+            "G. Martelli",
+            "G. Martellotti",
+            "L. Martinazzoli",
+            "M. Martinelli",
+            "D. Martinez Gomez",
+            "D. Martinez Santos",
+            "F. Martinez Vidal",
+            "A. Martorell i Granollers",
+            "A. Massafferri",
+            "R. Matev",
+            "A. Mathad",
+            "V. Matiunin",
+            "C. Matteuzzi",
+            "K. R. Mattioli",
+            "A. Mauri",
+            "E. Maurice",
+            "J. Mauricio",
+            "P. Mayencourt",
+            "J. Mazorra de Cos",
+            "M. Mazurek",
+            "D. Mazzanti Tarancon",
+            "M. McCann",
+            "N. T. McHugh",
+            "A. McNab",
+            "R. McNulty",
+            "B. Meadows",
+            "D. Melnychuk",
+            "D. Mendoza Granada",
+            "P. Menendez Valdes Perez",
+            "F. M. Meng",
+            "M. Merk",
+            "A. Merli",
+            "L. Meyer Garcia",
+            "D. Miao",
+            "H. Miao",
+            "M. Mikhasenko",
+            "D. A. Milanes",
+            "A. Minotti",
+            "E. Minucci",
+            "T. Miralles",
+            "B. Mitreska",
+            "D. S. Mitzel",
+            "R. Mocanu",
+            "A. Modak",
+            "L. Moeser",
+            "R. D. Moise",
+            "E. F. Molina Cardenas",
+            "T. Mombächer",
+            "M. Monk",
+            "T. Monnard",
+            "S. Monteil",
+            "A. Morcillo Gomez",
+            "G. Morello",
+            "M. J. Morello",
+            "M. P. Morgenthaler",
+            "A. Moro",
+            "J. Moron",
+            "W. Morren",
+            "A. B. Morris",
+            "A. G. Morris",
+            "R. Mountain",
+            "Z. M. Mu",
+            "E. Muhammad",
+            "F. Muheim",
+            "M. Mulder",
+            "K. Müller",
+            "F. Muñoz-Rojas",
+            "R. Murta",
+            "V. Mytrochenko",
+            "P. Naik",
+            "T. Nakada",
+            "R. Nandakumar",
+            "T. Nanut",
+            "G. Napoletano",
+            "I. Nasteva",
+            "M. Needham",
+            "E. Nekrasova",
+            "N. Neri",
+            "S. Neubert",
+            "N. Neufeld",
+            "P. Neustroev",
+            "J. Nicolini",
+            "D. Nicotra",
+            "E. M. Niel",
+            "N. Nikitin",
+            "L. Nisi",
+            "Q. Niu",
+            "B. K. Njoki",
+            "P. Nogarolli",
+            "P. Nogga",
+            "C. Normand",
+            "J. Novoa Fernandez",
+            "G. Nowak",
+            "C. Nunez",
+            "H. N. Nur",
+            "A. Oblakowska-Mucha",
+            "V. Obraztsov",
+            "T. Oeser",
+            "A. Okhotnikov",
+            "O. Okhrimenko",
+            "R. Oldeman",
+            "F. Oliva",
+            "E. Olivart Pino",
+            "M. Olocco",
+            "R. H. O'Neil",
+            "J. S. Ordonez Soto",
+            "D. Osthues",
+            "J. M. Otalora Goicochea",
+            "P. Owen",
+            "A. Oyanguren",
+            "O. Ozcelik",
+            "F. Paciolla",
+            "A. Padee",
+            "K. O. Padeken",
+            "B. Pagare",
+            "T. Pajero",
+            "A. Palano",
+            "L. Palini",
+            "M. Palutan",
+            "C. Pan",
+            "X. Pan",
+            "S. Panebianco",
+            "S. Paniskaki",
+            "G. Panshin",
+            "L. Paolucci",
+            "A. Papanestis",
+            "M. Pappagallo",
+            "L. L. Pappalardo",
+            "C. Pappenheimer",
+            "C. Parkes",
+            "D. Parmar",
+            "G. Passaleva",
+            "D. Passaro",
+            "A. Pastore",
+            "M. Patel",
+            "J. Patoc",
+            "C. Patrignani",
+            "A. Paul",
+            "C. J. Pawley",
+            "A. Pellegrino",
+            "J. Peng",
+            "X. Peng",
+            "M. Pepe Altarelli",
+            "S. Perazzini",
+            "D. Pereima",
+            "H. Pereira Da Costa",
+            "M. Pereira Martinez",
+            "A. Pereiro Castro",
+            "C. Perez",
+            "P. Perret",
+            "A. Perrevoort",
+            "A. Perro",
+            "M. J. Peters",
+            "K. Petridis",
+            "A. Petrolini",
+            "S. Pezzulo",
+            "J. P. Pfaller",
+            "H. Pham",
+            "L. Pica",
+            "M. Piccini",
+            "L. Piccolo",
+            "B. Pietrzyk",
+            "G. Pietrzyk",
+            "R. N. Pilato",
+            "D. Pinci",
+            "F. Pisani",
+            "M. Pizzichemi",
+            "V. M. Placinta",
+            "M. Plo Casasus",
+            "T. Poeschl",
+            "F. Polci",
+            "M. Poli Lener",
+            "A. Poluektov",
+            "N. Polukhina",
+            "I. Polyakov",
+            "E. Polycarpo",
+            "S. Ponce",
+            "D. Popov",
+            "K. Popp",
+            "S. Poslavskii",
+            "K. Prasanth",
+            "C. Prouve",
+            "D. Provenzano",
+            "V. Pugatch",
+            "A. Puicercus Gomez",
+            "G. Punzi",
+            "J. R. Pybus",
+            "Q. Q. Qian",
+            "W. Qian",
+            "N. Qin",
+            "R. Quagliani",
+            "R. I. Rabadan Trejo",
+            "R. Racz",
+            "J. H. Rademacker",
+            "M. Rama",
+            "M. Ramírez García",
+            "V. Ramos De Oliveira",
+            "M. Ramos Pernas",
+            "M. S. Rangel",
+            "F. Ratnikov",
+            "G. Raven",
+            "M. Rebollo De Miguel",
+            "F. Redi",
+            "J. Reich",
+            "F. Reiss",
+            "Z. Ren",
+            "P. K. Resmi",
+            "M. Ribalda Galvez",
+            "R. Ribatti",
+            "G. Ricart",
+            "D. Riccardi",
+            "S. Ricciardi",
+            "K. Richardson",
+            "M. Richardson-Slipper",
+            "F. Riehn",
+            "K. Rinnert",
+            "P. Robbe",
+            "G. Robertson",
+            "E. Rodrigues",
+            "A. Rodriguez Alvarez",
+            "E. Rodriguez Fernandez",
+            "J. A. Rodriguez Lopez",
+            "E. Rodriguez Rodriguez",
+            "J. Roensch",
+            "A. Rogachev",
+            "A. Rogovskiy",
+            "D. L. Rolf",
+            "P. Roloff",
+            "V. Romanovskiy",
+            "A. Romero Vidal",
+            "G. Romolini",
+            "F. Ronchetti",
+            "T. Rong",
+            "M. Rotondo",
+            "S. R. Roy",
+            "M. S. Rudolph",
+            "M. Ruiz Diaz",
+            "R. A. Ruiz Fernandez",
+            "J. Ruiz Vidal",
+            "J. J. Saavedra-Arias",
+            "J. J. Saborido Silva",
+            "S. E. R. Sacha Emile R.",
+            "N. Sagidova",
+            "D. Sahoo",
+            "N. Sahoo",
+            "B. Saitta",
+            "M. Salomoni",
+            "I. Sanderswood",
+            "R. Santacesaria",
+            "C. Santamarina Rios",
+            "M. Santimaria",
+            "L. Santoro",
+            "E. Santovetti",
+            "A. Saputi",
+            "D. Saranin",
+            "A. Sarnatskiy",
+            "G. Sarpis",
+            "M. Sarpis",
+            "C. Satriano",
+            "A. Satta",
+            "M. Saur",
+            "D. Savrina",
+            "H. Sazak",
+            "F. Sborzacchi",
+            "A. Scarabotto",
+            "S. Schael",
+            "S. Scherl",
+            "M. Schiller",
+            "H. Schindler",
+            "M. Schmelling",
+            "B. Schmidt",
+            "N. Schmidt",
+            "S. Schmitt",
+            "H. Schmitz",
+            "O. Schneider",
+            "A. Schopper",
+            "N. Schulte",
+            "M. H. Schune",
+            "G. Schwering",
+            "B. Sciascia",
+            "A. Sciuccati",
+            "G. Scriven",
+            "I. Segal",
+            "S. Sellam",
+            "A. Semennikov",
+            "T. Senger",
+            "M. Senghi Soares",
+            "A. Sergi",
+            "N. Serra",
+            "L. Sestini",
+            "A. Seuthe",
+            "B. Sevilla Sanjuan",
+            "Y. Shang",
+            "D. M. Shangase",
+            "M. Shapkin",
+            "R. S. Sharma",
+            "I. Shchemerov",
+            "L. Shchutska",
+            "T. Shears",
+            "L. Shekhtman",
+            "Z. Shen",
+            "S. Sheng",
+            "V. Shevchenko",
+            "B. Shi",
+            "J. Shi",
+            "Q. Shi",
+            "W. S. Shi",
+            "Y. Shimizu",
+            "E. Shmanin",
+            "R. Shorkin",
+            "J. D. Shupperd",
+            "R. Silva Coutinho",
+            "G. Simi",
+            "S. Simone",
+            "M. Singha",
+            "N. Skidmore",
+            "T. Skwarnicki",
+            "M. W. Slater",
+            "E. Smith",
+            "M. Smith",
+            "L. Soares Lavra",
+            "M. D. Sokoloff",
+            "F. J. P. Soler",
+            "A. Solomin",
+            "A. Solovev",
+            "K. Solovieva",
+            "N. S. Sommerfeld",
+            "R. Song",
+            "Y. Song",
+            "Y. Song",
+            "Y. S. Song",
+            "F. L. Souza De Almeida",
+            "B. Souza De Paula",
+            "K. M. Sowa",
+            "E. Spadaro Norella",
+            "E. Spedicato",
+            "J. G. Speer",
+            "P. Spradlin",
+            "F. Stagni",
+            "M. Stahl",
+            "S. Stahl",
+            "S. Stanislaus",
+            "M. Stefaniak",
+            "O. Steinkamp",
+            "D. Strekalina",
+            "Y. Su",
+            "F. Suljik",
+            "J. Sun",
+            "J. Sun",
+            "L. Sun",
+            "D. Sundfeld",
+            "W. Sutcliffe",
+            "P. Svihra",
+            "V. Svintozelskyi",
+            "K. Swientek",
+            "F. Swystun",
+            "A. Szabelski",
+            "T. Szumlak",
+            "Y. Tan",
+            "Y. Tang",
+            "Y. T. Tang",
+            "M. D. Tat",
+            "J. A. Teijeiro Jimenez",
+            "A. Terentev",
+            "F. Terzuoli",
+            "F. Teubert",
+            "E. Thomas",
+            "D. J. D. Thompson",
+            "A. R. Thomson-Strong",
+            "H. Tilquin",
+            "V. Tisserand",
+            "S. T'Jampens",
+            "M. Tobin",
+            "T. T. Todorov",
+            "L. Tomassetti",
+            "G. Tonani",
+            "X. Tong",
+            "T. Tork",
+            "L. Toscano",
+            "D. Y. Tou",
+            "C. Trippl",
+            "G. Tuci",
+            "N. Tuning",
+            "L. H. Uecker",
+            "A. Ukleja",
+            "D. J. Unverzagt",
+            "A. Upadhyay",
+            "B. Urbach",
+            "A. Usachov",
+            "A. Ustyuzhanin",
+            "U. Uwer",
+            "V. Vagnoni",
+            "A. Vaitkevicius",
+            "V. Valcarce Cadenas",
+            "G. Valenti",
+            "N. Valls Canudas",
+            "J. van Eldik",
+            "H. Van Hecke",
+            "E. van Herwijnen",
+            "C. B. Van Hulse",
+            "R. Van Laak",
+            "M. van Veghel",
+            "G. Vasquez",
+            "R. Vazquez Gomez",
+            "P. Vazquez Regueiro",
+            "C. Vázquez Sierra",
+            "S. Vecchi",
+            "J. Velilla Serna",
+            "J. J. Velthuis",
+            "M. Veltri",
+            "A. Venkateswaran",
+            "M. Verdoglia",
+            "M. Vesterinen",
+            "W. Vetens",
+            "D. Vico Benet",
+            "P. Vidrier Villalba",
+            "M. Vieites Diaz",
+            "X. Vilasis-Cardona",
+            "E. Vilella Figueras",
+            "A. Villa",
+            "P. Vincent",
+            "B. Vivacqua",
+            "F. C. Volle",
+            "D. vom Bruch",
+            "N. Voropaev",
+            "K. Vos",
+            "C. Vrahas",
+            "J. Wagner",
+            "J. Walsh",
+            "E. J. Walton",
+            "G. Wan",
+            "A. Wang",
+            "B. Wang",
+            "C. Wang",
+            "G. Wang",
+            "H. Wang",
+            "J. Wang",
+            "J. Wang",
+            "J. Wang",
+            "J. Wang",
+            "M. Wang",
+            "M. Wang",
+            "N. W. Wang",
+            "R. Wang",
+            "X. Wang",
+            "X. Wang",
+            "X. W. Wang",
+            "Y. Wang",
+            "Y. Wang",
+            "Y. H. Wang",
+            "Z. Wang",
+            "Z. Wang",
+            "J. A. Ward",
+            "M. Waterlaat",
+            "N. K. Watson",
+            "D. Websdale",
+            "Y. Wei",
+            "Z. Weida",
+            "J. Wendel",
+            "B. D. C. Westhenry",
+            "C. White",
+            "M. Whitehead",
+            "E. Whiter",
+            "A. R. Wiederhold",
+            "D. Wiedner",
+            "M. A. Wiegertjes",
+            "C. Wild",
+            "G. Wilkinson",
+            "M. K. Wilkinson",
+            "M. Williams",
+            "M. J. Williams",
+            "M. R. J. Williams",
+            "R. Williams",
+            "S. Williams",
+            "Z. Williams",
+            "F. F. Wilson",
+            "M. Winn",
+            "W. Wislicki",
+            "M. Witek",
+            "L. Witola",
+            "T. Wolf",
+            "E. Wood",
+            "G. Wormser",
+            "S. A. Wotton",
+            "H. Wu",
+            "J. Wu",
+            "X. Wu",
+            "Y. Wu",
+            "Z. Wu",
+            "K. Wyllie",
+            "S. Xian",
+            "Z. Xiang",
+            "Y. Xie",
+            "T. X. Xing",
+            "A. Xu",
+            "L. Xu",
+            "M. Xu",
+            "Z. Xu",
+            "Z. Xu",
+            "Z. Xu",
+            "S. Yadav",
+            "K. Yang",
+            "X. Yang",
+            "Y. Yang",
+            "Y. Yang",
+            "Z. Yang",
+            "V. Yeroshenko",
+            "H. Yeung",
+            "H. Yin",
+            "X. Yin",
+            "C. Y. Yu",
+            "J. Yu",
+            "X. Yuan",
+            "Y Yuan",
+            "J. A. Zamora Saa",
+            "M. Zavertyaev",
+            "M. Zdybal",
+            "F. Zenesini",
+            "C. Zeng",
+            "M. Zeng",
+            "C. Zhang",
+            "D. Zhang",
+            "J. Zhang",
+            "L. Zhang",
+            "R. Zhang",
+            "S. Zhang",
+            "S. L. Zhang",
+            "Y. Zhang",
+            "Y. Z. Zhang",
+            "Z. Zhang",
+            "Y. Zhao",
+            "A. Zhelezov",
+            "S. Z. Zheng",
+            "X. Z. Zheng",
+            "Y. Zheng",
+            "T. Zhou",
+            "X. Zhou",
+            "Y. Zhou",
+            "V. Zhovkovska",
+            "L. Z. Zhu",
+            "X. Zhu",
+            "X. Zhu",
+            "Y. Zhu",
+            "V. Zhukov",
+            "J. Zhuo",
+            "D. Zuliani",
+            "G. Zunica"
+          ],
+          "display_authors": [
+            " LHCb collaboration",
+            "R. Aaij",
+            "A. S. W. Abdelmotteleb",
+            "et al."
+          ],
+          "summary": "A search for the rare decay $B^{+} \\to \\bar Λp μ^{+} μ^{-}$ is performed using proton-proton collision data recorded by the LHCb experiment at a center-of-mass energy of $\\sqrt{s}= 13$ TeV, corresponding to an integrated luminosity of 5.4 fb$^-1$. An excess of events is found with respect to the background-only expectation, with a signal significance of 3.5 standard deviations, in the low invariant-mass region of $m(\\bar Λp)<2.8$ GeV/$c^2$. The branching fraction is measured to be ${\\cal B}_{\\rm low}({B^{+}}\\to {\\bar Λp μ^{+} μ^{-}})=\\left(1.70 ^{+0.65}_{-0.56}(\\rm stat) \\pm 0.17(\\rm syst) \\pm 0.14(\\rm ext)\\right) \\times 10^{-8}$, where the last uncertainty is due to external inputs on ${\\cal B}(B^+\\to{J/ψ\\bar Λp})\\times {\\cal B}({J/ψ}\\to{μ^+μ^-})$. With no significant signal observed in the high $m(\\bar Λp)$ region above 2.8 GeV/$c^2$, an upper limit is set to be ${\\cal B}_{\\rm high}(B^{+}\\to {\\bar Λp μ^{+} μ^{-}})<2.8\\,(3.7) \\times 10^{-9}$ at the $90\\%$ ($95\\%$) confidence level.",
+          "arxiv_url": "https://arxiv.org/abs/2601.06878v1",
+          "pdf_url": "https://arxiv.org/pdf/2601.06878v1.pdf",
+          "submitted_date": "2026-01-11T11:56:07+00:00",
+          "categories": [
+            "hep-ex"
+          ],
+          "comments": "All figures and tables, along with any supplementary material and additional information, are available at https://lbfence.cern.ch/alcm/public/analysis/full-details/5370"
+        },
+        {
+          "id": "2601.06856v1",
+          "title": "Probing the microscopic origin of prompt and non-prompt $D^{0}$ production through event-shape engineering in proton-proton collisions at the LHC",
+          "authors": [
+            "Aswathy Menon Kavumpadikkal Radhakrishnan",
+            "Suraj Prasad",
+            "Purnima Srivastava",
+            "Raghunath Sahoo"
+          ],
+          "display_authors": [
+            "Aswathy Menon Kavumpadikkal Radhakrishnan",
+            "Suraj Prasad",
+            "Purnima Srivastava",
+            "et al."
+          ],
+          "summary": "Heavy-flavour hadrons are produced in the early stages of ultra-relativistic collisions at the LHC via hard partonic interactions and experience the whole system evolution. The study of prompt and non-prompt $D^{0}$ mesons provides an independent avenue to test the theories of quantum chromodynamics and to investigate beauty hadron production. Moreover, the production of both prompt and non-prompt $D^{0}$ is influenced by microscopic processes such as multi-partonic interactions (MPI) and hadronisation through fragmentation. In this study, an attempt is made to understand the production of prompt and non-prompt $D^{0}$ mesons in proton-proton collisions at $\\sqrt{s}=13.6$ TeV using the PYTHIA8 event generator, which offers a qualitative description of charm production. The role of the transverse momentum transfer in the hardest partonic scattering ($\\hat{p}_{\\rm T}$), MPI, and color reconnection is systematically explored. In addition, the charged particle production in different topological regions with respect to the leading $D^{0}$ meson is studied to assess the influence of the $D^{0}$ meson on the event topology and to examine the selection biases arising from the use of charged particle multiplicity as an event classifier.",
+          "arxiv_url": "https://arxiv.org/abs/2601.06856v1",
+          "pdf_url": "https://arxiv.org/pdf/2601.06856v1.pdf",
+          "submitted_date": "2026-01-11T10:58:45+00:00",
+          "categories": [
+            "hep-ph",
+            "hep-ex",
+            "hep-th",
+            "nucl-ex",
+            "nucl-th"
+          ],
+          "comments": "14 pages and 11 captioned figures"
+        },
+        {
+          "id": "2601.06822v1",
+          "title": "Radiation Resistance of Ge-doped Multi-Mode Fiber for Optical Links in Collider Experiments",
+          "authors": [
+            "Datao Gong",
+            "Suen Hou",
+            "Bo-Jing Juang",
+            "Chonghan Liu",
+            "Tiankuan Liu",
+            "Ming Qi",
+            "Jingbo Ye",
+            "Lei Zhang",
+            "Li Zhang"
+          ],
+          "display_authors": [
+            "Datao Gong",
+            "Suen Hou",
+            "Bo-Jing Juang",
+            "et al."
+          ],
+          "summary": "The applications of optical links in collider experiments provide the advantage of high-speed data transmission with low mass fibers over distances of a few hundred meters. Ge-doped multi-mode fibers are evaluated for radiation tolerance in ionizing doses of Co-60 gamma rays. The Radiation-Induced Attenuation (RIA) varies significantly depending on doping substances and fabrication technologies. A type of telecom-grade fiber has demonstrated an RIA of 0.05 dB/m under a total ionizing dose of 300 kGy(SiO2). The dependence on dose rate is compared in the range between 5 Gy/hr and 1.4 kGy/hr, and the annealing recovery is observed after the Co-60 source is shielded. The temperature dependence is investigated across a range of -15 oC to room temperature. At cold temperatures, stagnant annealing leads to a substantially higher RIA during irradiation. The recovery of radiation-induced defects is typically within a few hours, resulting in similar RIA levels regardless of the dose rate and temperature during exposure. Ge-doped fibers of chosen fabrication methods are capable of enduring high ionizing doses for use in high-energy physics experiments.",
+          "arxiv_url": "https://arxiv.org/abs/2601.06822v1",
+          "pdf_url": "https://arxiv.org/pdf/2601.06822v1.pdf",
+          "submitted_date": "2026-01-11T09:10:42+00:00",
+          "categories": [
+            "hep-ex"
+          ],
+          "comments": "5 pages, 6 figures"
+        },
+        {
+          "id": "2601.06817v1",
+          "title": "Probing Dark Matter annihilation in the Galactic Centre with TRIDENT",
+          "authors": [
+            "Yingwei Wang",
+            "Xinhui Chu",
+            "Andrew Cheek",
+            "Iwan Morton-Blake",
+            "Qichao Chang",
+            "Gwenael Giacinti",
+            "Samy Kaci",
+            "Xin Xiang",
+            "Donglian Xu",
+            "Fuyudi Zhang"
+          ],
+          "display_authors": [
+            "Yingwei Wang",
+            "Xinhui Chu",
+            "Andrew Cheek",
+            "et al."
+          ],
+          "summary": "We determine the future sensitivity of the TRIDENT neutrino telescope to dark matter annihilation in the Galactic Centre. By applying the full detector design we show that TRIDENT will probe annihilation rates down to $\\langleσv\\rangle\\approx5\\times10^{-27}\\,{\\rm cm}^3\\,{\\rm s}^{-1}$ for a $10\\,{\\rm TeV}$ dark matter, which is below the thermal freeze-out benchmark. The analysis is carried out with all-flavour neutrino interactions, where we demonstrate that cascade events, primarily due to $ν_{e,τ}$, show greater sensitivity to a dark matter signal compared to the more commonly studied track events. Furthermore, we highlight the impact of a previously overlooked background, Galactic neutrinos produced from interactions between hadronic cosmic rays and interstellar gas. We find dark matter sensitivities are more strongly degraded in the high energy region above $\\sim 10\\, {\\rm TeV}$, with a maximal weakening of approximately a factor of $\\sim 2$. This effect remains smaller than the uncertainty associated with the dark matter density profile but can nonetheless mimic a positive annihilation signal. We contextualize these results with a concrete particle model and show that TRIDENT will be able to probe the most interesting untested parts of parameter space.",
+          "arxiv_url": "https://arxiv.org/abs/2601.06817v1",
+          "pdf_url": "https://arxiv.org/pdf/2601.06817v1.pdf",
+          "submitted_date": "2026-01-11T09:04:21+00:00",
+          "categories": [
+            "hep-ph",
+            "hep-ex"
+          ],
+          "comments": ""
+        },
+        {
+          "id": "2601.06816v1",
+          "title": "Axion Signal Search Using Hybrid Nuclear-Electronic Spin Systems",
+          "authors": [
+            "Xiangjun Tan",
+            "Zhanning Wang"
+          ],
+          "display_authors": [
+            "Xiangjun Tan",
+            "Zhanning Wang"
+          ],
+          "summary": "Conventional nuclear magnetic resonance searches for the galactic axion wind lose sensitivity at low frequencies due to the unfavourable scaling of inductive readout. Here, we propose a hybrid architecture where the hyperfine interaction transduces axion-driven nuclear precession into a high-bandwidth electron-spin readout channel. We demonstrate analytically that this dispersive upconversion preserves the specific sidereal and annual modulation signatures required to distinguish dark matter signals from instrumental backgrounds. When instantiated in a silicon ${ }^{209} \\text{Bi}$ donor platform, the hybrid sensor is projected to outperform direct nuclear detection by more than an order of magnitude over the $10^{-16}-10^{-6} \\text{eV}$ wide mass range. With collective enhancement, the design reaches a $5 σ$ sensitivity to DFSZ axion-nucleon couplings within one year, establishing hyperfine-mediated sensing as a competitive path for compact, solid-state dark matter searches.",
+          "arxiv_url": "https://arxiv.org/abs/2601.06816v1",
+          "pdf_url": "https://arxiv.org/pdf/2601.06816v1.pdf",
+          "submitted_date": "2026-01-11T09:03:55+00:00",
+          "categories": [
+            "quant-ph",
+            "hep-ex",
+            "hep-ph"
+          ],
+          "comments": ""
+        },
+        {
+          "id": "2601.06784v1",
+          "title": "Performance evaluation of Luxium Solutions BCF-XL wavelength-shifting fibers",
+          "authors": [
+            "Tatsuki Yamazumi",
+            "Yota Endo",
+            "Shoma Kodama",
+            "Kota Nakagiri",
+            "Yasuhiro Nakajima",
+            "Minoru Sekiyama",
+            "Masashi Yokoyama"
+          ],
+          "display_authors": [
+            "Tatsuki Yamazumi",
+            "Yota Endo",
+            "Shoma Kodama",
+            "et al."
+          ],
+          "summary": "We evaluate the performance of single-clad wavelength-shifting fibers newly developed by Luxium Solutions, BCF-92XL, BCF-9929AXL, and BCF-9995XL and compare them with the multi-clad Kuraray Y-11 fiber. The BCF-XL fibers exhibit faster decay times (92XL: $2.10\\pm0.01$ ns, 9929AXL: $2.10\\pm0.02$ ns, 9995XL: $2.41\\pm0.03$ ns) than Y-11 ($7.44\\pm0.06$ ns). The attenuation lengths are comparable to that of Y-11 within the measurement range up to 3.2 m. When coupled to an EJ-204 plastic scintillator, the BCF-XL fibers achieve superior time resolution while maintaining light yields comparable to those expected for a single-clad Y-11 fiber.",
+          "arxiv_url": "https://arxiv.org/abs/2601.06784v1",
+          "pdf_url": "https://arxiv.org/pdf/2601.06784v1.pdf",
+          "submitted_date": "2026-01-11T05:51:55+00:00",
+          "categories": [
+            "physics.ins-det",
+            "hep-ex",
+            "nucl-ex"
+          ],
+          "comments": "14 pages, 15 figures"
+        }
+      ],
+      "count": 7
+    },
+    "hep-ph": {
+      "name": "High Energy Physics - Phenomenology",
+      "papers": [
+        {
+          "id": "2601.07015v1",
+          "title": "Light cone QCD sum rules study of the rare radiative $Ξ^{*}_{bb}\\toΞ_bγ$ decay",
+          "authors": [
+            "T. M. Aliev",
+            "A. Ozpineci",
+            "Y. Sarac"
+          ],
+          "display_authors": [
+            "T. M. Aliev",
+            "A. Ozpineci",
+            "Y. Sarac"
+          ],
+          "summary": "The rare radiative decay $Ξ^{*}_{bb}\\toΞ_bγ$ is investigated within the light cone QCD sum rules approach. This decay proceeds through the flavor changing neutral current $b\\to s$ transition in the Standard Model. The hadronic matrix element of the considered decay is parameterized in terms of four tensor form factors $T_1^{V}(q^2)$, $T_2^{V}(q^2)$, $T_1^{A}(q^2)$ and $T_2^{A}(q^2)$. The sum rules for these form factors describing the $Ξ^{*}_{bb}\\toΞ_bγ$ decay are derived at $q^2=0$ point using the $Ξ_b$ distribution amplitudes. The results of the form factors are employed to calculate the corresponding decay width. Our finding indicates that this weak radiative decay could be within reach of future high statistics studies of doubly heavy baryons at LHCb and upcoming facilities.",
+          "arxiv_url": "https://arxiv.org/abs/2601.07015v1",
+          "pdf_url": "https://arxiv.org/pdf/2601.07015v1.pdf",
+          "submitted_date": "2026-01-11T18:05:09+00:00",
+          "categories": [
+            "hep-ph"
+          ],
+          "comments": ""
+        },
+        {
+          "id": "2601.07007v1",
+          "title": "Oscillatory Freeze from Inertial Holographic Dark Energy",
+          "authors": [
+            "Swapnil Kumar Singh"
+          ],
+          "display_authors": [
+            "Swapnil Kumar Singh"
+          ],
+          "summary": "We study a generalized holographic dark energy model in which the infrared cutoff depends on the Hubble parameter and its first two time derivatives. The inclusion of the $\\ddot H$ term introduces a finite relaxation timescale for the horizon degrees of freedom, which can be interpreted as an effective entropic inertia of the holographic vacuum energy. The resulting background dynamics admit late--time solutions in which the cosmic expansion gradually halts.   In the underdamped regime, the Hubble parameter undergoes exponentially damped oscillations and asymptotically approaches $H\\to0$. The scale factor grows monotonically but by a finite amount, while curvature invariants decay exponentially, leading to an asymptotically Minkowski spacetime without future singularities. We confront the full nonlinear background evolution with cosmic chronometer measurements of the Hubble parameter and find good agreement with current late--time expansion data, with a reduced chi--squared $χ^2/ν\\simeq0.52$. At observable redshifts, oscillatory features are strongly suppressed and remain consistent with existing constraints.",
+          "arxiv_url": "https://arxiv.org/abs/2601.07007v1",
+          "pdf_url": "https://arxiv.org/pdf/2601.07007v1.pdf",
+          "submitted_date": "2026-01-11T17:48:05+00:00",
+          "categories": [
+            "gr-qc",
+            "astro-ph.CO",
+            "hep-ph",
+            "hep-th"
+          ],
+          "comments": "16 pages, 8 figures, Comments are welcome"
+        },
+        {
+          "id": "2601.06958v1",
+          "title": "$η^{(\\prime)}\\toπ^+π^-l^+l^-$ decays in the NJL model",
+          "authors": [
+            "M. K. Volkov",
+            "A. A. Osipov",
+            "K. Nurlan",
+            "A. A. Pivovarov"
+          ],
+          "display_authors": [
+            "M. K. Volkov",
+            "A. A. Osipov",
+            "K. Nurlan",
+            "et al."
+          ],
+          "summary": "The Nambu-Jona-Lasinio model is used to calculate the branching fractions of two-lepton decays $η^{(\\prime)}\\toπ^+π^-l^+l^-$, where $l=e,μ$. Particular attention is paid to the study of the contribution of the diagram with the exchange of two vector mesons. It is shown that taking this contribution into account is essential for the agreement between theoretical calculations and available experimental data.",
+          "arxiv_url": "https://arxiv.org/abs/2601.06958v1",
+          "pdf_url": "https://arxiv.org/pdf/2601.06958v1.pdf",
+          "submitted_date": "2026-01-11T15:35:06+00:00",
+          "categories": [
+            "hep-ph"
+          ],
+          "comments": "8 pages, 2 figures"
+        },
+        {
+          "id": "2601.06856v1",
+          "title": "Probing the microscopic origin of prompt and non-prompt $D^{0}$ production through event-shape engineering in proton-proton collisions at the LHC",
+          "authors": [
+            "Aswathy Menon Kavumpadikkal Radhakrishnan",
+            "Suraj Prasad",
+            "Purnima Srivastava",
+            "Raghunath Sahoo"
+          ],
+          "display_authors": [
+            "Aswathy Menon Kavumpadikkal Radhakrishnan",
+            "Suraj Prasad",
+            "Purnima Srivastava",
+            "et al."
+          ],
+          "summary": "Heavy-flavour hadrons are produced in the early stages of ultra-relativistic collisions at the LHC via hard partonic interactions and experience the whole system evolution. The study of prompt and non-prompt $D^{0}$ mesons provides an independent avenue to test the theories of quantum chromodynamics and to investigate beauty hadron production. Moreover, the production of both prompt and non-prompt $D^{0}$ is influenced by microscopic processes such as multi-partonic interactions (MPI) and hadronisation through fragmentation. In this study, an attempt is made to understand the production of prompt and non-prompt $D^{0}$ mesons in proton-proton collisions at $\\sqrt{s}=13.6$ TeV using the PYTHIA8 event generator, which offers a qualitative description of charm production. The role of the transverse momentum transfer in the hardest partonic scattering ($\\hat{p}_{\\rm T}$), MPI, and color reconnection is systematically explored. In addition, the charged particle production in different topological regions with respect to the leading $D^{0}$ meson is studied to assess the influence of the $D^{0}$ meson on the event topology and to examine the selection biases arising from the use of charged particle multiplicity as an event classifier.",
+          "arxiv_url": "https://arxiv.org/abs/2601.06856v1",
+          "pdf_url": "https://arxiv.org/pdf/2601.06856v1.pdf",
+          "submitted_date": "2026-01-11T10:58:45+00:00",
+          "categories": [
+            "hep-ph",
+            "hep-ex",
+            "hep-th",
+            "nucl-ex",
+            "nucl-th"
+          ],
+          "comments": "14 pages and 11 captioned figures"
+        },
+        {
+          "id": "2601.06825v1",
+          "title": "Quarkonium light-cone distribution amplitudes: twist structure and mass dependence",
+          "authors": [
+            "Shuai Xu",
+            "Xiao-Nan Li",
+            "Jin-Zhong Han",
+            "Bai-hui Cheng",
+            "Li-li Chen",
+            "Qin Chang"
+          ],
+          "display_authors": [
+            "Shuai Xu",
+            "Xiao-Nan Li",
+            "Jin-Zhong Han",
+            "et al."
+          ],
+          "summary": "We present a systematic study of the leading- and next-to-leading-twist light-cone distribution amplitudes (LCDAs) of ground-state pseudoscalar and vector quarkonium within the light-front quark model (LFQM). By implementing the replacement $M \\to M_0$, we analyze the longitudinal and transverse structures of the LCDAs, together with their Gegenbauer moments, $ξ$-moments, and transverse momentum moments. We show that charge-conjugation symmetry enforces the exact vanishing of all odd Gegenbauer moments and odd $ξ$-moments. For pseudoscalar quarkonium, the twist-2 and twist-3 LCDAs become identical, which lead to their Gegenbauer moments, $ξ$-moments, and transverse momentum moments are the same, respectively. For vector quarkonium, although the twist-2 and twist-3 LCDAs differ in the case of masses quark, they progressively converge as the quark mass increases. In the heavy-quark limit, all quarkonium LCDAs satisfy $φ^A_{2} = φ^P_{3} \\simeq φ^{\\parallel}_{2} \\simeq φ^{\\perp}_{3}$, demonstrating an emergent twist-independence of quarkonium distribution amplitudes. We further find that the LCDAs become increasingly peaked and narrower with increasing quark mass, reflecting the meson system becomes increasingly close to a nonrelativistic bound state, with a more uniform and stable distribution of internal longitudinal momentum. For all quarkonium, the peak value exhibits a simple phenomenological scaling behavior governed by the ratio $m/β$. The transverse momentum moments increase with the meson mass, indicating a progressively more compact bound-state structure. These results reveal a universal and systematic evolution of quarkonium LCDAs driven by the quark mass.",
+          "arxiv_url": "https://arxiv.org/abs/2601.06825v1",
+          "pdf_url": "https://arxiv.org/pdf/2601.06825v1.pdf",
+          "submitted_date": "2026-01-11T09:25:30+00:00",
+          "categories": [
+            "hep-ph"
+          ],
+          "comments": "15 pages, 2 figures"
+        },
+        {
+          "id": "2601.06817v1",
+          "title": "Probing Dark Matter annihilation in the Galactic Centre with TRIDENT",
+          "authors": [
+            "Yingwei Wang",
+            "Xinhui Chu",
+            "Andrew Cheek",
+            "Iwan Morton-Blake",
+            "Qichao Chang",
+            "Gwenael Giacinti",
+            "Samy Kaci",
+            "Xin Xiang",
+            "Donglian Xu",
+            "Fuyudi Zhang"
+          ],
+          "display_authors": [
+            "Yingwei Wang",
+            "Xinhui Chu",
+            "Andrew Cheek",
+            "et al."
+          ],
+          "summary": "We determine the future sensitivity of the TRIDENT neutrino telescope to dark matter annihilation in the Galactic Centre. By applying the full detector design we show that TRIDENT will probe annihilation rates down to $\\langleσv\\rangle\\approx5\\times10^{-27}\\,{\\rm cm}^3\\,{\\rm s}^{-1}$ for a $10\\,{\\rm TeV}$ dark matter, which is below the thermal freeze-out benchmark. The analysis is carried out with all-flavour neutrino interactions, where we demonstrate that cascade events, primarily due to $ν_{e,τ}$, show greater sensitivity to a dark matter signal compared to the more commonly studied track events. Furthermore, we highlight the impact of a previously overlooked background, Galactic neutrinos produced from interactions between hadronic cosmic rays and interstellar gas. We find dark matter sensitivities are more strongly degraded in the high energy region above $\\sim 10\\, {\\rm TeV}$, with a maximal weakening of approximately a factor of $\\sim 2$. This effect remains smaller than the uncertainty associated with the dark matter density profile but can nonetheless mimic a positive annihilation signal. We contextualize these results with a concrete particle model and show that TRIDENT will be able to probe the most interesting untested parts of parameter space.",
+          "arxiv_url": "https://arxiv.org/abs/2601.06817v1",
+          "pdf_url": "https://arxiv.org/pdf/2601.06817v1.pdf",
+          "submitted_date": "2026-01-11T09:04:21+00:00",
+          "categories": [
+            "hep-ph",
+            "hep-ex"
+          ],
+          "comments": ""
+        },
+        {
+          "id": "2601.06816v1",
+          "title": "Axion Signal Search Using Hybrid Nuclear-Electronic Spin Systems",
+          "authors": [
+            "Xiangjun Tan",
+            "Zhanning Wang"
+          ],
+          "display_authors": [
+            "Xiangjun Tan",
+            "Zhanning Wang"
+          ],
+          "summary": "Conventional nuclear magnetic resonance searches for the galactic axion wind lose sensitivity at low frequencies due to the unfavourable scaling of inductive readout. Here, we propose a hybrid architecture where the hyperfine interaction transduces axion-driven nuclear precession into a high-bandwidth electron-spin readout channel. We demonstrate analytically that this dispersive upconversion preserves the specific sidereal and annual modulation signatures required to distinguish dark matter signals from instrumental backgrounds. When instantiated in a silicon ${ }^{209} \\text{Bi}$ donor platform, the hybrid sensor is projected to outperform direct nuclear detection by more than an order of magnitude over the $10^{-16}-10^{-6} \\text{eV}$ wide mass range. With collective enhancement, the design reaches a $5 σ$ sensitivity to DFSZ axion-nucleon couplings within one year, establishing hyperfine-mediated sensing as a competitive path for compact, solid-state dark matter searches.",
+          "arxiv_url": "https://arxiv.org/abs/2601.06816v1",
+          "pdf_url": "https://arxiv.org/pdf/2601.06816v1.pdf",
+          "submitted_date": "2026-01-11T09:03:55+00:00",
+          "categories": [
+            "quant-ph",
+            "hep-ex",
+            "hep-ph"
+          ],
+          "comments": ""
+        },
+        {
+          "id": "2601.06804v1",
+          "title": "Low-energy $Nφ$ scattering from a pole-enhanced triangle diagram",
+          "authors": [
+            "Mao-Jun Yan",
+            "Chun-Sheng An",
+            "Cheng-Rong Deng"
+          ],
+          "display_authors": [
+            "Mao-Jun Yan",
+            "Chun-Sheng An",
+            "Cheng-Rong Deng"
+          ],
+          "summary": "We investigate low-energy $Nφ$ scattering driven by a pole-enhanced triangle diagram, in which the two-kaon-exchange contribution is promoted by the near-threshold $Λ(1405)$ pole in the $N\\bar K$ subsystem. Using an unphysical kaon mass motivated by lattice simulations, we evaluate the $Nφ$ scattering length and find that this mechanism generates an attractive interaction with a magnitude of $-1.5$ to $-0.5,\\rm{fm}$. Spin-dependent effects are not treated explicitly and are expected to provide subleading corrections in the near-threshold region. We further analyze the low-energy behavior of the triangle-diagram amplitude and show that the scattering length performs a characteristic power-law dependence on the parameter $\\tildeδ$, defined as the mass difference between the $K\\bar K$ threshold and the $φ$ meson. This threshold-driven behavior differs from that associated with van der Waals-type forces or the long-range tail of two-pion exchange, highlighting the role of three-body dynamics encoded in the pole-enhanced triangle diagram in shaping the near-threshold $Nφ$ interaction.",
+          "arxiv_url": "https://arxiv.org/abs/2601.06804v1",
+          "pdf_url": "https://arxiv.org/pdf/2601.06804v1.pdf",
+          "submitted_date": "2026-01-11T08:32:30+00:00",
+          "categories": [
+            "hep-ph"
+          ],
+          "comments": "13 pages, 9 figures"
+        }
+      ],
+      "count": 8
+    },
+    "stat.ML": {
+      "name": "Machine Learning - Statistics",
+      "papers": [
+        {
+          "id": "2601.07074v1",
+          "title": "Robust Mean Estimation under Quantization",
+          "authors": [
+            "Pedro Abdalla",
+            "Junren Chen"
+          ],
+          "display_authors": [
+            "Pedro Abdalla",
+            "Junren Chen"
+          ],
+          "summary": "We consider the problem of mean estimation under quantization and adversarial corruption. We construct multivariate robust estimators that are optimal up to logarithmic factors in two different settings. The first is a one-bit setting, where each bit depends only on a single sample, and the second is a partial quantization setting, in which the estimator may use a small fraction of unquantized data.",
+          "arxiv_url": "https://arxiv.org/abs/2601.07074v1",
+          "pdf_url": "https://arxiv.org/pdf/2601.07074v1.pdf",
+          "submitted_date": "2026-01-11T21:42:46+00:00",
+          "categories": [
+            "stat.ML",
+            "cs.LG",
+            "math.ST"
+          ],
+          "comments": ""
+        },
+        {
+          "id": "2601.07061v1",
+          "title": "Local EGOP for Continuous Index Learning",
+          "authors": [
+            "Alex Kokot",
+            "Anand Hemmady",
+            "Vydhourie Thiyageswaran",
+            "Marina Meila"
+          ],
+          "display_authors": [
+            "Alex Kokot",
+            "Anand Hemmady",
+            "Vydhourie Thiyageswaran",
+            "et al."
+          ],
+          "summary": "We introduce the setting of continuous index learning, in which a function of many variables varies only along a small number of directions at each point. For efficient estimation, it is beneficial for a learning algorithm to adapt, near each point $x$, to the subspace that captures the local variability of the function $f$. We pose this task as kernel adaptation along a manifold with noise, and introduce Local EGOP learning, a recursive algorithm that utilizes the Expected Gradient Outer Product (EGOP) quadratic form as both a metric and inverse-covariance of our target distribution. We prove that Local EGOP learning adapts to the regularity of the function of interest, showing that under a supervised noisy manifold hypothesis, intrinsic dimensional learning rates are achieved for arbitrarily high-dimensional noise. Empirically, we compare our algorithm to the feature learning capabilities of deep learning. Additionally, we demonstrate improved regression quality compared to two-layer neural networks in the continuous single-index setting.",
+          "arxiv_url": "https://arxiv.org/abs/2601.07061v1",
+          "pdf_url": "https://arxiv.org/pdf/2601.07061v1.pdf",
+          "submitted_date": "2026-01-11T21:03:02+00:00",
+          "categories": [
+            "stat.ML",
+            "cs.LG"
+          ],
+          "comments": ""
+        },
+        {
+          "id": "2601.07013v1",
+          "title": "Conditional Normalizing Flows for Forward and Backward Joint State and Parameter Estimation",
+          "authors": [
+            "Luke S. Lagunowich",
+            "Guoxiang Grayson Tong",
+            "Daniele E. Schiavazzi"
+          ],
+          "display_authors": [
+            "Luke S. Lagunowich",
+            "Guoxiang Grayson Tong",
+            "Daniele E. Schiavazzi"
+          ],
+          "summary": "Traditional filtering algorithms for state estimation -- such as classical Kalman filtering, unscented Kalman filtering, and particle filters - show performance degradation when applied to nonlinear systems whose uncertainty follows arbitrary non-Gaussian, and potentially multi-modal distributions. This study reviews recent approaches to state estimation via nonlinear filtering based on conditional normalizing flows, where the conditional embedding is generated by standard MLP architectures, transformers or selective state-space models (like Mamba-SSM). In addition, we test the effectiveness of an optimal-transport-inspired kinetic loss term in mitigating overparameterization in flows consisting of a large collection of transformations. We investigate the performance of these approaches on applications relevant to autonomous driving and patient population dynamics, paying special attention to how they handle time inversion and chained predictions. Finally, we assess the performance of various conditioning strategies for an application to real-world COVID-19 joint SIR system forecasting and parameter estimation.",
+          "arxiv_url": "https://arxiv.org/abs/2601.07013v1",
+          "pdf_url": "https://arxiv.org/pdf/2601.07013v1.pdf",
+          "submitted_date": "2026-01-11T18:01:42+00:00",
+          "categories": [
+            "stat.ML",
+            "cs.LG"
+          ],
+          "comments": ""
+        },
+        {
+          "id": "2601.06982v1",
+          "title": "Match Made with Matrix Completion: Efficient Learning under Matching Interference",
+          "authors": [
+            "Zhiyuan Tang",
+            "Wanning Chen",
+            "Kan Xu"
+          ],
+          "display_authors": [
+            "Zhiyuan Tang",
+            "Wanning Chen",
+            "Kan Xu"
+          ],
+          "summary": "Matching markets face increasing needs to learn the matching qualities between demand and supply for effective design of matching policies. In practice, the matching rewards are high-dimensional due to the growing diversity of participants. We leverage a natural low-rank matrix structure of the matching rewards in these two-sided markets, and propose to utilize matrix completion to accelerate reward learning with limited offline data. A unique property for matrix completion in this setting is that the entries of the reward matrix are observed with matching interference -- i.e., the entries are not observed independently but dependently due to matching or budget constraints. Such matching dependence renders unique technical challenges, such as sub-optimality or inapplicability of the existing analytical tools in the matrix completion literature, since they typically rely on sample independence. In this paper, we first show that standard nuclear norm regularization remains theoretically effective under matching interference. We provide a near-optimal Frobenius norm guarantee in this setting, coupled with a new analytical technique. Next, to guide certain matching decisions, we develop a novel ``double-enhanced'' estimator, based off the nuclear norm estimator, with a near-optimal entry-wise guarantee. Our double-enhancement procedure can apply to broader sampling schemes even with dependence, which may be of independent interest. Additionally, we extend our approach to online learning settings with matching constraints such as optimal matching and stable matching, and present improved regret bounds in matrix dimensions. Finally, we demonstrate the practical value of our methods using both synthetic data and real data of labor markets.",
+          "arxiv_url": "https://arxiv.org/abs/2601.06982v1",
+          "pdf_url": "https://arxiv.org/pdf/2601.06982v1.pdf",
+          "submitted_date": "2026-01-11T16:33:01+00:00",
+          "categories": [
+            "stat.ML",
+            "cs.LG"
+          ],
+          "comments": ""
+        },
+        {
+          "id": "2601.06961v1",
+          "title": "The Impact of Anisotropic Covariance Structure on the Training Dynamics and Generalization Error of Linear Networks",
+          "authors": [
+            "Taishi Watanabe",
+            "Ryo Karakida",
+            "Jun-nosuke Teramae"
+          ],
+          "display_authors": [
+            "Taishi Watanabe",
+            "Ryo Karakida",
+            "Jun-nosuke Teramae"
+          ],
+          "summary": "The success of deep neural networks largely depends on the statistical structure of the training data. While learning dynamics and generalization on isotropic data are well-established, the impact of pronounced anisotropy on these crucial aspects is not yet fully understood. We examine the impact of data anisotropy, represented by a spiked covariance structure, a canonical yet tractable model, on the learning dynamics and generalization error of a two-layer linear network in a linear regression setting. Our analysis reveals that the learning dynamics proceed in two distinct phases, governed initially by the input-output correlation and subsequently by other principal directions of the data structure. Furthermore, we derive an analytical expression for the generalization error, quantifying how the alignment of the spike structure of the data with the learning task improves performance. Our findings offer deep theoretical insights into how data anisotropy shapes the learning trajectory and final performance, providing a foundation for understanding complex interactions in more advanced network architectures.",
+          "arxiv_url": "https://arxiv.org/abs/2601.06961v1",
+          "pdf_url": "https://arxiv.org/pdf/2601.06961v1.pdf",
+          "submitted_date": "2026-01-11T15:37:39+00:00",
+          "categories": [
+            "stat.ML",
+            "cs.LG"
+          ],
+          "comments": "18 pages"
+        },
+        {
+          "id": "2601.06913v1",
+          "title": "Tractable Multinomial Logit Contextual Bandits with Non-Linear Utilities",
+          "authors": [
+            "Taehyun Hwang",
+            "Dahngoon Kim",
+            "Min-hwan Oh"
+          ],
+          "display_authors": [
+            "Taehyun Hwang",
+            "Dahngoon Kim",
+            "Min-hwan Oh"
+          ],
+          "summary": "We study the multinomial logit (MNL) contextual bandit problem for sequential assortment selection. Although most existing research assumes utility functions to be linear in item features, this linearity assumption restricts the modeling of intricate interactions between items and user preferences. A recent work (Zhang & Luo, 2024) has investigated general utility function classes, yet its method faces fundamental trade-offs between computational tractability and statistical efficiency. To address this limitation, we propose a computationally efficient algorithm for MNL contextual bandits leveraging the upper confidence bound principle, specifically designed for non-linear parametric utility functions, including those modeled by neural networks. Under a realizability assumption and a mild geometric condition on the utility function class, our algorithm achieves a regret bound of $\\tilde{O}(\\sqrt{T})$, where $T$ denotes the total number of rounds. Our result establishes that sharp $\\tilde{O}(\\sqrt{T})$-regret is attainable even with neural network-based utilities, without relying on strong assumptions such as neural tangent kernel approximations. To the best of our knowledge, our proposed method is the first computationally tractable algorithm for MNL contextual bandits with non-linear utilities that provably attains $\\tilde{O}(\\sqrt{T})$ regret. Comprehensive numerical experiments validate the effectiveness of our approach, showing robust performance not only in realizable settings but also in scenarios with model misspecification.",
+          "arxiv_url": "https://arxiv.org/abs/2601.06913v1",
+          "pdf_url": "https://arxiv.org/pdf/2601.06913v1.pdf",
+          "submitted_date": "2026-01-11T13:43:42+00:00",
+          "categories": [
+            "cs.LG",
+            "stat.ML"
+          ],
+          "comments": "Accepted at NeurIPS 2025"
+        },
+        {
+          "id": "2601.06844v1",
+          "title": "Variational decomposition autoencoding improves disentanglement of latent representations",
+          "authors": [
+            "Ioannis Ziogas",
+            "Aamna Al Shehhi",
+            "Ahsan H. Khandoker",
+            "Leontios J. Hadjileontiadis"
+          ],
+          "display_authors": [
+            "Ioannis Ziogas",
+            "Aamna Al Shehhi",
+            "Ahsan H. Khandoker",
+            "et al."
+          ],
+          "summary": "Understanding the structure of complex, nonstationary, high-dimensional time-evolving signals is a central challenge in scientific data analysis. In many domains, such as speech and biomedical signal processing, the ability to learn disentangled and interpretable representations is critical for uncovering latent generative mechanisms. Traditional approaches to unsupervised representation learning, including variational autoencoders (VAEs), often struggle to capture the temporal and spectral diversity inherent in such data. Here we introduce variational decomposition autoencoding (VDA), a framework that extends VAEs by incorporating a strong structural bias toward signal decomposition. VDA is instantiated through variational decomposition autoencoders (DecVAEs), i.e., encoder-only neural networks that combine a signal decomposition model, a contrastive self-supervised task, and variational prior approximation to learn multiple latent subspaces aligned with time-frequency characteristics. We demonstrate the effectiveness of DecVAEs on simulated data and three publicly available scientific datasets, spanning speech recognition, dysarthria severity evaluation, and emotional speech classification. Our results demonstrate that DecVAEs surpass state-of-the-art VAE-based methods in terms of disentanglement quality, generalization across tasks, and the interpretability of latent encodings. These findings suggest that decomposition-aware architectures can serve as robust tools for extracting structured representations from dynamic signals, with potential applications in clinical diagnostics, human-computer interaction, and adaptive neurotechnologies.",
+          "arxiv_url": "https://arxiv.org/abs/2601.06844v1",
+          "pdf_url": "https://arxiv.org/pdf/2601.06844v1.pdf",
+          "submitted_date": "2026-01-11T10:16:34+00:00",
+          "categories": [
+            "cs.LG",
+            "cs.AI",
+            "eess.AS",
+            "eess.SP",
+            "stat.ML"
+          ],
+          "comments": "Supplementary information file at: https://drive.google.com/drive/folders/1sZl2AcCtRK-1oav7XZSaxlu0Cq0-3MMs?usp=sharing"
+        },
+        {
+          "id": "2601.06830v1",
+          "title": "Constrained Density Estimation via Optimal Transport",
+          "authors": [
+            "Yinan Hu",
+            "Estaban Tabak"
+          ],
+          "display_authors": [
+            "Yinan Hu",
+            "Estaban Tabak"
+          ],
+          "summary": "A novel framework for density estimation under expectation constraints is proposed. The framework minimizes the Wasserstein distance between the estimated density and a prior, subject to the constraints that the expected value of a set of functions adopts or exceeds given values. The framework is generalized to include regularization inequalities to mitigate the artifacts in the target measure. An annealing-like algorithm is developed to address non-smooth constraints, with its effectiveness demonstrated through both synthetic and proof-of-concept real world examples in finance.",
+          "arxiv_url": "https://arxiv.org/abs/2601.06830v1",
+          "pdf_url": "https://arxiv.org/pdf/2601.06830v1.pdf",
+          "submitted_date": "2026-01-11T09:44:04+00:00",
+          "categories": [
+            "stat.ML",
+            "cs.LG",
+            "math.NA",
+            "math.OC",
+            "math.PR"
+          ],
+          "comments": ""
+        },
+        {
+          "id": "2601.06788v1",
+          "title": "Artificial Entanglement in the Fine-Tuning of Large Language Models",
+          "authors": [
+            "Min Chen",
+            "Zihan Wang",
+            "Canyu Chen",
+            "Zeguan Wu",
+            "Manling Li",
+            "Junyu Liu"
+          ],
+          "display_authors": [
+            "Min Chen",
+            "Zihan Wang",
+            "Canyu Chen",
+            "et al."
+          ],
+          "summary": "Large language models (LLMs) can be adapted to new tasks using parameter-efficient fine-tuning (PEFT) methods that modify only a small number of trainable parameters, often through low-rank updates. In this work, we adopt a quantum-information-inspired perspective to understand their effectiveness. From this perspective, low-rank parameterizations naturally correspond to low-dimensional Matrix Product States (MPS) representations, which enable entanglement-based characterizations of parameter structure. Thereby, we term and measure \"Artificial Entanglement\", defined as the entanglement entropy of the parameters in artificial neural networks (in particular the LLMs). We first study the representative low-rank adaptation (LoRA) PEFT method, alongside full fine-tuning (FFT), using LLaMA models at the 1B and 8B scales trained on the Tulu3 and OpenThoughts3 datasets, and uncover: (i) Internal artificial entanglement in the updates of query and value projection matrices in LoRA follows a volume law with a central suppression (termed as the \"Entanglement Valley\"), which is sensitive to hyper-parameters and is distinct from that in FFT; (ii) External artificial entanglement in attention matrices, corresponding to token-token correlations in representation space, follows an area law with logarithmic corrections and remains robust to LoRA hyper-parameters and training steps. Drawing a parallel to the No-Hair Theorem in black hole physics, we propose that although LoRA and FFT induce distinct internal entanglement signatures, such differences do not manifest in the attention outputs, suggesting a \"no-hair\" property that results in the effectiveness of low rank updates. We further provide theoretical support based on random matrix theory, and extend our analysis to an MPS Adaptation PEFT method, which exhibits qualitatively similar behaviors.",
+          "arxiv_url": "https://arxiv.org/abs/2601.06788v1",
+          "pdf_url": "https://arxiv.org/pdf/2601.06788v1.pdf",
+          "submitted_date": "2026-01-11T06:34:50+00:00",
+          "categories": [
+            "cs.LG",
+            "cs.AI",
+            "quant-ph",
+            "stat.ML"
+          ],
+          "comments": "41 pages, many figures"
+        },
+        {
+          "id": "2601.06782v1",
+          "title": "Dimension-reduced outcome-weighted learning for estimating individualized treatment regimes in observational studies",
+          "authors": [
+            "Sungtaek Son",
+            "Eardi Lila",
+            "Kwun Chuen Gary Chan"
+          ],
+          "display_authors": [
+            "Sungtaek Son",
+            "Eardi Lila",
+            "Kwun Chuen Gary Chan"
+          ],
+          "summary": "Individualized treatment regimes (ITRs) aim to improve clinical outcomes by assigning treatment based on patient-specific characteristics. However, existing methods often struggle with high-dimensional covariates, limiting accuracy, interpretability, and real-world applicability. We propose a novel sufficient dimension reduction approach that directly targets the contrast between potential outcomes and identifies a low-dimensional subspace of the covariates capturing treatment effect heterogeneity. This reduced representation enables more accurate estimation of optimal ITRs through outcome-weighted learning. To accommodate observational data, our method incorporates kernel-based covariate balancing, allowing treatment assignment to depend on the full covariate set and avoiding the restrictive assumption that the subspace sufficient for modeling heterogeneous treatment effects is also sufficient for confounding adjustment. We show that the proposed method achieves universal consistency, i.e., its risk converges to the Bayes risk, under mild regularity conditions. We demonstrate its finite sample performance through simulations and an analysis of intensive care unit sepsis patient data to determine who should receive transthoracic echocardiography.",
+          "arxiv_url": "https://arxiv.org/abs/2601.06782v1",
+          "pdf_url": "https://arxiv.org/pdf/2601.06782v1.pdf",
+          "submitted_date": "2026-01-11T05:38:08+00:00",
+          "categories": [
+            "stat.ML",
+            "cs.LG",
+            "stat.ME"
+          ],
+          "comments": "54 pages, 9 figures"
+        },
+        {
+          "id": "2601.06730v1",
+          "title": "Why are there many equally good models? An Anatomy of the Rashomon Effect",
+          "authors": [
+            "Harsh Parikh"
+          ],
+          "display_authors": [
+            "Harsh Parikh"
+          ],
+          "summary": "The Rashomon effect -- the existence of multiple, distinct models that achieve nearly equivalent predictive performance -- has emerged as a fundamental phenomenon in modern machine learning and statistics. In this paper, we explore the causes underlying the Rashomon effect, organizing them into three categories: statistical sources arising from finite samples and noise in the data-generating process; structural sources arising from non-convexity of optimization objectives and unobserved variables that create fundamental non-identifiability; and procedural sources arising from limitations of optimization algorithms and deliberate restrictions to suboptimal model classes. We synthesize insights from machine learning, statistics, and optimization literature to provide a unified framework for understanding why the multiplicity of good models arises. A key distinction emerges: statistical multiplicity diminishes with more data, structural multiplicity persists asymptotically and cannot be resolved without different data or additional assumptions, and procedural multiplicity reflects choices made by practitioners. Beyond characterizing causes, we discuss both the challenges and opportunities presented by the Rashomon effect, including implications for inference, interpretability, fairness, and decision-making under uncertainty.",
+          "arxiv_url": "https://arxiv.org/abs/2601.06730v1",
+          "pdf_url": "https://arxiv.org/pdf/2601.06730v1.pdf",
+          "submitted_date": "2026-01-11T00:48:15+00:00",
+          "categories": [
+            "cs.LG",
+            "cs.AI",
+            "stat.ME",
+            "stat.ML"
+          ],
+          "comments": ""
+        }
+      ],
+      "count": 11
+    },
+    "cs.LG": {
+      "name": "Machine Learning",
+      "papers": [
+        {
+          "id": "2601.07094v1",
+          "title": "Robust Bayesian Optimization via Tempered Posteriors",
+          "authors": [
+            "Jiguang Li",
+            "Hengrui Luo"
+          ],
+          "display_authors": [
+            "Jiguang Li",
+            "Hengrui Luo"
+          ],
+          "summary": "Bayesian optimization (BO) iteratively fits a Gaussian process (GP) surrogate to accumulated evaluations and selects new queries via an acquisition function such as expected improvement (EI). In practice, BO often concentrates evaluations near the current incumbent, causing the surrogate to become overconfident and to understate predictive uncertainty in the region guiding subsequent decisions. We develop a robust GP-based BO via tempered posterior updates, which downweight the likelihood by a power $α\\in (0,1]$ to mitigate overconfidence under local misspecification. We establish cumulative regret bounds for tempered BO under a family of generalized improvement rules, including EI, and show that tempering yields strictly sharper worst-case regret guarantees than the standard posterior $(α=1)$, with the most favorable guarantees occurring near the classical EI choice.   Motivated by our theoretic findings, we propose a prequential procedure for selecting $α$ online: it decreases $α$ when realized prediction errors exceed model-implied uncertainty and returns $α$ toward one as calibration improves. Empirical results demonstrate that tempering provides a practical yet theoretically grounded tool for stabilizing BO surrogates under localized sampling.",
+          "arxiv_url": "https://arxiv.org/abs/2601.07094v1",
+          "pdf_url": "https://arxiv.org/pdf/2601.07094v1.pdf",
+          "submitted_date": "2026-01-11T23:34:24+00:00",
+          "categories": [
+            "stat.ME",
+            "cs.LG"
+          ],
+          "comments": ""
+        },
+        {
+          "id": "2601.07087v1",
+          "title": "When Should We Introduce Safety Interventions During Pretraining?",
+          "authors": [
+            "Dylan Sam",
+            "Sachin Goyal",
+            "Pratyush Maini",
+            "Alexander Robey",
+            "J. Zico Kolter"
+          ],
+          "display_authors": [
+            "Dylan Sam",
+            "Sachin Goyal",
+            "Pratyush Maini",
+            "et al."
+          ],
+          "summary": "Ensuring the safety of language models in high-stakes settings remains a pressing challenge, as aligned behaviors are often brittle and easily undone by adversarial pressure or downstream finetuning. Prior work has shown that interventions applied during pretraining, such as rephrasing harmful content, can substantially improve the safety of the resulting models. In this paper, we study the fundamental question: \"When during pretraining should safety interventions be introduced?\" We keep the underlying data fixed and vary only the choice of a safety curriculum: the timing of these interventions, i.e., after 0%, 20%, or 60% of the pretraining token budget. We find that introducing interventions earlier generally yields more robust models with no increase in overrefusal rates, with the clearest benefits appearing after downstream, benign finetuning. We also see clear benefits in the steerability of models towards safer generations. Finally, we observe that earlier interventions reshape internal representations: linear probes more cleanly separate safe vs harmful examples. Overall, these results argue for incorporating safety signals early in pretraining, producing models that are more robust to downstream finetuning and jailbreaking, and more reliable under both standard and safety-aware inference procedures.",
+          "arxiv_url": "https://arxiv.org/abs/2601.07087v1",
+          "pdf_url": "https://arxiv.org/pdf/2601.07087v1.pdf",
+          "submitted_date": "2026-01-11T22:38:17+00:00",
+          "categories": [
+            "cs.LG"
+          ],
+          "comments": ""
+        },
+        {
+          "id": "2601.07086v1",
+          "title": "XBTorch: A Unified Framework for Modeling and Co-Design of Crossbar-Based Deep Learning Accelerators",
+          "authors": [
+            "Osama Yousuf",
+            "Andreu L. Glasmann",
+            "Martin Lueker-Boden",
+            "Sina Najmaei",
+            "Gina C. Adam"
+          ],
+          "display_authors": [
+            "Osama Yousuf",
+            "Andreu L. Glasmann",
+            "Martin Lueker-Boden",
+            "et al."
+          ],
+          "summary": "Emerging memory technologies have gained significant attention as a promising pathway to overcome the limitations of conventional computing architectures in deep learning applications. By enabling computation directly within memory, these technologies - built on nanoscale devices with tunable and nonvolatile conductance - offer the potential to drastically reduce energy consumption and latency compared to traditional von Neumann systems. This paper introduces XBTorch (short for CrossBarTorch), a novel simulation framework that integrates seamlessly with PyTorch and provides specialized tools for accurately and efficiently modeling crossbar-based systems based on emerging memory technologies. Through detailed comparisons and case studies involving hardware-aware training and inference, we demonstrate how XBTorch offers a unified interface for key research areas such as device-level modeling, cross-layer co-design, and inference-time fault tolerance. While exemplar studies utilize ferroelectric field-effect transistor (FeFET) models, the framework remains technology-agnostic - supporting other emerging memories such as resistive RAM (ReRAM), as well as enabling user-defined custom device models. The code is publicly available at: https://github.com/ADAM-Lab-GW/xbtorch",
+          "arxiv_url": "https://arxiv.org/abs/2601.07086v1",
+          "pdf_url": "https://arxiv.org/pdf/2601.07086v1.pdf",
+          "submitted_date": "2026-01-11T22:35:30+00:00",
+          "categories": [
+            "cs.ET",
+            "cs.AI",
+            "cs.LG"
+          ],
+          "comments": ""
+        },
+        {
+          "id": "2601.07074v1",
+          "title": "Robust Mean Estimation under Quantization",
+          "authors": [
+            "Pedro Abdalla",
+            "Junren Chen"
+          ],
+          "display_authors": [
+            "Pedro Abdalla",
+            "Junren Chen"
+          ],
+          "summary": "We consider the problem of mean estimation under quantization and adversarial corruption. We construct multivariate robust estimators that are optimal up to logarithmic factors in two different settings. The first is a one-bit setting, where each bit depends only on a single sample, and the second is a partial quantization setting, in which the estimator may use a small fraction of unquantized data.",
+          "arxiv_url": "https://arxiv.org/abs/2601.07074v1",
+          "pdf_url": "https://arxiv.org/pdf/2601.07074v1.pdf",
+          "submitted_date": "2026-01-11T21:42:46+00:00",
+          "categories": [
+            "stat.ML",
+            "cs.LG",
+            "math.ST"
+          ],
+          "comments": ""
+        },
+        {
+          "id": "2601.07061v1",
+          "title": "Local EGOP for Continuous Index Learning",
+          "authors": [
+            "Alex Kokot",
+            "Anand Hemmady",
+            "Vydhourie Thiyageswaran",
+            "Marina Meila"
+          ],
+          "display_authors": [
+            "Alex Kokot",
+            "Anand Hemmady",
+            "Vydhourie Thiyageswaran",
+            "et al."
+          ],
+          "summary": "We introduce the setting of continuous index learning, in which a function of many variables varies only along a small number of directions at each point. For efficient estimation, it is beneficial for a learning algorithm to adapt, near each point $x$, to the subspace that captures the local variability of the function $f$. We pose this task as kernel adaptation along a manifold with noise, and introduce Local EGOP learning, a recursive algorithm that utilizes the Expected Gradient Outer Product (EGOP) quadratic form as both a metric and inverse-covariance of our target distribution. We prove that Local EGOP learning adapts to the regularity of the function of interest, showing that under a supervised noisy manifold hypothesis, intrinsic dimensional learning rates are achieved for arbitrarily high-dimensional noise. Empirically, we compare our algorithm to the feature learning capabilities of deep learning. Additionally, we demonstrate improved regression quality compared to two-layer neural networks in the continuous single-index setting.",
+          "arxiv_url": "https://arxiv.org/abs/2601.07061v1",
+          "pdf_url": "https://arxiv.org/pdf/2601.07061v1.pdf",
+          "submitted_date": "2026-01-11T21:03:02+00:00",
+          "categories": [
+            "stat.ML",
+            "cs.LG"
+          ],
+          "comments": ""
+        },
+        {
+          "id": "2601.07058v1",
+          "title": "Hallucinations Live in Variance",
+          "authors": [
+            "Aaron R. Flouro",
+            "Shawn P. Chadwick"
+          ],
+          "display_authors": [
+            "Aaron R. Flouro",
+            "Shawn P. Chadwick"
+          ],
+          "summary": "Benchmarks measure whether a model is correct. They do not measure whether a model is reliable. This distinction is largely academic for single-shot inference, but becomes critical for agentic AI systems, where a single rephrased prompt can trigger cascading failures in multi-step execution. Yet this form of instability is not captured by existing evaluations.   Hallucinations live in variance: they arise when semantically equivalent prompts activate inconsistent internal pathways, producing divergent outputs. Consistent but incorrect outputs reflect bias or missing knowledge; confident guessing reflects calibration failure. Neither constitutes hallucination under this definition. When error is variance-dominated, reducing redundant pathways improves reliability without adding knowledge. We formalize this through Semantic Stability (SS), measured via Paraphrase Consistency (PC@k): generate k paraphrases, greedy decode each, compute mode agreement. SS is a diagnostic for variance-driven unreliability, not a method for improving correctness.   We show that a dense Qwen3-0.6B agrees with itself only 23.8% of the time; at 32% sparsity, agreement jumps to 55.9%. A phase diagram reveals the sweet spot where variance reduction outpaces bias accumulation, and regimes where stability collapses onto wrong answers.",
+          "arxiv_url": "https://arxiv.org/abs/2601.07058v1",
+          "pdf_url": "https://arxiv.org/pdf/2601.07058v1.pdf",
+          "submitted_date": "2026-01-11T20:41:51+00:00",
+          "categories": [
+            "cs.LG",
+            "cs.AI"
+          ],
+          "comments": "8 pages, 3 figures"
+        },
+        {
+          "id": "2601.07054v1",
+          "title": "Fine-Tuning vs. RAG for Multi-Hop Question Answering with Novel Knowledge",
+          "authors": [
+            "Zhuoyi Yang",
+            "Yurun Song",
+            "Iftekhar Ahmed",
+            "Ian Harris"
+          ],
+          "display_authors": [
+            "Zhuoyi Yang",
+            "Yurun Song",
+            "Iftekhar Ahmed",
+            "et al."
+          ],
+          "summary": "Multi-hop question answering is widely used to evaluate the reasoning capabilities of large language models (LLMs), as it requires integrating multiple pieces of supporting knowledge to arrive at a correct answer. While prior work has explored different mechanisms for providing knowledge to LLMs, such as finetuning and retrieval-augmented generation (RAG), their relative effectiveness for multi-hop question answering remains insufficiently understood, particularly when the required knowledge is temporally novel.   In this paper, we systematically compare parametric and non-parametric knowledge injection methods for open-domain multi-hop question answering. We evaluate unsupervised fine-tuning (continual pretraining), supervised fine-tuning, and retrieval-augmented generation across three 7B-parameter open-source LLMs. Experiments are conducted on two benchmarks: QASC, a standard multi-hop science question answering dataset, and a newly constructed dataset of over 10,000 multi-hop questions derived from Wikipedia events in 2024, designed to test knowledge beyond the models' pretraining cutoff.   Our results show that unsupervised fine-tuning provides only limited gains over base models, suggesting that continual pretraining alone is insufficient for improving multi-hop reasoning accuracy. In contrast, retrieval-augmented generation yields substantial and consistent improvements, particularly when answering questions that rely on temporally novel information. Supervised fine-tuning achieves the highest overall accuracy across models and datasets. These findings highlight fundamental differences in how knowledge injection mechanisms support multi-hop question answering and underscore the importance of retrieval-based methods when external or compositional knowledge is required.",
+          "arxiv_url": "https://arxiv.org/abs/2601.07054v1",
+          "pdf_url": "https://arxiv.org/pdf/2601.07054v1.pdf",
+          "submitted_date": "2026-01-11T20:24:25+00:00",
+          "categories": [
+            "cs.CL",
+            "cs.LG"
+          ],
+          "comments": ""
+        },
+        {
+          "id": "2601.07036v1",
+          "title": "Mid-Think: Training-Free Intermediate-Budget Reasoning via Token-Level Triggers",
+          "authors": [
+            "Wang Yang",
+            "Debargha Ganguly",
+            "Xinpeng Li",
+            "Chaoda Song",
+            "Shouren Wang",
+            "Vikash Singh",
+            "Vipin Chaudhary",
+            "Xiaotian Han"
+          ],
+          "display_authors": [
+            "Wang Yang",
+            "Debargha Ganguly",
+            "Xinpeng Li",
+            "et al."
+          ],
+          "summary": "Hybrid reasoning language models are commonly controlled through high-level Think/No-think instructions to regulate reasoning behavior, yet we found that such mode switching is largely driven by a small set of trigger tokens rather than the instructions themselves. Through attention analysis and controlled prompting experiments, we show that a leading ``Okay'' token induces reasoning behavior, while the newline pattern following ``</think>'' suppresses it. Based on this observation, we propose Mid-Think, a simple training-free prompting format that combines these triggers to achieve intermediate-budget reasoning, consistently outperforming fixed-token and prompt-based baselines in terms of the accuracy-length trade-off. Furthermore, applying Mid-Think to RL training after SFT reduces training time by approximately 15% while improving final performance of Qwen3-8B on AIME from 69.8% to 72.4% and on GPQA from 58.5% to 61.1%, demonstrating its effectiveness for both inference-time control and RL-based reasoning training.",
+          "arxiv_url": "https://arxiv.org/abs/2601.07036v1",
+          "pdf_url": "https://arxiv.org/pdf/2601.07036v1.pdf",
+          "submitted_date": "2026-01-11T19:19:39+00:00",
+          "categories": [
+            "cs.CL",
+            "cs.AI",
+            "cs.LG"
+          ],
+          "comments": ""
+        },
+        {
+          "id": "2601.07035v1",
+          "title": "Explainable Deep Radiogenomic Molecular Imaging for MGMT Methylation Prediction in Glioblastoma",
+          "authors": [
+            "Hasan M Jamil"
+          ],
+          "display_authors": [
+            "Hasan M Jamil"
+          ],
+          "summary": "Glioblastoma (GBM) is a highly aggressive primary brain tumor with limited therapeutic options and poor prognosis. The methylation status of the O6-methylguanine-DNA methyltransferase (MGMT) gene promoter is a critical molecular biomarker that influences patient response to temozolomide chemotherapy. Traditional methods for determining MGMT status rely on invasive biopsies and are limited by intratumoral heterogeneity and procedural risks. This study presents a radiogenomic molecular imaging analysis framework for the non-invasive prediction of MGMT promoter methylation using multi-parametric magnetic resonance imaging (mpMRI).   Our approach integrates radiomics, deep learning, and explainable artificial intelligence (XAI) to analyze MRI-derived imaging phenotypes and correlate them with molecular labels. Radiomic features are extracted from FLAIR, T1-weighted, T1-contrast-enhanced, and T2-weighted MRI sequences, while a 3D convolutional neural network learns deep representations from the same modalities. These complementary features are fused using both early fusion and attention-based strategies and classified to predict MGMT methylation status.   To enhance clinical interpretability, we apply XAI methods such as Grad-CAM and SHAP to visualize and explain model decisions. The proposed framework is trained on the RSNA-MICCAI Radiogenomic Classification dataset and externally validated on the BraTS 2021 dataset. This work advances the field of molecular imaging by demonstrating the potential of AI-driven radiogenomics for precision oncology, supporting non-invasive, accurate, and interpretable prediction of clinically actionable molecular biomarkers in GBM.",
+          "arxiv_url": "https://arxiv.org/abs/2601.07035v1",
+          "pdf_url": "https://arxiv.org/pdf/2601.07035v1.pdf",
+          "submitted_date": "2026-01-11T19:16:19+00:00",
+          "categories": [
+            "cs.LG",
+            "cs.AI",
+            "cs.CV"
+          ],
+          "comments": "14 pages"
+        },
+        {
+          "id": "2601.07021v1",
+          "title": "Tight Analysis of Decentralized SGD: A Markov Chain Perspective",
+          "authors": [
+            "Lucas Versini",
+            "Paul Mangold",
+            "Aymeric Dieuleveut"
+          ],
+          "display_authors": [
+            "Lucas Versini",
+            "Paul Mangold",
+            "Aymeric Dieuleveut"
+          ],
+          "summary": "We propose a novel analysis of the Decentralized Stochastic Gradient Descent (DSGD) algorithm with constant step size, interpreting the iterates of the algorithm as a Markov chain. We show that DSGD converges to a stationary distribution, with its bias, to first order, decomposable into two components: one due to decentralization (growing with the graph's spectral gap and clients' heterogeneity) and one due to stochasticity. Remarkably, the variance of local parameters is, at the first-order, inversely proportional to the number of clients, regardless of the network topology and even when clients' iterates are not averaged at the end. As a consequence of our analysis, we obtain non-asymptotic convergence bounds for clients' local iterates, confirming that DSGD has linear speed-up in the number of clients, and that the network topology only impacts higher-order terms.",
+          "arxiv_url": "https://arxiv.org/abs/2601.07021v1",
+          "pdf_url": "https://arxiv.org/pdf/2601.07021v1.pdf",
+          "submitted_date": "2026-01-11T18:28:37+00:00",
+          "categories": [
+            "cs.LG"
+          ],
+          "comments": ""
+        },
+        {
+          "id": "2601.07013v1",
+          "title": "Conditional Normalizing Flows for Forward and Backward Joint State and Parameter Estimation",
+          "authors": [
+            "Luke S. Lagunowich",
+            "Guoxiang Grayson Tong",
+            "Daniele E. Schiavazzi"
+          ],
+          "display_authors": [
+            "Luke S. Lagunowich",
+            "Guoxiang Grayson Tong",
+            "Daniele E. Schiavazzi"
+          ],
+          "summary": "Traditional filtering algorithms for state estimation -- such as classical Kalman filtering, unscented Kalman filtering, and particle filters - show performance degradation when applied to nonlinear systems whose uncertainty follows arbitrary non-Gaussian, and potentially multi-modal distributions. This study reviews recent approaches to state estimation via nonlinear filtering based on conditional normalizing flows, where the conditional embedding is generated by standard MLP architectures, transformers or selective state-space models (like Mamba-SSM). In addition, we test the effectiveness of an optimal-transport-inspired kinetic loss term in mitigating overparameterization in flows consisting of a large collection of transformations. We investigate the performance of these approaches on applications relevant to autonomous driving and patient population dynamics, paying special attention to how they handle time inversion and chained predictions. Finally, we assess the performance of various conditioning strategies for an application to real-world COVID-19 joint SIR system forecasting and parameter estimation.",
+          "arxiv_url": "https://arxiv.org/abs/2601.07013v1",
+          "pdf_url": "https://arxiv.org/pdf/2601.07013v1.pdf",
+          "submitted_date": "2026-01-11T18:01:42+00:00",
+          "categories": [
+            "stat.ML",
+            "cs.LG"
+          ],
+          "comments": ""
+        },
+        {
+          "id": "2601.07003v1",
+          "title": "Unity Forests: Improving Interaction Modelling and Interpretability in Random Forests",
+          "authors": [
+            "Roman Hornung",
+            "Alexander Hapfelmeier"
+          ],
+          "display_authors": [
+            "Roman Hornung",
+            "Alexander Hapfelmeier"
+          ],
+          "summary": "Random forests (RFs) are widely used for prediction and variable importance analysis and are often believed to capture any types of interactions via recursive splitting. However, since the splits are chosen locally, interactions are only reliably captured when at least one involved covariate has a marginal effect. We introduce unity forests (UFOs), an RF variant designed to better exploit interactions involving covariates without marginal effects. In UFOs, the first few splits of each tree are optimized jointly across a random covariate subset to form a \"tree root\" capturing such interactions; the remainder is grown conventionally. We further propose the unity variable importance measure (VIM), which is based on out-of-bag split criterion values from the tree roots. Here, only a small fraction of tree root splits with the highest in-bag criterion values are considered per covariate, reflecting that covariates with purely interaction-based effects are discriminative only if a split in an interacting covariate occurred earlier in the tree. Finally, we introduce covariate-representative tree roots (CRTRs), which select representative tree roots per covariate and provide interpretable insight into the conditions - marginal or interactive - under which each covariate has its strongest effects. In a simulation study, the unity VIM reliably identified interacting covariates without marginal effects, unlike conventional RF-based VIMs. In a large-scale real-data comparison, UFOs achieved higher discrimination and predictive accuracy than standard RFs, with comparable calibration. The CRTRs reproduced the covariates' true effect types reliably in simulated data and provided interesting insights in a real data analysis.",
+          "arxiv_url": "https://arxiv.org/abs/2601.07003v1",
+          "pdf_url": "https://arxiv.org/pdf/2601.07003v1.pdf",
+          "submitted_date": "2026-01-11T17:36:58+00:00",
+          "categories": [
+            "stat.ME",
+            "cs.LG",
+            "stat.CO"
+          ],
+          "comments": "33 pages, 12 figures"
+        },
+        {
+          "id": "2601.06982v1",
+          "title": "Match Made with Matrix Completion: Efficient Learning under Matching Interference",
+          "authors": [
+            "Zhiyuan Tang",
+            "Wanning Chen",
+            "Kan Xu"
+          ],
+          "display_authors": [
+            "Zhiyuan Tang",
+            "Wanning Chen",
+            "Kan Xu"
+          ],
+          "summary": "Matching markets face increasing needs to learn the matching qualities between demand and supply for effective design of matching policies. In practice, the matching rewards are high-dimensional due to the growing diversity of participants. We leverage a natural low-rank matrix structure of the matching rewards in these two-sided markets, and propose to utilize matrix completion to accelerate reward learning with limited offline data. A unique property for matrix completion in this setting is that the entries of the reward matrix are observed with matching interference -- i.e., the entries are not observed independently but dependently due to matching or budget constraints. Such matching dependence renders unique technical challenges, such as sub-optimality or inapplicability of the existing analytical tools in the matrix completion literature, since they typically rely on sample independence. In this paper, we first show that standard nuclear norm regularization remains theoretically effective under matching interference. We provide a near-optimal Frobenius norm guarantee in this setting, coupled with a new analytical technique. Next, to guide certain matching decisions, we develop a novel ``double-enhanced'' estimator, based off the nuclear norm estimator, with a near-optimal entry-wise guarantee. Our double-enhancement procedure can apply to broader sampling schemes even with dependence, which may be of independent interest. Additionally, we extend our approach to online learning settings with matching constraints such as optimal matching and stable matching, and present improved regret bounds in matrix dimensions. Finally, we demonstrate the practical value of our methods using both synthetic data and real data of labor markets.",
+          "arxiv_url": "https://arxiv.org/abs/2601.06982v1",
+          "pdf_url": "https://arxiv.org/pdf/2601.06982v1.pdf",
+          "submitted_date": "2026-01-11T16:33:01+00:00",
+          "categories": [
+            "stat.ML",
+            "cs.LG"
+          ],
+          "comments": ""
+        },
+        {
+          "id": "2601.06969v1",
+          "title": "Generalization Bounds for Transformer Channel Decoders",
+          "authors": [
+            "Qinshan Zhang",
+            "Bin Chen",
+            "Yong Jiang",
+            "Shu-Tao Xia"
+          ],
+          "display_authors": [
+            "Qinshan Zhang",
+            "Bin Chen",
+            "Yong Jiang",
+            "et al."
+          ],
+          "summary": "Transformer channel decoders, such as the Error Correction Code Transformer (ECCT), have shown strong empirical performance in channel decoding, yet their generalization behavior remains theoretically unclear. This paper studies the generalization performance of ECCT from a learning-theoretic perspective. By establishing a connection between multiplicative noise estimation errors and bit-error-rate (BER), we derive an upper bound on the generalization gap via bit-wise Rademacher complexity. The resulting bound characterizes the dependence on code length, model parameters, and training set size, and applies to both single-layer and multi-layer ECCTs. We further show that parity-check-based masked attention induces sparsity that reduces the covering number, leading to a tighter generalization bound. To the best of our knowledge, this work provides the first theoretical generalization guarantees for this class of decoders.",
+          "arxiv_url": "https://arxiv.org/abs/2601.06969v1",
+          "pdf_url": "https://arxiv.org/pdf/2601.06969v1.pdf",
+          "submitted_date": "2026-01-11T15:56:37+00:00",
+          "categories": [
+            "cs.IT",
+            "cs.LG"
+          ],
+          "comments": "18 pages, 3 figures"
+        },
+        {
+          "id": "2601.06967v1",
+          "title": "A Robust Certified Machine Unlearning Method Under Distribution Shift",
+          "authors": [
+            "Jinduo Guo",
+            "Yinzhi Cao"
+          ],
+          "display_authors": [
+            "Jinduo Guo",
+            "Yinzhi Cao"
+          ],
+          "summary": "The Newton method has been widely adopted to achieve certified unlearning. A critical assumption in existing approaches is that the data requested for unlearning are selected i.i.d.(independent and identically distributed). However,the problem of certified unlearning under non-i.i.d. deletions remains largely unexplored. In practice, unlearning requests are inherently biased, leading to non-i.i.d. deletions and causing distribution shifts between the original and retained datasets. In this paper, we show that certified unlearning with the Newton method becomes inefficient and ineffective under non-i.i.d. unlearning sets. We then propose a better certified unlearning approach by performing a distribution-aware certified unlearning framework based on iterative Newton updates constrained by a trust region. Our method provides a closer approximation to the retrained model and yields a tighter pre-run bound on the gradient residual, thereby ensuring efficient (epsilon, delta)-certified unlearning. To demonstrate its practical effectiveness under distribution shift, we also conduct extensive experiments across multiple evaluation metrics, providing a comprehensive assessment of our approach.",
+          "arxiv_url": "https://arxiv.org/abs/2601.06967v1",
+          "pdf_url": "https://arxiv.org/pdf/2601.06967v1.pdf",
+          "submitted_date": "2026-01-11T15:53:19+00:00",
+          "categories": [
+            "cs.LG",
+            "cs.CR"
+          ],
+          "comments": ""
+        },
+        {
+          "id": "2601.06961v1",
+          "title": "The Impact of Anisotropic Covariance Structure on the Training Dynamics and Generalization Error of Linear Networks",
+          "authors": [
+            "Taishi Watanabe",
+            "Ryo Karakida",
+            "Jun-nosuke Teramae"
+          ],
+          "display_authors": [
+            "Taishi Watanabe",
+            "Ryo Karakida",
+            "Jun-nosuke Teramae"
+          ],
+          "summary": "The success of deep neural networks largely depends on the statistical structure of the training data. While learning dynamics and generalization on isotropic data are well-established, the impact of pronounced anisotropy on these crucial aspects is not yet fully understood. We examine the impact of data anisotropy, represented by a spiked covariance structure, a canonical yet tractable model, on the learning dynamics and generalization error of a two-layer linear network in a linear regression setting. Our analysis reveals that the learning dynamics proceed in two distinct phases, governed initially by the input-output correlation and subsequently by other principal directions of the data structure. Furthermore, we derive an analytical expression for the generalization error, quantifying how the alignment of the spike structure of the data with the learning task improves performance. Our findings offer deep theoretical insights into how data anisotropy shapes the learning trajectory and final performance, providing a foundation for understanding complex interactions in more advanced network architectures.",
+          "arxiv_url": "https://arxiv.org/abs/2601.06961v1",
+          "pdf_url": "https://arxiv.org/pdf/2601.06961v1.pdf",
+          "submitted_date": "2026-01-11T15:37:39+00:00",
+          "categories": [
+            "stat.ML",
+            "cs.LG"
+          ],
+          "comments": "18 pages"
+        },
+        {
+          "id": "2601.06959v1",
+          "title": "HAS-VQ: Hessian-Adaptive Sparse Vector Quantization for High-Fidelity LLM Compression",
+          "authors": [
+            "Vladimer Khasia"
+          ],
+          "display_authors": [
+            "Vladimer Khasia"
+          ],
+          "summary": "Post-training quantization is essential for deploying Large Language Models (LLMs) on resource- constrained devices. However, standard integer quantization (e.g., INT4) fundamentally degrades per- formance by imposing a uniform grid on the heavy-tailed distribution of weight parameters, particularly in smaller-scale models (e.g., <2B parameters). We introduce HAS-VQ (Hessian-Adaptive Sparse Vec- tor Quantization), a compression framework that strictly decouples high-sensitivity outliers from the bulk weight distribution using second-order sensitivity analysis. HAS-VQ employs a Hessian-Masked Decoupling strategy to isolate sensitive parameters, followed by robust Vector Quantization (VQ) of the remaining dense body. Crucially, we introduce a residual sparse feedback mechanism that corrects quan- tization errors in the most sensitive dimensions, ensuring exact reconstruction of outliers. We evaluate HAS-VQ on SmolLM2-1.7B, demonstrating two distinct regimes of superiority: (1) Pareto Dominance over Integer Baselines: At 4.23 effective bits-per-parameter (BPP), we achieve a perplexity of 14.23, significantly outperforming the standard INT4 baseline (20.03 PPL at 4.71 BPP). (2) High-Fidelity Compression: Relative to the FP16 baseline, HAS-VQ achieves a 2.3x reduction in model size (7.03 BPP) while maintaining statistically indistinguishable perplexity (10.12 vs. 10.04), effectively offering a lossless compression alternative for bandwidth-constrained environments. The code is available at https://github.com/VladimerKhasia/HASVQ",
+          "arxiv_url": "https://arxiv.org/abs/2601.06959v1",
+          "pdf_url": "https://arxiv.org/pdf/2601.06959v1.pdf",
+          "submitted_date": "2026-01-11T15:35:10+00:00",
+          "categories": [
+            "cs.LG"
+          ],
+          "comments": ""
+        },
+        {
+          "id": "2601.06953v1",
+          "title": "X-Coder: Advancing Competitive Programming with Fully Synthetic Tasks, Solutions, and Tests",
+          "authors": [
+            "Jie Wu",
+            "Haoling Li",
+            "Xin Zhang",
+            "Jiani Guo",
+            "Jane Luo",
+            "Steven Liu",
+            "Yangyu Huang",
+            "Ruihang Chu",
+            "Scarlett Li",
+            "Yujiu Yang"
+          ],
+          "display_authors": [
+            "Jie Wu",
+            "Haoling Li",
+            "Xin Zhang",
+            "et al."
+          ],
+          "summary": "Competitive programming presents great challenges for Code LLMs due to its intensive reasoning demands and high logical complexity. However, current Code LLMs still rely heavily on real-world data, which limits their scalability. In this paper, we explore a fully synthetic approach: training Code LLMs with entirely generated tasks, solutions, and test cases, to empower code reasoning models without relying on real-world data. To support this, we leverage feature-based synthesis to propose a novel data synthesis pipeline called SynthSmith. SynthSmith shows strong potential in producing diverse and challenging tasks, along with verified solutions and tests, supporting both supervised fine-tuning and reinforcement learning. Based on the proposed synthetic SFT and RL datasets, we introduce the X-Coder model series, which achieves a notable pass rate of 62.9 avg@8 on LiveCodeBench v5 and 55.8 on v6, outperforming DeepCoder-14B-Preview and AReal-boba2-14B despite having only 7B parameters. In-depth analysis reveals that scaling laws hold on our synthetic dataset, and we explore which dimensions are more effective to scale. We further provide insights into code-centric reinforcement learning and highlight the key factors that shape performance through detailed ablations and analysis. Our findings demonstrate that scaling high-quality synthetic data and adopting staged training can greatly advance code reasoning, while mitigating reliance on real-world coding data.",
+          "arxiv_url": "https://arxiv.org/abs/2601.06953v1",
+          "pdf_url": "https://arxiv.org/pdf/2601.06953v1.pdf",
+          "submitted_date": "2026-01-11T15:22:33+00:00",
+          "categories": [
+            "cs.CL",
+            "cs.LG"
+          ],
+          "comments": "Project: https://github.com/JieWu02/X-Coder"
+        },
+        {
+          "id": "2601.06941v1",
+          "title": "Towards Operational Streamflow Forecasting in the Limpopo River Basin using Long Short-Term Memory Networks",
+          "authors": [
+            "James Tlhomole",
+            "Edoardo Borgomeo",
+            "Karthikeyan Matheswaran",
+            "Mariangel Garcia Andarcia"
+          ],
+          "display_authors": [
+            "James Tlhomole",
+            "Edoardo Borgomeo",
+            "Karthikeyan Matheswaran",
+            "et al."
+          ],
+          "summary": "Robust hydrological simulation is key for sustainable development, water management strategies, and climate change adaptation. In recent years, deep learning methods have been demonstrated to outperform mechanistic models at the task of hydrological discharge simulation. Adoption of these methods has been catalysed by the proliferation of large sample hydrology datasets, consisting of the observed discharge and meteorological drivers, along with geological and topographical catchment descriptors. Deep learning methods infer rainfall-runoff characteristics that have been shown to generalise across catchments, benefitting from the data diversity in large datasets. Despite this, application to catchments in Africa has been limited. The lack of adoption of deep learning methodologies is primarily due to sparsity or lack of the spatiotemporal observational data required to enable downstream model training. We therefore investigate the application of deep learning models, including LSTMs, for hydrological discharge simulation in the transboundary Limpopo River basin, emphasising application to data scarce regions. We conduct a number of computational experiments primarily focused on assessing the impact of varying the LSTM model input data on performance. Results confirm that data constraints remain the largest obstacle to deep learning applications across African river basins. We further outline the impact of human influence on data-driven modelling which is a commonly overlooked aspect of data-driven large-sample hydrology approaches and investigate solutions for model adaptation under smaller datasets. Additionally, we include recommendations for future efforts towards seasonal hydrological discharge prediction and direct comparison or inclusion of SWAT model outputs, as well as architectural improvements.",
+          "arxiv_url": "https://arxiv.org/abs/2601.06941v1",
+          "pdf_url": "https://arxiv.org/pdf/2601.06941v1.pdf",
+          "submitted_date": "2026-01-11T15:05:27+00:00",
+          "categories": [
+            "cs.LG",
+            "physics.geo-ph"
+          ],
+          "comments": "14 pages, 6 figures, 2 tables"
+        },
+        {
+          "id": "2601.06938v1",
+          "title": "Forgetting Similar Samples: Can Machine Unlearning Do it Better?",
+          "authors": [
+            "Heng Xu",
+            "Tianqing Zhu",
+            "Dayong Ye",
+            "Lefeng Zhang",
+            "Le Wang",
+            "Wanlei Zhou"
+          ],
+          "display_authors": [
+            "Heng Xu",
+            "Tianqing Zhu",
+            "Dayong Ye",
+            "et al."
+          ],
+          "summary": "Machine unlearning, a process enabling pre-trained models to remove the influence of specific training samples, has attracted significant attention in recent years. Although extensive research has focused on developing efficient machine unlearning strategies, we argue that these methods mainly aim at removing samples rather than removing samples' influence on the model, thus overlooking the fundamental definition of machine unlearning. In this paper, we first conduct a comprehensive study to evaluate the effectiveness of existing unlearning schemes when the training dataset includes many samples similar to those targeted for unlearning. Specifically, we evaluate: Do existing unlearning methods truly adhere to the original definition of machine unlearning and effectively eliminate all influence of target samples when similar samples are present in the training dataset? Our extensive experiments, conducted on four carefully constructed datasets with thorough analysis, reveal a notable gap between the expected and actual performance of most existing unlearning methods for image and language models, even for the retraining-from-scratch baseline. Additionally, we also explore potential solutions to enhance current unlearning approaches.",
+          "arxiv_url": "https://arxiv.org/abs/2601.06938v1",
+          "pdf_url": "https://arxiv.org/pdf/2601.06938v1.pdf",
+          "submitted_date": "2026-01-11T14:55:57+00:00",
+          "categories": [
+            "cs.LG",
+            "cs.CR"
+          ],
+          "comments": ""
+        },
+        {
+          "id": "2601.06937v1",
+          "title": "mind_call: A Dataset for Mental Health Function Calling with Large Language Models",
+          "authors": [
+            "Fozle Rabbi Shafi",
+            "M. Anwar Hossain",
+            "Salimur Choudhury"
+          ],
+          "display_authors": [
+            "Fozle Rabbi Shafi",
+            "M. Anwar Hossain",
+            "Salimur Choudhury"
+          ],
+          "summary": "Large Language Model (LLM)-based systems increasingly rely on function calling to enable structured and controllable interaction with external data sources, yet existing datasets do not address mental health-oriented access to wearable sensor data. This paper presents a synthetic function-calling dataset designed for mental health assistance grounded in wearable health signals such as sleep, physical activity, cardiovascular measures, stress indicators, and metabolic data. The dataset maps diverse natural language queries to standardized API calls derived from a widely adopted health data schema. Each sample includes a user query, a query category, an explicit reasoning step, a normalized temporal parameter, and a target function. The dataset covers explicit, implicit, behavioral, symptom-based, and metaphorical expressions, which reflect realistic mental health-related user interactions. This resource supports research on intent grounding, temporal reasoning, and reliable function invocation in LLM-based mental health agents and is publicly released to promote reproducibility and future work.",
+          "arxiv_url": "https://arxiv.org/abs/2601.06937v1",
+          "pdf_url": "https://arxiv.org/pdf/2601.06937v1.pdf",
+          "submitted_date": "2026-01-11T14:52:57+00:00",
+          "categories": [
+            "cs.AI",
+            "cs.LG"
+          ],
+          "comments": ""
+        },
+        {
+          "id": "2601.06916v1",
+          "title": "Active Learning Strategies for Efficient Machine-Learned Interatomic Potentials Across Diverse Material Systems",
+          "authors": [
+            "Mohammed Azeez Khan",
+            "Aaron D'Souza",
+            "Vijay Choyal"
+          ],
+          "display_authors": [
+            "Mohammed Azeez Khan",
+            "Aaron D'Souza",
+            "Vijay Choyal"
+          ],
+          "summary": "Efficient discovery of new materials demands strategies to reduce the number of costly first-principles calculations required to train predictive machine learning models. We develop and validate an active learning framework that iteratively selects informative training structures for machine-learned interatomic potentials (MLIPs) from large, heterogeneous materials databases, specifically the Materials Project and OQMD. Our framework integrates compositional and property-based descriptors with a neural network ensemble model, enabling real-time uncertainty quantification via Query-by-Committee. We systematically compare four selection strategies: random sampling (baseline), uncertainty-based sampling, diversity-based sampling (k-means clustering with farthest-point refinement), and a hybrid approach balancing both objectives. Experiments across four representative material systems (elemental carbon, silicon, iron, and a titanium-oxide compound) with 5 random seeds per configuration demonstrate that diversity sampling consistently achieves competitive or superior performance, with particularly strong advantages on complex systems like titanium-oxide (10.9% improvement, p=0.008). Our results show that intelligent data selection strategies can achieve target accuracy with 5-13% fewer labeled samples compared to random baselines. The entire pipeline executes on Google Colab in under 4 hours per system using less than 8 GB of RAM, thereby democratizing MLIP development for researchers globally with limited computational resources. Our open-source code and detailed experimental configurations are available on GitHub. This multi-system evaluation establishes practical guidelines for data-efficient MLIP training and highlights promising future directions including integration with symmetry-aware neural network architectures.",
+          "arxiv_url": "https://arxiv.org/abs/2601.06916v1",
+          "pdf_url": "https://arxiv.org/pdf/2601.06916v1.pdf",
+          "submitted_date": "2026-01-11T13:52:28+00:00",
+          "categories": [
+            "cs.LG"
+          ],
+          "comments": "16 pages, 3 figures, 2 tables"
+        },
+        {
+          "id": "2601.06913v1",
+          "title": "Tractable Multinomial Logit Contextual Bandits with Non-Linear Utilities",
+          "authors": [
+            "Taehyun Hwang",
+            "Dahngoon Kim",
+            "Min-hwan Oh"
+          ],
+          "display_authors": [
+            "Taehyun Hwang",
+            "Dahngoon Kim",
+            "Min-hwan Oh"
+          ],
+          "summary": "We study the multinomial logit (MNL) contextual bandit problem for sequential assortment selection. Although most existing research assumes utility functions to be linear in item features, this linearity assumption restricts the modeling of intricate interactions between items and user preferences. A recent work (Zhang & Luo, 2024) has investigated general utility function classes, yet its method faces fundamental trade-offs between computational tractability and statistical efficiency. To address this limitation, we propose a computationally efficient algorithm for MNL contextual bandits leveraging the upper confidence bound principle, specifically designed for non-linear parametric utility functions, including those modeled by neural networks. Under a realizability assumption and a mild geometric condition on the utility function class, our algorithm achieves a regret bound of $\\tilde{O}(\\sqrt{T})$, where $T$ denotes the total number of rounds. Our result establishes that sharp $\\tilde{O}(\\sqrt{T})$-regret is attainable even with neural network-based utilities, without relying on strong assumptions such as neural tangent kernel approximations. To the best of our knowledge, our proposed method is the first computationally tractable algorithm for MNL contextual bandits with non-linear utilities that provably attains $\\tilde{O}(\\sqrt{T})$ regret. Comprehensive numerical experiments validate the effectiveness of our approach, showing robust performance not only in realizable settings but also in scenarios with model misspecification.",
+          "arxiv_url": "https://arxiv.org/abs/2601.06913v1",
+          "pdf_url": "https://arxiv.org/pdf/2601.06913v1.pdf",
+          "submitted_date": "2026-01-11T13:43:42+00:00",
+          "categories": [
+            "cs.LG",
+            "stat.ML"
+          ],
+          "comments": "Accepted at NeurIPS 2025"
+        },
+        {
+          "id": "2601.06911v1",
+          "title": "Distributional Clarity: The Hidden Driver of RL-Friendliness in Large Language Models",
+          "authors": [
+            "Shaoning Sun",
+            "Mingzhu Cai",
+            "Huang He",
+            "Bingjin Chen",
+            "Siqi Bao",
+            "Yujiu Yang",
+            "Hua Wu",
+            "Haifeng Wang"
+          ],
+          "display_authors": [
+            "Shaoning Sun",
+            "Mingzhu Cai",
+            "Huang He",
+            "et al."
+          ],
+          "summary": "Language model families exhibit striking disparity in their capacity to benefit from reinforcement learning: under identical training, models like Qwen achieve substantial gains, while others like Llama yield limited improvements. Complementing data-centric approaches, we reveal that this disparity reflects a hidden structural property: \\textbf{distributional clarity} in probability space. Through a three-stage analysis-from phenomenon to mechanism to interpretation-we uncover that RL-friendly models exhibit intra-class compactness and inter-class separation in their probability assignments to correct vs. incorrect responses. We quantify this clarity using the \\textbf{Silhouette Coefficient} ($S$) and demonstrate that (1) high $S$ correlates strongly with RL performance; (2) low $S$ is associated with severe logic errors and reasoning instability. To confirm this property, we introduce a Silhouette-Aware Reweighting strategy that prioritizes low-$S$ samples during training. Experiments across six mathematical benchmarks show consistent improvements across all model families, with gains up to 5.9 points on AIME24. Our work establishes distributional clarity as a fundamental, trainable property underlying RL-Friendliness.",
+          "arxiv_url": "https://arxiv.org/abs/2601.06911v1",
+          "pdf_url": "https://arxiv.org/pdf/2601.06911v1.pdf",
+          "submitted_date": "2026-01-11T13:34:44+00:00",
+          "categories": [
+            "cs.CL",
+            "cs.AI",
+            "cs.LG"
+          ],
+          "comments": ""
+        },
+        {
+          "id": "2601.06884v1",
+          "title": "Paraphrasing Adversarial Attack on LLM-as-a-Reviewer",
+          "authors": [
+            "Masahiro Kaneko"
+          ],
+          "display_authors": [
+            "Masahiro Kaneko"
+          ],
+          "summary": "The use of large language models (LLMs) in peer review systems has attracted growing attention, making it essential to examine their potential vulnerabilities. Prior attacks rely on prompt injection, which alters manuscript content and conflates injection susceptibility with evaluation robustness. We propose the Paraphrasing Adversarial Attack (PAA), a black-box optimization method that searches for paraphrased sequences yielding higher review scores while preserving semantic equivalence and linguistic naturalness. PAA leverages in-context learning, using previous paraphrases and their scores to guide candidate generation. Experiments across five ML and NLP conferences with three LLM reviewers and five attacking models show that PAA consistently increases review scores without changing the paper's claims. Human evaluation confirms that generated paraphrases maintain meaning and naturalness. We also find that attacked papers exhibit increased perplexity in reviews, offering a potential detection signal, and that paraphrasing submissions can partially mitigate attacks.",
+          "arxiv_url": "https://arxiv.org/abs/2601.06884v1",
+          "pdf_url": "https://arxiv.org/pdf/2601.06884v1.pdf",
+          "submitted_date": "2026-01-11T12:14:10+00:00",
+          "categories": [
+            "cs.CL",
+            "cs.AI",
+            "cs.LG"
+          ],
+          "comments": ""
+        },
+        {
+          "id": "2601.06873v1",
+          "title": "Applying Embedding-Based Retrieval to Airbnb Search",
+          "authors": [
+            "Mustafa Abdool",
+            "Soumyadip Banerjee",
+            "Moutupsi Paul",
+            "Do-kyum Kim",
+            "Xioawei Liu",
+            "Bin Xu",
+            "Tracy Yu",
+            "Hui Gao",
+            "Karen Ouyang",
+            "Huiji Gao",
+            "Liwei He",
+            "Stephanie Moyerman",
+            "Sanjeev Katariya"
+          ],
+          "display_authors": [
+            "Mustafa Abdool",
+            "Soumyadip Banerjee",
+            "Moutupsi Paul",
+            "et al."
+          ],
+          "summary": "The goal of Airbnb search is to match guests with the ideal accommodation that fits their travel needs. This is a challenging problem, as popular search locations can have around a hundred thousand available homes, and guests themselves have a wide variety of preferences. Furthermore, the launch of new product features, such as \\textit{flexible date search,} significantly increased the number of eligible homes per search query. As such, there is a need for a sophisticated retrieval system which can provide high-quality candidates with low latency in a way that integrates with the overall ranking stack.   This paper details our journey to build an efficient and high-quality retrieval system for Airbnb search. We describe the key unique challenges we encountered when implementing an Embedding-Based Retrieval (EBR) system for a two sided marketplace like Airbnb -- such as the dynamic nature of the inventory, a lengthy user funnel with multiple stages, and a variety of product surfaces. We cover unique insights when modeling the retrieval problem, how to build robust evaluation systems, and design choices for online serving. The EBR system was launched to production and powers several use-cases such as regular search, flexible date and promotional emails for marketing campaigns. The system demonstrated statistically-significant improvements in key metrics, such as booking conversion, via A/B testing.",
+          "arxiv_url": "https://arxiv.org/abs/2601.06873v1",
+          "pdf_url": "https://arxiv.org/pdf/2601.06873v1.pdf",
+          "submitted_date": "2026-01-11T11:41:55+00:00",
+          "categories": [
+            "cs.IR",
+            "cs.LG"
+          ],
+          "comments": "14 pages, 9 figures"
+        },
+        {
+          "id": "2601.06870v1",
+          "title": "DaQ-MSA: Denoising and Qualifying Diffusion Augmentations for Multimodal Sentiment Analysis",
+          "authors": [
+            "Jiazhang Liang",
+            "Jianheng Dai",
+            "Miaosen Luo",
+            "Menghua Jiang",
+            "Sijie Mai"
+          ],
+          "display_authors": [
+            "Jiazhang Liang",
+            "Jianheng Dai",
+            "Miaosen Luo",
+            "et al."
+          ],
+          "summary": "Multimodal large language models (MLLMs) have demonstrated strong performance on vision-language tasks, yet their effectiveness on multimodal sentiment analysis remains constrained by the scarcity of high-quality training data, which limits accurate multimodal understanding and generalization. To alleviate this bottleneck, we leverage diffusion models to perform semantics-preserving augmentation on the video and audio modalities, expanding the multimodal training distribution. However, increasing data quantity alone is insufficient, as diffusion-generated samples exhibit substantial quality variation and noisy augmentations may degrade performance. We therefore propose DaQ-MSA (Denoising and Qualifying Diffusion Augmentations for Multimodal Sentiment Analysis), which introduces a quality scoring module to evaluate the reliability of augmented samples and assign adaptive training weights. By down-weighting low-quality samples and emphasizing high-fidelity ones, DaQ-MSA enables more stable learning. By integrating the generative capability of diffusion models with the semantic understanding of MLLMs, our approach provides a robust and generalizable automated augmentation strategy for training MLLMs without any human annotation or additional supervision.",
+          "arxiv_url": "https://arxiv.org/abs/2601.06870v1",
+          "pdf_url": "https://arxiv.org/pdf/2601.06870v1.pdf",
+          "submitted_date": "2026-01-11T11:29:21+00:00",
+          "categories": [
+            "cs.LG",
+            "cs.AI"
+          ],
+          "comments": "11 pages, 4 figures"
+        },
+        {
+          "id": "2601.06867v1",
+          "title": "U-MASK: User-adaptive Spatio-Temporal Masking for Personalized Mobile AI Applications",
+          "authors": [
+            "Shiyuan Zhang",
+            "Yilai Liu",
+            "Yuwei Du",
+            "Ruoxuan Yang",
+            "Dong In Kim",
+            "Hongyang Du"
+          ],
+          "display_authors": [
+            "Shiyuan Zhang",
+            "Yilai Liu",
+            "Yuwei Du",
+            "et al."
+          ],
+          "summary": "Personalized mobile artificial intelligence applications are widely deployed, yet they are expected to infer user behavior from sparse and irregular histories under a continuously evolving spatio-temporal context. This setting induces a fundamental tension among three requirements, i.e., immediacy to adapt to recent behavior, stability to resist transient noise, and generalization to support long-horizon prediction and cold-start users. Most existing approaches satisfy at most two of these requirements, resulting in an inherent impossibility triangle in data-scarce, non-stationary personalization. To address this challenge, we model mobile behavior as a partially observed spatio-temporal tensor and unify short-term adaptation, long-horizon forecasting, and cold-start recommendation as a conditional completion problem, where a user- and task-specific mask specifies which coordinates are treated as evidence. We propose U-MASK, a user-adaptive spatio-temporal masking method that allocates evidence budgets based on user reliability and task sensitivity. To enable mask generation under sparse observations, U-MASK learns a compact, task-agnostic user representation from app and location histories via U-SCOPE, which serves as the sole semantic conditioning signal. A shared diffusion transformer then performs mask-guided generative completion while preserving observed evidence, so personalization and task differentiation are governed entirely by the mask and the user representation. Experiments on real-world mobile datasets demonstrate consistent improvements over state-of-the-art methods across short-term prediction, long-horizon forecasting, and cold-start settings, with the largest gains under severe data sparsity. The code and dataset will be available at https://github.com/NICE-HKU/U-MASK.",
+          "arxiv_url": "https://arxiv.org/abs/2601.06867v1",
+          "pdf_url": "https://arxiv.org/pdf/2601.06867v1.pdf",
+          "submitted_date": "2026-01-11T11:22:25+00:00",
+          "categories": [
+            "cs.LG"
+          ],
+          "comments": "18 pages, 9 figures"
+        },
+        {
+          "id": "2601.06862v1",
+          "title": "qAttCNN - Self Attention Mechanism for Video QoE Prediction in Encrypted Traffic",
+          "authors": [
+            "Michael Sidorov",
+            "Ofer Hadar"
+          ],
+          "display_authors": [
+            "Michael Sidorov",
+            "Ofer Hadar"
+          ],
+          "summary": "The rapid growth of multimedia consumption, driven by major advances in mobile devices since the mid-2000s, has led to widespread use of video conferencing applications (VCAs) such as Zoom and Google Meet, as well as instant messaging applications (IMAs) like WhatsApp and Telegram, which increasingly support video conferencing as a core feature. Many of these systems rely on the Web Real-Time Communication (WebRTC) protocol, enabling direct peer-to-peer media streaming without requiring a third-party server to relay data, reducing the latency and facilitating a real-time communication. Despite WebRTC's potential, adverse network conditions can degrade streaming quality and consequently reduce users' Quality of Experience (QoE). Maintaining high QoE therefore requires continuous monitoring and timely intervention when QoE begins to deteriorate. While content providers can often estimate QoE by directly comparing transmitted and received media, this task is significantly more challenging for internet service providers (ISPs). End-to-end encryption, commonly used by modern VCAs and IMAs, prevent ISPs from accessing the original media stream, leaving only Quality of Service (QoS) and routing information available. To address this limitation, we propose the QoE Attention Convolutional Neural Network (qAttCNN), a model that leverages packet size parameter of the traffic to infer two no-reference QoE metrics viz. BRISQUE and frames per second (FPS). We evaluate qAttCNN on a custom dataset collected from WhatsApp video calls and compare it against existing QoE models. Using mean absolute error percentage (MAEP), our approach achieves 2.14% error for BRISQUE and 7.39% for FPS prediction.",
+          "arxiv_url": "https://arxiv.org/abs/2601.06862v1",
+          "pdf_url": "https://arxiv.org/pdf/2601.06862v1.pdf",
+          "submitted_date": "2026-01-11T11:08:40+00:00",
+          "categories": [
+            "cs.CR",
+            "cs.CV",
+            "cs.LG",
+            "cs.MM",
+            "eess.IV"
+          ],
+          "comments": ""
+        },
+        {
+          "id": "2601.06858v1",
+          "title": "Deep Learning Based Channel Extrapolation for Dual-Band Massive MIMO Systems",
+          "authors": [
+            "Qikai Xiao",
+            "Kehui Li",
+            "Binggui Zhou",
+            "Shaodan Ma"
+          ],
+          "display_authors": [
+            "Qikai Xiao",
+            "Kehui Li",
+            "Binggui Zhou",
+            "et al."
+          ],
+          "summary": "Future wireless communication systems will increasingly rely on the integration of millimeter wave (mmWave) and sub-6 GHz bands to meet heterogeneous demands on high-speed data transmission and extensive coverage. To fully exploit the benefits of mmWave bands in massive multiple-input multiple-output (MIMO) systems, highly accurate channel state information (CSI) is required. However, directly estimating the mmWave channel demands substantial pilot overhead due to the large CSI dimension and low signal-to-noise ratio (SNR) led by severe path loss and blockage attenuation. In this paper, we propose an efficient \\textbf{M}ulti-\\textbf{D}omain \\textbf{F}usion \\textbf{C}hannel \\textbf{E}xtrapolator (MDFCE) to extrapolate sub-6 GHz band CSI to mmWave band CSI, so as to reduce the pilot overhead for mmWave CSI acquisition in dual band massive MIMO systems. Unlike traditional channel extrapolation methods based on mathematical modeling, the proposed MDFCE combines the mixture-of-experts framework and the multi-head self-attention mechanism to fuse multi-domain features of sub-6 GHz CSI, aiming to characterize the mapping from sub-6 GHz CSI to mmWave CSI effectively and efficiently. The simulation results demonstrate that MDFCE can achieve superior performance with less training pilots compared with existing methods across various antenna array scales and signal-to-noise ratio levels while showing a much higher computational efficiency.",
+          "arxiv_url": "https://arxiv.org/abs/2601.06858v1",
+          "pdf_url": "https://arxiv.org/pdf/2601.06858v1.pdf",
+          "submitted_date": "2026-01-11T10:59:22+00:00",
+          "categories": [
+            "eess.SP",
+            "cs.LG"
+          ],
+          "comments": ""
+        },
+        {
+          "id": "2601.06857v1",
+          "title": "MoE-DisCo:Low Economy Cost Training Mixture-of-Experts Models",
+          "authors": [
+            "Xin Ye",
+            "Daning Cheng",
+            "Boyang Zhang",
+            "Yunquan Zhang"
+          ],
+          "display_authors": [
+            "Xin Ye",
+            "Daning Cheng",
+            "Boyang Zhang",
+            "et al."
+          ],
+          "summary": "Training large-scale Mixture-of-Experts (MoE) models typically requires high-memory, high-bandwidth GPUs (e.g., A100), and their high cost has become a major barrier to large-model training. In contrast, affordable hardware is low-cost but constrained by memory capacity and bandwidth, making it unsuitable for direct LLM training. To address this, we propose MoE-DisCo (Mixture-of-Experts with Disentangled Clustering and Coordination), a staged training framework. MoE-DisCo decomposes the MoE model into multiple dense submodels, each consisting of a shared backbone and a single expert, and partitions the training data into subsets using unsupervised clustering. Each submodel is trained independently and in parallel on its assigned data subset using low-cost devices, without any inter-device communication. Subsequently, all experts are integrated into a complete MoE model and fine-tuned globally for a short period on high-memory, high-bandwidth GPUs. Experiments show that our method matches or even surpasses full-parameter training in performance across multiple downstream tasks, loss function, and perplexity (PPL), while reducing training cost by 47.6 percent to 69.5 percent on Qwen1.5-MoE-2.7B and Llama-MoE-3.5B across different datasets.",
+          "arxiv_url": "https://arxiv.org/abs/2601.06857v1",
+          "pdf_url": "https://arxiv.org/pdf/2601.06857v1.pdf",
+          "submitted_date": "2026-01-11T10:59:15+00:00",
+          "categories": [
+            "cs.LG",
+            "cs.AI"
+          ],
+          "comments": ""
+        },
+        {
+          "id": "2601.06853v1",
+          "title": "†DAGGER: Distractor-Aware Graph Generation for Executable Reasoning in Math Problems",
+          "authors": [
+            "Zabir Al Nazi",
+            "Shubhashis Roy Dipta",
+            "Sudipta Kar"
+          ],
+          "display_authors": [
+            "Zabir Al Nazi",
+            "Shubhashis Roy Dipta",
+            "Sudipta Kar"
+          ],
+          "summary": "Chain-of-Thought (CoT) prompting is widely adopted for mathematical problem solving, including in low-resource languages, yet its behavior under irrelevant context remains underexplored. To systematically study this challenge, we introduce DISTRACTMATH-BN, a Bangla benchmark that augments MGSM and MSVAMP with semantically coherent but computationally irrelevant information. Evaluating seven models ranging from 3B to 12B parameters, we observe substantial performance degradation under distractors: standard models drop by up to 41 points, while reasoning-specialized models decline by 14 to 20 points despite consuming five times more tokens. We propose †DAGGER, which reformulates mathematical problem solving as executable computational graph generation with explicit modeling of distractor nodes. Fine-tuning Gemma-3 models using supervised fine-tuning followed by Group Relative Policy Optimization achieves comparable weighted accuracy on augmented benchmarks while using 89 percent fewer tokens than reasoning models. Importantly, this robustness emerges without explicit training on distractor-augmented examples. Our results suggest that enforcing structured intermediate representations improves robustness and inference efficiency in mathematical reasoning compared to free-form approaches, particularly in noisy, low-resource settings.",
+          "arxiv_url": "https://arxiv.org/abs/2601.06853v1",
+          "pdf_url": "https://arxiv.org/pdf/2601.06853v1.pdf",
+          "submitted_date": "2026-01-11T10:51:03+00:00",
+          "categories": [
+            "cs.CL",
+            "cs.LG"
+          ],
+          "comments": ""
+        },
+        {
+          "id": "2601.06844v1",
+          "title": "Variational decomposition autoencoding improves disentanglement of latent representations",
+          "authors": [
+            "Ioannis Ziogas",
+            "Aamna Al Shehhi",
+            "Ahsan H. Khandoker",
+            "Leontios J. Hadjileontiadis"
+          ],
+          "display_authors": [
+            "Ioannis Ziogas",
+            "Aamna Al Shehhi",
+            "Ahsan H. Khandoker",
+            "et al."
+          ],
+          "summary": "Understanding the structure of complex, nonstationary, high-dimensional time-evolving signals is a central challenge in scientific data analysis. In many domains, such as speech and biomedical signal processing, the ability to learn disentangled and interpretable representations is critical for uncovering latent generative mechanisms. Traditional approaches to unsupervised representation learning, including variational autoencoders (VAEs), often struggle to capture the temporal and spectral diversity inherent in such data. Here we introduce variational decomposition autoencoding (VDA), a framework that extends VAEs by incorporating a strong structural bias toward signal decomposition. VDA is instantiated through variational decomposition autoencoders (DecVAEs), i.e., encoder-only neural networks that combine a signal decomposition model, a contrastive self-supervised task, and variational prior approximation to learn multiple latent subspaces aligned with time-frequency characteristics. We demonstrate the effectiveness of DecVAEs on simulated data and three publicly available scientific datasets, spanning speech recognition, dysarthria severity evaluation, and emotional speech classification. Our results demonstrate that DecVAEs surpass state-of-the-art VAE-based methods in terms of disentanglement quality, generalization across tasks, and the interpretability of latent encodings. These findings suggest that decomposition-aware architectures can serve as robust tools for extracting structured representations from dynamic signals, with potential applications in clinical diagnostics, human-computer interaction, and adaptive neurotechnologies.",
+          "arxiv_url": "https://arxiv.org/abs/2601.06844v1",
+          "pdf_url": "https://arxiv.org/pdf/2601.06844v1.pdf",
+          "submitted_date": "2026-01-11T10:16:34+00:00",
+          "categories": [
+            "cs.LG",
+            "cs.AI",
+            "eess.AS",
+            "eess.SP",
+            "stat.ML"
+          ],
+          "comments": "Supplementary information file at: https://drive.google.com/drive/folders/1sZl2AcCtRK-1oav7XZSaxlu0Cq0-3MMs?usp=sharing"
+        },
+        {
+          "id": "2601.06830v1",
+          "title": "Constrained Density Estimation via Optimal Transport",
+          "authors": [
+            "Yinan Hu",
+            "Estaban Tabak"
+          ],
+          "display_authors": [
+            "Yinan Hu",
+            "Estaban Tabak"
+          ],
+          "summary": "A novel framework for density estimation under expectation constraints is proposed. The framework minimizes the Wasserstein distance between the estimated density and a prior, subject to the constraints that the expected value of a set of functions adopts or exceeds given values. The framework is generalized to include regularization inequalities to mitigate the artifacts in the target measure. An annealing-like algorithm is developed to address non-smooth constraints, with its effectiveness demonstrated through both synthetic and proof-of-concept real world examples in finance.",
+          "arxiv_url": "https://arxiv.org/abs/2601.06830v1",
+          "pdf_url": "https://arxiv.org/pdf/2601.06830v1.pdf",
+          "submitted_date": "2026-01-11T09:44:04+00:00",
+          "categories": [
+            "stat.ML",
+            "cs.LG",
+            "math.NA",
+            "math.OC",
+            "math.PR"
+          ],
+          "comments": ""
+        },
+        {
+          "id": "2601.06813v1",
+          "title": "Analyzing the effect of prediction accuracy on the distributionally-robust competitive ratio",
+          "authors": [
+            "Toru Yoshinaga",
+            "Yasushi Kawase"
+          ],
+          "display_authors": [
+            "Toru Yoshinaga",
+            "Yasushi Kawase"
+          ],
+          "summary": "The field of algorithms with predictions aims to improve algorithm performance by integrating machine learning predictions into algorithm design. A central question in this area is how predictions can improve performance, and a key aspect of this analysis is the role of prediction accuracy. In this context, prediction accuracy is defined as a guaranteed probability that an instance drawn from the distribution belongs to the predicted set. As a performance measure that incorporates prediction accuracy, we focus on the distributionally-robust competitive ratio (DRCR), introduced by Sun et al.~(ICML 2024). The DRCR is defined as the expected ratio between the algorithm's cost and the optimal cost, where the expectation is taken over the worst-case instance distribution that satisfies the given prediction and accuracy requirement. A known structural property is that, for any fixed algorithm, the DRCR decreases linearly as prediction accuracy increases. Building on this result, we establish that the optimal DRCR value (i.e., the infimum over all algorithms) is a monotone and concave function of prediction accuracy. We further generalize the DRCR framework to a multiple-prediction setting and show that monotonicity and concavity are preserved in this setting. Finally, we apply our results to the ski rental problem, a benchmark problem in online optimization, to identify the conditions on prediction accuracies required for the optimal DRCR to attain a target value. Moreover, we provide a method for computing the critical accuracy, defined as the minimum accuracy required for the optimal DRCR to strictly improve upon the performance attainable without any accuracy guarantee.",
+          "arxiv_url": "https://arxiv.org/abs/2601.06813v1",
+          "pdf_url": "https://arxiv.org/pdf/2601.06813v1.pdf",
+          "submitted_date": "2026-01-11T08:51:40+00:00",
+          "categories": [
+            "cs.LG",
+            "cs.DS"
+          ],
+          "comments": ""
+        },
+        {
+          "id": "2601.06810v1",
+          "title": "WFR-FM: Simulation-Free Dynamic Unbalanced Optimal Transport",
+          "authors": [
+            "Qiangwei Peng",
+            "Zihan Wang",
+            "Junda Ying",
+            "Yuhao Sun",
+            "Qing Nie",
+            "Lei Zhang",
+            "Tiejun Li",
+            "Peijie Zhou"
+          ],
+          "display_authors": [
+            "Qiangwei Peng",
+            "Zihan Wang",
+            "Junda Ying",
+            "et al."
+          ],
+          "summary": "The Wasserstein-Fisher-Rao (WFR) metric extends dynamic optimal transport (OT) by coupling displacement with change of mass, providing a principled geometry for modeling unbalanced snapshot dynamics. Existing WFR solvers, however, are often unstable, computationally expensive, and difficult to scale. Here we introduce WFR Flow Matching (WFR-FM), a simulation-free training algorithm that unifies flow matching with dynamic unbalanced OT. Unlike classical flow matching which regresses only a transport vector field, WFR-FM simultaneously regresses a vector field for displacement and a scalar growth rate function for birth-death dynamics, yielding continuous flows under the WFR geometry. Theoretically, we show that minimizing the WFR-FM loss exactly recovers WFR geodesics. Empirically, WFR-FM yields more accurate and robust trajectory inference in single-cell biology, reconstructing consistent dynamics with proliferation and apoptosis, estimating time-varying growth fields, and applying to generative dynamics under imbalanced data. It outperforms state-of-the-art baselines in efficiency, stability, and reconstruction accuracy. Overall, WFR-FM establishes a unified and efficient paradigm for learning dynamical systems from unbalanced snapshots, where not only states but also mass evolve over time.",
+          "arxiv_url": "https://arxiv.org/abs/2601.06810v1",
+          "pdf_url": "https://arxiv.org/pdf/2601.06810v1.pdf",
+          "submitted_date": "2026-01-11T08:48:08+00:00",
+          "categories": [
+            "cs.LG",
+            "cs.AI",
+            "math-ph"
+          ],
+          "comments": ""
+        },
+        {
+          "id": "2601.06801v1",
+          "title": "Thinking with Deltas: Incentivizing Reinforcement Learning via Differential Visual Reasoning Policy",
+          "authors": [
+            "Shujian Gao",
+            "Yuan Wang",
+            "Jiangtao Yan",
+            "Zuxuan Wu",
+            "Yu-Gang Jiang"
+          ],
+          "display_authors": [
+            "Shujian Gao",
+            "Yuan Wang",
+            "Jiangtao Yan",
+            "et al."
+          ],
+          "summary": "Reinforcement Learning with Verifiable Rewards (RLVR) has significantly advanced reasoning capabilities in Large Language Models. However, adapting RLVR to multimodal domains suffers from a critical \\textit{perception-reasoning decoupling}. Existing paradigms, driven by text-centric outcome rewards, reasoning in language medium, inadvertently encourage models to bypass visual perception. We empirically validate this through blind experiments: state-of-the-art policies maintain or surprisingly improve performance even when visual inputs are entirely removed. This reveals that these models degenerate into \\textit{blind reasoners}, exploiting linguistic priors to generate plausible answers instead of attending to visual evidence. In response, we propose \\textbf{Thinking with Deltas}, a framework driven by a \\textbf{Differential Visual Reasoning Policy (DVRP)}. DVRP introduces intrinsic supervision via visual triplets, comprising original, masked, and perturbed inputs. It optimizes the model to maximize reasoning divergence from masked inputs (enforcing \\textit{visual sensitivity}) while minimizing divergence from perturbed inputs (ensuring \\textit{visual robustness}). By aligning reasoning variations strictly with the \\textit{Delta} of visual information, DVRP inherently bolsters visual understanding capabilities and significantly outperforms state-of-the-art methods on both general and medical benchmarks, without requiring external annotations or auxiliary tools.",
+          "arxiv_url": "https://arxiv.org/abs/2601.06801v1",
+          "pdf_url": "https://arxiv.org/pdf/2601.06801v1.pdf",
+          "submitted_date": "2026-01-11T08:25:34+00:00",
+          "categories": [
+            "cs.AI",
+            "cs.LG"
+          ],
+          "comments": "24 pages, 10 tables, 4 figures"
+        },
+        {
+          "id": "2601.06800v1",
+          "title": "Graph Neural Network with One-side Edge Sampling for Fraud Detection",
+          "authors": [
+            "Hoang Hiep Trieu"
+          ],
+          "display_authors": [
+            "Hoang Hiep Trieu"
+          ],
+          "summary": "Financial fraud is always a major problem in the field of finance, as it can cause significant consequences. As a result, many approaches have been designed to detect it, and lately Graph Neural Networks (GNNs) have been demonstrated as a competent candidate. However, when trained with a large amount of data, they are slow and computationally demanding. In addition, GNNs may need a deep architecture to detect complex fraud patterns, but doing so may make them suffer from problems such as over-fitting or over-smoothing. Over-fitting leads to reduced generalisation of the model on unseen data, while over-smoothing causes all nodes' features to converge to a fixed point due to excessive aggregation of information from neighbouring nodes. In this research, I propose an approach called One-Side Edge Sampling (OES) that can potentially reduce training duration as well as the effects of over-smoothing and over-fitting. The approach leverages predictive confidence in an edge classification task to sample edges from the input graph during a certain number of epochs. To explain why OES can alleviate over-smoothing, I perform a theoretical analysis of the proposed approach. In addition, to validate the effect of OES, I conduct experiments using different GNNs on two datasets. The results show that OES can empirically outperform backbone models in both shallow and deep architectures while also reducing training time.",
+          "arxiv_url": "https://arxiv.org/abs/2601.06800v1",
+          "pdf_url": "https://arxiv.org/pdf/2601.06800v1.pdf",
+          "submitted_date": "2026-01-11T07:59:39+00:00",
+          "categories": [
+            "cs.LG",
+            "cs.AI"
+          ],
+          "comments": ""
+        },
+        {
+          "id": "2601.06793v1",
+          "title": "CliffordNet: All You Need is Geometric Algebra",
+          "authors": [
+            "Zhongping Ji"
+          ],
+          "display_authors": [
+            "Zhongping Ji"
+          ],
+          "summary": "Modern computer vision architectures, from CNNs to Transformers, predominantly rely on the stacking of heuristic modules: spatial mixers (Attention/Conv) followed by channel mixers (FFNs). In this work, we challenge this paradigm by returning to mathematical first principles. We propose the \\textbf{Clifford Algebra Network (CAN)}, also referred to as CliffordNet, a vision backbone grounded purely in Geometric Algebra. Instead of engineering separate modules for mixing and memory, we derive a unified interaction mechanism based on the \\textbf{Clifford Geometric Product} ($uv = u \\cdot v + u \\wedge v$). This operation ensures algebraic completeness regarding the Geometric Product by simultaneously capturing feature coherence (via the generalized inner product) and structural variation (via the exterior wedge product).   Implemented via an efficient sparse rolling mechanism with \\textbf{strict linear complexity $\\mathcal{O}(N)$}, our model reveals a surprising emergent property: the geometric interaction is so representationally dense that standard Feed-Forward Networks (FFNs) become redundant. Empirically, CliffordNet establishes a new Pareto frontier: our \\textbf{Nano} variant achieves \\textbf{76.41\\%} accuracy on CIFAR-100 with only \\textbf{1.4M} parameters, effectively matching the heavy-weight ResNet-18 (11.2M) with \\textbf{$8\\times$ fewer parameters}, while our \\textbf{Base} variant sets a new SOTA for tiny models at \\textbf{78.05\\%}. Our results suggest that global understanding can emerge solely from rigorous, algebraically complete local interactions, potentially signaling a shift where \\textit{geometry is all you need}. Code is available at https://github.com/ParaMind2025/CAN.",
+          "arxiv_url": "https://arxiv.org/abs/2601.06793v1",
+          "pdf_url": "https://arxiv.org/pdf/2601.06793v1.pdf",
+          "submitted_date": "2026-01-11T07:26:02+00:00",
+          "categories": [
+            "cs.CV",
+            "cs.LG"
+          ],
+          "comments": "15 pages"
+        },
+        {
+          "id": "2601.06792v1",
+          "title": "Cross-Modal Computational Model of Brain-Heart Interactions via HRV and EEG Feature",
+          "authors": [
+            "Malavika Pradeep",
+            "Akshay Sasi",
+            "Nusaibah Farrukh",
+            "Rahul Venugopal",
+            "Elizabeth Sherly"
+          ],
+          "display_authors": [
+            "Malavika Pradeep",
+            "Akshay Sasi",
+            "Nusaibah Farrukh",
+            "et al."
+          ],
+          "summary": "The electroencephalogram (EEG) has been the gold standard for quantifying mental workload; however, due to its complexity and non-portability, it can be constraining. ECG signals, which are feasible on wearable equipment pieces such as headbands, present a promising method for cognitive state monitoring. This research explores whether electrocardiogram (ECG) signals are able to indicate mental workload consistently and act as surrogates for EEG-based cognitive indicators. This study investigates whether ECG-derived features can serve as surrogate indicators of cognitive load, a concept traditionally quantified using EEG. Using a publicly available multimodal dataset (OpenNeuro) of EEG and ECG recorded during working-memory and listening tasks, features of HRV and Catch22 descriptors are extracted from ECG, and spectral band-power with Catch22 features from EEG. A cross-modal regression framework based on XGBoost was trained to map ECG-derived HRV representations to EEG-derived cognitive features. In order to address data sparsity and model brain-heart interactions, we integrated the PSV-SDG to produce EEG-conditioned synthetic HRV time series.This addresses the challenge of inferring cognitive load solely from ECG-derived features using a combination of multimodal learning, signal processing, and synthetic data generation. These outcomes form a basis for light, interpretable machine learning models that are implemented through wearable biosensors in non-lab environments. Synthetic HRV inclusion enhances robustness, particularly in sparse data situations. Overall, this work is an initiation for building low-cost, explainable, and real-time cognitive monitoring systems for mental health, education, and human-computer interaction, with a focus on ageing and clinical populations.",
+          "arxiv_url": "https://arxiv.org/abs/2601.06792v1",
+          "pdf_url": "https://arxiv.org/pdf/2601.06792v1.pdf",
+          "submitted_date": "2026-01-11T07:20:30+00:00",
+          "categories": [
+            "cs.LG"
+          ],
+          "comments": "6 pages, 2 figures, Code available at: https://github.com/Malavika-pradeep/Computational-model-for-Brain-heart-Interaction-Analysis. Presented at AIHC (not published)"
+        },
+        {
+          "id": "2601.06788v1",
+          "title": "Artificial Entanglement in the Fine-Tuning of Large Language Models",
+          "authors": [
+            "Min Chen",
+            "Zihan Wang",
+            "Canyu Chen",
+            "Zeguan Wu",
+            "Manling Li",
+            "Junyu Liu"
+          ],
+          "display_authors": [
+            "Min Chen",
+            "Zihan Wang",
+            "Canyu Chen",
+            "et al."
+          ],
+          "summary": "Large language models (LLMs) can be adapted to new tasks using parameter-efficient fine-tuning (PEFT) methods that modify only a small number of trainable parameters, often through low-rank updates. In this work, we adopt a quantum-information-inspired perspective to understand their effectiveness. From this perspective, low-rank parameterizations naturally correspond to low-dimensional Matrix Product States (MPS) representations, which enable entanglement-based characterizations of parameter structure. Thereby, we term and measure \"Artificial Entanglement\", defined as the entanglement entropy of the parameters in artificial neural networks (in particular the LLMs). We first study the representative low-rank adaptation (LoRA) PEFT method, alongside full fine-tuning (FFT), using LLaMA models at the 1B and 8B scales trained on the Tulu3 and OpenThoughts3 datasets, and uncover: (i) Internal artificial entanglement in the updates of query and value projection matrices in LoRA follows a volume law with a central suppression (termed as the \"Entanglement Valley\"), which is sensitive to hyper-parameters and is distinct from that in FFT; (ii) External artificial entanglement in attention matrices, corresponding to token-token correlations in representation space, follows an area law with logarithmic corrections and remains robust to LoRA hyper-parameters and training steps. Drawing a parallel to the No-Hair Theorem in black hole physics, we propose that although LoRA and FFT induce distinct internal entanglement signatures, such differences do not manifest in the attention outputs, suggesting a \"no-hair\" property that results in the effectiveness of low rank updates. We further provide theoretical support based on random matrix theory, and extend our analysis to an MPS Adaptation PEFT method, which exhibits qualitatively similar behaviors.",
+          "arxiv_url": "https://arxiv.org/abs/2601.06788v1",
+          "pdf_url": "https://arxiv.org/pdf/2601.06788v1.pdf",
+          "submitted_date": "2026-01-11T06:34:50+00:00",
+          "categories": [
+            "cs.LG",
+            "cs.AI",
+            "quant-ph",
+            "stat.ML"
+          ],
+          "comments": "41 pages, many figures"
+        },
+        {
+          "id": "2601.06782v1",
+          "title": "Dimension-reduced outcome-weighted learning for estimating individualized treatment regimes in observational studies",
+          "authors": [
+            "Sungtaek Son",
+            "Eardi Lila",
+            "Kwun Chuen Gary Chan"
+          ],
+          "display_authors": [
+            "Sungtaek Son",
+            "Eardi Lila",
+            "Kwun Chuen Gary Chan"
+          ],
+          "summary": "Individualized treatment regimes (ITRs) aim to improve clinical outcomes by assigning treatment based on patient-specific characteristics. However, existing methods often struggle with high-dimensional covariates, limiting accuracy, interpretability, and real-world applicability. We propose a novel sufficient dimension reduction approach that directly targets the contrast between potential outcomes and identifies a low-dimensional subspace of the covariates capturing treatment effect heterogeneity. This reduced representation enables more accurate estimation of optimal ITRs through outcome-weighted learning. To accommodate observational data, our method incorporates kernel-based covariate balancing, allowing treatment assignment to depend on the full covariate set and avoiding the restrictive assumption that the subspace sufficient for modeling heterogeneous treatment effects is also sufficient for confounding adjustment. We show that the proposed method achieves universal consistency, i.e., its risk converges to the Bayes risk, under mild regularity conditions. We demonstrate its finite sample performance through simulations and an analysis of intensive care unit sepsis patient data to determine who should receive transthoracic echocardiography.",
+          "arxiv_url": "https://arxiv.org/abs/2601.06782v1",
+          "pdf_url": "https://arxiv.org/pdf/2601.06782v1.pdf",
+          "submitted_date": "2026-01-11T05:38:08+00:00",
+          "categories": [
+            "stat.ML",
+            "cs.LG",
+            "stat.ME"
+          ],
+          "comments": "54 pages, 9 figures"
+        },
+        {
+          "id": "2601.06770v1",
+          "title": "Structure-preserving learning and prediction in optimal control of collective motion",
+          "authors": [
+            "Sofiia Huraka",
+            "Vakhtang Putkaradze"
+          ],
+          "display_authors": [
+            "Sofiia Huraka",
+            "Vakhtang Putkaradze"
+          ],
+          "summary": "Wide-spread adoption of unmanned vehicle technologies requires the ability to predict the motion of the combined vehicle operation from observations. While the general prediction of such motion for an arbitrary control mechanism is difficult, for a particular choice of control, the dynamics reduces to the Lie-Poisson equations [33,34]. Our goal is to learn the phase-space dynamics and predict the motion solely from observations, without any knowledge of the control Hamiltonian or the nature of interaction between vehicles. To achieve that goal, we propose the Control Optimal Lie-Poisson Neural Networks (CO-LPNets) for learning and predicting the dynamics of the system from data. Our methods learn the mapping of the phase space through the composition of Poisson maps, which are obtained as flows from Hamiltonians that could be integrated explicitly. CO-LPNets preserve the Poisson bracket and thus preserve Casimirs to machine precision. We discuss the completeness of the derived neural networks and their efficiency in approximating the dynamics. To illustrate the power of the method, we apply these techniques to systems of $N=3$ particles evolving on ${\\rm SO}(3)$ group, which describe coupled rigid bodies rotating about their center of mass, and ${\\rm SE}(3)$ group, applicable to the movement of unmanned air and water vehicles. Numerical results demonstrate that CO-LPNets learn the dynamics in phase space from data points and reproduce trajectories, with good accuracy, over hundreds of time steps. The method uses a limited number of points ($\\sim200$/dimension) and parameters ($\\sim 1000$ in our case), demonstrating potential for practical applications and edge deployment.",
+          "arxiv_url": "https://arxiv.org/abs/2601.06770v1",
+          "pdf_url": "https://arxiv.org/pdf/2601.06770v1.pdf",
+          "submitted_date": "2026-01-11T04:04:22+00:00",
+          "categories": [
+            "cs.LG"
+          ],
+          "comments": "55 pages, 9 figures"
+        },
+        {
+          "id": "2601.06768v1",
+          "title": "ALFA: A Safe-by-Design Approach to Mitigate Quishing Attacks Launched via Fancy QR Codes",
+          "authors": [
+            "Muhammad Wahid Akram",
+            "Keshav Sood",
+            "Muneeb Ul Hassan",
+            "Dhananjay Thiruvady"
+          ],
+          "display_authors": [
+            "Muhammad Wahid Akram",
+            "Keshav Sood",
+            "Muneeb Ul Hassan",
+            "et al."
+          ],
+          "summary": "Phishing with Quick Response (QR) codes is termed as Quishing. The attackers exploit this method to manipulate individuals into revealing their confidential data. Recently, we see the colorful and fancy representations of QR codes, the 2D matrix of QR codes which does not reflect a typical mixture of black-white modules anymore. Instead, they become more tempting as an attack vector for adversaries which can evade the state-of-the-art deep learning visual-based and other prevailing countermeasures. We introduce \"ALFA\", a safe-by-design approach, to mitigate Quishing and prevent everyone from accessing the post-scan harmful payload of fancy QR codes. Our method first converts a fancy QR code into the replica of binary grid and then identify the erroneous representation of modules in that grid. Following that, we present \"FAST\" method which can conveniently recover erroneous modules from that binary grid. Afterwards, using this binary grid, our solution extracts the structural features of fancy QR code and predicts its legitimacy using a pre-trained model. The effectiveness of our proposal is demonstrated by the experimental evaluation on a synthetic dataset (containing diverse variations of fancy QR codes) and achieve a FNR of 0.06% only. We also develop the mobile app to test the practical feasibility of our solution and provide a performance comparison of the app with the real-world QR readers. This comparison further highlights the classification reliability and detection accuracy of this solution in real-world environments.",
+          "arxiv_url": "https://arxiv.org/abs/2601.06768v1",
+          "pdf_url": "https://arxiv.org/pdf/2601.06768v1.pdf",
+          "submitted_date": "2026-01-11T03:56:56+00:00",
+          "categories": [
+            "cs.CR",
+            "cs.LG"
+          ],
+          "comments": "LNCS Springer Template (19 pages, 5 figures, 4 tables). This paper is currently submitted to 31st European Symposium on Research in Computer Security (ESORICS) 2026 for publication"
+        },
+        {
+          "id": "2601.06767v1",
+          "title": "GanitLLM: Difficulty-Aware Bengali Mathematical Reasoning through Curriculum-GRPO",
+          "authors": [
+            "Shubhashis Roy Dipta",
+            "Khairul Mahbub",
+            "Nadia Najjar"
+          ],
+          "display_authors": [
+            "Shubhashis Roy Dipta",
+            "Khairul Mahbub",
+            "Nadia Najjar"
+          ],
+          "summary": "We present a Bengali mathematical reasoning model called GanitLLM (named after the Bangla word for mathematics, \"Ganit\"), together with a new difficulty-aware Bengali math corpus and a curriculum-based GRPO pipeline. Bengali is one of the world's most widely spoken languages, yet existing LLMs either reason in English and then translate, or simply fail on multi-step Bengali math, in part because reinforcement learning recipes are tuned for high-resource languages and collapse under reward sparsity in low-resource settings. To address this, we construct Ganit, a rigorously filtered and decontaminated Bengali math dataset with automatic difficulty tags derived from the pass@k of a strong evaluator model. Building on this dataset, we propose Curriculum-GRPO, which combines multi-stage training (SFT + GRPO) with difficulty-aware sampling and verifiable rewards for format, numerical correctness, and Bengali reasoning. On Bn-MGSM and Bn-MSVAMP, GanitLLM-4B improves over its Qwen3-4B base by +8 and +7 accuracy points, respectively, while increasing the percentage of Bengali reasoning tokens from 14% to over 88% and reducing average solution length from 943 to 193 words.",
+          "arxiv_url": "https://arxiv.org/abs/2601.06767v1",
+          "pdf_url": "https://arxiv.org/pdf/2601.06767v1.pdf",
+          "submitted_date": "2026-01-11T03:49:18+00:00",
+          "categories": [
+            "cs.CL",
+            "cs.AI",
+            "cs.LG"
+          ],
+          "comments": ""
+        },
+        {
+          "id": "2601.06761v1",
+          "title": "Comparative Separation: Evaluating Separation on Comparative Judgment Test Data",
+          "authors": [
+            "Xiaoyin Xi",
+            "Neeku Capak",
+            "Kate Stockwell",
+            "Zhe Yu"
+          ],
+          "display_authors": [
+            "Xiaoyin Xi",
+            "Neeku Capak",
+            "Kate Stockwell",
+            "et al."
+          ],
+          "summary": "This research seeks to benefit the software engineering society by proposing comparative separation, a novel group fairness notion to evaluate the fairness of machine learning software on comparative judgment test data. Fairness issues have attracted increasing attention since machine learning software is increasingly used for high-stakes and high-risk decisions. It is the responsibility of all software developers to make their software accountable by ensuring that the machine learning software do not perform differently on different sensitive groups -- satisfying the separation criterion. However, evaluation of separation requires ground truth labels for each test data point. This motivates our work on analyzing whether separation can be evaluated on comparative judgment test data. Instead of asking humans to provide the ratings or categorical labels on each test data point, comparative judgments are made between pairs of data points such as A is better than B. According to the law of comparative judgment, providing such comparative judgments yields a lower cognitive burden for humans than providing ratings or categorical labels. This work first defines the novel fairness notion comparative separation on comparative judgment test data, and the metrics to evaluate comparative separation. Then, both theoretically and empirically, we show that in binary classification problems, comparative separation is equivalent to separation. Lastly, we analyze the number of test data points and test data pairs required to achieve the same level of statistical power in the evaluation of separation and comparative separation, respectively. This work is the first to explore fairness evaluation on comparative judgment test data. It shows the feasibility and the practical benefits of using comparative judgment test data for model evaluations.",
+          "arxiv_url": "https://arxiv.org/abs/2601.06761v1",
+          "pdf_url": "https://arxiv.org/pdf/2601.06761v1.pdf",
+          "submitted_date": "2026-01-11T03:39:45+00:00",
+          "categories": [
+            "cs.SE",
+            "cs.LG"
+          ],
+          "comments": "10 pages, 8 tables, 1 figure"
+        },
+        {
+          "id": "2601.06758v1",
+          "title": "A Backpropagation-Free Feedback-Hebbian Network for Continual Learning Dynamics",
+          "authors": [
+            "Josh Li"
+          ],
+          "display_authors": [
+            "Josh Li"
+          ],
+          "summary": "Feedback-rich neural architectures can regenerate earlier representations and inject temporal context, making them a natural setting for strictly local synaptic plasticity. We ask whether a minimal, backpropagation-free feedback--Hebbian system can already express interpretable continual-learning--relevant behaviors under controlled training schedules. We introduce a compact prediction--reconstruction architecture with two feedforward layers for supervised association learning and two dedicated feedback layers trained to reconstruct earlier activity and re-inject it as additive temporal context. All synapses are updated by a unified local rule combining centered Hebbian covariance, Oja-style stabilization, and a local supervised drive where targets are available, requiring no weight transport or global error backpropagation. On a small two-pair association task, we characterize learning through layer-wise activity snapshots, connectivity trajectories (row/column means of learned weights), and a normalized retention index across phases. Under sequential A->B training, forward output connectivity exhibits a long-term depression (LTD)-like suppression of the earlier association while feedback connectivity preserves an A-related trace during acquisition of B. Under deterministic interleaving A,B,A,B,..., both associations are concurrently maintained rather than sequentially suppressed. Architectural controls and rule-term ablations isolate the role of dedicated feedback in regeneration and co-maintenance, and the role of the local supervised term in output selectivity and unlearning. Together, the results show that a compact feedback pathway trained with local plasticity can support regeneration and continual-learning--relevant dynamics in a minimal, mechanistically transparent setting.",
+          "arxiv_url": "https://arxiv.org/abs/2601.06758v1",
+          "pdf_url": "https://arxiv.org/pdf/2601.06758v1.pdf",
+          "submitted_date": "2026-01-11T03:25:38+00:00",
+          "categories": [
+            "cs.NE",
+            "cs.LG"
+          ],
+          "comments": "8 pages, 10 figures"
+        },
+        {
+          "id": "2601.06742v1",
+          "title": "Federated Continual Learning for Privacy-Preserving Hospital Imaging Classification",
+          "authors": [
+            "Anay Sinhal",
+            "Arpana Sinhal",
+            "Amit Sinhal"
+          ],
+          "display_authors": [
+            "Anay Sinhal",
+            "Arpana Sinhal",
+            "Amit Sinhal"
+          ],
+          "summary": "Deep learning models for radiology interpretation increasingly rely on multi-institutional data, yet privacy regulations and distribution shift across hospitals limit central data pooling. Federated learning (FL) allows hospitals to collaboratively train models without sharing raw images, but current FL algorithms typically assume a static data distribution. In practice, hospitals experience continual evolution in case mix, annotation protocols, and imaging devices, which leads to catastrophic forgetting when models are updated sequentially. Federated continual learning (FCL) aims to reconcile these challenges but existing methods either ignore the stringent privacy constraints of healthcare or rely on replay buffers and public surrogate datasets that are difficult to justify in clinical settings. We study FCL for chest radiography classification in a setting where hospitals are clients that receive temporally evolving streams of cases and labels. We introduce DP-FedEPC (Differentially Private Federated Elastic Prototype Consolidation), a method that combines elastic weight consolidation (EWC), prototype-based rehearsal, and client-side differential privacy within a standard FedAvg framework. EWC constrains updates along parameters deemed important for previous tasks, while a memory of latent prototypes preserves class structure without storing raw images. Differentially private stochastic gradient descent (DP-SGD) at each client adds calibrated Gaussian noise to clipped gradients, providing formal privacy guarantees for individual radiographs.",
+          "arxiv_url": "https://arxiv.org/abs/2601.06742v1",
+          "pdf_url": "https://arxiv.org/pdf/2601.06742v1.pdf",
+          "submitted_date": "2026-01-11T01:28:34+00:00",
+          "categories": [
+            "cs.LG"
+          ],
+          "comments": ""
+        },
+        {
+          "id": "2601.06733v1",
+          "title": "Logic-Driven Semantic Communication for Resilient Multi-Agent Systems",
+          "authors": [
+            "Tamara Alshammari",
+            "Mehdi Bennis"
+          ],
+          "display_authors": [
+            "Tamara Alshammari",
+            "Mehdi Bennis"
+          ],
+          "summary": "The advent of 6G networks is accelerating autonomy and intelligence in large-scale, decentralized multi-agent systems (MAS). While this evolution enables adaptive behavior, it also heightens vulnerability to stressors such as environmental changes and adversarial behavior. Existing literature on resilience in decentralized MAS largely focuses on isolated aspects, such as fault tolerance, without offering a principled unified definition of multi-agent resilience. This gap limits the ability to design systems that can continuously sense, adapt, and recover under dynamic conditions. This article proposes a formal definition of MAS resilience grounded in two complementary dimensions: epistemic resilience, wherein agents recover and sustain accurate knowledge of the environment, and action resilience, wherein agents leverage that knowledge to coordinate and sustain goals under disruptions. We formalize resilience via temporal epistemic logic and quantify it using recoverability time (how quickly desired properties are re-established after a disturbance) and durability time (how long accurate beliefs and goal-directed behavior are sustained after recovery). We design an agent architecture and develop decentralized algorithms to achieve both epistemic and action resilience. We provide formal verification guarantees, showing that our specifications are sound with respect to the metric bounds and admit finite-horizon verification, enabling design-time certification and lightweight runtime monitoring. Through a case study on distributed multi-agent decision-making under stressors, we show that our approach outperforms baseline methods. Our formal verification analysis and simulation results highlight that the proposed framework enables resilient, knowledge-driven decision-making and sustained operation, laying the groundwork for resilient decentralized MAS in next-generation communication systems.",
+          "arxiv_url": "https://arxiv.org/abs/2601.06733v1",
+          "pdf_url": "https://arxiv.org/pdf/2601.06733v1.pdf",
+          "submitted_date": "2026-01-11T00:54:09+00:00",
+          "categories": [
+            "cs.MA",
+            "cs.AI",
+            "cs.LG",
+            "cs.LO"
+          ],
+          "comments": ""
+        },
+        {
+          "id": "2601.06730v1",
+          "title": "Why are there many equally good models? An Anatomy of the Rashomon Effect",
+          "authors": [
+            "Harsh Parikh"
+          ],
+          "display_authors": [
+            "Harsh Parikh"
+          ],
+          "summary": "The Rashomon effect -- the existence of multiple, distinct models that achieve nearly equivalent predictive performance -- has emerged as a fundamental phenomenon in modern machine learning and statistics. In this paper, we explore the causes underlying the Rashomon effect, organizing them into three categories: statistical sources arising from finite samples and noise in the data-generating process; structural sources arising from non-convexity of optimization objectives and unobserved variables that create fundamental non-identifiability; and procedural sources arising from limitations of optimization algorithms and deliberate restrictions to suboptimal model classes. We synthesize insights from machine learning, statistics, and optimization literature to provide a unified framework for understanding why the multiplicity of good models arises. A key distinction emerges: statistical multiplicity diminishes with more data, structural multiplicity persists asymptotically and cannot be resolved without different data or additional assumptions, and procedural multiplicity reflects choices made by practitioners. Beyond characterizing causes, we discuss both the challenges and opportunities presented by the Rashomon effect, including implications for inference, interpretability, fairness, and decision-making under uncertainty.",
+          "arxiv_url": "https://arxiv.org/abs/2601.06730v1",
+          "pdf_url": "https://arxiv.org/pdf/2601.06730v1.pdf",
+          "submitted_date": "2026-01-11T00:48:15+00:00",
+          "categories": [
+            "cs.LG",
+            "cs.AI",
+            "stat.ME",
+            "stat.ML"
+          ],
+          "comments": ""
+        }
+      ],
+      "count": 50
+    },
+    "nucl-ex": {
+      "name": "Nuclear Physics - Experiment",
+      "papers": [
+        {
+          "id": "2601.06856v1",
+          "title": "Probing the microscopic origin of prompt and non-prompt $D^{0}$ production through event-shape engineering in proton-proton collisions at the LHC",
+          "authors": [
+            "Aswathy Menon Kavumpadikkal Radhakrishnan",
+            "Suraj Prasad",
+            "Purnima Srivastava",
+            "Raghunath Sahoo"
+          ],
+          "display_authors": [
+            "Aswathy Menon Kavumpadikkal Radhakrishnan",
+            "Suraj Prasad",
+            "Purnima Srivastava",
+            "et al."
+          ],
+          "summary": "Heavy-flavour hadrons are produced in the early stages of ultra-relativistic collisions at the LHC via hard partonic interactions and experience the whole system evolution. The study of prompt and non-prompt $D^{0}$ mesons provides an independent avenue to test the theories of quantum chromodynamics and to investigate beauty hadron production. Moreover, the production of both prompt and non-prompt $D^{0}$ is influenced by microscopic processes such as multi-partonic interactions (MPI) and hadronisation through fragmentation. In this study, an attempt is made to understand the production of prompt and non-prompt $D^{0}$ mesons in proton-proton collisions at $\\sqrt{s}=13.6$ TeV using the PYTHIA8 event generator, which offers a qualitative description of charm production. The role of the transverse momentum transfer in the hardest partonic scattering ($\\hat{p}_{\\rm T}$), MPI, and color reconnection is systematically explored. In addition, the charged particle production in different topological regions with respect to the leading $D^{0}$ meson is studied to assess the influence of the $D^{0}$ meson on the event topology and to examine the selection biases arising from the use of charged particle multiplicity as an event classifier.",
+          "arxiv_url": "https://arxiv.org/abs/2601.06856v1",
+          "pdf_url": "https://arxiv.org/pdf/2601.06856v1.pdf",
+          "submitted_date": "2026-01-11T10:58:45+00:00",
+          "categories": [
+            "hep-ph",
+            "hep-ex",
+            "hep-th",
+            "nucl-ex",
+            "nucl-th"
+          ],
+          "comments": "14 pages and 11 captioned figures"
+        },
+        {
+          "id": "2601.06784v1",
+          "title": "Performance evaluation of Luxium Solutions BCF-XL wavelength-shifting fibers",
+          "authors": [
+            "Tatsuki Yamazumi",
+            "Yota Endo",
+            "Shoma Kodama",
+            "Kota Nakagiri",
+            "Yasuhiro Nakajima",
+            "Minoru Sekiyama",
+            "Masashi Yokoyama"
+          ],
+          "display_authors": [
+            "Tatsuki Yamazumi",
+            "Yota Endo",
+            "Shoma Kodama",
+            "et al."
+          ],
+          "summary": "We evaluate the performance of single-clad wavelength-shifting fibers newly developed by Luxium Solutions, BCF-92XL, BCF-9929AXL, and BCF-9995XL and compare them with the multi-clad Kuraray Y-11 fiber. The BCF-XL fibers exhibit faster decay times (92XL: $2.10\\pm0.01$ ns, 9929AXL: $2.10\\pm0.02$ ns, 9995XL: $2.41\\pm0.03$ ns) than Y-11 ($7.44\\pm0.06$ ns). The attenuation lengths are comparable to that of Y-11 within the measurement range up to 3.2 m. When coupled to an EJ-204 plastic scintillator, the BCF-XL fibers achieve superior time resolution while maintaining light yields comparable to those expected for a single-clad Y-11 fiber.",
+          "arxiv_url": "https://arxiv.org/abs/2601.06784v1",
+          "pdf_url": "https://arxiv.org/pdf/2601.06784v1.pdf",
+          "submitted_date": "2026-01-11T05:51:55+00:00",
+          "categories": [
+            "physics.ins-det",
+            "hep-ex",
+            "nucl-ex"
+          ],
+          "comments": "14 pages, 15 figures"
+        }
+      ],
+      "count": 2
+    }
+  }
+}
