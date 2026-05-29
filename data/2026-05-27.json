@@ -1,0 +1,418 @@
+{
+  "date": "2026-05-27",
+  "generated_at": "2026-05-29T03:47:07.077268",
+  "categories": {
+    "hep-ex": {
+      "name": "High Energy Physics - Experiment",
+      "papers": [
+        {
+          "id": "2605.29105v1",
+          "title": "Visible inelasticity as a probe of tau flavor content of astrophysical neutrinos",
+          "authors": [
+            "Alex Y. Wen",
+            "Carlos A. Argüelles",
+            "Sergio Palomares-Ruiz"
+          ],
+          "display_authors": [
+            "Alex Y. Wen",
+            "Carlos A. Argüelles",
+            "Sergio Palomares-Ruiz"
+          ],
+          "summary": "Astrophysical neutrinos provide a unique probe of neutrino flavor changes over cosmological baselines. While the tau component of the neutrino flux is expected to arise almost entirely from mixing, current measurements rely primarily on rare double-cascade signatures. We investigate a complementary method to measure the tau fraction using the visible inelasticity of starting track events in neutrino telescopes. Muonic decays of tau leptons produce tracks with systematically larger visible inelasticity than those from muon neutrino interactions, potentially enabling statistical separation of the two flavors. Using realistic IceCube exposures and detector performance, we show that this observable already yields competitive sensitivity to the tau-to-muon flux ratio, $R_{τμ}$, achievable with existing data. This approach may further enable flavor measurements of individual sources and the selection of tau-enhanced source catalogs. Starting-track inelasticity thus provides a powerful and immediately accessible probe of astrophysical neutrino flavor and of potential physics beyond standard neutrino mixing.",
+          "arxiv_url": "https://arxiv.org/abs/2605.29105v1",
+          "pdf_url": "https://arxiv.org/pdf/2605.29105v1.pdf",
+          "submitted_date": "2026-05-27T21:09:42+00:00",
+          "categories": [
+            "hep-ph",
+            "astro-ph.HE",
+            "hep-ex"
+          ],
+          "comments": ""
+        },
+        {
+          "id": "2605.29031v1",
+          "title": "Twilight of the WIMP: Comprehensive Phenomenology of Electroweak Triplet Dark Matter",
+          "authors": [
+            " Gaurav",
+            "Niharika Shrivastava",
+            "Rahul Srivastava",
+            "Sushant Yadav"
+          ],
+          "display_authors": [
+            " Gaurav",
+            "Niharika Shrivastava",
+            "Rahul Srivastava",
+            "et al."
+          ],
+          "summary": "We present a comprehensive study of dark matter phenomenology in standard model extensions featuring an electroweak triplet scalar or fermion with hypercharge $Y = 0$ or $Y = 2$. These minimal triplet extensions provide well-motivated dark matter candidates stabilised by the $Z_2$ discrete symmetry. We perform a detailed analysis of the parameter space consistent with current cosmological and experimental constraints, including the relic abundance, direct detection limits, and indirect detection bounds. We find that the scalar triplet with $Y=0$ is ruled out by a combination of relic density, direct detection and indirect detection constraints. On the other hand, the scalar and fermionic triplets with $Y=2$ are both excluded by current direct detection experiments due to their large spin-independent scattering cross-sections. The viable parameter space of the remaining $Y=0$ fermion triplet dark matter lies within the projected sensitivity of near-future experiments, particularly those targeting indirect detection signatures. Collider prospects for these triplet extensions are also discussed in the Appendix.",
+          "arxiv_url": "https://arxiv.org/abs/2605.29031v1",
+          "pdf_url": "https://arxiv.org/pdf/2605.29031v1.pdf",
+          "submitted_date": "2026-05-27T19:29:36+00:00",
+          "categories": [
+            "hep-ph",
+            "gr-qc",
+            "hep-ex"
+          ],
+          "comments": "49 pages, 22 figures, 6 tables"
+        },
+        {
+          "id": "2605.28940v1",
+          "title": "Neural Scaling Laws for Jet Generation",
+          "authors": [
+            "Oz Amram",
+            "Darius A. Faroughy",
+            "Tjarko Gerdes",
+            "Anna Hallin",
+            "Gregor Kasieczka",
+            "Michael Krämer",
+            "Humberto Reyes-Gonzalez",
+            "David Shih"
+          ],
+          "display_authors": [
+            "Oz Amram",
+            "Darius A. Faroughy",
+            "Tjarko Gerdes",
+            "et al."
+          ],
+          "summary": "Recently observed empirical scaling laws describe the performance of foundation-type models as three independent key quantities -- dataset size, compute, and model parameters -- are modified. Extracting these scaling laws informs the training of large complex models for which the tuning of hyperparameters in traditional ways is not feasible. This work for the first time explores if scaling laws can also be observed for the task of particle jet generation -- both relevant as a pre-training objective for foundation models and as in-situ simulation by itself. We indeed replicate the key logarithmic scaling law behavior for model-size scaling. Beyond studying the next token prediction validation loss of the generative model, we also study the sliced Wasserstein distance of five physical quantities that are not immediately available to the model during training. Our study shows that this quantity is monotonically related to the next token prediction validation loss, meaning that this loss is indeed a good proxy for the physics performance. For the scaling with dataset size and compute, we observe substantially weaker scaling behavior of both the loss and the sliced Wasserstein distance. We analyze this behavior by introducing the concept of a learnable window, and argue that autoregressive next token prediction on jet constituents exhibits comparatively rapid saturation relative to language-model studies. We discuss possible origins of this behavior, including the stochastic nature of QCD radiation and differences between generative and supervised learning tasks in collider physics.",
+          "arxiv_url": "https://arxiv.org/abs/2605.28940v1",
+          "pdf_url": "https://arxiv.org/pdf/2605.28940v1.pdf",
+          "submitted_date": "2026-05-27T18:00:03+00:00",
+          "categories": [
+            "hep-ph",
+            "cs.LG",
+            "hep-ex",
+            "physics.data-an"
+          ],
+          "comments": ""
+        },
+        {
+          "id": "2605.28696v1",
+          "title": "Characterising the role of final state interactions on neutrino energy estimation in the DUNE and Hyper-K era",
+          "authors": [
+            "Stephen Dolan",
+            "Jake McKean",
+            "Laura Munteanu"
+          ],
+          "display_authors": [
+            "Stephen Dolan",
+            "Jake McKean",
+            "Laura Munteanu"
+          ],
+          "summary": "The Deep Underground Neutrino Experiment (DUNE) and Hyper-Kamiokande (Hyper-K) will measure neutrino oscillation parameters with an unprecedented precision that requires neutrino energy estimation to be controlled at the few-MeV level. A central challenge in achieving this is the modelling of the reinteractions of hadrons produced in neutrino-nucleus scatters with the residual nuclear medium, or final-state interactions (FSI). In this work we use state-of-the-art neutrino interaction event generators to review the impact of FSI modelling on the kinematic and calorimetric neutrino energy estimators used by Hyper-K and DUNE respectively, considering both the semi-classical intranuclear cascades (INCs) that dominate current simulations and a microscopic treatment based on a relativistic mean field calculation. We find that plausible variations of the FSI model introduce uncertainties on the neutrino energy estimation proxies that are at or above the precision on the energy scale control required for Hyper-K and DUNE projected neutrino oscillation sensitivities, highlighting the importance of careful FSI modelling to allow robust near detector constraints. We further demonstrate that the two experiments are sensitive to different aspects of the FSI models. Neutrino energy estimation at Hyper-K is most impacted by pion absorption and nuclear effects beyond the semi-classical paradigm, whilst the DUNE energy estimation is more affected by the modelling of how hadronic energy is shared between sources of visible and invisible energy in the detector. We discuss the implications of these findings for neutrino oscillation analyses and outline some of the key experimental and theoretical developments needed to bring FSI modelling uncertainties under control.",
+          "arxiv_url": "https://arxiv.org/abs/2605.28696v1",
+          "pdf_url": "https://arxiv.org/pdf/2605.28696v1.pdf",
+          "submitted_date": "2026-05-27T16:21:25+00:00",
+          "categories": [
+            "hep-ex",
+            "hep-ph"
+          ],
+          "comments": ""
+        },
+        {
+          "id": "2605.28671v1",
+          "title": "CP-violation or Nuclear Excitation: Reviewing the Role of Neutrino Interaction Model Uncertainties on Accelerator-Based Neutrino Oscillation Measurements",
+          "authors": [
+            "Stephen Dolan",
+            "Luke Pickering",
+            "Patrick Stowell",
+            "Callum Wilkinson",
+            "Clarence Wret"
+          ],
+          "display_authors": [
+            "Stephen Dolan",
+            "Luke Pickering",
+            "Patrick Stowell",
+            "et al."
+          ],
+          "summary": "Accelerator-based neutrino oscillation experiments have the potential to revolutionise our understanding of fundamental physics, offering an opportunity to characterise charge-parity violation in the lepton sector; to determine the neutrino mass ordering; and to explore the possibility of physics beyond three-flavour neutrino mixing. However, as more data is collected, the current and next-generation of experiments will require increasingly precise control over the systematic uncertainties within their analyses. It is well known that some of the most challenging uncertainties to overcome stem from our uncertain modelling of neutrino--nucleus interactions, which also affect the event rates used to infer the oscillation probability. The sources of these uncertainties are often related to subtle details of the pertinent nuclear physics which are extremely difficult to control with sufficient precision. Confronting such uncertainties requires both state-of-the-art theoretical modelling and precise measurements of neutrino interaction event rates at experiment's near detectors, before oscillations occur. In this work, we review the role of neutrino interaction systematic uncertainties in current and future measurements of neutrino oscillation as well as the experimental and theoretical prospects for reducing them to an acceptable level for the next generation of experiments.",
+          "arxiv_url": "https://arxiv.org/abs/2605.28671v1",
+          "pdf_url": "https://arxiv.org/pdf/2605.28671v1.pdf",
+          "submitted_date": "2026-05-27T16:04:45+00:00",
+          "categories": [
+            "hep-ex",
+            "hep-ph"
+          ],
+          "comments": ""
+        },
+        {
+          "id": "2605.28608v1",
+          "title": "Generation as Compositeness: A Subconstituent Interpretation of the $B$-Lattice Flavor Hierarchy",
+          "authors": [
+            "Vernon Barger"
+          ],
+          "display_authors": [
+            "Vernon Barger"
+          ],
+          "summary": "We interpret the $B$-lattice flavor framework as a compositeness hierarchy: all three fermion generations are elementary chiral fields, but third-generation Yukawa couplings are undressed ($Q=0$), while lighter generations acquire their Yukawa couplings through chains of spin-$0$ subconstituents (``hops'') whose depth is counted by the $\\mathbb{Z}_9$ discrete gauge symmetry. The $\\mathbb{Z}_9$ charge admits a two-index decomposition $q_9\\mapsto(a,b)$ that identifies two hop species ($α$, $β$) and organizes all fundamental scales from $v_{\\rm EW}$ to $M_{\\rm Pl}$ on a ``ninths ladder'' $Λ\\timesε^{n/9}$. The lattice structure yields the CKM and PMNS mixing parameterizations (with all mixing exponents expressible as charge differences $ΔQ$ dressed by a universal Fritzsch--Xing phase shift of $\\pm 1/9$), a seesaw benchmark $m_3\\simeq 51$~meV, the axion mass window $m_a\\sim 7$--$12\\;μ$eV, and the prediction $\\tanβ\\simeq 10$--$16$ (from the chain internal factor combined with the DFSZ-II two-Higgs-doublet structure), all from two parameters ($Λ$ and $ε= 14/75$). Generation-dependent Peccei--Quinn charges restore the axion--photon coupling ($C_{aγ}\\simeq 0.6$--$1.0$) from ``back to invisible'' suppression. An illustrative UV realization in terms of hypercolor-confined scalars communicated to the SM by a gauge-invariant messenger chain is presented as an existence proof.",
+          "arxiv_url": "https://arxiv.org/abs/2605.28608v1",
+          "pdf_url": "https://arxiv.org/pdf/2605.28608v1.pdf",
+          "submitted_date": "2026-05-27T15:23:51+00:00",
+          "categories": [
+            "hep-ph",
+            "hep-ex",
+            "hep-th"
+          ],
+          "comments": ""
+        },
+        {
+          "id": "2605.28568v1",
+          "title": "Double D meson production in ultraperipheral $pp$, $pPb$ and $PbPb$ collisions",
+          "authors": [
+            "Ya-Ping Xie",
+            "Victor P. Goncalves"
+          ],
+          "display_authors": [
+            "Ya-Ping Xie",
+            "Victor P. Goncalves"
+          ],
+          "summary": "The production of a $D^+ D^-$ pair by photon - photon interactions at the Large Hadron Collider (LHC) is investigated considering ultraperipheral proton - proton ($pp$), proton - lead ($pPb$) and lead - lead ($PbPb$) collisions. Assuming that the scattering amplitude for the $γγ\\rightarrow D^+ D^-$ process can be described by the Brodsky - Lepage formalism in the heavy - quark approximation, we derive the associated differential distributions and total cross - sections. In particular, in addition to the rapidity and transverse momentum distributions, usually presented in the literature, we also present predictions for the total transverse momentum and momentum imbalance distributions. Our results indicate that a future experimental analysis of this final state is, in principle, feasible during the high luminosity run of LHC.",
+          "arxiv_url": "https://arxiv.org/abs/2605.28568v1",
+          "pdf_url": "https://arxiv.org/pdf/2605.28568v1.pdf",
+          "submitted_date": "2026-05-27T14:55:40+00:00",
+          "categories": [
+            "hep-ph",
+            "hep-ex"
+          ],
+          "comments": "7 pages, 4 figures, 1 table"
+        },
+        {
+          "id": "2605.28538v1",
+          "title": "Search for pair-produced vector-like $T$-quarks decaying into $Ht$ final states in the lepton-plus-jets channel in $pp$ collisions at $\\sqrt{s}$=13 TeV with the ATLAS detector",
+          "authors": [
+            " The ATLAS Collaboration"
+          ],
+          "display_authors": [
+            " The ATLAS Collaboration"
+          ],
+          "summary": "A search for pair-produced vector-like $T$-quarks in 139 fb$^{-1}$ of $pp$ collisions recorded by the ATLAS detector at a centre-of-mass energy $\\sqrt{s}$=13 TeV is presented. The search targets signal events where at least one $T$-quark decays into a Higgs boson and a top quark, $T\\rightarrow Ht$, with subsequent decays of the Higgs boson into a bottom quark-antiquark pair, $H\\rightarrow b\\bar{b}$, and the top quark into a light charged lepton, a neutrino and a bottom quark, $t\\rightarrow\\ell^+ν_\\ell b$, where $\\ell=e/μ$. The decay products of boosted heavy resonances are reconstructed using variable-radius, reclustered jets, and a neural network is employed to discriminate signal from Standard Model background processes. A profile-likelihood fit to the effective mass distribution is performed, and no excess above the Standard Model prediction is observed. Exclusion limits at 95% confidence level are set on the $T$-quark pair-production cross-section, corresponding to lower mass limits of 1.40 TeV in the SU(2) singlet representation, 1.56 TeV in the SU(2) doublet representation, and 1.66 TeV assuming the branching fraction of $T$-quarks to $Ht$ to be 100%.",
+          "arxiv_url": "https://arxiv.org/abs/2605.28538v1",
+          "pdf_url": "https://arxiv.org/pdf/2605.28538v1.pdf",
+          "submitted_date": "2026-05-27T14:33:13+00:00",
+          "categories": [
+            "hep-ex"
+          ],
+          "comments": "58 pages in total, author list starting page 41, 10 figures, 10 tables, submitted to JHEP. All figures including auxiliary figures are available at https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/EXOT-2022-05/"
+        },
+        {
+          "id": "2605.28410v1",
+          "title": "Topological Diagram Analysis of Charmed Baryon Decays with Vector Mesons",
+          "authors": [
+            "Yixuan Wu",
+            "Fanrong Xu",
+            "Hai-Yang Cheng"
+          ],
+          "display_authors": [
+            "Yixuan Wu",
+            "Fanrong Xu",
+            "Hai-Yang Cheng"
+          ],
+          "summary": "In this work, we further develop the application of the topological diagram approach (TDA) to charmed baryon weak decays $\\mathcal{B}_c \\to \\mathcal{B} V$ with a vector meson in the final state. By incorporating the Korner-Pati-Woo theorem, we show that only five independent sets of TDA parameters are required. Relations among different decay channels arising from isospin, U-spin, and V-spin symmetries are explicitly derived within the TDA framework. Partial wave contributions and form factors associated with different topological diagrams are extracted from global fits to the experimental data. It is found that the form factors $A_2$ and $B_2$ induced from the tensor interaction of the vector mreson with octet baryons are comparable in magnitude to $A_1$ and $B_1$, implying the importance of the tensor coupling in $\\mathcal{B}_c \\to \\mathcal{B} V$ decays. Branching fractions for all $\\mathcal{B}_c\\to \\mathcal{B} V$ channels are predicted, and most measured modes are found to be in good agreement with current data. More physical observables, including up-down asymmetries, longitudinal polarizations as well as observables in the subsequent decays are also predicted. Our results provide a systematic framework for understanding charmed baryon weak decays with vector mesons and can be further tested with future experiments.",
+          "arxiv_url": "https://arxiv.org/abs/2605.28410v1",
+          "pdf_url": "https://arxiv.org/pdf/2605.28410v1.pdf",
+          "submitted_date": "2026-05-27T12:46:32+00:00",
+          "categories": [
+            "hep-ph",
+            "hep-ex"
+          ],
+          "comments": "28 pages, 1 figure, 11 tables"
+        },
+        {
+          "id": "2605.28332v1",
+          "title": "Hybrid neural denoising for resource-efficient near- and sub-threshold radio triggering of extensive air showers",
+          "authors": [
+            "Alperen Aksoy",
+            "Ilja Bekman",
+            "Markus Cristinziani",
+            "Eric-Teunis de Boone",
+            "Vesselin Dimitrov",
+            "Qader Dorosti",
+            "Chimezie Eguzo",
+            "Stefan Heidbrink",
+            "Stefan van Waasen",
+            "Andre Zambanini"
+          ],
+          "display_authors": [
+            "Alperen Aksoy",
+            "Ilja Bekman",
+            "Markus Cristinziani",
+            "et al."
+          ],
+          "summary": "Autonomous radio self-triggering for extensive air showers must reject variable radio-frequency interference while preserving sensitivity to weak pulses and remaining compatible with station-level edge hardware. This work presents a hybrid neural trigger in which waveform recovery and signal classification are treated as a single deployment-constrained problem. A compact convolutional denoiser maps a noisy single-channel trace to a cleaned estimate of the air-shower pulse, which is then evaluated by a compact classifier. The method is tested with measured high-interference background traces and detector-folded air-shower pulses from the Pierre Auger Offline simulation chain, with signals concentrated in the near- and sub-threshold regime. Model selection and deployment are linked through hyperparameter optimisation, quantisation-aware training, fixed-point quantisation, hls4ml firmware export, high-level synthesis, and register-transfer-level validation. The denoiser alone turns a simple peak-envelope decision into an efficient weak-pulse trigger, showing that the cleaned waveform carries trigger-relevant information beyond a final classifier score. In the full denoiser-classifier chain, the hybrid trigger improves signal-background separation and efficiency at fixed false-positive rates: at a false-positive rate of 10^-4, it retains about 41% of held-out signal traces in the weak-signal benchmark, while the classical peak-envelope trigger retains none. The cleaned waveform preserves timing and peak-amplitude structure for station-level diagnostics, feature extraction, and selective readout. The firmware meets timing on representative FPGA targets with microsecond-scale latency and compact arithmetic-resource demand. These results establish hybrid neural denoising as a practical route toward radio-only triggering for weak and inclined air-shower signals in noisy environments.",
+          "arxiv_url": "https://arxiv.org/abs/2605.28332v1",
+          "pdf_url": "https://arxiv.org/pdf/2605.28332v1.pdf",
+          "submitted_date": "2026-05-27T11:34:55+00:00",
+          "categories": [
+            "astro-ph.IM",
+            "hep-ex"
+          ],
+          "comments": ""
+        },
+        {
+          "id": "2605.28285v1",
+          "title": "Probing hidden-charm pentaquarks from the $πN\\rightarrow J/ψN$ reaction",
+          "authors": [
+            "Samson Clymton",
+            "Sun-Young Ryu",
+            "Jung-Keun Ahn",
+            "Hyun-Chul Kim"
+          ],
+          "display_authors": [
+            "Samson Clymton",
+            "Sun-Young Ryu",
+            "Jung-Keun Ahn",
+            "et al."
+          ],
+          "summary": "We investigate the dynamical generation of hidden-charm pentaquark resonances in the $πN \\to J/ψN$ reaction utilizing an off-shell coupled-channel formalism. Motivated by the absence of pentaquark signals in $J/ψ$ photoproduction, we evaluate rescattering effects with two-body kernel amplitudes constructed from effective Lagrangians that explicitly incorporate $t$-channel meson and $u$-channel baryon exchanges. We demonstrate that the $u$-channel $Λ_c$ exchange, of which an analogous contribution is absent in the photoproduction kernel, greatly enhances the rescattering contributions through the $\\bar{D}^{(*)}Σ_c$ intermediate states. Consequently, the $\\bar{D}^{(*)}Σ_c^{(*)}$ channels yield contributions of comparable magnitude to the $\\bar{D}^{(*)}Λ_c$ channels, directly leading to prominent pentaquark signals. The partial-wave analysis reveals that the $P_{c\\bar{c}}(4312)$ and $P_{c\\bar{c}}(4457)$ states emerge as clear peak structures with $J^P=1/2^-$ and $3/2^-$, respectively. In contrast, the $P_{c\\bar{c}}(4380)$ and $J^P=5/2^-$ states are strongly suppressed because the $Λ_c$ exchange does not provide the required tensor interactions. The result for the total cross section reaches the microbarn level at the peak positions.",
+          "arxiv_url": "https://arxiv.org/abs/2605.28285v1",
+          "pdf_url": "https://arxiv.org/pdf/2605.28285v1.pdf",
+          "submitted_date": "2026-05-27T10:32:17+00:00",
+          "categories": [
+            "hep-ph",
+            "hep-ex"
+          ],
+          "comments": "10 pages, 7 figures"
+        },
+        {
+          "id": "2605.28275v1",
+          "title": "Dark Matter Interpretation of the Super-Kamiokande Antineutrino Excess in $\\mathrm{U}(1)_{L_μ-L_τ}$ model",
+          "authors": [
+            "Motoi Endo",
+            "Yushi Mura",
+            "Tenta Tsuji"
+          ],
+          "display_authors": [
+            "Motoi Endo",
+            "Yushi Mura",
+            "Tenta Tsuji"
+          ],
+          "summary": "Recent Super-Kamiokande analyses of the diffuse supernova neutrino background, based on data across all SK phases, indicate a mild preference over the zero-DSNB hypothesis at the level of about $2.3σ$ with electron-like antineutrino events at $E_{\\barν_e} \\simeq 20\\,\\mathrm{MeV}$. We investigate whether this excess can be explained by MeV-scale dark matter annihilation into neutrinos in a $\\mathrm{U}(1)_{L_μ- L_τ}$ model. The dark matter is a Dirac fermion with $m_χ\\simeq 22\\,\\mathrm{MeV}$ that annihilates via a light $Z'$ mediator into $ν_μ\\barν_μ$ and $ν_τ\\barν_τ$, which are partly converted into $\\barν_e$ through flavor oscillations. We find that this scenario simultaneously accounts for the excess and the observed relic abundance via thermal freeze-out. We further discuss the relevant laboratory and cosmological constraints, including neutrino trident production, NA64-$μ$, Borexino, and the contribution to $ΔN_\\mathrm{eff}$.",
+          "arxiv_url": "https://arxiv.org/abs/2605.28275v1",
+          "pdf_url": "https://arxiv.org/pdf/2605.28275v1.pdf",
+          "submitted_date": "2026-05-27T10:20:23+00:00",
+          "categories": [
+            "hep-ph",
+            "astro-ph.CO",
+            "hep-ex"
+          ],
+          "comments": "9 pages, 2 figures"
+        },
+        {
+          "id": "2605.28216v1",
+          "title": "A first extraction of gluon TMDs from Higgs data at the LHC",
+          "authors": [
+            "Simone Anedda",
+            "Valerio Bertone",
+            "Giuseppe Bozzi",
+            "Matteo Cerutti"
+          ],
+          "display_authors": [
+            "Simone Anedda",
+            "Valerio Bertone",
+            "Giuseppe Bozzi",
+            "et al."
+          ],
+          "summary": "We present the first extraction of the unpolarised gluon transverse-momentum-dependent (TMD) parton distribution from Higgs-boson production data at the LHC within the framework of TMD factorisation. The analysis is based on the currently available set of ATLAS and CMS measurements of the Higgs $q_T$ distribution at $\\sqrt{s} = 8$ and $13$ TeV in the diphoton and four-lepton decay channels, restricted to the small-$q_T$ region where TMD factorisation is applicable. Theoretical predictions are computed up to N$^3$LL accuracy, with the contribution of the linearly polarised gluon TMD $h_1^{\\perp g}$ accounted for. Fiducial selections are consistently incorporated for both two- (diphoton) and four-body (four-lepton) final states. The fit reproduces both the shape and the normalisation of the experimental data, and yields a moderate sensitivity to the nonperturbative content of gluon TMDs. We further assess the convergence of the perturbative expansion and the stability of the extracted distribution under variations of the $q_T$ cut. This analysis provides a baseline for future extractions combining LHC Higgs measurements with other gluon-sensitive processes spanning a broader range of hard scales.",
+          "arxiv_url": "https://arxiv.org/abs/2605.28216v1",
+          "pdf_url": "https://arxiv.org/pdf/2605.28216v1.pdf",
+          "submitted_date": "2026-05-27T09:33:11+00:00",
+          "categories": [
+            "hep-ph",
+            "hep-ex",
+            "hep-lat"
+          ],
+          "comments": ""
+        },
+        {
+          "id": "2605.28147v1",
+          "title": "Sensitivity Analysis of the Top-Quark Sector",
+          "authors": [
+            "Fernando Cornet-Gomez",
+            "Víctor Miralles",
+            "Marcos Miralles López",
+            "María Moreno Llácer",
+            "Marcel Vos"
+          ],
+          "display_authors": [
+            "Fernando Cornet-Gomez",
+            "Víctor Miralles",
+            "Marcos Miralles López",
+            "et al."
+          ],
+          "summary": "We study the sensitivity of current and future collider observables to top-quark SMEFT operators through a one-operator-at-a-time analysis. Using data from the Tevatron, LEP, and LHC Run~2, as well as projections for the HL-LHC and future lepton colliders, we identify the measurements that provide the strongest individual constraints. This approach clarifies the role of specific observables in the top-quark SMEFT program and highlights the significant improvement in sensitivity expected at future facilities.",
+          "arxiv_url": "https://arxiv.org/abs/2605.28147v1",
+          "pdf_url": "https://arxiv.org/pdf/2605.28147v1.pdf",
+          "submitted_date": "2026-05-27T08:29:42+00:00",
+          "categories": [
+            "hep-ph",
+            "hep-ex"
+          ],
+          "comments": "Contribution to the International Workshop on Future Linear Colliders (LCWS 2025), 20-24 October 2025. Valencia, Spain (C25-10-20.1)"
+        },
+        {
+          "id": "2605.28015v1",
+          "title": "Tensor molecule $J/ψJ/ψ$: A candidate to the resonance $X(6200) $",
+          "authors": [
+            "S. S. Agaev",
+            "K. Azizi",
+            "H. Sundu"
+          ],
+          "display_authors": [
+            "S. S. Agaev",
+            "K. Azizi",
+            "H. Sundu"
+          ],
+          "summary": "The hadronic tensor molecule $\\mathcal{M}=J/ψJ/ψ$ is investigated in the framework of QCD sum rule method. We evaluate its mass and current coupling using the two-point SR approach. Our result $m=(6290 \\pm 50)~ \\mathrm{MeV}$ for the mass of $\\mathcal{M}$ indicates that it can decay to a pair of mesons $J/ψJ/ψ$. Apart from this dominant channel there are subdominant modes of the molecule $\\mathcal{M}$ generated due to annihilation of constituent $\\overline{c}c$ quarks to pairs of light quarks $ \\overline{q}q$ and $\\overline{s}s$. This mechanism launches processes $ \\mathcal{M} \\to D_{(s)}^{(\\ast )+}D_{(s)}^{(\\ast )-}$, $DD_{1}(2420)$, $ D_sD_{s1}(2460)$ and $D_{(s)}^{(\\ast )0}\\overline{D}_{(s)}^{(\\ast )0}$. The decays of $\\mathcal{M}$ are explored by applying technical tools of the three-point sum rule approach which is necessary to estimate strong couplings at $\\mathcal{M}$-meson-meson vertices. Comparing the mass $m$ of the molecule $\\mathcal{M}$ and its decay width $Γ[\\mathcal{M}]=(149 \\pm 21)~ \\mathrm{MeV}$ with available experimental data, we discuss the molecule $\\mathcal{M}$ as a possible candidate to the tensor resonance $X(6200)$.",
+          "arxiv_url": "https://arxiv.org/abs/2605.28015v1",
+          "pdf_url": "https://arxiv.org/pdf/2605.28015v1.pdf",
+          "submitted_date": "2026-05-27T06:10:32+00:00",
+          "categories": [
+            "hep-ph",
+            "hep-ex",
+            "hep-lat"
+          ],
+          "comments": "10 Pages and 3 Figures"
+        },
+        {
+          "id": "2605.27875v1",
+          "title": "Search for light scalar particles produced in Higgs boson decays in exclusive final states with two muons and two hadrons in proton-proton collisions at $\\sqrt{s}$ = 13 TeV",
+          "authors": [
+            " CMS Collaboration"
+          ],
+          "display_authors": [
+            " CMS Collaboration"
+          ],
+          "summary": "A search for new scalar particles of $\\mathcal{O}$(GeV) mass in exclusive final states with muons and light hadrons is presented. The analysis uses proton-proton collision data produced at a center-of-mass energy of 13 TeV collected by the CMS experiment at the CERN LHC in 201$-$2018, corresponding to an integrated luminosity of 138 fb$^{-1}$. The search targets exotic decays of the Higgs boson to a pair of prompt or long-lived identical scalar particles with proper decay lengths $cτ$ up to 100 mm and masses within the range of 0.4$-$2.0 GeV. This mass window corresponds to a unique parameter space where hadronic decays of these particles mostly result in a pair of light hadrons. The considered experimental signature is a collimated pair of muons and another pair of charged kaons or pions, each of which may be prompt or displaced. The analysis improves the sensitivity to very light scalar boson masses and demonstrates a novel approach to probe hadronic decays of light scalar bosons. Upper limits on the branching fraction of the Higgs boson to scalar bosons at the level of $\\mathcal{O}$(10$^{-4}$) are obtained for several scalar boson masses between 0.4 and 2.0 GeV, with proper decay lengths of up to $\\sim$1 mm.",
+          "arxiv_url": "https://arxiv.org/abs/2605.27875v1",
+          "pdf_url": "https://arxiv.org/pdf/2605.27875v1.pdf",
+          "submitted_date": "2026-05-27T02:51:39+00:00",
+          "categories": [
+            "hep-ex"
+          ],
+          "comments": "Submitted to the Journal of High Energy Physics. All figures and tables can be found at http://cms-results.web.cern.ch/cms-results/public-results/publications/EXO-24-034 (CMS Public Pages)"
+        }
+      ],
+      "count": 16
+    },
+    "hep-ph": {
+      "name": "High Energy Physics - Phenomenology",
+      "papers": [],
+      "count": 0
+    },
+    "stat.ML": {
+      "name": "Machine Learning - Statistics",
+      "papers": [],
+      "count": 0
+    },
+    "cs.LG": {
+      "name": "Machine Learning",
+      "papers": [],
+      "count": 0
+    },
+    "nucl-ex": {
+      "name": "Nuclear Physics - Experiment",
+      "papers": [],
+      "count": 0
+    }
+  }
+}
