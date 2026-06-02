@@ -10,15 +10,23 @@ import shutil
 from datetime import datetime, timedelta
 from pathlib import Path
 from typing import Dict, List, Any
-import toml
 import re
 from zoneinfo import ZoneInfo
+
+try:
+    import tomllib
+    _USES_STDLIB_TOML = True
+except ModuleNotFoundError:  # pragma: no cover - Python < 3.11 fallback
+    import toml as tomllib
+    _USES_STDLIB_TOML = False
 
 
 class SiteGenerator:
     def __init__(self, config_path: str = "config.toml"):
         """Initialize the site generator with configuration."""
-        self.config = toml.load(config_path)
+        mode = "rb" if _USES_STDLIB_TOML else "r"
+        with open(config_path, mode) as f:
+            self.config = tomllib.load(f)
         self.data_dir = Path("data")
         self.templates_dir = Path("templates")
         self.output_dir = Path("site")  # Generated static site files
@@ -158,7 +166,7 @@ class SiteGenerator:
                     <h4>Abstract</h4>
                     <p>{paper['summary']}</p>
                 </div>
-                {f'<div class="comments"><strong>Comments:</strong> {paper["comments"]}</div>' if paper.get("comments") else ""}
+                {f'<div class="comments">{paper["comments"]}</div>' if paper.get("comments") else ""}
                 <div class="paper-info">
                     <span class="submitted-date">Submitted: {date_str}</span>
                     <span class="arxiv-id">ArXiv ID: {paper['id']}</span>
@@ -168,20 +176,24 @@ class SiteGenerator:
         
         return html
     
-    def generate_category_html(self, category_code: str, category_data: Dict[str, Any]) -> str:
+    def generate_category_html(self, category_code: str, category_data: Dict[str, Any], expanded: bool = False) -> str:
         """Generate HTML for a category section."""
         category_name = category_data["name"]
         papers = category_data["papers"]
         paper_count = len(papers)
+        icon_class = "toggle-icon expanded" if expanded else "toggle-icon"
+        content_display = "block" if expanded else "none"
+        category_class = "category-" + re.sub(r"[^a-z0-9]+", "-", category_code.lower()).strip("-")
         
         if paper_count == 0:
             return f'''
-            <div class="category">
+            <div class="category {category_class}">
                 <div class="category-header" onclick="toggleCategory(this)">
-                    <span class="toggle-icon">▶</span>
+                    <span class="{icon_class}">▶</span>
                     <h2>{category_name}</h2>
+                    <span class="category-count">0 papers</span>
                 </div>
-                <div class="category-content" style="display: none;">
+                <div class="category-content" style="display: {content_display};">
                     <p class="no-papers">No papers found for this category today.</p>
                 </div>
             </div>'''
@@ -191,12 +203,13 @@ class SiteGenerator:
             papers_html += self.generate_paper_html(paper)
         
         html = f'''
-        <div class="category">
+        <div class="category {category_class}">
             <div class="category-header" onclick="toggleCategory(this)">
-                <span class="toggle-icon">▶</span>
+                <span class="{icon_class}">▶</span>
                 <h2>{category_name}</h2>
+                <span class="category-count">{paper_count} {'paper' if paper_count == 1 else 'papers'}</span>
             </div>
-            <div class="category-content" style="display: none;">
+            <div class="category-content" style="display: {content_display};">
                 {papers_html}
             </div>
         </div>'''
@@ -252,18 +265,27 @@ class SiteGenerator:
                 
                 # Format the date
                 current_date = datetime.fromisoformat(data["date"]).strftime("%Y-%m-%d")
+                date_paper_count = sum(
+                    len(category_data.get("papers", []))
+                    for category_data in data["categories"].values()
+                    if isinstance(category_data, dict)
+                )
+                is_latest_date = i == 0
+                icon_class = "toggle-icon expanded" if is_latest_date else "toggle-icon"
+                content_display = "block" if is_latest_date else "none"
                 
                 # Generate date header with toggle
                 all_dates_html += f'<div class="date-section">\n'
                 all_dates_html += f'    <div class="date-header" onclick="toggleDate(this)">\n'
-                all_dates_html += f'        <span class="toggle-icon">▶</span>\n'
-                all_dates_html += f'        <span>{current_date}</span>\n'
+                all_dates_html += f'        <span class="{icon_class}">▶</span>\n'
+                all_dates_html += f'        <span class="date-label">{current_date}</span>\n'
+                all_dates_html += f'        <span class="date-count">{date_paper_count} {"paper" if date_paper_count == 1 else "papers"}</span>\n'
                 all_dates_html += f'    </div>\n'
-                all_dates_html += f'    <div class="date-content" style="display: none;">\n'
+                all_dates_html += f'    <div class="date-content" style="display: {content_display};">\n'
                 
                 # Generate categories for this date
                 for category_code, category_data in data["categories"].items():
-                    all_dates_html += self.generate_category_html(category_code, category_data)
+                    all_dates_html += self.generate_category_html(category_code, category_data, expanded=is_latest_date)
                 
                 all_dates_html += '    </div>\n'
                 all_dates_html += '</div>\n'

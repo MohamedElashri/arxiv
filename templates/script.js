@@ -84,13 +84,13 @@ class ThemeManager {
         if (themeIcon) {
             switch (this.theme) {
                 case 'light':
-                    themeIcon.className = 'ri-sun-line';
+                    themeIcon.textContent = '◐';
                     break;
                 case 'dark':
-                    themeIcon.className = 'ri-moon-line';
+                    themeIcon.textContent = '●';
                     break;
                 case 'eink':
-                    themeIcon.className = 'ri-contrast-2-line';
+                    themeIcon.textContent = '◯';
                     break;
             }
         }
@@ -134,8 +134,22 @@ class CollapsibleManager {
     }
 
     init() {
-        // Initialize all collapsible sections as collapsed
-        this.collapseAll();
+        this.syncInitialState();
+    }
+
+    syncInitialState() {
+        document.querySelectorAll('.date-header, .category-header, .paper-header').forEach(header => {
+            const content = header.nextElementSibling;
+            const isExpanded = content && getComputedStyle(content).display !== 'none';
+            const toggleIcon = header.querySelector('.toggle-icon');
+
+            if (toggleIcon) {
+                toggleIcon.textContent = '▶';
+                toggleIcon.classList.toggle('expanded', isExpanded);
+            }
+
+            header.setAttribute('aria-expanded', isExpanded ? 'true' : 'false');
+        });
     }
 
     collapseAll() {
@@ -183,7 +197,7 @@ class CollapsibleManager {
 
         // Update all toggle icons and ARIA states
         document.querySelectorAll('.toggle-icon').forEach(icon => {
-            icon.textContent = '▼';
+            icon.textContent = '▶';
             icon.classList.add('expanded');
         });
 
@@ -197,7 +211,7 @@ class CollapsibleManager {
 
     toggleElement(header, content) {
         const toggleIcon = header.querySelector('.toggle-icon');
-        const isExpanded = content.style.display !== 'none';
+        const isExpanded = getComputedStyle(content).display !== 'none';
 
         if (isExpanded) {
             // Collapse
@@ -211,7 +225,7 @@ class CollapsibleManager {
             // Expand
             content.style.display = 'block';
             if (toggleIcon) {
-                toggleIcon.textContent = '▼';
+                toggleIcon.textContent = '▶';
                 toggleIcon.classList.add('expanded');
             }
             header.setAttribute('aria-expanded', 'true');
@@ -286,7 +300,7 @@ class ReadingProgress {
             left: 0;
             width: 0%;
             height: 3px;
-            background: var(--color-accent);
+            background: var(--accent);
             z-index: 9999;
             transition: width 100ms ease-out;
         `;
@@ -394,45 +408,45 @@ class KeyboardManager {
                 z-index: 10000;
             " onclick="this.parentElement.remove()">
                 <div style="
-                    background: var(--color-bg);
-                    border: 1px solid var(--color-border);
-                    border-radius: 8px;
+                    background: var(--paper);
+                    border: 1px solid var(--rule-color);
+                    border-radius: 2px;
                     padding: 24px;
                     max-width: 400px;
                     width: 90%;
-                    color: var(--color-text);
-                    font-family: var(--font-heading);
+                    color: var(--ink);
+                    font-family: var(--font-ui);
                 " onclick="event.stopPropagation()">
                     <h3 style="margin: 0 0 16px 0; font-size: 1.25rem;">Keyboard Shortcuts</h3>
                     <dl style="margin: 0; font-size: 0.9rem; line-height: 1.8;">
                         <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
-                            <dt><kbd style="background: var(--color-bg-muted); padding: 2px 8px; border-radius: 4px; font-family: monospace;">t</kbd></dt>
-                            <dd style="margin: 0; color: var(--color-text-secondary);">Cycle theme</dd>
+                            <dt><kbd style="background: var(--paper-muted); padding: 2px 8px; border-radius: 2px; font-family: monospace;">t</kbd></dt>
+                            <dd style="margin: 0; color: var(--ink-secondary);">Cycle theme</dd>
                         </div>
                         <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
-                            <dt><kbd style="background: var(--color-bg-muted); padding: 2px 8px; border-radius: 4px; font-family: monospace;">1</kbd> <kbd style="background: var(--color-bg-muted); padding: 2px 8px; border-radius: 4px; font-family: monospace;">2</kbd> <kbd style="background: var(--color-bg-muted); padding: 2px 8px; border-radius: 4px; font-family: monospace;">3</kbd></dt>
-                            <dd style="margin: 0; color: var(--color-text-secondary);">Light / Dark / E-ink</dd>
+                            <dt><kbd style="background: var(--paper-muted); padding: 2px 8px; border-radius: 2px; font-family: monospace;">1</kbd> <kbd style="background: var(--paper-muted); padding: 2px 8px; border-radius: 2px; font-family: monospace;">2</kbd> <kbd style="background: var(--paper-muted); padding: 2px 8px; border-radius: 2px; font-family: monospace;">3</kbd></dt>
+                            <dd style="margin: 0; color: var(--ink-secondary);">Light / Dark / E-ink</dd>
                         </div>
                         <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
-                            <dt><kbd style="background: var(--color-bg-muted); padding: 2px 8px; border-radius: 4px; font-family: monospace;">e</kbd></dt>
-                            <dd style="margin: 0; color: var(--color-text-secondary);">Expand/collapse all</dd>
+                            <dt><kbd style="background: var(--paper-muted); padding: 2px 8px; border-radius: 2px; font-family: monospace;">e</kbd></dt>
+                            <dd style="margin: 0; color: var(--ink-secondary);">Expand/collapse all</dd>
                         </div>
                         <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
-                            <dt><kbd style="background: var(--color-bg-muted); padding: 2px 8px; border-radius: 4px; font-family: monospace;">Esc</kbd></dt>
-                            <dd style="margin: 0; color: var(--color-text-secondary);">Collapse all</dd>
+                            <dt><kbd style="background: var(--paper-muted); padding: 2px 8px; border-radius: 2px; font-family: monospace;">Esc</kbd></dt>
+                            <dd style="margin: 0; color: var(--ink-secondary);">Collapse all</dd>
                         </div>
                         <div style="display: flex; justify-content: space-between;">
-                            <dt><kbd style="background: var(--color-bg-muted); padding: 2px 8px; border-radius: 4px; font-family: monospace;">?</kbd></dt>
-                            <dd style="margin: 0; color: var(--color-text-secondary);">Toggle this help</dd>
+                            <dt><kbd style="background: var(--paper-muted); padding: 2px 8px; border-radius: 2px; font-family: monospace;">?</kbd></dt>
+                            <dd style="margin: 0; color: var(--ink-secondary);">Toggle this help</dd>
                         </div>
                     </dl>
                     <button onclick="this.closest('#shortcuts-help').remove()" style="
                         margin-top: 16px;
                         padding: 8px 16px;
-                        background: var(--color-accent);
-                        color: white;
-                        border: none;
-                        border-radius: 4px;
+                        background: var(--ink);
+                        color: var(--paper);
+                        border: 1px solid var(--ink);
+                        border-radius: 2px;
                         cursor: pointer;
                         font-size: 0.9rem;
                     ">Close</button>
@@ -487,7 +501,7 @@ class AccessibilityManager {
     addAriaLabels() {
         // Date headers
         document.querySelectorAll('.date-header').forEach(header => {
-            const dateText = header.querySelector('span:last-child')?.textContent || 'Date';
+            const dateText = header.querySelector('.date-label')?.textContent || 'Date';
             header.setAttribute('aria-label', `Toggle papers for ${dateText}`);
         });
 
@@ -536,6 +550,7 @@ class MobileManager {
     }
 
     init() {
+        this.updateLayoutClasses();
         this.handleViewportChanges();
         this.addTouchFeedback();
         
