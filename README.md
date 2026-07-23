@@ -2,18 +2,6 @@
 
 A GitHub Pages-powered web application that automatically fetches and displays daily papers from ArXiv in specified categories. The app features a clean, responsive design with dark/light mode support and collapsible sections for easy browsing.
 
-## Features
-
-- **Automated Daily Updates**: GitHub Actions fetch new papers every day at 7:00 AM
-- **Multiple Categories**: Support for various ArXiv categories (configurable)
-- **Dark/Light Mode**: Toggle between themes with persistent preference
-- **Responsive Design**: Works seamlessly on desktop and mobile devices
-- **Collapsible Interface**: Categories and papers can be expanded/collapsed
-- **Direct Links**: Quick access to ArXiv page and PDF downloads
-- **Keyword Highlighting**: Configurable word highlighting in paper titles
-- **7-Day Retention**: Automatic cleanup of old data to manage storage
-- **Manual Trigger**: Option to manually run the update process
-
 ## Setup Instructions
 
 ### 1. Fork/Clone this Repository
@@ -63,25 +51,6 @@ To populate your site with initial data:
 1. Go to the "Actions" tab in your repository
 2. Select "Update ArXiv Papers" workflow
 3. Click "Run workflow" to trigger manually
-
-## Project Structure
-
-```
-├── .github/workflows/          # GitHub Actions workflows
-│   ├── update-papers.yml      # Daily paper fetching
-│   └── pages.yml              # GitHub Pages deployment
-├── scripts/                   # Python scripts
-│   ├── arxiv_fetcher.py       # ArXiv API integration
-│   └── generate_site.py       # Static site generator
-├── site/                      # Generated static site
-│   ├── css/style.css          # Responsive CSS with themes
-│   ├── js/script.js           # Interactive JavaScript
-│   └── index.html             # Generated HTML pages
-├── data/                      # JSON data files (auto-generated)
-├── config.toml                # Configuration file
-├── requirements.txt           # Python dependencies
-└── README.md                  # This file
-```
 
 ## Configuration Options
 
@@ -170,58 +139,6 @@ python scripts/generate_site.py
 ```bash
 pip install -r requirements.txt
 ```
-
-## Customization
-
-### Styling
-
-Edit `site/css/style.css` to customize:
-- Colors and themes
-- Layout and spacing
-- Typography
-- Responsive breakpoints
-
-### Functionality
-
-Edit `site/js/script.js` to add:
-- Search functionality
-- Additional interactions
-- Analytics tracking
-- Custom features
-
-### Data Processing
-
-Edit `scripts/arxiv_fetcher.py` to:
-- Add more paper metadata
-- Implement custom filtering
-- Add additional data sources
-
-## Troubleshooting
-
-### Papers Not Updating
-
-1. Check GitHub Actions logs in the "Actions" tab
-2. Verify ArXiv API is accessible
-3. Check if rate limits are being hit (script includes delays)
-
-### Site Not Deploying
-
-1. Ensure GitHub Pages is enabled in repository settings
-2. Check the 'site' folder for generated HTML files
-🌐 You can open site/index.html in a browser to preview
-
-### Missing Papers
-
-- ArXiv submissions may take time to appear in API
-- Some categories may have fewer papers on certain days (or none at all)
-
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Test locally
-5. Submit a pull request
 
 ## License
 
