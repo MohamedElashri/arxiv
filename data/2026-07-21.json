@@ -1,0 +1,335 @@
+{
+  "date": "2026-07-21",
+  "generated_at": "2026-07-23T03:41:02.691392",
+  "categories": {
+    "hep-ex": {
+      "name": "High Energy Physics - Experiment",
+      "papers": [
+        {
+          "id": "2607.19487v1",
+          "title": "Four, One, and None: Quantifying the Ultra-High-Energy Neutrino Anomaly Across ANITA-IV, KM3NeT, and IceCube",
+          "authors": [
+            "Dibya S. Chattopadhyay",
+            "Carlos A. Argüelles",
+            "Vedran Brdar"
+          ],
+          "display_authors": [
+            "Dibya S. Chattopadhyay",
+            "Carlos A. Argüelles",
+            "Vedran Brdar"
+          ],
+          "summary": "The four near-horizon neutrino-like events reported by ANITA-IV and the ultra-high-energy track-like event KM3-230213A observed by KM3NeT imply neutrino event rates that are in tension with the absence of corresponding events at IceCube. In this work, we perform a joint analysis of these events, taking into account the absence of any corresponding ones at IceCube. We construct semi-analytic, energy- and direction-dependent effective areas for the three detectors and account for the time-dependent ANITA-IV and KM3NeT exposures. For a diffuse all-sky power-law flux varying both the normalization and the spectral index, the measured event rates across the three detectors are not reproduced. The best-fit configuration, corresponding to a tension of $\\sim7.5σ$, predicts approximately five IceCube events while strongly underpredicting the ANITA-IV and KM3NeT counts. In contrast to the diffuse scenario, the tension can be substantially alleviated if the events arise from short-duration transients that occur exactly along the observed directions during the ANITA-IV and KM3NeT detection windows. Such a realization, however, is highly fine-tuned. If rare transients are instead distributed randomly across the full sky over the $\\sim15$-year IceCube observation period, additional sources inevitably contribute to the IceCube exposure. For benchmark populations with a probability of approximately $10^{-4}$ to produce four favorable transients at ANITA-IV, the best-fit configuration of sources, out of $10^5$ Monte Carlo realizations, remains in $5.9σ$ tension. We conclude that, within the Standard Model, directional and temporal variations alone can not reconcile the ANITA-IV and KM3NeT observations with the IceCube null result, under both a diffuse all-sky flux and a rare-transient source hypothesis.",
+          "arxiv_url": "https://arxiv.org/abs/2607.19487v1",
+          "pdf_url": "https://arxiv.org/pdf/2607.19487v1.pdf",
+          "submitted_date": "2026-07-21T18:06:43+00:00",
+          "categories": [
+            "astro-ph.HE",
+            "hep-ex",
+            "hep-ph"
+          ],
+          "comments": "18+12 pages, 8+7 figures"
+        },
+        {
+          "id": "2607.19461v1",
+          "title": "Neutrino t-channels at Colliders: When Light Neutrinos Matter",
+          "authors": [
+            "Claudia Garcia-Garcia",
+            "Manuel González-López",
+            "Xabier Marcano",
+            "Daniel Naredo-Tuero"
+          ],
+          "display_authors": [
+            "Claudia Garcia-Garcia",
+            "Manuel González-López",
+            "Xabier Marcano",
+            "et al."
+          ],
+          "summary": "Heavy Neutral Lepton (HNL)-mediated t-channel processes provide a unique opportunity to probe mass scales beyond the kinematic reach of direct production at high-energy colliders. We revisit these processes using the vector boson scattering channel $WW\\to\\ell\\ell$ at the LHC as a case study, highlighting the essential role of the light neutrinos in restoring the proper high-energy unitary behavior of the scattering amplitude. Their inclusion, overlooked in some previous studies, leads to destructive interference that strongly suppresses lepton number violating signatures, demonstrating that a consistent treatment of the full seesaw spectrum qualitatively alters the phenomenology of t-channel HNL searches. This motivates the exploration of lepton number conserving but lepton flavor violating final states instead. We present a detailed analysis of the $pp\\to eμjj$ channel and show that it provides a promising probe of TeV-scale HNLs in low-scale seesaw scenarios with sizable active-sterile mixing, extending the LHC sensitivity beyond existing direct searches.",
+          "arxiv_url": "https://arxiv.org/abs/2607.19461v1",
+          "pdf_url": "https://arxiv.org/pdf/2607.19461v1.pdf",
+          "submitted_date": "2026-07-21T18:00:00+00:00",
+          "categories": [
+            "hep-ph",
+            "hep-ex"
+          ],
+          "comments": "17 pages + bibliography, 6 figures"
+        },
+        {
+          "id": "2607.19340v1",
+          "title": "Integral representation of the neutrino mass-squared differences",
+          "authors": [
+            "I. Alikhanov"
+          ],
+          "display_authors": [
+            "I. Alikhanov"
+          ],
+          "summary": "Determining the absolute neutrino mass scale remains one of the most compelling challenges in particle physics. To constrain theoretical models, establishing precise relations among neutrino masses is essential. We propose a simple integral representation of the neutrino mass-squared differences $Δm_{ij}^2$ that provides a complementary perspective on these oscillation parameters. We then demonstrate its utility through several examples. Specifically, assuming stringent cosmological bounds that confine the sum of neutrino masses near the normal ordering floor, we derive an analytical condition for the lightest neutrino mass, $m_1 < \\sqrt{61Δm^2_{21}}/30$. Using recent data from the JUNO experiment, this yields a competitive upper limit of $m_1<0.0023$ eV (95\\% C.L.). We also formulate practical analytical bounds for $m_{2}$ and $m_{3}$ adaptable to future data, and translate the results into allowed ranges for the effective electron and Majorana neutrino masses $m_{ν_e}$ and $m_{ββ}$. Finally, we show that neutrino mass relations of the Gatto-Sartori-Tonin type emerge directly from the proposed integral representation.",
+          "arxiv_url": "https://arxiv.org/abs/2607.19340v1",
+          "pdf_url": "https://arxiv.org/pdf/2607.19340v1.pdf",
+          "submitted_date": "2026-07-21T17:58:11+00:00",
+          "categories": [
+            "hep-ph",
+            "hep-ex"
+          ],
+          "comments": "9 pages, JHEP style files used"
+        },
+        {
+          "id": "2607.19323v1",
+          "title": "Towards anomaly detection searches for new physics signatures including Higgs bosons with weakly supervised machine learning",
+          "authors": [
+            "Chi Lung Cheng",
+            "Julia Gonski",
+            "Runze Li",
+            "Qibin Liu",
+            "Benjamin Nachman",
+            "Dennis Noll",
+            "Julie Khalilieh Romman",
+            "Liangyu Wu"
+          ],
+          "display_authors": [
+            "Chi Lung Cheng",
+            "Julia Gonski",
+            "Runze Li",
+            "et al."
+          ],
+          "summary": "The Higgs boson, with its universal coupling to mass, provides a broadly applicable portal to sectors beyond the Standard Model and is therefore a natural anchor for anomaly detection (AD) at collider experiments. The Higgs And X Anomaly Detection (HAXAD) strategy offers a principled approach to searching for such anomalies occurring in association with a Higgs boson by combining machine-learning-based feature embedding, background estimation, and weakly supervised classification. This work extends the previous HAXAD approach towards the level of maturity required for application to recorded collider data. A major addition is the introduction and comparison of two new embedding strategies, which in turn shape the background estimation and classification. In addition, a new inference framework is developed, yielding signal-agnostic and signal-specific cross section limits and thereby completing the statistical machinery needed for future AD analyses built on HAXAD. The set of investigated signal models is also significantly expanded, allowing for the evaluation of sensitivity on a much broader phase space. Improvements to the method increase signal sensitivity with respect to the original method, and when benchmarked against an example cut-based search on the same final state, HAXAD matches or exceeds the best individual cut-based limits for a wide variety of considered signal models. These developments strengthen the case for HAXAD as a viable and compelling AD-based search strategy with novel discovery potential at colliders.",
+          "arxiv_url": "https://arxiv.org/abs/2607.19323v1",
+          "pdf_url": "https://arxiv.org/pdf/2607.19323v1.pdf",
+          "submitted_date": "2026-07-21T17:44:28+00:00",
+          "categories": [
+            "hep-ex",
+            "hep-ph"
+          ],
+          "comments": "27 pages, 10 figures"
+        },
+        {
+          "id": "2607.19319v1",
+          "title": "Dark matter searches with a 13 meV threshold superconducting sensor array",
+          "authors": [
+            "Christopher Albert",
+            "Lanqing Yuan",
+            "Jacob Harris",
+            "Ritoban Basu Thakur",
+            "Andrew Bear",
+            "Karl K. Berggren",
+            "Christopher Cappiello",
+            "Christopher Curwen",
+            "Peter Day",
+            "Byeong H. Eom",
+            "Arjun Ghosh",
+            "William Ho",
+            "Nikita Klimovich",
+            "Henry G. LeDuc",
+            "Karthik Ramanathan",
+            "Alejandro Simon"
+          ],
+          "display_authors": [
+            "Christopher Albert",
+            "Lanqing Yuan",
+            "Jacob Harris",
+            "et al."
+          ],
+          "summary": "Many well-motivated dark matter models predict meV-scale energy deposits in interactions with terrestrial experiments, but this regime is challenging to probe due to a lack of mature single-quantum detectors. Here we report results from QUALIPHIDE (QUAntum LImited PHotons In the Dark Experiment), a cryogenic dark matter search using a $41$-pixel array of energy-resolving microwave kinetic inductance detectors with a $13$ meV threshold, simultaneously used to look for both conversion photons from THz wavelength hidden photon dark matter and phonons from particle-like light dark matter interactions. The experimental design, with on- and off-focus pixels for the hidden photon search, allows for a data-driven background model, giving the experiment discovery potential. A blind analysis of $22$ hours of data shows no significant excess, setting the strongest constraints on the hidden photon kinetic mixing parameter $χ$ over the mass range of $13$-$90$ meV/$c^2$, reaching $1.5\\times10^{-12}$ at $50$ meV/$c^2$. These data also yield among the first terrestrial limits on dark matter scattering off nuclei and electrons, down to $5$ MeV/$c^2$ and $20$ keV/$c^2$, respectively. The low threshold also enables future study of the low-energy excess limiting cryogenic detectors and, as we project, will allow for a terahertz-scale QCD axion search with a magnetic field.",
+          "arxiv_url": "https://arxiv.org/abs/2607.19319v1",
+          "pdf_url": "https://arxiv.org/pdf/2607.19319v1.pdf",
+          "submitted_date": "2026-07-21T17:39:52+00:00",
+          "categories": [
+            "hep-ex",
+            "astro-ph.IM",
+            "quant-ph"
+          ],
+          "comments": ""
+        },
+        {
+          "id": "2607.19254v1",
+          "title": "Astrophysical Neutrino Sources as Colliders",
+          "authors": [
+            "Carlos A. Argüelles",
+            "P. S. Bhupal Dev",
+            "Bhaskar Dutta",
+            "Gonzalo Herrera",
+            "Nicholas Kamp",
+            "Jason Kumar",
+            "Stephan A. Meighen-Berger",
+            "Mudit Rai",
+            "Ian M. Shoemaker"
+          ],
+          "display_authors": [
+            "Carlos A. Argüelles",
+            "P. S. Bhupal Dev",
+            "Bhaskar Dutta",
+            "et al."
+          ],
+          "summary": "High-energy neutrinos arise from processes at large center-of-mass energies, offering a window to test physics at comparable scales or beyond those accessible in collider experiments on Earth. Here, we present a recipe for extracting two-sided bounds on the inelastic $pp$ and $pγ$ cross sections from neutrino point-source data, by independently constraining every astrophysical input (cosmic-ray luminosities and target densities) through electromagnetic observations or theoretical arguments. The cross section is then the only remaining free parameter. Applying this framework to the IceCube associations with TXS~0506+056, NGC~1068, and the Galactic Plane, to a stacked population of eleven X-ray bright Seyfert galaxies, to the ultra-high-energy KM3NeT event KM3-230213A, and to projected observations of ultra-high-energy neutrinos, we obtain constraints that span center-of-mass energies from $\\sqrt{s}\\sim 1$ GeV to $\\sim 10^{5}$ GeV, some of which are well beyond the reach of the LHC and, for the $pγ$ channel, beyond HERA. Several of these bounds are more stringent than unitarity limits.",
+          "arxiv_url": "https://arxiv.org/abs/2607.19254v1",
+          "pdf_url": "https://arxiv.org/pdf/2607.19254v1.pdf",
+          "submitted_date": "2026-07-21T16:24:37+00:00",
+          "categories": [
+            "hep-ph",
+            "astro-ph.HE",
+            "hep-ex"
+          ],
+          "comments": "18 pages, 2 tables, 7 figures"
+        },
+        {
+          "id": "2607.19183v1",
+          "title": "Impact of Z-boson transverse-momentum resummation on PDF determination",
+          "authors": [
+            "Juan M. Cruz-Martinez",
+            "Emanuele R. Nocera",
+            "Luca Rottoli",
+            "Paolo Torrielli"
+          ],
+          "display_authors": [
+            "Juan M. Cruz-Martinez",
+            "Emanuele R. Nocera",
+            "Luca Rottoli",
+            "et al."
+          ],
+          "summary": "We study the impact of small-transverse-momentum resummation for neutral-current Drell-Yan lepton-pair production on the determination of collinear parton distribution functions (PDFs). We focus on measurements of the Z-boson transverse-momentum spectrum performed by ATLAS and CMS at the LHC at centre-of-mass energies of 8 and 13 TeV, and include them in PDF fits based on the NNPDF methodology. Theoretical predictions are computed at next-to-next-to-leading order (NNLO) in perturbative QCD and are supplemented with small-transverse-momentum resummation corrections at next-to-next-to-next-to-leading logarithmic accuracy obtained with RadISH. Missing higher-order uncertainties are accounted for through a theory covariance matrix constructed from renormalisation- and factorisation-scale variations. We first revisit the treatment of the 8 TeV data, replacing the fixed-order predictions used in previous analyses with numerically stable NNLO calculations, and removing the additional numerical uncertainties introduced in earlier fits. We then assess the impact of the 13 TeV measurements, of resummation corrections, and of progressively lowering the minimum cut on the dilepton transverse momentum. We find that resummation improves the description of the Z boson transverse-momentum data and is essential for ensuring the overall consistency of the PDF fits. Nevertheless, it does not conclusively support extending the fitted kinematic region to transverse momenta below a few tens of GeV. The impact of resummation on PDFs is moderate, leading primarily to a stabilisation of the gluon PDF in a kinematic region of relevance for LHC phenomenology. Finally, we comment on the fact that the treatment of correlations among theoretical uncertainties may play a central role in PDF fits to measurements with percent- and sub-percent-level precision.",
+          "arxiv_url": "https://arxiv.org/abs/2607.19183v1",
+          "pdf_url": "https://arxiv.org/pdf/2607.19183v1.pdf",
+          "submitted_date": "2026-07-21T15:16:12+00:00",
+          "categories": [
+            "hep-ph",
+            "hep-ex"
+          ],
+          "comments": "35 pages, 10 figures, 7 tables"
+        },
+        {
+          "id": "2607.19066v1",
+          "title": "The Research and Development of New Electronics Systems and Testing on the JNE-1ton Prototype Detector",
+          "authors": [
+            "Haoyan Yang",
+            "Yuzi Yang",
+            "Yapeng Wang",
+            "Changxu Wei",
+            "Haoyang Fu",
+            "Haozhe Sun",
+            "Juntao Liu",
+            "Zhiyi Liu",
+            "Tao Xue",
+            "Jianmin Li",
+            "Yinong Liu",
+            "Zhe Wang",
+            "Shaomin Chen"
+          ],
+          "display_authors": [
+            "Haoyan Yang",
+            "Yuzi Yang",
+            "Yapeng Wang",
+            "et al."
+          ],
+          "summary": "The Jinping Neutrino Experiment (JNE), a next-generation neutrino observatory under construction at the China Jinping Underground Laboratory II (CJPL-II), requires high-precision waveform-based event reconstruction, imposing stringent demands on its readout electronics. To meet these requirements, we have developed a high-performance readout system featuring 1 GSa/s real-time sampling, 14-bit physical resolution with an effective number of bits (ENOB) of 10.6, a total data throughput of 64 Gbps, and a deterministic zero-delay clock distribution architecture. The new single-crate 64-channel system (PDS1500) was validated through bench tests and deployment on the upgraded JNE-1ton prototype detector. Its performance was further evaluated against a commercial reference system. The results demonstrate that all key metrics meet the JNE experimental requirements: zero data loss within a 1000 ns acquisition window, baseline noise reduced to one-third of the reference level, timing drift limited to 0.3 ns across power cycles, and an energy threshold as low as 0.1 MeV, enabling the detection of low-energy solar neutrinos. While the 14-bit physical resolution provides significantly higher waveform fidelity, the overall energy resolution in this test remains dominated by the intrinsic limitations of the JNE-1ton detector, as expected. Furthermore, the modular architecture provides the throughput and scalability required to support the full-scale 3000-channel JNE detector. These results collectively demonstrate that the newly developed electronics system fully satisfies the technical requirements of the future JNE experiment.",
+          "arxiv_url": "https://arxiv.org/abs/2607.19066v1",
+          "pdf_url": "https://arxiv.org/pdf/2607.19066v1.pdf",
+          "submitted_date": "2026-07-21T12:58:08+00:00",
+          "categories": [
+            "physics.ins-det",
+            "hep-ex"
+          ],
+          "comments": ""
+        },
+        {
+          "id": "2607.19055v1",
+          "title": "Prospects for $K_{L}\\toπ^{0}ν\\barν$, $K_S\\toμ^+μ^-$, $K_L\\toπ^0 \\ell^+\\ell^-$ and $\\varepsilon^{\\prime}/\\varepsilon$ after the new $K^{+}\\toπ^{+}ν\\barν$ result from NA62",
+          "authors": [
+            "Monika Blanke",
+            "Andrzej J. Buras",
+            "Cristina Lazzeroni",
+            "Joel C. Swallow"
+          ],
+          "display_authors": [
+            "Monika Blanke",
+            "Andrzej J. Buras",
+            "Cristina Lazzeroni",
+            "et al."
+          ],
+          "summary": "The recently announced NA62 measurement of the $K^{+}\\toπ^{+}ν\\barν$ branching ratio, based on 2016--2024 data, is fully consistent with its very accurate Standard Model (SM) prediction. While it is not excluded that the final result based on 2016--2026 data will deviate from the SM prediction, the question arises whether a similar fate awaits the $K_{L}\\toπ^{0}ν\\barν$ decay. This decay is currently being searched for by the KOTO experiment, with the present upper bound roughly two orders of magnitude above its very precise SM prediction. The proposed KOTO II experiment aims to provide the first discovery of the $K_{L}\\toπ^{0}ν\\barν$ decay and measure its branching ratio. Building on the findings of several previous papers we demonstrate that in the presence of suitably chosen large new complex phases and of a small amount of new right-handed $\\bar s d$ couplings, in addition to the left-handed ones, the $K_{L}\\toπ^{0}ν\\barν$ branching ratio can still be enhanced by one order of magnitude with respect to the SM prediction while keeping both $K^{+}\\toπ^{+}ν\\barν$ and $\\varepsilon_K$ SM-like. Simultaneously the decays $K_S\\toμ^+μ^-$, studied by LHCb, and $K_L\\toπ^0\\ell^+\\ell^-$, searched for by KOTO II, can be strongly enhanced and the anomaly in the ratio $\\varepsilon^{\\prime}/\\varepsilon$, as claimed by Dual QCD, removed. We illustrate this with an example of a specific $Z^\\prime$ scenario.",
+          "arxiv_url": "https://arxiv.org/abs/2607.19055v1",
+          "pdf_url": "https://arxiv.org/pdf/2607.19055v1.pdf",
+          "submitted_date": "2026-07-21T12:44:01+00:00",
+          "categories": [
+            "hep-ph",
+            "hep-ex",
+            "hep-lat"
+          ],
+          "comments": ""
+        },
+        {
+          "id": "2607.19034v1",
+          "title": "Analysis Preservation and Reproducibility in Collider Physics: An ADL/CutLang Implementation of ATLAS Open Data Analyses",
+          "authors": [
+            "Aytül Adıgüzel",
+            "Ahmetcan Sansar",
+            "Kağan Şahan",
+            "Kürşat Karaca"
+          ],
+          "display_authors": [
+            "Aytül Adıgüzel",
+            "Ahmetcan Sansar",
+            "Kağan Şahan",
+            "et al."
+          ],
+          "summary": "Analysis Description Language (ADL) and the CutLang runtime interpreter offer an innovative and sustainable solution for describing, executing, and preserving the physics content of collider data analyses. In this solution, all physics objects and event selection criteria are expressed in a human-readable form using ADL, a domain-specific language designed for collider physics. ADL descriptions are interpreted directly at runtime by CutLang without translation into a general-purpose programming language, producing event selections that can be readily fed into statistical analysis tools. This approach addresses the long-standing challenge of analysis preservation and analysis reproducibility in high energy physics by decoupling the physics logic from experiment-specific software infrastructures.   In this study, several benchmark analyses within ATLAS Open Data C++ Framework are reimplemented in ADL and executed with CutLang using data provided by ATLAS Open Data at a center-of-mass energy of 13 TeV and corresponding to an integrated luminosity of 10 fb$^{-1}$. The reimplemented analyses yield results in good agreement with the original publications, validating the ADL/CutLang workflow as a reliable alternative to traditional analysis frameworks. The study also provides a detailed assessment of CutLang's current capabilities and identifies areas for further development, offering a roadmap toward broader adoption of ADL-based analysis preservation in the LHC community.",
+          "arxiv_url": "https://arxiv.org/abs/2607.19034v1",
+          "pdf_url": "https://arxiv.org/pdf/2607.19034v1.pdf",
+          "submitted_date": "2026-07-21T12:19:46+00:00",
+          "categories": [
+            "hep-ex"
+          ],
+          "comments": ""
+        },
+        {
+          "id": "2607.18752v1",
+          "title": "Nonlinear collective flow reveals the breakdown of quadrupole--hexadecapole scaling in heavy ion collisions",
+          "authors": [
+            "Hadi Mehrabpour",
+            "Zahra Sheibani",
+            "Li Yan",
+            "Chunjian Zhang",
+            "Abolfazl Mirjalili"
+          ],
+          "display_authors": [
+            "Hadi Mehrabpour",
+            "Zahra Sheibani",
+            "Li Yan",
+            "et al."
+          ],
+          "summary": "Determining the role of intrinsic hexadecapole deformation ($β_4$) in nuclear structure remains a long-standing challenge. Relativistic heavy-ion collisions provide a unique opportunity to address this problem by converting the initial nuclear geometry into the collective motion of the quark--gluon plasma (QGP). Using event-by-event viscous hydrodynamic simulations of ultra-central $^{238}$U+$^{238}$U collisions at $\\sqrt{s_{NN}}=193$ GeV, we investigate whether higher-order collective flow can isolate the contribution of $β_4$ and test the $β_2-β_4$ correlation. We demonstrate that information carried by the sign of $β_4$ survives the QGP evolution and is enhanced through nonlinear hydrodynamic response: the fourth-order flow harmonic acquires its topology dependence predominantly from the linear response, whereas the sensitivity of the sixth-order harmonic originates almost entirely from nonlinear mode coupling. As a consequence, the nonlinear response coefficient $ξ_{6,222}$ cleanly separates the $(β_2,β_4)$ intrinsic nuclear topologies. These results establish the sign of $β_4$ as an experimentally accessible signature of deviations from the quadrupole--hexadecapole correlation, demonstrating that higher-order collective flow provides a direct probe of nuclear multipole structure while revealing how nonlinear QGP dynamics encode subtle higher-order geometric information into final-state observables.",
+          "arxiv_url": "https://arxiv.org/abs/2607.18752v1",
+          "pdf_url": "https://arxiv.org/pdf/2607.18752v1.pdf",
+          "submitted_date": "2026-07-21T06:19:16+00:00",
+          "categories": [
+            "nucl-th",
+            "hep-ex",
+            "hep-ph",
+            "nucl-ex"
+          ],
+          "comments": "9 pages, 4 figures"
+        }
+      ],
+      "count": 11
+    },
+    "hep-ph": {
+      "name": "High Energy Physics - Phenomenology",
+      "papers": [],
+      "count": 0
+    },
+    "stat.ML": {
+      "name": "Machine Learning - Statistics",
+      "papers": [],
+      "count": 0
+    },
+    "cs.LG": {
+      "name": "Machine Learning",
+      "papers": [],
+      "count": 0
+    },
+    "nucl-ex": {
+      "name": "Nuclear Physics - Experiment",
+      "papers": [],
+      "count": 0
+    }
+  }
+}
