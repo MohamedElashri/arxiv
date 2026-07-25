@@ -14,7 +14,7 @@ nucl-ex = "Nuclear Physics - Experiment"
 # Number of days to keep papers (older papers will be cleaned up)
 retention_days = 7
 # Maximum number of papers per category per day
-max_papers_per_category = 50
+max_papers_per_category = 100
 # Show only first N authors if more exist
 max_authors_display = 3
 
