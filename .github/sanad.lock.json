@@ -11,7 +11,7 @@
       "kind": "github-action",
       "logical_ref": "v7.0.0",
       "pinned_sha": "9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0",
-      "resolved_at": "2026-07-23T11:00:42Z",
+      "resolved_at": "2026-08-29T09:17:26Z",
       "timestamp": "2026-06-18T13:53:05Z",
       "timestamp_source": "release"
     },
@@ -24,7 +24,7 @@
       "kind": "github-action",
       "logical_ref": "v6.3.0",
       "pinned_sha": "ece7cb06caefa5fff74198d8649806c4678c61a1",
-      "resolved_at": "2026-07-23T11:00:42Z",
+      "resolved_at": "2026-08-29T09:17:26Z",
       "timestamp": "2026-06-24T02:48:35Z",
       "timestamp_source": "release"
     },
@@ -37,7 +37,9 @@
       "kind": "github-action",
       "logical_ref": "v6.0.0",
       "pinned_sha": "45bfe0192ca1faeb007ade9deae92b16b8254a0d",
-      "resolved_at": "2026-07-23T11:00:42Z"
+      "resolved_at": "2026-08-29T09:17:26Z",
+      "timestamp": "2026-03-25T17:00:49Z",
+      "timestamp_source": "release"
     },
     {
       "file": ".github/workflows/pages.yml",
@@ -48,7 +50,9 @@
       "kind": "github-action",
       "logical_ref": "v5.0.0",
       "pinned_sha": "fc324d3547104276b827a68afc52ff2a11cc49c9",
-      "resolved_at": "2026-07-23T11:00:42Z"
+      "resolved_at": "2026-08-29T09:17:26Z",
+      "timestamp": "2026-04-10T18:22:59Z",
+      "timestamp_source": "release"
     },
     {
       "file": ".github/workflows/pages.yml",
@@ -59,7 +63,9 @@
       "kind": "github-action",
       "logical_ref": "v5.0.0",
       "pinned_sha": "cd2ce8fcbc39b97be8ca5fce6e763baed58fa128",
-      "resolved_at": "2026-07-23T11:00:42Z"
+      "resolved_at": "2026-08-29T09:17:26Z",
+      "timestamp": "2026-03-25T16:59:14Z",
+      "timestamp_source": "release"
     },
     {
       "file": ".github/workflows/update-papers.yml",
@@ -70,7 +76,7 @@
       "kind": "github-action",
       "logical_ref": "v7.0.0",
       "pinned_sha": "9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0",
-      "resolved_at": "2026-07-23T11:00:42Z",
+      "resolved_at": "2026-08-29T09:17:26Z",
       "timestamp": "2026-06-18T13:53:05Z",
       "timestamp_source": "release"
     },
@@ -83,7 +89,9 @@
       "kind": "github-action",
       "logical_ref": "v5.0.0",
       "pinned_sha": "cd2ce8fcbc39b97be8ca5fce6e763baed58fa128",
-      "resolved_at": "2026-07-23T11:00:42Z"
+      "resolved_at": "2026-08-29T09:17:26Z",
+      "timestamp": "2026-03-25T16:59:14Z",
+      "timestamp_source": "release"
     },
     {
       "file": ".github/workflows/update-papers.yml",
@@ -94,7 +102,7 @@
       "kind": "github-action",
       "logical_ref": "v6.3.0",
       "pinned_sha": "ece7cb06caefa5fff74198d8649806c4678c61a1",
-      "resolved_at": "2026-07-23T11:00:42Z",
+      "resolved_at": "2026-08-29T09:17:26Z",
       "timestamp": "2026-06-24T02:48:35Z",
       "timestamp_source": "release"
     },
@@ -107,7 +115,9 @@
       "kind": "github-action",
       "logical_ref": "v6.0.0",
       "pinned_sha": "45bfe0192ca1faeb007ade9deae92b16b8254a0d",
-      "resolved_at": "2026-07-23T11:00:42Z"
+      "resolved_at": "2026-08-29T09:17:26Z",
+      "timestamp": "2026-03-25T17:00:49Z",
+      "timestamp_source": "release"
     },
     {
       "file": ".github/workflows/update-papers.yml",
@@ -118,7 +128,9 @@
       "kind": "github-action",
       "logical_ref": "v5.0.0",
       "pinned_sha": "fc324d3547104276b827a68afc52ff2a11cc49c9",
-      "resolved_at": "2026-07-23T11:00:42Z"
+      "resolved_at": "2026-08-29T09:17:26Z",
+      "timestamp": "2026-04-10T18:22:59Z",
+      "timestamp_source": "release"
     }
   ]
 }
