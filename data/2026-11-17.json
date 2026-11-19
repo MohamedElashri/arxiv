@@ -1,0 +1,451 @@
+{
+  "date": "2026-11-17",
+  "generated_at": "2026-11-19T02:34:12.114967",
+  "categories": {
+    "hep-ex": {
+      "name": "High Energy Physics - Experiment",
+      "papers": [],
+      "count": 0
+    },
+    "hep-ph": {
+      "name": "High Energy Physics - Phenomenology",
+      "papers": [],
+      "count": 0
+    },
+    "stat.ML": {
+      "name": "Machine Learning - Statistics",
+      "papers": [
+        {
+          "id": "2611.23596v1",
+          "title": "Efficient Variance-Aware Reinforcement Learning in Time-Inhomogeneous Linear MDPs",
+          "authors": [
+            "Qingyue Zhao",
+            "Qiwei Di",
+            "Jiafan He",
+            "Heyang Zhao",
+            "Kaixuan Ji",
+            "Quanquan Gu"
+          ],
+          "display_authors": [
+            "Qingyue Zhao",
+            "Qiwei Di",
+            "Jiafan He",
+            "et al."
+          ],
+          "summary": "We study variance-dependent reinforcement learning in episodic time-inhomogeneous linear Markov decision processes (MDPs) with feature dimension $d$, horizon $H$, and $K$ episodes. While recent works have established variance-dependent regret with $\\tilde{O}(1)$ deterministic-regime overhead for linear mixture MDPs (Zhao et al., 2023) and worst-case nearly minimax optimal regret $\\tilde{O}(d\\sqrt{H^3 K} + d^7 H^8)$ for linear MDPs (He et al., 2023),, existing variance-aware analyses for linear MDPs (Li and Sun, 2023; Huang et al., 2023) rely on a coarse concentration step whose resulting regret guarantees retain a polynomial $\\tilde{O}(K^{1/4})$ additive term even in deterministic environments. We propose VA-LSVI-UCB++, a computationally efficient algorithm that achieves the variance-dependent regret bound $\\tilde{O}(d\\sqrt{H\\min\\{\\mathrm{Var}_K^*,\\mathrm{Var}_K^π\\}}+d^5H^4)$, where $\\mathrm{Var}_K^*$ and $\\mathrm{Var}_K^π$ denote the cumulative conditional variances of the optimal value function and the played policies' value functions along the realized trajectory. Our result adapts to the minimum of the two realized trajectory variances, recovers the worst-case minimax optimal leading term $\\tilde{O}(d\\sqrt{H^3 K})$, and collapses to $\\tilde{O}(d^5 H^4)$ in deterministic environments, free of polynomial-in-$K$ dependency. At the core of our analysis is a simultaneous three-way reference-advantage decomposition for the optimistic, pessimistic, and squared value function estimators coupled with variance self-bounding and Freedman-type value-difference arguments, which tightens the pessimistic and second-moment confidence radii by a factor of $\\tilde{O}(d H)$ and removes the inverse-variance-floor blowup.",
+          "arxiv_url": "https://arxiv.org/abs/2611.23596v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.23596v1.pdf",
+          "submitted_date": "2026-11-17T22:51:12+00:00",
+          "categories": [
+            "cs.LG",
+            "math.OC",
+            "stat.ML"
+          ],
+          "comments": "38 pages, 2 tables"
+        },
+        {
+          "id": "2611.23547v1",
+          "title": "Bounded-Order Non-Identifiability in Latent Structure Block Models: The Fiber in Closed Form",
+          "authors": [
+            "Sie Hendrata Dharmawan",
+            "Peter Chin"
+          ],
+          "display_authors": [
+            "Sie Hendrata Dharmawan",
+            "Peter Chin"
+          ],
+          "summary": "A graphon is determined by all of its homomorphism densities, but motif-based methods use finitely many. We compute exactly what that truncation costs in a natural family: latent structure block models whose positions lie on $K$ rays, equivalently degree-corrected block models of rank two. For a given radial law, the configurations that agree on every graph with fewer than $2K-1$ vertices form a one-dimensional fiber, which we give in closed form with explicit endpoints; the friendship graph $F_{K-1}$ is its unique edge-minimal separator, so no fixed motif order serves every $K$. The separating signal is suppressed by a factor of at most $m_1^{2(K-1)}$, where $m_1$ is the mean squared slope, about $10^{-4}$ at $K=4$: detecting it from motif counts would take about $10^{15}$ nodes in a single graph, at any edge density. The information is nonetheless in the graph; the fiber belongs to the statistic, not the model. Common spectral pipelines, which count no motifs, still slide along the fiber by more than a third of its length at ordinary densities, with confidence regions that almost never contain the truth, while model-based fits of the same embedding do not. We give practitioners four checks: whether a fit is at risk, what to run instead, why a confidence interval will not warn, and how wide the remaining ambiguity is.",
+          "arxiv_url": "https://arxiv.org/abs/2611.23547v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.23547v1.pdf",
+          "submitted_date": "2026-11-17T21:53:37+00:00",
+          "categories": [
+            "stat.ML",
+            "cs.LG",
+            "math.ST"
+          ],
+          "comments": "Submitted to AISTATS 2027"
+        },
+        {
+          "id": "2611.23543v1",
+          "title": "Stability of Parallel Transport Convolution under Riemannian Metric Perturbations",
+          "authors": [
+            "Hongnian Huang",
+            "Andrew Stump"
+          ],
+          "display_authors": [
+            "Hongnian Huang",
+            "Andrew Stump"
+          ],
+          "summary": "Geometric convolutions on Riemannian manifolds depend on the geometry of the underlying domain, making stability under metric perturbations a fundamental question in geometric deep learning. This paper studies this question for parallel transport convolution through methods from differential geometry and analysis. On a fixed compact manifold, we establish that, for a continuous input signal and a continuous reference kernel supported in a sufficiently small normal neighborhood, the convolution output depends continuously in $L^2$ on the Riemannian metric in the $C^2$-topology, under the specified localization and transport-path conventions. The analysis develops perturbation estimates for geodesics, parallel transport, Jacobi fields, and exponential maps, and uses these estimates to compare the transported kernels. A central difficulty is the cut locus, which obstructs uniform comparison of the transport construction over the entire manifold. We address this difficulty by combining uniform estimates away from the cut locus with integral bounds on neighborhoods of arbitrarily small volume, while also controlling the change in the Riemannian volume measure. The resulting qualitative stability theorem connects perturbation theory for Riemannian geometric constructions with the analysis of spatial convolution operators in geometric deep learning.",
+          "arxiv_url": "https://arxiv.org/abs/2611.23543v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.23543v1.pdf",
+          "submitted_date": "2026-11-17T21:50:20+00:00",
+          "categories": [
+            "cs.LG",
+            "cs.CV",
+            "math.DG",
+            "stat.ML"
+          ],
+          "comments": "78 pages. Comments welcome!"
+        },
+        {
+          "id": "2611.23431v1",
+          "title": "The Spectral Distribution of Matrix Least Squares Solutions, and the Ellipsoid Fitting Problem",
+          "authors": [
+            "Afonso S. Bandeira",
+            "Yue M. Lu",
+            "Petar Nizić-Nikolac"
+          ],
+          "display_authors": [
+            "Afonso S. Bandeira",
+            "Yue M. Lu",
+            "Petar Nizić-Nikolac"
+          ],
+          "summary": "We study the spectral distribution of the least squares solution to a random linear system whose unknown is a symmetric matrix. In the normalized and isotropic setting, we derive a closed-form description of the support of the spectral distribution. As an application, we consider the ellipsoid fitting problem: given $n$ standard Gaussian vectors in $\\mathbb{R}^d$, does there exist a centered ellipsoid passing through all of them? It was recently shown that this problem has a sharp phase transition at $n \\approx d^2/4$. On the satisfiability side, unlike earlier results, these sharp results do not rely on least squares candidates. We show that the least squares candidates considered in earlier works have a threshold of positive semi-definiteness at $n \\approx d^2/10$, which was previously observed numerically and predicted non-rigorously using statistical physics methods. Moreover, we show that the corresponding least squares dual certificates have a threshold of positive definiteness at $n \\approx 2d^2/5$. Our approach combines several matrix concentration tools. A key technical ingredient, which may be of independent interest, is showing that a certain kernel matrix is well-conditioned with high probability until $n \\approx d^2/2$.",
+          "arxiv_url": "https://arxiv.org/abs/2611.23431v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.23431v1.pdf",
+          "submitted_date": "2026-11-17T19:35:46+00:00",
+          "categories": [
+            "math.PR",
+            "cs.DS",
+            "math.ST",
+            "stat.ML"
+          ],
+          "comments": "40 pages"
+        },
+        {
+          "id": "2611.23428v1",
+          "title": "When Does Subspace Direction Matter for LoRA? Regime Analysis of the Magnitude Principle in Few-Shot Adaptation",
+          "authors": [
+            "Nischal Subedi",
+            "Cencheng Shen",
+            "Peng Zhao"
+          ],
+          "display_authors": [
+            "Nischal Subedi",
+            "Cencheng Shen",
+            "Peng Zhao"
+          ],
+          "summary": "We show that the importance of a LoRA adapter's initial input-subspace direction is regime-dependent, and we characterize this dependence in theory and experiment. This refines the recent view that spectral initializers help through update magnitude alone. Direction matters most when labeled data are scarce relative to the representation dimension and the activation subspace used for initialization captures supervised task structure. In this regime, the adapter's row span remains sensitive to its starting point, making task-aligned initialization especially useful. A spiked-covariance perturbation analysis characterizes the finite-sample stability of the estimated subspace. A first-step analysis of LoRA training explains why the subspace's alignment with the task matters and motivates an alignment coefficient $ρ$ that closely tracks gains across classification tasks. We test this account with PivotLoRA, which initializes adapters from activation PCA at prediction-relevant positions and applies one output-preserving orthogonal pivot early in training. In few-shot BERT-base classification, PivotLoRA achieves the best average rank among 13 methods and improves over vanilla LoRA in 29 of 30 settings, even though it starts from a smaller input-factor initialization norm. Additional classification experiments extend the evaluation to 7B and 8B Llama decoders. Classification gains diminish with more labeled data, consistent with the proposed regime dependence. A targeted extension to completion-only reasoning also shows improvements on GSM8K and StrategyQA. These findings identify conditions under which initialization direction matters, with subspace-task alignment offering a low-cost diagnostic before training for classification.",
+          "arxiv_url": "https://arxiv.org/abs/2611.23428v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.23428v1.pdf",
+          "submitted_date": "2026-11-17T19:30:56+00:00",
+          "categories": [
+            "cs.LG",
+            "stat.ML"
+          ],
+          "comments": "Accepted at NeurIPS 2026. 43 pages, 5 figures. Code: https://github.com/Nischal1011/pivotlora"
+        },
+        {
+          "id": "2611.23397v1",
+          "title": "Which Tokens, in What Order, and How Fast? A Theoretical Analysis of On-Policy Distillation Objectives",
+          "authors": [
+            "Hubert Strauss",
+            "Liam Fowl",
+            "Noam Razin"
+          ],
+          "display_authors": [
+            "Hubert Strauss",
+            "Liam Fowl",
+            "Noam Razin"
+          ],
+          "summary": "On-policy distillation (OPD) trains a student language model to match a teacher model based on its own generations. When using OPD, one must choose whether to apply it at the sequence or token level and which divergence to minimize. However, despite the wide adoption of OPD in practice, the formal understanding of which OPD objective is appropriate for a given setting is limited. Toward addressing this gap, we theoretically analyze how the choice of OPD objective governs which tokens are prioritized, in what order, and how efficiently. Our analysis reveals that sequence-level OPD exhibits a future agreement bias, which myopic token-level objectives avoid. This bias induces a reverse learning order, in which sequence-level OPD first matches the teacher at later token positions, while at earlier positions it can favor tokens that are improbable under the teacher, and thus often undesirable. As for the choice of divergence, we prove that it strongly influences the amenability of OPD to gradient-based optimization. In particular, while the forward KL divergence enjoys a well-behaved objective landscape, other $f$-divergences, such as reverse KL, can suffer from vanishing gradients even when the student and teacher are far apart. Across language model post-training settings, we demonstrate the implications of these theoretical findings for which OPD objective is preferable, highlighting the importance of accounting for the interplay between the student, teacher, and task at hand.",
+          "arxiv_url": "https://arxiv.org/abs/2611.23397v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.23397v1.pdf",
+          "submitted_date": "2026-11-17T19:01:02+00:00",
+          "categories": [
+            "cs.LG",
+            "cs.AI",
+            "stat.ML"
+          ],
+          "comments": "Code available at https://github.com/princeton-pli/opd-objectives-analysis"
+        },
+        {
+          "id": "2611.23184v1",
+          "title": "Fold Weighting for Cross-Validation Under Continuous Distributional Drift",
+          "authors": [
+            "Yegor Baranovski"
+          ],
+          "display_authors": [
+            "Yegor Baranovski"
+          ],
+          "summary": "Cross-validation weights all folds equally, so under drift the oldest folds count as much as the newest. We model drift by a Hölder condition in total variation distance and give finite-sample bounds on the excess deployment risk of the configuration that sliding-window cross-validation selects. Each bound splits into drift, estimation, and validation-noise terms. With equal weights the drift terms saturate as the record grows. With fold weights fixed in advance, the drift terms become weighted averages, which shrink as weight moves toward deployment. The noise term grows as the weights concentrate and shrinks with the batch size. The drift terms are linear in the weights and the noise term is convex, so minimizing the bound over the weights is a convex problem. Applications to U.S. earnings and flight delays show both sides of this trade-off. Weight on recent folds pays off when a change in the best predictor persists and each period has many observations, and equal weights do best when changes are short-lived.",
+          "arxiv_url": "https://arxiv.org/abs/2611.23184v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.23184v1.pdf",
+          "submitted_date": "2026-11-17T18:28:52+00:00",
+          "categories": [
+            "stat.ME",
+            "stat.ML"
+          ],
+          "comments": "25 pages, 4 figures"
+        },
+        {
+          "id": "2611.23072v1",
+          "title": "Amortizing Tempered Sampling with Corrected Self-Training",
+          "authors": [
+            "Hoang-Viet Nguyen",
+            "Hai-Dang Dau",
+            "Alexandre H. Thiéry"
+          ],
+          "display_authors": [
+            "Hoang-Viet Nguyen",
+            "Hai-Dang Dau",
+            "Alexandre H. Thiéry"
+          ],
+          "summary": "Learning a neural sampler can reduce the cost of repeated sampling from an un-normalized distribution, but obtaining good training data remains difficult. We develop a corrected self-training scheme across a sequence of tempered targets, making use of importance sampling and Markov chain Monte Carlo to correct the samples and replay buffers to store them. We introduce Sequential Score Sampler (SSS) as a particular case. In SSS, the proposal is a score-based diffusion trained by regression on energy gradients; and the samples are corrected by importance weights on the path space. After training, samples can be collected directly from the model, from its importance-corrected proposals, or from the final-temperature buffer. The method amortizes repeated sampling by encoding the global structure of the target in the model. SSS achieves competitive sampling accuracy across the benchmarks and, on several targets, uses shorter runtimes with fewer energy evaluations than competing samplers.",
+          "arxiv_url": "https://arxiv.org/abs/2611.23072v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.23072v1.pdf",
+          "submitted_date": "2026-11-17T16:59:07+00:00",
+          "categories": [
+            "stat.ML",
+            "cs.LG"
+          ],
+          "comments": ""
+        },
+        {
+          "id": "2611.22948v1",
+          "title": "Symmetries of Counterfactuals: Identification and Testability of Counterfactual Maps from Covariate Heterogeneity",
+          "authors": [
+            "Marc Braun",
+            "Adel Daoud",
+            "Jose M. Peña"
+          ],
+          "display_authors": [
+            "Marc Braun",
+            "Adel Daoud",
+            "Jose M. Peña"
+          ],
+          "summary": "In general, counterfactuals are not identified from data alone, because many causal models produce the same observed distributions but different counterfactuals. A common approach to circumvent this problem is to restrict the mechanism to a class in which it becomes unique, such as triangular monotone maps or optimal transport maps. However, whether the assumed class is correct is usually not examined. In this work, we study what the data can tell us when covariates are available that influence the outcome only through its latent cause. First, we characterise all counterfactual maps that are consistent with the data. They differ from the true map by a group of symmetries that preserve the conditional outcome distributions given the covariates. The more these distributions vary across covariate values, the smaller the group. Second, we show that for the classes above, consistency with the data is equivalent to a single conditional independence, which yields a test of the assumed class. We illustrate both results on synthetic data and on the ACTG 175 HIV trial.",
+          "arxiv_url": "https://arxiv.org/abs/2611.22948v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.22948v1.pdf",
+          "submitted_date": "2026-11-17T15:39:32+00:00",
+          "categories": [
+            "stat.ML",
+            "cs.LG"
+          ],
+          "comments": ""
+        },
+        {
+          "id": "2611.22759v1",
+          "title": "Robust Actor-Critic Learning under Transport and Divergence Uncertainty",
+          "authors": [
+            "Kunqi Huang",
+            "Lican Kang",
+            "Hongrui Shu",
+            "Jincheng Ying"
+          ],
+          "display_authors": [
+            "Kunqi Huang",
+            "Lican Kang",
+            "Hongrui Shu",
+            "et al."
+          ],
+          "summary": "Learning reliable control policies requires accounting for uncertainty in transition dynamics and errors introduced by function estimation and action generation. We develop an actor--critic method for discounted robust Markov decision processes with continuous states and actions and an unknown nominal transition law. We consider transition uncertainty sets defined by Wasserstein distance, total variation, Kullback--Leibler divergence, or Pearson chi-square divergence. A conditional diffusion model is fitted once to offline transitions. At each subsequent iteration, we estimate the robust action-value function from current-policy observations using a shared-target minimax criterion, then update a generative actor through exponentially weighted score matching. Regularization preserves exploration and provides the density regularity needed for conditional distribution estimation. Under coverage and regularity conditions, we establish finite-sample bounds for critic estimation, the learned conditional action law, and the robust return of the implemented policy. The bounds distinguish critic estimation error, uncertainty in the nominal transition model, and policy regularization, and characterize how the four robustness radii affect the resulting guarantees.",
+          "arxiv_url": "https://arxiv.org/abs/2611.22759v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.22759v1.pdf",
+          "submitted_date": "2026-11-17T13:26:43+00:00",
+          "categories": [
+            "stat.ML",
+            "cs.LG"
+          ],
+          "comments": ""
+        },
+        {
+          "id": "2611.22715v1",
+          "title": "TRAIL-IRL: Crossed Reward-Temperature Mixtures for Unlabeled Trajectory Clustering",
+          "authors": [
+            "Yichen Zhu",
+            "Guanhua Fang",
+            "Ming Zheng"
+          ],
+          "display_authors": [
+            "Yichen Zhu",
+            "Guanhua Fang",
+            "Ming Zheng"
+          ],
+          "summary": "Different paths need not imply different preferences, trajectories also differ in how randomly actions are chosen. Many multi-reward inverse reinforcement learning (IRL) methods assume common action randomness and can confound it with preference heterogeneity. We introduce TRAIL-IRL, which clusters unlabeled trajectories using rewards for preferences and temperatures for action randomness. Its crossed mixture pairs each reward with a shared set of temperature levels, allowing action regularity to vary within preference groups. With centered and normalized rewards in a known finite-state environment, we establish the identifiability conditions under which the distribution of sufficiently long trajectories determines rewards, temperatures, mixing weights, and class counts up to relabeling. Under the same conditions and reward constraints, common-temperature reward mixtures with the same component count cannot reproduce a crossed mixture with multiple temperatures. We develop a generalized expectation-maximization algorithm and select class counts using the Bayesian information criterion (BIC). Simulations show improved predictive fit, reward recovery, and trajectory classification over common-temperature mixtures with the same component count. For 140 bird-year trajectories from 79 white storks, BIC favors four reward classes and three temperature levels over common-temperature candidates. Younger birds have higher posterior membership probabilities for a southwestward migration class, whereas older birds have higher probabilities for a northern retention class. Within reward classes, higher temperatures are associated with more variable movement directions and positions farther ahead along the migration route, consistent with social information use and collective sensing.",
+          "arxiv_url": "https://arxiv.org/abs/2611.22715v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.22715v1.pdf",
+          "submitted_date": "2026-11-17T12:53:35+00:00",
+          "categories": [
+            "stat.ME",
+            "stat.AP",
+            "stat.ML"
+          ],
+          "comments": ""
+        },
+        {
+          "id": "2611.22646v1",
+          "title": "The Price of Hard Coverage Constraints in Online Conformal Prediction",
+          "authors": [
+            "Mingrui Liu"
+          ],
+          "display_authors": [
+            "Mingrui Liu"
+          ],
+          "summary": "Conformal prediction provides distribution-free uncertainty quantification, but in sequential deployment, standard coverage guarantees can still allow substantial fluctuations in the number of miscoverages over time. We study an online setting in which prediction sets are produced one round at a time and the cumulative number of miscoverages must stay within a prescribed budget throughout deployment.Such a hard coverage guarantee can be enforced by enlarging prediction sets, but how much additional prediction-set size is fundamentally necessary remains unclear. We characterize this unavoidable efficiency cost over $T$ prediction rounds. Remarkably, the cost persists even with i.i.d.\\ data, a known score distribution, and perfect knowledge of the population-optimal prediction set. Under suitable regularity conditions relating coverage and prediction-set size, we determine the minimum cumulative excess prediction-set size required by any online method satisfying the hard coverage constraint. This minimum cost is $Θ(\\log T)$ for expected cost at a fixed time known in advance, $Θ(T^{1/3})$ for the largest expected cost over all fixed times up to $T$, and $Θ(\\sqrt{T})$ for the expected worst realized cost when the evaluation time is chosen in hindsight. We further show that these rates can be attained using past scores, without knowing the score distribution. Thus, even perfect statistical knowledge does not make sequential reliability free.",
+          "arxiv_url": "https://arxiv.org/abs/2611.22646v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.22646v1.pdf",
+          "submitted_date": "2026-11-17T12:01:24+00:00",
+          "categories": [
+            "cs.LG",
+            "math.ST",
+            "stat.ML"
+          ],
+          "comments": ""
+        },
+        {
+          "id": "2611.22227v1",
+          "title": "SOTA or Luck? The Winner's Curse in LLM Leaderboards",
+          "authors": [
+            "Sikun Xu",
+            "Raphael Thomadsen",
+            "Dennis J. Zhang",
+            "Heng Zhang"
+          ],
+          "display_authors": [
+            "Sikun Xu",
+            "Raphael Thomadsen",
+            "Dennis J. Zhang",
+            "et al."
+          ],
+          "summary": "Public LLM leaderboards guide model evaluation and adoption, yet the reported performance of top-ranked models can be systematically overstated. This leaderboard winner's curse arises because ranking noisy benchmark scores rewards sampling luck alongside genuine ability. The same selection effect can distort scores throughout the leaderboard, a phenomenon we call the rank-induced bias. We develop an $m$-out-of-$N$ bootstrap to correct for this bias. It assumes a fixed model pool with independent, identically distributed bounded tasks while allowing arbitrary within-task correlation among models. Under exact population tiers separated by positive gaps, we prove that the bootstrap reduces $Θ(N^{-1/2})$ ranking bias to expected residual bias $o(N^{-1/2})$. Across 14 benchmarks from 5 benchmark families, the rank-1 adjustments range from approximately 0.09 to 3.86 percentage points. In our SWE-bench Verified snapshot, the tied leaders receive an adjustment of 0.90 percentage points. Such overstatement is large enough to make the apparent winner statistically fragile. Thus, we use the same bootstrap to further quantify the intervals of plausible rank positions for each model and group models into tiers. We establish sufficient conditions for consistent recovery of population tiers. On SWE-bench Verified, this procedure places 13 of 173 models in the leading tier. We combine the score adjustment and rank intervals in the Rank Uncertainty and Leaderboard Evaluation Report (RULER). We validate its finite-sample performance using sample splitting and calibrated simulations, and advocate publishing RULER alongside raw rankings so readers can assess both reported performance and the precision of the ordering. RULER also provides guidance for benchmark design that accounts for selection effects and ranking uncertainty.",
+          "arxiv_url": "https://arxiv.org/abs/2611.22227v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.22227v1.pdf",
+          "submitted_date": "2026-11-17T05:18:14+00:00",
+          "categories": [
+            "cs.LG",
+            "cs.CL",
+            "stat.ME",
+            "stat.ML"
+          ],
+          "comments": ""
+        },
+        {
+          "id": "2611.22198v1",
+          "title": "Training Neural Networks to be Locally Adaptive",
+          "authors": [
+            "Bilol Banerjee",
+            "Soham Sarkar"
+          ],
+          "display_authors": [
+            "Bilol Banerjee",
+            "Soham Sarkar"
+          ],
+          "summary": "Deep neural networks fitted by global empirical risk minimization commit to a single model for the entire covariate space. In a regression problem, if the regression function $f_0$ is inhomogeneous --- varying rapidly in one region, while being nearly flat in another --- no single model can be appropriate everywhere, and the fit degrades where the function varies most rapidly. Here we study an alternative in which, instead of fitting the network globally, we fit it locally. For each query point $x$, a \\emph{local neural network} is trained on the $k$ nearest-neighbours of $x$ alone, making the training sample and the fitted function query-dependent. We analyze the performance of the resulting estimator through a localization approach, establishing that the pointwise risk of the estimator with an appropriate choice of $k$ attains the rate $n^{-2α/(2α+d^{*})}$, up to logarithmic factors, when $f_0$ is locally $α$-Hölder with $α\\in(0,1]$ and the covariates are supported on a $d^{*}$-dimensional manifold embedded in $\\mathbb{R}^{d}$. A matching Le Cam lower bound shows that this rate is pointwise minimax optimal. However, the local rate-optimality requires $k$ to be calibrated to the smoothness of $f_0$, which is unknown in practice. We therefore provide a locally adaptive choice of $k$ that makes the neural network adapt to the local Hölder exponent of $f_0$ and to the intrinsic dimension simultaneously, both of which are potentially varying over the covariate domain. An extensive simulation study demonstrates the dominance of the locally adaptive neural network over a globally trained network and several state-of-the-art methods.",
+          "arxiv_url": "https://arxiv.org/abs/2611.22198v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.22198v1.pdf",
+          "submitted_date": "2026-11-17T04:35:59+00:00",
+          "categories": [
+            "math.ST",
+            "stat.ML"
+          ],
+          "comments": ""
+        },
+        {
+          "id": "2611.22158v1",
+          "title": "Centroid Spectral Coupling: Implicit Alignment and Representation Diversity in Self-Supervised Learning",
+          "authors": [
+            "M. Hadi Sepanj",
+            "Benyamin Ghojogh",
+            "Saed Moradi",
+            "Paul Fieguth"
+          ],
+          "display_authors": [
+            "M. Hadi Sepanj",
+            "Benyamin Ghojogh",
+            "Saed Moradi",
+            "et al."
+          ],
+          "summary": "Self-Supervised Learning (SSL) aims to align augmented views while preserving representation diversity and preventing collapse. Existing non-contrastive methods often address these goals using multiple weighted loss terms. We introduce Centroid Spectral Coupling (CSC), a single-term SSL objective that implicitly couples view alignment, representation diversity, and collapse resistance. CSC constructs centroids from independently normalized augmented-view pairs and applies a ridge-based spectral objective to their uncentered second-moment matrix. Preserving centroid magnitudes encodes view agreement while encouraging balanced representation energy across spectral directions. We establish an exact decomposition into nonnegative alignment and spectral-imbalance components, characterize the geometry of global optima, and derive finite-loss guarantees for alignment and diversity. We also show that complete constant-output collapse is a strict saddle in normalized representation space. Experiments on CIFAR-10, CIFAR-100, and Imagenette show that CSC achieves the highest linear Top-1 accuracy among the evaluated non-contrastive methods on all three benchmarks, and the highest kNN Top-1 accuracy on both CIFAR datasets. A ridge-parameter sensitivity study reveals an empirical alignment--diversity trade-off: increasing $κ$ strengthens view alignment but reduces representation effective rank. These results show that a unified spectral objective yields competitive visual representations without explicit contrastive negatives or separately weighted alignment and diversity penalties.",
+          "arxiv_url": "https://arxiv.org/abs/2611.22158v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.22158v1.pdf",
+          "submitted_date": "2026-11-17T03:41:50+00:00",
+          "categories": [
+            "cs.CV",
+            "cs.LG",
+            "stat.ML"
+          ],
+          "comments": ""
+        },
+        {
+          "id": "2611.22130v1",
+          "title": "Bandit Online Submodular Minimisation Using Zeroth-Order Oracles",
+          "authors": [
+            "Amir Ali Farzin",
+            "Philipp Braun",
+            "Iman Shames"
+          ],
+          "display_authors": [
+            "Amir Ali Farzin",
+            "Philipp Braun",
+            "Iman Shames"
+          ],
+          "summary": "We consider online submodular minimisation under bandit feedback, where at each round a decision maker plays a subset and observes only its cost, while the cost functions, and hence their minimiser, change over time. Existing bandit methods only guarantee static regret, which compares against a single fixed subset and is a weak benchmark when the minimiser moves. This paper provides, to the best of our knowledge, the first method with guarantees for tracking a moving minimiser in this setting. We propose a zeroth-order method built on a two-point oracle for the Lovász extension whose two evaluations are both subsets that can be played. The perturbed and base points are rounded by a common random threshold, and drawing the smoothing direction from the unit sphere makes the base evaluation a zero-mean control variate, so the oracle is an unbiased estimator of the smoothed gradient. We establish dynamic regret bounds of order $O\\big((1+\\sqrt{P^\\ast_N})N^{3/4}\\big)$ in general and $O\\big((1+\\sqrt{P^\\ast_N})N^{2/3}\\big)$ under a sufficiently small drift, where $P^\\ast_N$ is the path length of the minimiser sequence, together with the corresponding $O(N^{3/4})$ and $O(N^{2/3})$ static regret bounds. Numerically, the method attains lower regret than the algorithm of (Hazan and Kale (2012)), with the advantage growing with the path length.",
+          "arxiv_url": "https://arxiv.org/abs/2611.22130v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.22130v1.pdf",
+          "submitted_date": "2026-11-17T03:12:23+00:00",
+          "categories": [
+            "stat.ML",
+            "cs.LG"
+          ],
+          "comments": ""
+        },
+        {
+          "id": "2611.22096v1",
+          "title": "COSI: A Framework for Robustly Valid Inference",
+          "authors": [
+            "Arun K. Kuchibhotla",
+            "Sivaraman Balakrishnan",
+            "Larry Wasserman"
+          ],
+          "display_authors": [
+            "Arun K. Kuchibhotla",
+            "Sivaraman Balakrishnan",
+            "Larry Wasserman"
+          ],
+          "summary": "We introduce COSI (COnfidence from Scale Invariance), a framework for constructing confidence sets for statistical functionals. COSI builds on the HulC (Hull-based Confidence), which uses median unbiasedness to construct confidence sets from batch estimates. COSI uses scale-invariance properties shared by many common estimators. We divide the data into batches, compute an estimate in each batch, and retain each candidate parameter value for which the batch estimates pass a test of scale invariance. The resulting confidence sets are asymptotically valid under weaker assumptions than classical Wald and bootstrap procedures require, and their coverage can be closer to the nominal level in small samples. Applications include robust inference for the mean, regression coefficients in misspecified linear models, tensor norms, and Fréchet means.",
+          "arxiv_url": "https://arxiv.org/abs/2611.22096v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.22096v1.pdf",
+          "submitted_date": "2026-11-17T02:27:30+00:00",
+          "categories": [
+            "stat.ME",
+            "math.ST",
+            "stat.ML"
+          ],
+          "comments": "Slides based on this paper can be found at https://arun-kuchibhotla.github.io/docs/talk/ (These slides includes more examples and sometime more simulations. The discussion in some of these slides is also informal.)"
+        },
+        {
+          "id": "2611.22065v1",
+          "title": "Two Counterexamples for e-means",
+          "authors": [
+            "Zhenisbek Assylbekov"
+          ],
+          "display_authors": [
+            "Zhenisbek Assylbekov"
+          ],
+          "summary": "e-means (Bessa et al., 2026) combines exponential averaging and cluster revival. We give two counterexamples to its published recipe with higher final loss than standard k-means (Lloyd, 1982) from identical initial centers. Mass-based revival can destroy a global optimum and make the ratio of expected losses unbounded even with k-means++ seeding.",
+          "arxiv_url": "https://arxiv.org/abs/2611.22065v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.22065v1.pdf",
+          "submitted_date": "2026-11-17T01:42:16+00:00",
+          "categories": [
+            "cs.LG",
+            "stat.ML"
+          ],
+          "comments": ""
+        }
+      ],
+      "count": 18
+    },
+    "cs.LG": {
+      "name": "Machine Learning",
+      "papers": [],
+      "count": 0
+    },
+    "nucl-ex": {
+      "name": "Nuclear Physics - Experiment",
+      "papers": [],
+      "count": 0
+    }
+  }
+}
