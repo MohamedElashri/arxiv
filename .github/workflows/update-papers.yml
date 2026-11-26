@@ -14,8 +14,7 @@ on:
 permissions:
   actions: read
   contents: write
-  pages: write
-  id-token: write
+  pages: read
 
 concurrency:
   group: pages
@@ -24,7 +23,6 @@ concurrency:
 jobs:
   fetch-and-generate:
     runs-on: ubuntu-latest
-    environment: github-pages
 
     steps:
       - name: Checkout repository
@@ -116,6 +114,16 @@ jobs:
         with:
           path: ./public
 
+  deploy:
+    needs: fetch-and-generate
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346 # sanad: ref=v5.0.1
