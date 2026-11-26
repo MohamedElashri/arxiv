@@ -1,6 +1,6 @@
 requests>=2.34.2
 feedparser>=6.0.14
-python-dateutil>=2.9.0.post0
+python-dateutil>=4.0.0
 toml>=0.10.2
 fastembed==0.8.0
 huggingface-hub>=0.20,<2
