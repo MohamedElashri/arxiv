@@ -1,0 +1,49 @@
+{{ define "dated-issue" }}
+    {{ $date := .Page.Title }}
+    <section class="date-section" aria-labelledby="issue-date">
+        <div class="issue-navigation"><a href="{{ .BasePath }}/"><span aria-hidden="true">←</span> Latest issue</a></div>
+        {{ with index .Data.feed.issues $date }}{{ template "issue" . }}{{ end }}
+    </section>
+    {{ template "issue-list" (dict "Site" . "Current" $date "Heading" "Other dates") }}
+{{ end }}
+
+{{ define "issue" }}
+    <div class="date-header">
+        <h2 class="date-label" id="issue-date"><time datetime="{{ .date }}">{{ .date }}</time></h2>
+        <span class="date-count">{{ .count }} {{ if eq .count 1.0 }}paper{{ else }}papers{{ end }}</span>
+    </div>
+    {{ range .sections }}
+        <details class="category category-{{ .class }}"{{ if .expanded }} open{{ end }}>
+            <summary class="category-header">
+                <span class="toggle-icon" aria-hidden="true">▶</span>
+                <span class="category-title">{{ .name }}</span>
+                <span class="category-count">{{ len .papers }} {{ if eq (len .papers) 1 }}paper{{ else }}papers{{ end }}</span>
+            </summary>
+            <div class="category-content">
+                {{ range .papers }}{{ template "paper" . }}{{ end }}
+            </div>
+        </details>
+    {{ end }}
+    <p class="issue-updated">Last updated {{ .updated }}</p>
+{{ end }}
+
+{{ define "issue-list" }}
+    {{ if gt (len .Site.Data.feed.dates) 1 }}
+        <nav class="issue-list" id="other-dates" aria-labelledby="other-dates-heading">
+            <h2 id="other-dates-heading">{{ .Heading }}</h2>
+            <ul>
+                {{ range .Site.Data.feed.dates }}
+                    {{ if ne . $.Current }}
+                        {{ $issue := index $.Site.Data.feed.issues . }}
+                        <li>
+                            <a href="{{ $.Site.BasePath }}/days/{{ . }}/">
+                                <time datetime="{{ . }}">{{ . }}</time>
+                                <span>{{ $issue.count }} {{ if eq $issue.count 1.0 }}paper{{ else }}papers{{ end }}</span>
+                            </a>
+                        </li>
+                    {{ end }}
+                {{ end }}
+            </ul>
+        </nav>
+    {{ end }}
+{{ end }}

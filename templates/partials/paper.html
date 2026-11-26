@@ -1,0 +1,45 @@
+{{ define "paper" }}
+<details class="paper">
+    <summary class="paper-header">
+        <span class="toggle-icon" aria-hidden="true">▶</span>
+        <span class="paper-title">{{ range .title_parts }}{{ if .highlight }}<span class="highlight">{{ .text }}</span>{{ else }}{{ .text }}{{ end }}{{ end }}</span>
+    </summary>
+    <div class="paper-content">
+        <div class="authors-section">
+            <h3>Authors</h3>
+            <div class="authors-with-links">
+                <p class="authors">{{ .authors }}</p>
+                <div class="paper-links">
+                    <a href="{{ .arxiv_url }}" class="arxiv-link" target="_blank" rel="noopener" aria-label="View on arXiv" title="View on arXiv">
+                        <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H6.9C4.01 7 1.9 9.11 1.9 12s2.11 5 5 5h4v-1.9H6.9c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9.1-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.89 0 5-2.11 5-5s-2.11-5-5-5z"/>
+                        </svg>
+                        <span class="action-label">arXiv</span>
+                    </a>
+                    <a href="{{ .pdf_url }}" class="pdf-link" target="_blank" rel="noopener" aria-label="Open PDF" title="Open PDF">
+                        <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z M9,13V19H7V13H9M15,13V19H13V13H15M11,13V19H9V13H11"/>
+                        </svg>
+                        <span class="action-label">PDF</span>
+                    </a>
+                    <a href="https://www.zotero.org/save?type=doi&q={{ .doi }}" class="zotero-link" target="_blank" rel="noopener" aria-label="Add to Zotero" title="Add to Zotero">
+                        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 16 16" fill="currentColor">
+                        <polygon points="13.863 2.73 13.027 1 2.137 1 2.137 3.8 2.137 3.921 8.822 3.921 1.289 13.233 2.137 15 13.863 15 13.863 12.142 13.863 12.021 6.448 12.021 13.863 2.73"/>
+                        </svg>
+                        <span class="action-label">Zotero</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="abstract">
+            <h3>Abstract</h3>
+            <p>{{ .summary }}</p>
+        </div>
+        {{ with .comments }}<div class="comments">{{ . }}</div>{{ end }}
+        <div class="paper-info">
+            <span>Submitted <time datetime="{{ .submitted }}">{{ .submitted }}</time></span>
+            <span>arXiv ID {{ .id }}</span>
+        </div>
+    </div>
+</details>
+{{ end }}

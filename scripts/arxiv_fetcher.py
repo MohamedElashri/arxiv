@@ -5,28 +5,35 @@ and saves them to JSON files for static site generation.
 """
 
 import json
-import os
+import shutil
 import sys
 import time
-import shutil
-from datetime import datetime, timedelta
+import xml.etree.ElementTree as ET
+from datetime import datetime
 from pathlib import Path
 from typing import Dict, List, Any
+
 import requests
 import toml
-import xml.etree.ElementTree as ET
-from urllib.parse import quote
+
+
+NAMESPACES = {
+    "atom": "http://www.w3.org/2005/Atom",
+    "arxiv": "http://arxiv.org/schemas/atom",
+    "opensearch": "http://a9.com/-/spec/opensearch/1.1/",
+}
 
 
 class ArXivFetcher:
     def __init__(self, config_path: str = "config.toml"):
         """Initialize the ArXiv fetcher with configuration."""
-        self.config = toml.load(config_path)
+        self.config = toml.load(config_path)["extra"]["feed"]
         self.data_dir = Path("data")
         self.data_dir.mkdir(exist_ok=True)
         
         # ArXiv API endpoint
-        self.arxiv_api = "http://export.arxiv.org/api/query"
+        self.arxiv_api = "https://export.arxiv.org/api/query"
+        self.last_request = None
         
     def clean_old_data(self):
         """Keep only the last N days of data files (not calendar days, but actual files with data)."""
@@ -60,47 +67,50 @@ class ArXivFetcher:
                 print(f"Archived old data file: {json_file} -> {archive_path}")
     
     def fetch_papers_for_category(self, category: str, date_str: str) -> List[Dict[str, Any]]:
-        """Fetch papers for a specific category and date."""
-        # Format date for ArXiv query (YYYYMMDD)
+        """Fetch every page of results for a category and submission date."""
         query_date = date_str.replace("-", "")
-        
-        # Build query parameters
+        settings = self.config["settings"]
+        page_size = settings.get("papers_per_request", settings.get("max_papers_per_category", 100))
+        if page_size <= 0:
+            raise ValueError("papers_per_request must be positive")
+
         params = {
             "search_query": f"cat:{category} AND submittedDate:[{query_date}0000 TO {query_date}2359]",
             "start": 0,
-            "max_results": self.config["settings"]["max_papers_per_category"],
+            "max_results": page_size,
             "sortBy": "submittedDate",
-            "sortOrder": "descending"
+            "sortOrder": "descending",
         }
-        
-        try:
-            response = requests.get(self.arxiv_api, params=params, timeout=30)
-            response.raise_for_status()
-            
-            # Parse XML response
-            root = ET.fromstring(response.content)
-            
-            # Define namespaces
-            namespaces = {
-                'atom': 'http://www.w3.org/2005/Atom',
-                'arxiv': 'http://arxiv.org/schemas/atom'
-            }
-            
-            papers = []
-            for entry in root.findall('atom:entry', namespaces):
-                paper = self.parse_paper_entry(entry, namespaces)
-                if paper:
-                    papers.append(paper)
-            
-            print(f"Fetched {len(papers)} papers for category {category}")
-            return papers
-            
-        except requests.RequestException as e:
-            print(f"Error fetching papers for category {category}: {e}")
-            return []
-        except ET.ParseError as e:
-            print(f"Error parsing XML response for category {category}: {e}")
-            return []
+
+        papers = []
+        while True:
+            if self.last_request is not None:
+                time.sleep(max(0, 3 - (time.monotonic() - self.last_request)))
+            try:
+                response = requests.get(self.arxiv_api, params=params, timeout=30)
+                response.raise_for_status()
+                root = ET.fromstring(response.content)
+                total = int(root.findtext("opensearch:totalResults", "", NAMESPACES))
+            except (requests.RequestException, ET.ParseError, ValueError) as error:
+                raise RuntimeError(f"Fetching {category} at offset {params['start']}: {error}") from error
+            finally:
+                self.last_request = time.monotonic()
+
+            entries = root.findall("atom:entry", NAMESPACES)
+            if not entries and params["start"] < total:
+                raise RuntimeError(f"arXiv returned an empty page for {category} at offset {params['start']}")
+            for entry in entries:
+                paper = self.parse_paper_entry(entry, NAMESPACES)
+                if paper is None:
+                    raise RuntimeError(f"Invalid arXiv entry for {category} at offset {params['start']}")
+                papers.append(paper)
+
+            params["start"] += len(entries)
+            if params["start"] >= total:
+                break
+
+        print(f"Fetched {len(papers)} papers for category {category}")
+        return papers
     
     def parse_paper_entry(self, entry, namespaces) -> Dict[str, Any]:
         """Parse a single paper entry from ArXiv XML."""
@@ -134,6 +144,7 @@ class ArXivFetcher:
             categories = []
             for category in entry.findall('atom:category', namespaces):
                 categories.append(category.get('term'))
+            primary_category = entry.find('arxiv:primary_category', namespaces)
             
             # Extract comments if available
             comments = ""
@@ -151,6 +162,7 @@ class ArXivFetcher:
                 "pdf_url": pdf_url,
                 "submitted_date": submitted_date.isoformat(),
                 "categories": categories,
+                "primary_category": primary_category.get("term") if primary_category is not None else None,
                 "comments": comments
             }
             
@@ -187,9 +199,6 @@ class ArXivFetcher:
             
             total_papers += len(papers)
             
-            # Rate limiting to be respectful to ArXiv API
-            time.sleep(3)
-        
         # Check if any papers were found across all categories
         if total_papers == 0:
             print(f"No papers found for any category on {target_date}. Skipping JSON file creation.")

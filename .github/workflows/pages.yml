@@ -29,25 +29,26 @@ jobs:
         with:
           python-version: '3.11'
           
-      - name: Install dependencies
+      - name: Install Nida
+        run: bash scripts/install-nida.sh
+
+      - name: Cache the embedding model and paper vectors
+        uses: actions/cache@27d5ce7f107fe9357f9df03efb73ab90386fccae # sanad: ref=v5.0.5
+        with:
+          path: .nida/models
+          key: arxiv-semantic-v1-${{ runner.os }}-${{ hashFiles('scripts/prepare_feed.py', 'requirements.txt', 'data/*.json') }}
+          restore-keys: arxiv-semantic-v1-${{ runner.os }}-
+
+      - name: Prepare paper feed
         run: |
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt
-          
-      - name: Clean existing site directory
+          python -m pip install -r requirements.txt
+          python -m unittest discover -s tests
+          python scripts/prepare_feed.py
+
+      - name: Validate and build with Nida
         run: |
-          if [ -d "./site" ]; then
-            rm -rf ./site/*
-            echo "Cleaned existing site directory"
-          else
-            mkdir -p ./site
-            echo "Created new site directory"
-          fi
-          
-      - name: Generate static site
-        run: python scripts/generate_site.py
-        env:
-          PYTHONPATH: ${{ github.workspace }}
+          nida check
+          nida build
           
       - name: Setup Pages
         uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d # sanad: ref=v6.0.0
@@ -55,7 +56,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # sanad: ref=v5.0.0
         with:
-          path: './site'
+          path: './public'
           
       - name: Deploy to GitHub Pages
         id: deployment

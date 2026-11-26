@@ -1,27 +1,78 @@
-[site]
-title = "Daily Papers"
-description = "Daily collection of papers from ArXiv in selected categories"
-base_url = "https://melashri.net/arxiv"
+title = "AI Papers Daily"
+description = "Daily arXiv papers on agentic systems, AI engineering, and machine learning."
+base_url = "https://melashri.net/arxiv/"
+author = "Mohamed Elashri"
+content_dir = ".nida/content"
+data_dir = ".nida/data"
+minify_html = true
 
-[categories]
-# ArXiv category codes and their display names
-hep-ex = "High Energy Physics - Experiment"
-hep-ph = "High Energy Physics - Phenomenology"
-"stat.ML" = "Machine Learning - Statistics"
+[feed]
+enabled = false
+
+[pipeline]
+fingerprint = true
+minify_css = true
+
+[extra.feed.categories]
+# arXiv categories in fallback display order
+"cs.AI" = "Artificial Intelligence"
+"cs.MA" = "Multiagent Systems"
+"cs.CL" = "Computation and Language"
 "cs.LG" = "Machine Learning"
-nucl-ex = "Nuclear Physics - Experiment"
-[settings]
-# Number of days to keep papers (older papers will be cleaned up)
+"cs.IR" = "Information Retrieval"
+"cs.CV" = "Computer Vision"
+"cs.RO" = "Robotics"
+"stat.ML" = "Statistical Machine Learning"
+
+[extra.feed.semantic]
+# Require a small lead over the nearest broader research description.
+min_margin = 0.015
+background = [
+    "Fundamental machine learning theory, causal or statistical inference, mathematical optimization, and new learning algorithms.",
+    "Training general-purpose models, evaluating their knowledge and reasoning aptitude, and generating answers to individual prompts.",
+    "Computer vision and perceptual algorithms for recognition, image processing, generation, or reconstructing scenes.",
+    "Classical motion planning, control, locomotion, or imitation learning for a physical task.",
+    "Reinforcement learning algorithms, rewards and exploration, sample efficiency, and policy learning in simulations.",
+    "Using predictive models and neural simulators to study problems in science, medicine, finance, or other application domains.",
+    "Ranking, document retrieval, and recommendation algorithms that return scores or a list of results.",
+    "Modeling the behavior of people or organizations and simulating their interaction.",
+    "Quantum algorithms, quantum error correction, and simulations of physical systems.",
+    "Analyzing model representations, interpretability, privacy, or the behavior of trained models.",
+]
+
+[extra.feed.focus.agentic-systems]
+name = "Agentic Systems"
+descriptions = [
+    "An AI system interprets a goal, chooses successive actions, observes the resulting state, and adapts until the task is complete.",
+    "Multiple autonomous AI agents cooperate by sharing observations, allocating responsibilities, assessing intermediate results, and coordinating decisions in a common workflow.",
+    "Planning, memory, adaptation, verification, or failure recovery for AI systems carrying out extended tasks on their own.",
+    "Building and evaluating systems in which language or multimodal models perform work through repeated interaction with programs, tools, user interfaces, or physical surroundings.",
+    "Autonomous decision making over which capabilities to use, which information to obtain, or when to verify, revise, and stop during a task.",
+]
+
+[extra.feed.focus.ai-engineering]
+name = "AI Engineering"
+descriptions = [
+    "The paper improves how deployed machine learning systems execute workloads under real latency, memory, throughput, energy, or hardware constraints.",
+    "The main contribution makes it easier to train, adapt, serve, scale, monitor, or troubleshoot AI models as part of a working system.",
+    "The paper evaluates or improves the reliability, safety, or operating costs of an AI application in realistic usage or deployment.",
+    "The system connects a model with external information or components to deliver practical outputs that can be verified and maintained.",
+    "The paper compresses or accelerates model execution while measuring the tradeoff between model quality and practical resource use.",
+    "Adapting the size, numerical representation, hardware use, or processing schedule of a trained model to make it practical to run while retaining accuracy.",
+]
+
+[extra.feed.settings]
+# Number of daily files to keep in the feed before archiving
 retention_days = 7
-# Maximum number of papers per category per day
-max_papers_per_category = 100
-# Show only first N authors if more exist
+# Number of results requested per API page. The fetcher retrieves every page.
+papers_per_request = 100
+# Show only the first N authors
 max_authors_display = 3
 
-[highlights]
-# Words to highlight in paper titles (case-insensitive)
-# Add words you want to highlight, otherwise keep empty
-words = ["Allen","LHCb","charm","charmonium","trigger","FCC","FCC-ee",
-"FCC-hh","LLM","flavor","flavour","reconstruction","rare decay","attention",
-"tracks","tracking","benchmark","rare","vertex","locator", "FPGA", "FPGAs", "Monopole",
-"Monopoles"]
+[extra.feed.highlights]
+# Terms highlighted in paper titles
+words = [
+    "agentic", "agent", "agents", "multiagent", "multi-agent", "tool calling",
+    "tool use", "model context protocol", "inference", "retrieval", "RAG",
+    "evaluation", "benchmark", "benchmarks", "guardrails",
+]

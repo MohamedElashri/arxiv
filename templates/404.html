@@ -1,0 +1,7 @@
+{{ define "404" }}{{ template "base" . }}{{ end }}
+{{ define "content" }}
+    <section class="empty-state">
+        <h2>Page unavailable</h2>
+        <p><a href="{{ .BasePath }}/">Browse the latest papers</a></p>
+    </section>
+{{ end }}

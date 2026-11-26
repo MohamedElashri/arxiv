@@ -30,7 +30,20 @@
     },
     {
       "file": ".github/workflows/pages.yml",
-      "node": "jobs.build-and-deploy.steps[5].uses",
+      "node": "jobs.build-and-deploy.steps[3].uses",
+      "owner": "actions",
+      "repo": "cache",
+      "path": "",
+      "kind": "github-action",
+      "logical_ref": "v5.0.5",
+      "pinned_sha": "27d5ce7f107fe9357f9df03efb73ab90386fccae",
+      "resolved_at": "2026-11-26T17:00:19Z",
+      "timestamp": "2026-04-13T15:57:52Z",
+      "timestamp_source": "release"
+    },
+    {
+      "file": ".github/workflows/pages.yml",
+      "node": "jobs.build-and-deploy.steps[6].uses",
       "owner": "actions",
       "repo": "configure-pages",
       "path": "",
@@ -41,7 +54,7 @@
     },
     {
       "file": ".github/workflows/pages.yml",
-      "node": "jobs.build-and-deploy.steps[6].uses",
+      "node": "jobs.build-and-deploy.steps[7].uses",
       "owner": "actions",
       "repo": "upload-pages-artifact",
       "path": "",
@@ -52,7 +65,7 @@
     },
     {
       "file": ".github/workflows/pages.yml",
-      "node": "jobs.build-and-deploy.steps[7].uses",
+      "node": "jobs.build-and-deploy.steps[8].uses",
       "owner": "actions",
       "repo": "deploy-pages",
       "path": "",
@@ -80,6 +93,17 @@
       "file": ".github/workflows/update-papers.yml",
       "node": "jobs.fetch-and-generate.steps[10].uses",
       "owner": "actions",
+      "repo": "upload-pages-artifact",
+      "path": "",
+      "kind": "github-action",
+      "logical_ref": "v5.0.0",
+      "pinned_sha": "fc324d3547104276b827a68afc52ff2a11cc49c9",
+      "resolved_at": "2026-09-16T20:19:15Z"
+    },
+    {
+      "file": ".github/workflows/update-papers.yml",
+      "node": "jobs.fetch-and-generate.steps[11].uses",
+      "owner": "actions",
       "repo": "deploy-pages",
       "path": "",
       "kind": "github-action",
@@ -104,24 +128,26 @@
     },
     {
       "file": ".github/workflows/update-papers.yml",
-      "node": "jobs.fetch-and-generate.steps[8].uses",
+      "node": "jobs.fetch-and-generate.steps[7].uses",
+      "owner": "actions",
+      "repo": "cache",
+      "path": "",
+      "kind": "github-action",
+      "logical_ref": "v5.0.5",
+      "pinned_sha": "27d5ce7f107fe9357f9df03efb73ab90386fccae",
+      "resolved_at": "2026-11-26T17:00:19Z",
+      "timestamp": "2026-04-13T15:57:52Z",
+      "timestamp_source": "release"
+    },
+    {
+      "file": ".github/workflows/update-papers.yml",
+      "node": "jobs.fetch-and-generate.steps[9].uses",
       "owner": "actions",
       "repo": "configure-pages",
       "path": "",
       "kind": "github-action",
       "logical_ref": "v6.0.0",
       "pinned_sha": "45bfe0192ca1faeb007ade9deae92b16b8254a0d",
-      "resolved_at": "2026-09-16T20:19:15Z"
-    },
-    {
-      "file": ".github/workflows/update-papers.yml",
-      "node": "jobs.fetch-and-generate.steps[9].uses",
-      "owner": "actions",
-      "repo": "upload-pages-artifact",
-      "path": "",
-      "kind": "github-action",
-      "logical_ref": "v5.0.0",
-      "pinned_sha": "fc324d3547104276b827a68afc52ff2a11cc49c9",
       "resolved_at": "2026-09-16T20:19:15Z"
     }
   ]
